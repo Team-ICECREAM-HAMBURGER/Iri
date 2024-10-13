@@ -3,10 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class VehicleControlTrain : MonoBehaviour {
+public class VehicleTrainController : MonoBehaviour {
     [Header("Vehicle Component")]
-    [SerializeField] private GameControlType.TrainType trainType;
-    [SerializeField] private GameControlType.TrainStatus trainStatus;
+    [SerializeField] private GameControlTypeManager.TrainType trainType;
+    [SerializeField] private GameControlTypeManager.TrainStatus trainStatus;
     [SerializeField] private GameObject engineCar;
     [SerializeField] private List<GameObject> jointCars;
     

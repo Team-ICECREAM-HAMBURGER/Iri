@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ddc2bca3-3552-44fb-9935-884ccdc772c1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Iri/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Iri/.idea/projectSettingsUpdater.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameControlColliderBoundsCalculator.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Iri/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Iri/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Rail_Express.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Rail_Express.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Rail_Freight.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Rail_Freight.prefab" afterDir="false" />
@@ -14,8 +14,12 @@
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Vehicle_Train (Oil).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Vehicle_Train (Oil).prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Vehicle_Train (Passenger).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Vehicle_Train (Passenger).prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameControlType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameControlType.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/VehicleControlTrain.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/VehicleControlTrain.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameControlAdjustBoxColliderBound.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameControlAdjustBoxColliderBound.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameControlColliderBoundsCalculator.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameControlType.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameControlType.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/VehicleControlTrain.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/VehicleTrainController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/VehicleControlTrain.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/VehicleTrainController.cs.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +116,7 @@
       <updated>1720096802208</updated>
       <workItem from="1720096803865" duration="3000" />
       <workItem from="1720257153500" duration="598000" />
-      <workItem from="1728808238092" duration="1803000" />
+      <workItem from="1728808238092" duration="11014000" />
     </task>
     <servers />
   </component>

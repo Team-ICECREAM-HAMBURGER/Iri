@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameControlType : MonoBehaviour {
+public class GameControlTypeManager : MonoBehaviour {
     public enum TrainType {
         PASSENGER,
         CARGO,

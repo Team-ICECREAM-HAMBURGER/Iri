@@ -178,6 +178,7 @@ GameObject:
   - component: {fileID: 8900253698398077294}
   - component: {fileID: 3843262840762487814}
   - component: {fileID: 2965628556136507279}
+  - component: {fileID: 7694880182705702537}
   m_Layer: 0
   m_Name: Vehicle_Train Wagon (Passenger)
   m_TagString: Untagged
@@ -193,8 +194,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 470180425460325172}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 63.951336, y: 0, z: -61.9}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -41.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -206,7 +207,7 @@ Transform:
   - {fileID: 470180425459828504}
   - {fileID: 470180425459828506}
   m_Father: {fileID: 8899261555154542397}
-  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &8900253698398077294
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -270,6 +271,18 @@ FixedJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!114 &7694880182705702537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 470180425460325172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1f8849d86451fc46a2b63a59a9f51f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &470180425460325174
 GameObject:
   m_ObjectHideFlags: 0
@@ -702,6 +715,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8899261555154542397}
+  - component: {fileID: 7232297180115364954}
   m_Layer: 0
   m_Name: Vehicle_Train (Passenger)
   m_TagString: Untagged
@@ -731,6 +745,30 @@ Transform:
   - {fileID: 7517907969381054765}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7232297180115364954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 540300813762860313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1623aa736eb58764680c5622d9599ede, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trainType: 0
+  trainStatus: 0
+  engineCar: {fileID: 3777217568716600467}
+  jointCars:
+  - {fileID: 8140006879855528057}
+  - {fileID: 4753810898505821909}
+  - {fileID: 470180425460325172}
+  - {fileID: 1294499906163653605}
+  - {fileID: 7588520263392946777}
+  - {fileID: 7517907969381410061}
+  vehicleCurrentSpeed: 0
+  vehicleAcceleration: 0
 --- !u!1 &1294499906163653601
 GameObject:
   m_ObjectHideFlags: 0
@@ -909,6 +947,7 @@ GameObject:
   - component: {fileID: 1553664030480819431}
   - component: {fileID: 6081794220528808834}
   - component: {fileID: 543512079696365073}
+  - component: {fileID: 6451901114279262482}
   m_Layer: 0
   m_Name: Vehicle_Train Wagon (Passenger)
   m_TagString: Untagged
@@ -924,8 +963,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1294499906163653605}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 22.941471, y: 0, z: -61.9}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -54.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -937,7 +976,7 @@ Transform:
   - {fileID: 1294499906164008905}
   - {fileID: 1294499906164008907}
   m_Father: {fileID: 8899261555154542397}
-  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1553664030480819431
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1001,6 +1040,18 @@ FixedJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!114 &6451901114279262482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294499906163653605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1f8849d86451fc46a2b63a59a9f51f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1294499906163653607
 GameObject:
   m_ObjectHideFlags: 0
@@ -1523,6 +1574,7 @@ GameObject:
   - component: {fileID: 3777217568716105907}
   - component: {fileID: 6986871598463795285}
   - component: {fileID: 7675474153274200862}
+  - component: {fileID: 832190773582935050}
   m_Layer: 0
   m_Name: Vehicle_Train Engine (Passenger)
   m_TagString: Untagged
@@ -1538,8 +1590,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3777217568716600467}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -4.394186, y: 0, z: -61.9}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1551,7 +1603,7 @@ Transform:
   - {fileID: 3777217568716105919}
   - {fileID: 3777217568716105917}
   m_Father: {fileID: 8899261555154542397}
-  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &6986871598463795285
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1600,6 +1652,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &832190773582935050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3777217568716600467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1f8849d86451fc46a2b63a59a9f51f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3777217568716600469
 GameObject:
   m_ObjectHideFlags: 0
@@ -2280,6 +2344,7 @@ GameObject:
   - component: {fileID: 206261381676792351}
   - component: {fileID: 2567897903314160831}
   - component: {fileID: 5654147923111371591}
+  - component: {fileID: 2152832043213776388}
   m_Layer: 0
   m_Name: Vehicle_Train Wagon (Passenger)
   m_TagString: Untagged
@@ -2295,8 +2360,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4753810898505821909}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 36.591473, y: 0, z: -61.9}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -27.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2308,7 +2373,7 @@ Transform:
   - {fileID: 4753810898506117881}
   - {fileID: 4753810898506117883}
   m_Father: {fileID: 8899261555154542397}
-  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &206261381676792351
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2372,6 +2437,18 @@ FixedJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!114 &2152832043213776388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4753810898505821909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1f8849d86451fc46a2b63a59a9f51f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4753810898505821911
 GameObject:
   m_ObjectHideFlags: 0
@@ -3309,6 +3386,7 @@ GameObject:
   - component: {fileID: 6279552694325943588}
   - component: {fileID: 6765696163592337706}
   - component: {fileID: 8458351237768373783}
+  - component: {fileID: 2564378024004074032}
   m_Layer: 0
   m_Name: Vehicle_Train Wagon (Passenger)
   m_TagString: Untagged
@@ -3324,8 +3402,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7517907969381410061}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 77.65134, y: 0, z: -61.9}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -82.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3337,7 +3415,7 @@ Transform:
   - {fileID: 7517907969381054753}
   - {fileID: 7517907969381054755}
   m_Father: {fileID: 8899261555154542397}
-  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &6279552694325943588
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3401,6 +3479,18 @@ FixedJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!114 &2564378024004074032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7517907969381410061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1f8849d86451fc46a2b63a59a9f51f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7517907969381410063
 GameObject:
   m_ObjectHideFlags: 0
@@ -3836,6 +3926,7 @@ GameObject:
   - component: {fileID: 4293962952012571870}
   - component: {fileID: 2429009752082073257}
   - component: {fileID: 441007436745261732}
+  - component: {fileID: 2145733492657867137}
   m_Layer: 0
   m_Name: Vehicle_Train Wagon (Passenger)
   m_TagString: Untagged
@@ -3851,8 +3942,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7588520263392946777}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 50.29147, y: 0, z: -61.9}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -68.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3864,7 +3955,7 @@ Transform:
   - {fileID: 7588520263392982645}
   - {fileID: 7588520263392982647}
   m_Father: {fileID: 8899261555154542397}
-  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &4293962952012571870
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3928,6 +4019,18 @@ FixedJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!114 &2145733492657867137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7588520263392946777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1f8849d86451fc46a2b63a59a9f51f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7588520263392946779
 GameObject:
   m_ObjectHideFlags: 0
@@ -4529,6 +4632,7 @@ GameObject:
   - component: {fileID: 2803557824719118748}
   - component: {fileID: 1582661091778731363}
   - component: {fileID: 5198662131148745139}
+  - component: {fileID: 4229884174578482775}
   m_Layer: 0
   m_Name: Vehicle_Train Wagon (Passenger)
   m_TagString: Untagged
@@ -4544,8 +4648,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8140006879855528057}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 9.241471, y: 0, z: -61.9}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -13.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4557,7 +4661,7 @@ Transform:
   - {fileID: 8140006879855236181}
   - {fileID: 8140006879855236183}
   m_Father: {fileID: 8899261555154542397}
-  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &2803557824719118748
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4621,6 +4725,18 @@ FixedJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!114 &4229884174578482775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8140006879855528057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1f8849d86451fc46a2b63a59a9f51f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8140006879855528059
 GameObject:
   m_ObjectHideFlags: 0
