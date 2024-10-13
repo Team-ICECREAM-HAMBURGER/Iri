@@ -2,17 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameControlType : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+public class GameControlType : MonoBehaviour {
+    public enum TrainType {
+        PASSENGER,
+        CARGO,
+        DANGEROUS_CARGO
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public enum TrainStatus {
+        GO,
+        WARNING,
+        STOP
     }
 }
