@@ -47,13 +47,13 @@ public class VehicleTrainController : MonoBehaviour {
     }
 
     private void VehicleEngineControl() {
-        this.vehicleCurrentSpeed = this.vehicleRigidbody.velocity.magnitude;    // Current Speed (velocity Magnitude)
+        this.vehicleCurrentSpeed = this.vehicleRigidbody.linearVelocity.magnitude;    // Current Speed (velocity Magnitude)
         
         if (this.vehicleCurrentSpeed < this.vehicleMaxSpeed) {
             this.vehicleRigidbody.AddForce(this.vehicleTransform.forward * (this.vehicleAcceleration * this.vehicleRigidbody.mass * this.jointCars.Count), ForceMode.Force);    // Acceleration(m/s) * deltaTime * Mass 
         }
         else {
-            this.vehicleRigidbody.velocity = this.vehicleRigidbody.velocity.normalized * this.vehicleMaxSpeed;
+            this.vehicleRigidbody.linearVelocity = this.vehicleRigidbody.linearVelocity.normalized * this.vehicleMaxSpeed;
         }
     }
 }
