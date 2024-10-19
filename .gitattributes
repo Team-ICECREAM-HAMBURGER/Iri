@@ -5,3 +5,4 @@ Station/01_Iri filter=lfs diff=lfs merge=lfs -text
 Station filter=lfs diff=lfs merge=lfs -text
 Baking filter=lfs diff=lfs merge=lfs -text
 Set.CellSupportData.bytes filter=lfs diff=lfs merge=lfs -text
+Assets/Scenes/* filter=lfs diff=lfs merge=lfs -text
