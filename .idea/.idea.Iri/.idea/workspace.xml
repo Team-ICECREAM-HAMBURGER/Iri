@@ -5,290 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ddc2bca3-3552-44fb-9935-884ccdc772c1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Iri/.idea/indexLayout.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/External Packages/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Terrains_M/Worlds_M/terrain-world-plain.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/External Packages/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Terrains_M/Worlds_M/terrain-world-plain.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/External Packages/polyperfect/Low Poly Ultimate Pack/URP Materials and Post.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/02_GeungnakgangStation.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/02_GeungnakgangStation/Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/02_GeungnakgangStation/Materials/Geungnakgang_Station_mat-1.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/02_GeungnakgangStation/Materials/Geungnakgang_Station_mat-1.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/02_GeungnakgangStation/Materials/Geungnakgang_Station_mat-2.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/02_GeungnakgangStation/Materials/Geungnakgang_Station_mat-2.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/02_GeungnakgangStation/Meshes.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/02_GeungnakgangStation/Meshes/GeungnakganStation.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/02_GeungnakgangStation/Meshes/GeungnakganStation.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/02_GeungnakgangStation/Meshes/Geungnakgang_Base.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/02_GeungnakgangStation/Meshes/Geungnakgang_Base.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/02_GeungnakgangStation/Prefabs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/02_GeungnakgangStation/Prefabs/GeungnakganStation.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/02_GeungnakgangStation/Prefabs/GeungnakganStation.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/02_GeungnakgangStation/Prefabs/Geungnakgang_Base.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/02_GeungnakgangStation/Prefabs/Geungnakgang_Base.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/02_GeungnakgangStation/Textures.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/02_GeungnakgangStation/Textures/Geungnakgang_Station_mat-1_BaseMap.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/02_GeungnakgangStation/Textures/Geungnakgang_Station_mat-1_BaseMap.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/02_GeungnakgangStation/Textures/Geungnakgang_Station_mat-1_Emissive.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/02_GeungnakgangStation/Textures/Geungnakgang_Station_mat-1_Emissive.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/02_GeungnakgangStation/Textures/Geungnakgang_Station_mat-1_MaskMap.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/02_GeungnakgangStation/Textures/Geungnakgang_Station_mat-1_MaskMap.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/02_GeungnakgangStation/Textures/Geungnakgang_Station_mat-1_Normal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/02_GeungnakgangStation/Textures/Geungnakgang_Station_mat-1_Normal.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/02_GeungnakgangStation/Textures/Geungnakgang_Station_mat-2_BaseMap.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/02_GeungnakgangStation/Textures/Geungnakgang_Station_mat-2_BaseMap.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/02_GeungnakgangStation/Textures/Geungnakgang_Station_mat-2_Emissive.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/02_GeungnakgangStation/Textures/Geungnakgang_Station_mat-2_Emissive.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/02_GeungnakgangStation/Textures/Geungnakgang_Station_mat-2_MaskMap.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/02_GeungnakgangStation/Textures/Geungnakgang_Station_mat-2_MaskMap.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/02_GeungnakgangStation/Textures/Geungnakgang_Station_mat-2_Normal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/02_GeungnakgangStation/Textures/Geungnakgang_Station_mat-2_Normal.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/16_FormerGwangjuMBCBuilding.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/16_FormerGwangjuMBCBuilding/Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/16_FormerGwangjuMBCBuilding/Materials/FormerGwangjuMBCBuilding_ConcreteWall.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/16_FormerGwangjuMBCBuilding/Materials/FormerGwangjuMBCBuilding_ConcreteWall.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/16_FormerGwangjuMBCBuilding/Materials/FormerGwangjuMBCBuilding_Etc.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/16_FormerGwangjuMBCBuilding/Materials/FormerGwangjuMBCBuilding_Etc.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/16_FormerGwangjuMBCBuilding/Materials/FormerGwangjuMBCBuilding_Etc_Tile.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/16_FormerGwangjuMBCBuilding/Materials/FormerGwangjuMBCBuilding_Etc_Tile.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/16_FormerGwangjuMBCBuilding/Materials/FormerGwangjuMBCBuilding_Etc_Tower.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/16_FormerGwangjuMBCBuilding/Materials/FormerGwangjuMBCBuilding_Etc_Tower.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/16_FormerGwangjuMBCBuilding/Materials/FormerGwangjuMBCBuilding_Floor.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/16_FormerGwangjuMBCBuilding/Materials/FormerGwangjuMBCBuilding_Floor.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/16_FormerGwangjuMBCBuilding/Materials/FormerGwangjuMBCBuilding_Indoor.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/16_FormerGwangjuMBCBuilding/Materials/FormerGwangjuMBCBuilding_Indoor.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/16_FormerGwangjuMBCBuilding/Materials/FormerGwangjuMBCBuilding_Indoor_Object.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/16_FormerGwangjuMBCBuilding/Materials/FormerGwangjuMBCBuilding_Indoor_Object.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/16_FormerGwangjuMBCBuilding/Materials/StuccoFacade.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/16_FormerGwangjuMBCBuilding/Materials/StuccoFacade.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/16_FormerGwangjuMBCBuilding/Meshes.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/16_FormerGwangjuMBCBuilding/Meshes/FormerGwangjuMBCBuilding.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/16_FormerGwangjuMBCBuilding/Meshes/FormerGwangjuMBCBuilding.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/16_FormerGwangjuMBCBuilding/Meshes/FormerGwangjuMBCBuilding_Floor.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/16_FormerGwangjuMBCBuilding/Meshes/FormerGwangjuMBCBuilding_Floor.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/16_FormerGwangjuMBCBuilding/Prefabs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/16_FormerGwangjuMBCBuilding/Prefabs/FormerGwangjuMBCBuilding.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/16_FormerGwangjuMBCBuilding/Prefabs/FormerGwangjuMBCBuilding.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/16_FormerGwangjuMBCBuilding/Prefabs/FormerGwangjuMBCBuilding_Floor.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/16_FormerGwangjuMBCBuilding/Prefabs/FormerGwangjuMBCBuilding_Floor.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/16_FormerGwangjuMBCBuilding/Textures.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/16_FormerGwangjuMBCBuilding/Textures/FormerGwangjuMBCBuilding_Floor_BaseMap.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/16_FormerGwangjuMBCBuilding/Textures/FormerGwangjuMBCBuilding_Floor_BaseMap.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/16_FormerGwangjuMBCBuilding/Textures/FormerGwangjuMBCBuilding_Floor_MaskMap.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/16_FormerGwangjuMBCBuilding/Textures/FormerGwangjuMBCBuilding_Floor_MaskMap.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/16_FormerGwangjuMBCBuilding/Textures/FormerGwangjuMBCBuilding_Floor_Normal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/16_FormerGwangjuMBCBuilding/Textures/FormerGwangjuMBCBuilding_Floor_Normal.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/16_FormerGwangjuMBCBuilding/Textures/FormerGwangjuMBCBuilding_Map_ConcreteWall_BaseMap.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/16_FormerGwangjuMBCBuilding/Textures/FormerGwangjuMBCBuilding_Map_ConcreteWall_BaseMap.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/16_FormerGwangjuMBCBuilding/Textures/FormerGwangjuMBCBuilding_Map_ConcreteWall_MaskMap.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/16_FormerGwangjuMBCBuilding/Textures/FormerGwangjuMBCBuilding_Map_ConcreteWall_MaskMap.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/16_FormerGwangjuMBCBuilding/Textures/FormerGwangjuMBCBuilding_Map_ConcreteWall_Normal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/16_FormerGwangjuMBCBuilding/Textures/FormerGwangjuMBCBuilding_Map_ConcreteWall_Normal.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/16_FormerGwangjuMBCBuilding/Textures/FormerGwangjuMBCBuilding_Map_Etc_BaseMap.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/16_FormerGwangjuMBCBuilding/Textures/FormerGwangjuMBCBuilding_Map_Etc_BaseMap.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/16_FormerGwangjuMBCBuilding/Textures/FormerGwangjuMBCBuilding_Map_Etc_MaskMap.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/16_FormerGwangjuMBCBuilding/Textures/FormerGwangjuMBCBuilding_Map_Etc_MaskMap.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/16_FormerGwangjuMBCBuilding/Textures/FormerGwangjuMBCBuilding_Map_Etc_Normal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/16_FormerGwangjuMBCBuilding/Textures/FormerGwangjuMBCBuilding_Map_Etc_Normal.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/16_FormerGwangjuMBCBuilding/Textures/FormerGwangjuMBCBuilding_Map_Indoor_BaseMap.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/16_FormerGwangjuMBCBuilding/Textures/FormerGwangjuMBCBuilding_Map_Indoor_BaseMap.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/16_FormerGwangjuMBCBuilding/Textures/FormerGwangjuMBCBuilding_Map_Indoor_MaskMap.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/16_FormerGwangjuMBCBuilding/Textures/FormerGwangjuMBCBuilding_Map_Indoor_MaskMap.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/16_FormerGwangjuMBCBuilding/Textures/FormerGwangjuMBCBuilding_Map_Indoor_Normal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/16_FormerGwangjuMBCBuilding/Textures/FormerGwangjuMBCBuilding_Map_Indoor_Normal.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/16_FormerGwangjuMBCBuilding/Textures/FormerGwangjuMBCBuilding_Map_Indoor_Object_BaseMap.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/16_FormerGwangjuMBCBuilding/Textures/FormerGwangjuMBCBuilding_Map_Indoor_Object_BaseMap.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/16_FormerGwangjuMBCBuilding/Textures/FormerGwangjuMBCBuilding_Map_Indoor_Object_MaskMap.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/16_FormerGwangjuMBCBuilding/Textures/FormerGwangjuMBCBuilding_Map_Indoor_Object_MaskMap.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/16_FormerGwangjuMBCBuilding/Textures/FormerGwangjuMBCBuilding_Map_Indoor_Object_Normal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/16_FormerGwangjuMBCBuilding/Textures/FormerGwangjuMBCBuilding_Map_Indoor_Object_Normal.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/16_FormerGwangjuMBCBuilding/Textures/StuccoFacade_BaseMap.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/16_FormerGwangjuMBCBuilding/Textures/StuccoFacade_BaseMap.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/16_FormerGwangjuMBCBuilding/Textures/StuccoFacade_MaskMap.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/16_FormerGwangjuMBCBuilding/Textures/StuccoFacade_MaskMap.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/16_FormerGwangjuMBCBuilding/Textures/StuccoFacade_Normal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/16_FormerGwangjuMBCBuilding/Textures/StuccoFacade_Normal.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Common_Assets.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Common_Assets/Bg_Preset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Common_Assets/Bg_Preset/Ground.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Common_Assets/Bg_Preset/Ground.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Common_Assets/Bg_Preset/Ground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Common_Assets/Bg_Preset/Ground.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Common_Assets/Bg_Preset/Ground_Checker.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Common_Assets/Bg_Preset/Ground_Checker.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Common_Assets/Bg_Preset/Ground_Checker.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Common_Assets/Bg_Preset/Ground_Checker.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Common_Assets/Bg_Preset/SkyColor.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Common_Assets/Bg_Preset/SkyColor.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Common_Assets/Bg_Preset/sky_Mat.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Common_Assets/Bg_Preset/sky_Mat.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Common_Assets/Bush_04.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Common_Assets/Bush_04/Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Common_Assets/Bush_04/Materials/Bysh_04_Leaf.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Common_Assets/Bush_04/Materials/Bysh_04_Leaf.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Common_Assets/Bush_04/Materials/Bysh_04_Petal.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Common_Assets/Bush_04/Materials/Bysh_04_Petal.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Common_Assets/Bush_04/Meshes.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Common_Assets/Bush_04/Meshes/bush_04.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Common_Assets/Bush_04/Meshes/bush_04.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Common_Assets/Bush_04/Prefabs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Common_Assets/Bush_04/Prefabs/bush_04.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Common_Assets/Bush_04/Prefabs/bush_04.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Common_Assets/Bush_04/Textures.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Common_Assets/Bush_04/Textures/bush_04.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Common_Assets/Bush_04/Textures/bush_04.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Common_Assets/Bush_04/Textures/bush_04_NormalMap.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Common_Assets/Bush_04/Textures/bush_04_NormalMap.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Common_Assets/Ground_Common.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Common_Assets/Ground_Common/Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Common_Assets/Ground_Common/Materials/Ground_Common.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Common_Assets/Ground_Common/Materials/Ground_Common.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Common_Assets/Ground_Common/Textures.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Common_Assets/Ground_Common/Textures/GroundTex_BaseMap.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Common_Assets/Ground_Common/Textures/GroundTex_BaseMap.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Common_Assets/Ground_Common/Textures/GroundTex_MaskMap.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Common_Assets/Ground_Common/Textures/GroundTex_MaskMap.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Common_Assets/Ground_Common/Textures/GroundTex_Normal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Common_Assets/Ground_Common/Textures/GroundTex_Normal.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Common_Assets/Trees_URP.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Common_Assets/Trees_URP/Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Common_Assets/Trees_URP/Materials/Rock02.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Common_Assets/Trees_URP/Materials/Rock02.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Common_Assets/Trees_URP/Meshes.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Common_Assets/Trees_URP/Meshes/Trees_Rocks_var.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Common_Assets/Trees_URP/Meshes/Trees_Rocks_var.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Common_Assets/Trees_URP/Textures.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Common_Assets/Trees_URP/Textures/Rock02_Albedo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Common_Assets/Trees_URP/Textures/Rock02_Albedo.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Common_Assets/Trees_URP/Textures/Rock02_MetallicAOSmoothness.tif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Common_Assets/Trees_URP/Textures/Rock02_MetallicAOSmoothness.tif.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Common_Assets/Trees_URP/Textures/Rock02_Normal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Common_Assets/Trees_URP/Textures/Rock02_Normal.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Scenes.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Scenes/02_GeungnakgangStation.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Scenes/02_GeungnakgangStation.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Scenes/16_FormerGwangjuMBCBuilding.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Scenes/16_FormerGwangjuMBCBuilding.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Scenes/16_FormerGwangjuMBCBuilding.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Scenes/16_FormerGwangjuMBCBuilding/16_FormerGwangjuMBCBuilding_Lighting Settings.lighting" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Scenes/16_FormerGwangjuMBCBuilding/16_FormerGwangjuMBCBuilding_Lighting Settings.lighting.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Scenes/16_FormerGwangjuMBCBuilding/LightingData.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Scenes/16_FormerGwangjuMBCBuilding/LightingData.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Scenes/16_FormerGwangjuMBCBuilding/Lightmap-0_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Scenes/16_FormerGwangjuMBCBuilding/Lightmap-0_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Scenes/16_FormerGwangjuMBCBuilding/Lightmap-0_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Scenes/16_FormerGwangjuMBCBuilding/Lightmap-0_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Scenes/16_FormerGwangjuMBCBuilding/Lightmap-0_comp_shadowmask.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Scenes/16_FormerGwangjuMBCBuilding/Lightmap-0_comp_shadowmask.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Scenes/16_FormerGwangjuMBCBuilding/Lightmap-1_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Scenes/16_FormerGwangjuMBCBuilding/Lightmap-1_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Scenes/16_FormerGwangjuMBCBuilding/Lightmap-1_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Scenes/16_FormerGwangjuMBCBuilding/Lightmap-1_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Scenes/16_FormerGwangjuMBCBuilding/Lightmap-1_comp_shadowmask.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Scenes/16_FormerGwangjuMBCBuilding/Lightmap-1_comp_shadowmask.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Scenes/16_FormerGwangjuMBCBuilding/ReflectionProbe-0.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Scenes/16_FormerGwangjuMBCBuilding/ReflectionProbe-0.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Scenes/16_FormerGwangjuMBCBuilding/ReflectionProbe-1.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Scenes/16_FormerGwangjuMBCBuilding/ReflectionProbe-1.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Scenes/16_FormerGwangjuMBCBuilding/ReflectionProbe-2.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Scenes/16_FormerGwangjuMBCBuilding/ReflectionProbe-2.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Scenes/Volume.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Scenes/Volume/02_GeungnakganStation_SceneProfile.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Scenes/Volume/02_GeungnakganStation_SceneProfile.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Scenes/Volume/16_FormerGwangjuMBCBuilding_SceneProfile.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gwangju_3D asset/Scenes/Volume/16_FormerGwangjuMBCBuilding_SceneProfile.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Readme.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Readme.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Test.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Test.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TestSettings.lighting" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TestSettings.lighting.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Icons.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Icons/URP.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Icons/URP.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Layout.wlt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Layout.wlt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Scripts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Scripts/Editor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Scripts/Readme.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Scripts/Readme.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UniversalRenderPipelineGlobalSettings.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UniversalRenderPipelineGlobalSettings.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/URP.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/URP/01 - All Models - Global.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/URP/01 - All Models - Global.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/URP/02 - Worlds - Global.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/URP/02 - Worlds - Global.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/URP/03 - Islands - Global.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/URP/03 - Islands - Global.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/URP/04 - City - Global.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/URP/04 - City - Global.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/URP/05 - Suburban - Global.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/URP/05 - Suburban - Global.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/URP/06  - Castle - Global.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/URP/06  - Castle - Global.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/URP/07 - Wild West - Global.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/URP/07 - Wild West - Global.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/URP/08 - Japan - Global.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/URP/08 - Japan - Global.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/URP/09 - Dungeon - Global.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/URP/09 - Dungeon - Global.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/URP/10 - Scifi - Global.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/URP/10 - Scifi - Global.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/URP/11 - Farm - Global.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/URP/11 - Farm - Global.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/URP/12 - Home - Global.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/URP/12 - Home - Global.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/URP/LUTs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/URP/LUTs/LUT-blue.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/URP/LUTs/LUT-blue.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/URP/LUTs/LUT-bright.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/URP/LUTs/LUT-bright.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/URP/LUTs/LUT-dark-green.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/URP/LUTs/LUT-dark-green.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/URP/LUTs/LUT-green.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/URP/LUTs/LUT-green.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/URP/LUTs/LUT-neutral.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/URP/LUTs/LUT-neutral.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/URP/LUTs/LUT-orange.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/URP/LUTs/LUT-orange.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/URP/LUTs/LUT-pink.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/URP/LUTs/LUT-pink.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/URP/LUTs/LUT-red.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/URP/LUTs/LUT-red.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/URP/LUTs/LUT-white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/URP/LUTs/LUT-white.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/URP/LUTs/LUT-yellow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/URP/LUTs/LUT-yellow.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/URP/Lighting.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/URP/Lighting/01 - All ModelsSettings.lighting" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/URP/Lighting/01 - All ModelsSettings.lighting.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/URP/Lighting/02 - WorldsSettings.lighting" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/URP/Lighting/02 - WorldsSettings.lighting.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/URP/Lighting/03 - IslandsSettings.lighting" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/URP/Lighting/03 - IslandsSettings.lighting.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/URP/Lighting/04 - CitySettings.lighting" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/URP/Lighting/04 - CitySettings.lighting.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/URP/Lighting/05 - SuburbanSettings.lighting" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/URP/Lighting/05 - SuburbanSettings.lighting.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/URP/Lighting/06 - CastleSettings.lighting" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/URP/Lighting/06 - CastleSettings.lighting.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/URP/Lighting/07 - Wild WestSettings.lighting" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/URP/Lighting/07 - Wild WestSettings.lighting.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/URP/Lighting/08 - JapanSettings.lighting" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/URP/Lighting/08 - JapanSettings.lighting.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/URP/Lighting/09 - DungeonSettings.lighting" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/URP/Lighting/09 - DungeonSettings.lighting.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/URP/Lighting/10 - ScifiSettings.lighting" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/URP/Lighting/10 - ScifiSettings.lighting.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/URP/Lighting/11 - FarmSettings.lighting" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/URP/Lighting/11 - FarmSettings.lighting.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/URP/Lighting/12 - HomeSettings.lighting" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/URP/Lighting/12 - HomeSettings.lighting.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DefaultVolumeProfile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/DefaultVolumeProfile.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DefaultVolumeProfile.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/DefaultVolumeProfile.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/Lighting Settings.lighting" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/Lighting Settings.lighting" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/LightingData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/LightingData.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/LightingData.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/LightingData.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/ReflectionProbe-0.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/ReflectionProbe-0.exr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/ReflectionProbe-0.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/ReflectionProbe-0.exr.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/URP-HighFidelity.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/URP-HighFidelity.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/SceneTemplateSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/SceneTemplateSettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -298,18 +25,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Seung-Ki-Kim"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Seung-Ki-Kim&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Team-ICECREAM-HAMBURGER/Iri.git",
-    "accountId": "2a757629-010b-4f77-8af9-213fd08b870e"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Team-ICECREAM-HAMBURGER/Iri.git&quot;,
+    &quot;accountId&quot;: &quot;2a757629-010b-4f77-8af9-213fd08b870e&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@14.0.11/Shaders/Lit.shader" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -333,13 +60,6 @@
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.environmentSetup",
     "vue.rearranger.settings.migration": "true"
-  },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "/Users/seung-ki/Library/Application Support/JetBrains/Rider2024.1/resharper-host/DecompilerCache",
-      "/Users/seung-ki/Library/Application Support/JetBrains/Rider2024.1/resharper-host/SourcesCache",
-      "/Users/seung-ki/Library/Application Support/Symbols/src"
-    ]
   }
 }]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -390,6 +110,7 @@
       <updated>1720096802208</updated>
       <workItem from="1720096803865" duration="3000" />
       <workItem from="1720257153500" duration="598000" />
+      <workItem from="1729389791616" duration="2000" />
     </task>
     <servers />
   </component>
