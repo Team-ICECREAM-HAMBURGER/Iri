@@ -184,8 +184,6 @@ GameObject:
   - component: {fileID: 4311308702574608834}
   - component: {fileID: 8785621792104465875}
   - component: {fileID: 3143344919430025738}
-  - component: {fileID: 3210045652790606768}
-  - component: {fileID: 6399773559870718281}
   m_Layer: 0
   m_Name: Vehicle_Train Wagon (Passenger)
   m_TagString: Untagged
@@ -279,32 +277,6 @@ FixedJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 3000
   m_ConnectedMassScale: 1
---- !u!114 &3210045652790606768
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 470180425460325172}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1f8849d86451fc46a2b63a59a9f51f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameControlColliderBoundsManager: {fileID: 6399773559870718281}
---- !u!114 &6399773559870718281
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 470180425460325172}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd76e46bfc1d7964980e200add0bdb2d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  combineCollider: {fileID: 4311308702574608834}
 --- !u!1 &470180425460325174
 GameObject:
   m_ObjectHideFlags: 0
@@ -752,7 +724,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8899261555154542397}
-  - component: {fileID: 2408747581461356115}
   m_Layer: 0
   m_Name: Vehicle_Train (Passenger)
   m_TagString: Untagged
@@ -782,30 +753,6 @@ Transform:
   - {fileID: 7517907969381054765}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2408747581461356115
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 540300813762860313}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1623aa736eb58764680c5622d9599ede, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <VehicleType>k__BackingField: 0
-  <VehicleStatus>k__BackingField: 0
-  engineCar: {fileID: 3777217568716600467}
-  jointCars:
-  - {fileID: 8140006879855528057}
-  - {fileID: 4753810898505821909}
-  - {fileID: 470180425460325172}
-  - {fileID: 1294499906163653605}
-  - {fileID: 7588520263392946777}
-  - {fileID: 7517907969381410061}
-  vehicleMaxSpeed: 50
-  vehicleAcceleration: 15
 --- !u!1 &1294499906163653601
 GameObject:
   m_ObjectHideFlags: 0
@@ -990,8 +937,6 @@ GameObject:
   - component: {fileID: 7004252113066717698}
   - component: {fileID: 5636056308680745106}
   - component: {fileID: 6192525052125674383}
-  - component: {fileID: 3965496342584527679}
-  - component: {fileID: 7427668685779384418}
   m_Layer: 0
   m_Name: Vehicle_Train Wagon (Passenger)
   m_TagString: Untagged
@@ -1085,32 +1030,6 @@ FixedJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 3000
   m_ConnectedMassScale: 1
---- !u!114 &3965496342584527679
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1294499906163653605}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1f8849d86451fc46a2b63a59a9f51f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameControlColliderBoundsManager: {fileID: 7427668685779384418}
---- !u!114 &7427668685779384418
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1294499906163653605}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd76e46bfc1d7964980e200add0bdb2d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  combineCollider: {fileID: 7004252113066717698}
 --- !u!1 &1294499906163653607
 GameObject:
   m_ObjectHideFlags: 0
@@ -1651,8 +1570,6 @@ GameObject:
   - component: {fileID: 3777217568716105907}
   - component: {fileID: 3426349745836523936}
   - component: {fileID: 3477527110385338525}
-  - component: {fileID: 5971451656555535030}
-  - component: {fileID: 8435163763134909653}
   m_Layer: 0
   m_Name: Vehicle_Train Engine (Passenger)
   m_TagString: Untagged
@@ -1730,32 +1647,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &5971451656555535030
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3777217568716600467}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1f8849d86451fc46a2b63a59a9f51f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameControlColliderBoundsManager: {fileID: 8435163763134909653}
---- !u!114 &8435163763134909653
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3777217568716600467}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd76e46bfc1d7964980e200add0bdb2d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  combineCollider: {fileID: 3426349745836523936}
 --- !u!1 &3777217568716600469
 GameObject:
   m_ObjectHideFlags: 0
@@ -2460,8 +2351,6 @@ GameObject:
   - component: {fileID: 7838362119205069800}
   - component: {fileID: 6956558039459117957}
   - component: {fileID: 8400276446019771031}
-  - component: {fileID: 6819232263602489941}
-  - component: {fileID: 1989036089877432111}
   m_Layer: 0
   m_Name: Vehicle_Train Wagon (Passenger)
   m_TagString: Untagged
@@ -2555,32 +2444,6 @@ FixedJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 3000
   m_ConnectedMassScale: 1
---- !u!114 &6819232263602489941
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4753810898505821909}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1f8849d86451fc46a2b63a59a9f51f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameControlColliderBoundsManager: {fileID: 1989036089877432111}
---- !u!114 &1989036089877432111
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4753810898505821909}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd76e46bfc1d7964980e200add0bdb2d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  combineCollider: {fileID: 7838362119205069800}
 --- !u!1 &4753810898505821911
 GameObject:
   m_ObjectHideFlags: 0
@@ -3551,8 +3414,6 @@ GameObject:
   - component: {fileID: 3647451833274445997}
   - component: {fileID: 4071390864490789464}
   - component: {fileID: 9068620650463033682}
-  - component: {fileID: 7654822968627007461}
-  - component: {fileID: 186466205256495390}
   m_Layer: 0
   m_Name: Vehicle_Train Wagon (Passenger)
   m_TagString: Untagged
@@ -3646,32 +3507,6 @@ FixedJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 3000
   m_ConnectedMassScale: 1
---- !u!114 &7654822968627007461
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7517907969381410061}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1f8849d86451fc46a2b63a59a9f51f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameControlColliderBoundsManager: {fileID: 186466205256495390}
---- !u!114 &186466205256495390
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7517907969381410061}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd76e46bfc1d7964980e200add0bdb2d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  combineCollider: {fileID: 3647451833274445997}
 --- !u!1 &7517907969381410063
 GameObject:
   m_ObjectHideFlags: 0
@@ -4122,8 +3957,6 @@ GameObject:
   - component: {fileID: 5878398480857875236}
   - component: {fileID: 5634454050984223807}
   - component: {fileID: 229322457908236390}
-  - component: {fileID: 1721122451219893751}
-  - component: {fileID: 2963878018567410046}
   m_Layer: 0
   m_Name: Vehicle_Train Wagon (Passenger)
   m_TagString: Untagged
@@ -4217,32 +4050,6 @@ FixedJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 3000
   m_ConnectedMassScale: 1
---- !u!114 &1721122451219893751
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7588520263392946777}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1f8849d86451fc46a2b63a59a9f51f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameControlColliderBoundsManager: {fileID: 2963878018567410046}
---- !u!114 &2963878018567410046
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7588520263392946777}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd76e46bfc1d7964980e200add0bdb2d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  combineCollider: {fileID: 5878398480857875236}
 --- !u!1 &7588520263392946779
 GameObject:
   m_ObjectHideFlags: 0
@@ -4865,8 +4672,6 @@ GameObject:
   - component: {fileID: 6039355610929372609}
   - component: {fileID: 7615881295380217316}
   - component: {fileID: 7416413088523958097}
-  - component: {fileID: 946081632639856770}
-  - component: {fileID: 3192871111503199699}
   m_Layer: 0
   m_Name: Vehicle_Train Wagon (Passenger)
   m_TagString: Untagged
@@ -4960,32 +4765,6 @@ FixedJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 3000
   m_ConnectedMassScale: 1
---- !u!114 &946081632639856770
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8140006879855528057}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1f8849d86451fc46a2b63a59a9f51f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameControlColliderBoundsManager: {fileID: 3192871111503199699}
---- !u!114 &3192871111503199699
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8140006879855528057}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd76e46bfc1d7964980e200add0bdb2d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  combineCollider: {fileID: 6039355610929372609}
 --- !u!1 &8140006879855528059
 GameObject:
   m_ObjectHideFlags: 0

@@ -11,7 +11,7 @@ public class VehicleTrainStateMachine {
         this.vehicleTrainStateMove = new VehicleTrainStateMove(vehicleTrainController);
         this.vehicleTrainStateStop = new VehicleTrainStateStop(vehicleTrainController);
 
-        this.CurrentTrainState = this.vehicleTrainStateMove;
+        this.CurrentTrainState = this.vehicleTrainStateStop;
     }
 
     public void Init(IVehicleTrainState initVehicleTrainStateIdle) {

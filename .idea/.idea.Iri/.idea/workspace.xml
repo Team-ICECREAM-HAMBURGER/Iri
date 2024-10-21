@@ -5,97 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ddc2bca3-3552-44fb-9935-884ccdc772c1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RailTrafficLightController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RailTrafficLightController.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Iri/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Iri/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DefaultVolumeProfile.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/DefaultVolumeProfile.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/External Resources.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/External Resources.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Meshes.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Meshes.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Misc.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Misc.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Building_Bunker (Big).prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Building_Bunker (Big).prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Building_House 1F (Small).prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Building_House 1F (Small).prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Building_House 2F (Big).prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Building_House 2F (Big).prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Building_Platform (Express).prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Building_Platform (Express).prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Building_Platform (Passanger &amp; Freight).prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Building_Platform (Passanger &amp; Freight).prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Building_Platform (Passanger).prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Building_Platform (Passanger).prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Building_Station (Big).prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Building_Station (Big).prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Building_Station (Small).prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Building_Station (Small).prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Building_Store 1F (Big).prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Building_Store 1F (Big).prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Building_Store 1F (Medium).prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Building_Store 1F (Medium).prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/NPC_Man (Coat).prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/NPC_Man (Coat).prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Prop_Bench.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Prop_Bench.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Prop_Bus Stop Sign.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Prop_Bus Stop Sign.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Prop_Bus Stop.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Prop_Bus Stop.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Prop_Fence (Broken).prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Prop_Fence (Broken).prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Prop_Fence (Military).prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Prop_Fence (Military).prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Prop_Fence (Wire).prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Prop_Fence (Wire).prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Prop_Fence.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Prop_Fence.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Prop_Fountain.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Prop_Fountain.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Prop_Lamp Road (Double).prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Prop_Lamp Road (Double).prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Prop_Lamp Road (Single).prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Prop_Lamp Road (Single).prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Prop_Military Gate.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Prop_Military Gate.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Prop_Military Wall.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Prop_Military Wall.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Prop_Post Box.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Prop_Post Box.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Prop_Trash Can.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Prop_Trash Can.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Rail_Express.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Rail_Express.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Rail_Freight.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Rail_Freight.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Rail_Passanger.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Rail_Passanger.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Road_Curve.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Road_Curve.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Road_Intersection (T).prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Road_Intersection (T).prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Road_Intersection.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Road_Intersection.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Road_Straight.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Road_Straight.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Road_Straight.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Road_Straight.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Terrain_Mountain (Range).prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Terrain_Mountain (Range).prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Terrain_Mountain.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Terrain_Mountain.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Terrain_Tile (Dirt).prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Terrain_Tile (Dirt).prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Terrain_Tile (Plain).prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Terrain_Tile (Plain).prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Vehicle_Car Military Jeep (Open).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Vehicle_Car Military Jeep (Open).prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Vehicle_Car Military Jeep (Open).prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Vehicle_Car Military Jeep (Open).prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Vehicle_Car Taxi.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Vehicle_Car Taxi.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Vehicle_Car Taxi.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Vehicle_Car Taxi.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Vehicle_Car Truck (Cargo).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Vehicle_Car Truck (Cargo).prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Vehicle_Car Truck (Cargo).prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Vehicle_Car Truck (Cargo).prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Vehicle_Car Truck (Tow).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Vehicle_Car Truck (Tow).prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Vehicle_Car Truck (Tow).prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Vehicle_Car Truck (Tow).prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Building_Platform.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Building_Platform.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Prop_Lamp Rail (Left).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Prop_Lamp Rail (Left).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Prop_Lamp Rail (Right).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Prop_Lamp Rail (Right).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Road_Rail (4_4).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Road_Rail (4_4).prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Vehicle_Train (Freight).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Vehicle_Train (Freight).prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Vehicle_Train (Freight).prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Vehicle_Train (Freight).prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Vehicle_Train (Oil).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Vehicle_Train (Oil).prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Vehicle_Train (Oil).prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Vehicle_Train (Oil).prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Vehicle_Train (Passenger).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Vehicle_Train (Passenger).prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Vehicle_Train (Passenger).prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Vehicle_Train (Passenger).prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station.unity.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/01_Iri Station Baking Set-Default.CellData.bytes" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/01_Iri Station Baking Set-Default.CellData.bytes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/01_Iri Station Baking Set-Default.CellData.bytes.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/01_Iri Station Baking Set-Default.CellData.bytes.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/01_Iri Station Baking Set-Default.CellOptionalData.bytes" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/01_Iri Station Baking Set-Default.CellOptionalData.bytes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/01_Iri Station Baking Set-Default.CellOptionalData.bytes.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/01_Iri Station Baking Set-Default.CellOptionalData.bytes.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/01_Iri Station Baking Set-Default.CellProbeOcclusionData.bytes" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/01_Iri Station Baking Set-Default.CellProbeOcclusionData.bytes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/01_Iri Station Baking Set-Default.CellProbeOcclusionData.bytes.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/01_Iri Station Baking Set-Default.CellProbeOcclusionData.bytes.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/01_Iri Station Baking Set.CellBricksData.bytes" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/01_Iri Station Baking Set.CellBricksData.bytes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/01_Iri Station Baking Set.CellBricksData.bytes.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/01_Iri Station Baking Set.CellBricksData.bytes.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/01_Iri Station Baking Set.CellSharedData.bytes" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/01_Iri Station Baking Set.CellSharedData.bytes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/01_Iri Station Baking Set.CellSharedData.bytes.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/01_Iri Station Baking Set.CellSharedData.bytes.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/01_Iri Station Baking Set.CellSupportData.bytes" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/01_Iri Station Baking Set.CellSupportData.bytes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/01_Iri Station Baking Set.CellSupportData.bytes.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/01_Iri Station Baking Set.CellSupportData.bytes.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/01_Iri Station Baking Set.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/01_Iri Station Baking Set.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/01_Iri Station Baking Set.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/01_Iri Station Baking Set.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/Global Volume Profile.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/Global Volume Profile.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/Lighting Settings.lighting.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/Lighting Settings.lighting.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/LightingData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/LightingData.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/LightingData.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/LightingData.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/ReflectionProbe-0.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/ReflectionProbe-0.exr.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tutorial.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tutorial.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameController/GameControlTypeManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameController/GameControlTypeManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/VehicleTrainController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/VehicleTrainController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/VehicleTrainState/VehicleTrainStateIdle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/VehicleTrainState/VehicleTrainStateIdle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/VehicleTrainState/VehicleTrainStateMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/VehicleTrainState/VehicleTrainStateMove.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/VehicleTrainState/VehicleTrainStateStop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/VehicleTrainState/VehicleTrainStateStop.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/VehicleTrainStateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/VehicleTrainStateMachine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,34 +45,47 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@14.0.11/Shaders/Lit.shader" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Crashy-Road_2023/Assets/Scripts/EnemyVehicleController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Crashy-Road_2023/Assets/Scripts/PlayerVehicleController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/RailTrafficLightController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
   <component name="ProjectId" id="2imXbryDbprJq8gt4JXUn2An93p" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Train-Movement-Implementaion&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.environmentSetup&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "Train-Movement-Implementaion",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.environmentSetup",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "/Users/seung-ki/Library/Application Support/JetBrains/Rider2024.1/resharper-host/DecompilerCache",
+      "/Users/seung-ki/Library/Application Support/JetBrains/Rider2024.1/resharper-host/SourcesCache",
+      "/Users/seung-ki/Library/Application Support/Symbols/src"
+    ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.23f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/6000.0.23f1/Unity.app/Contents/MacOS/Unity" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath &quot;$PROJECT_DIR$&quot; -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -153,7 +93,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.23f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/6000.0.23f1/Unity.app/Contents/MacOS/Unity" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath &quot;$PROJECT_DIR$&quot; -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -194,6 +134,7 @@
       <workItem from="1729389791616" duration="2000" />
       <workItem from="1729400632098" duration="1452000" />
       <workItem from="1729404795436" duration="7741000" />
+      <workItem from="1729513502123" duration="7964000" />
     </task>
     <servers />
   </component>
@@ -220,6 +161,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
 </project>

@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - Traffic_Passanger_F
+  - Traffic_Passanger_R
+  - Traffic_Freight_F
+  - Traffic_Dangerous_F
+  - TrafficLight_P1
   layers:
   - Default
   - TransparentFX

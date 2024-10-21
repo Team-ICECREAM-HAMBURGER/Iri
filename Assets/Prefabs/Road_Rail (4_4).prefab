@@ -1629,7 +1629,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5594943044849673322}
-  - component: {fileID: 8142671694010350747}
   m_Layer: 0
   m_Name: Road_Rail (4_4)
   m_TagString: Untagged
@@ -1712,19 +1711,6 @@ Transform:
   - {fileID: 2499195514556103799}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8142671694010350747
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2679724392460533494}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1f8849d86451fc46a2b63a59a9f51f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameControlColliderBoundsManager: {fileID: 0}
 --- !u!1 &2926037256099444472
 GameObject:
   m_ObjectHideFlags: 0

@@ -620,8 +620,6 @@ GameObject:
   - component: {fileID: 8179288889035658431}
   - component: {fileID: 7430867147534626132}
   - component: {fileID: 5837474439299278631}
-  - component: {fileID: 2008086730972138583}
-  - component: {fileID: 1373354781974659535}
   m_Layer: 0
   m_Name: Vehicle_Train Freight (Cargo)
   m_TagString: Untagged
@@ -716,32 +714,6 @@ FixedJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 3000
   m_ConnectedMassScale: 1
---- !u!114 &2008086730972138583
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1961726915191345070}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1f8849d86451fc46a2b63a59a9f51f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameControlColliderBoundsManager: {fileID: 1373354781974659535}
---- !u!114 &1373354781974659535
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1961726915191345070}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd76e46bfc1d7964980e200add0bdb2d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  combineCollider: {fileID: 8179288889035658431}
 --- !u!1 &4580313349072362816
 GameObject:
   m_ObjectHideFlags: 0
@@ -1014,8 +986,6 @@ GameObject:
   - component: {fileID: 1680781667441394348}
   - component: {fileID: 656025763700100415}
   - component: {fileID: 4577522462724523063}
-  - component: {fileID: 1294368798636897837}
-  - component: {fileID: 5225670081961752451}
   m_Layer: 0
   m_Name: Vehicle_Train Freight (Cargo)
   m_TagString: Untagged
@@ -1110,32 +1080,6 @@ FixedJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 3000
   m_ConnectedMassScale: 1
---- !u!114 &1294368798636897837
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4580313349072362822}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1f8849d86451fc46a2b63a59a9f51f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameControlColliderBoundsManager: {fileID: 5225670081961752451}
---- !u!114 &5225670081961752451
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4580313349072362822}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd76e46bfc1d7964980e200add0bdb2d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  combineCollider: {fileID: 1680781667441394348}
 --- !u!1 &4580313349072362824
 GameObject:
   m_ObjectHideFlags: 0
@@ -1932,8 +1876,6 @@ GameObject:
   - component: {fileID: 5419302121228182838}
   - component: {fileID: 1891529400724339019}
   - component: {fileID: 4887969307049739653}
-  - component: {fileID: 6820229884277383597}
-  - component: {fileID: 3451396424414786619}
   m_Layer: 0
   m_Name: Vehicle_Train Engine Big (Freight)
   m_TagString: Untagged
@@ -2013,32 +1955,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &6820229884277383597
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5419302121228220694}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1f8849d86451fc46a2b63a59a9f51f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameControlColliderBoundsManager: {fileID: 3451396424414786619}
---- !u!114 &3451396424414786619
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5419302121228220694}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd76e46bfc1d7964980e200add0bdb2d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  combineCollider: {fileID: 1891529400724339019}
 --- !u!1 &5419302121228220696
 GameObject:
   m_ObjectHideFlags: 0
@@ -2571,8 +2487,6 @@ GameObject:
   - component: {fileID: 7093387074317488914}
   - component: {fileID: 722898152165885121}
   - component: {fileID: 1886176397903496382}
-  - component: {fileID: 8053576762801250105}
-  - component: {fileID: 3838711873968019619}
   m_Layer: 0
   m_Name: Vehicle_Train Freight (Cargo)
   m_TagString: Untagged
@@ -2667,32 +2581,6 @@ FixedJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 3000
   m_ConnectedMassScale: 1
---- !u!114 &8053576762801250105
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5585582879205978197}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1f8849d86451fc46a2b63a59a9f51f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameControlColliderBoundsManager: {fileID: 3838711873968019619}
---- !u!114 &3838711873968019619
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5585582879205978197}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd76e46bfc1d7964980e200add0bdb2d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  combineCollider: {fileID: 7093387074317488914}
 --- !u!1 &5585582879205978199
 GameObject:
   m_ObjectHideFlags: 0
@@ -3661,8 +3549,6 @@ GameObject:
   - component: {fileID: 5529571873257110952}
   - component: {fileID: 1813847627522890738}
   - component: {fileID: 6767699662734574713}
-  - component: {fileID: 5811929775406176805}
-  - component: {fileID: 9048205531391632859}
   m_Layer: 0
   m_Name: Vehicle_Train Freight (Cargo)
   m_TagString: Untagged
@@ -3757,32 +3643,6 @@ FixedJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 3000
   m_ConnectedMassScale: 1
---- !u!114 &5811929775406176805
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6632326688967041453}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1f8849d86451fc46a2b63a59a9f51f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameControlColliderBoundsManager: {fileID: 9048205531391632859}
---- !u!114 &9048205531391632859
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6632326688967041453}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd76e46bfc1d7964980e200add0bdb2d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  combineCollider: {fileID: 5529571873257110952}
 --- !u!1 &6632326688967041455
 GameObject:
   m_ObjectHideFlags: 0
@@ -3971,8 +3831,6 @@ GameObject:
   - component: {fileID: 634403125020088911}
   - component: {fileID: 3750933955076247930}
   - component: {fileID: 7006962243598141122}
-  - component: {fileID: 4638911027859837986}
-  - component: {fileID: 2087275331695692775}
   m_Layer: 0
   m_Name: Vehicle_Train Freight (Cargo)
   m_TagString: Untagged
@@ -4067,32 +3925,6 @@ FixedJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 3000
   m_ConnectedMassScale: 1
---- !u!114 &4638911027859837986
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6984954347713808419}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1f8849d86451fc46a2b63a59a9f51f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameControlColliderBoundsManager: {fileID: 2087275331695692775}
---- !u!114 &2087275331695692775
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6984954347713808419}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd76e46bfc1d7964980e200add0bdb2d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  combineCollider: {fileID: 634403125020088911}
 --- !u!1 &6984954347713808421
 GameObject:
   m_ObjectHideFlags: 0
@@ -4622,7 +4454,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2029381489382024687}
-  - component: {fileID: 5937643178335248647}
   m_Layer: 0
   m_Name: Vehicle_Train (Freight)
   m_TagString: Untagged
@@ -4652,30 +4483,6 @@ Transform:
   - {fileID: 6632326688967409037}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5937643178335248647
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8424193848400607440}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1623aa736eb58764680c5622d9599ede, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <VehicleType>k__BackingField: 1
-  <VehicleStatus>k__BackingField: 0
-  engineCar: {fileID: 5419302121228220694}
-  jointCars:
-  - {fileID: 4580313349072362822}
-  - {fileID: 5585582879205978197}
-  - {fileID: 8803117493287323382}
-  - {fileID: 6984954347713808419}
-  - {fileID: 1961726915191345070}
-  - {fileID: 6632326688967041453}
-  vehicleMaxSpeed: 80
-  vehicleAcceleration: 20
 --- !u!1 &8803117493287323376
 GameObject:
   m_ObjectHideFlags: 0
@@ -4948,8 +4755,6 @@ GameObject:
   - component: {fileID: 4531755959469927770}
   - component: {fileID: 901709746019851553}
   - component: {fileID: 8935617861515164752}
-  - component: {fileID: 4856019971500679856}
-  - component: {fileID: 607323983689924627}
   m_Layer: 0
   m_Name: Vehicle_Train Freight (Cargo)
   m_TagString: Untagged
@@ -5044,32 +4849,6 @@ FixedJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 3000
   m_ConnectedMassScale: 1
---- !u!114 &4856019971500679856
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8803117493287323382}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1f8849d86451fc46a2b63a59a9f51f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameControlColliderBoundsManager: {fileID: 607323983689924627}
---- !u!114 &607323983689924627
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8803117493287323382}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd76e46bfc1d7964980e200add0bdb2d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  combineCollider: {fileID: 4531755959469927770}
 --- !u!1 &8803117493287323384
 GameObject:
   m_ObjectHideFlags: 0

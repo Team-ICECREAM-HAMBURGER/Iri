@@ -15,10 +15,10 @@ public class VehicleTrainStateStop : IVehicleTrainState {
     public void Execute() {
         this.trainController.Stop();
         
-        if (this.trainController.VehicleStatus == GameControlTypeManager.vehicleStatus.IDLE) {
+        if (this.trainController.TrafficStatus == GameControlTypeManager.TrafficStatus.IDLE) {
             this.trainController.VehicleStateMachine.TransitionTo(this.trainController.VehicleStateMachine.vehicleTrainStateIdle);
         }
-        else if (this.trainController.VehicleStatus == GameControlTypeManager.vehicleStatus.MOVE) {
+        else if (this.trainController.TrafficStatus == GameControlTypeManager.TrafficStatus.MOVE) {
             this.trainController.VehicleStateMachine.TransitionTo(this.trainController.VehicleStateMachine.vehicleTrainStateMove);
         }
     }

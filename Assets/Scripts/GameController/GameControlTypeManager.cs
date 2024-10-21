@@ -9,7 +9,7 @@ public class GameControlTypeManager : MonoBehaviour {
         TRAIN_DANGEROUS
     }
 
-    public enum vehicleStatus {
+    public enum TrafficStatus {
         MOVE,
         STOP,
         IDLE

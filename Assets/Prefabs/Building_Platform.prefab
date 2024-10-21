@@ -189,6 +189,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Building_Station Platform Stairs (Small)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d845290d086c56f46a325a96f03db17b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d845290d086c56f46a325a96f03db17b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 29.013247
@@ -228,6 +232,10 @@ PrefabInstance:
     - target: {fileID: 400000, guid: d845290d086c56f46a325a96f03db17b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: d845290d086c56f46a325a96f03db17b, type: 3}
+      propertyPath: m_ReceiveGI
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1260,6 +1268,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Building_Station Platform Set
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 2f734705927976e4a8a5ac1df51cef2b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2f734705927976e4a8a5ac1df51cef2b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -16
@@ -1299,6 +1311,10 @@ PrefabInstance:
     - target: {fileID: 400000, guid: 2f734705927976e4a8a5ac1df51cef2b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 2f734705927976e4a8a5ac1df51cef2b, type: 3}
+      propertyPath: m_ReceiveGI
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

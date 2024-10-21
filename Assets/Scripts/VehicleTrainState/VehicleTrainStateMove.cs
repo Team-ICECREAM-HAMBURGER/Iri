@@ -16,7 +16,7 @@ public class VehicleTrainStateMove : IVehicleTrainState {
     public void Execute() {
         this.trainController.Move();
 
-        if (this.trainController.VehicleStatus == GameControlTypeManager.vehicleStatus.STOP) {
+        if (this.trainController.TrafficStatus == GameControlTypeManager.TrafficStatus.STOP) {
             this.trainController.VehicleStateMachine.TransitionTo(this.trainController.VehicleStateMachine.vehicleTrainStateStop);
         }
     }
