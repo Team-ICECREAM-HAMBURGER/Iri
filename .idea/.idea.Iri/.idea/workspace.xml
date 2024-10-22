@@ -5,23 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ddc2bca3-3552-44fb-9935-884ccdc772c1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RailTrafficLightController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RailTrafficLightController.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Iri/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Iri/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Building_Platform.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Building_Platform.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Prop_Lamp Rail (Left).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Prop_Lamp Rail (Left).prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Prop_Lamp Rail (Right).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Prop_Lamp Rail (Right).prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Road_Rail (4_4).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Road_Rail (4_4).prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Vehicle_Train (Freight).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Vehicle_Train (Freight).prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Vehicle_Train (Oil).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Vehicle_Train (Oil).prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Vehicle_Train (Passenger).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Vehicle_Train (Passenger).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Prop_Lamp Road (Double).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Prop_Lamp Road (Double).prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameController/GameControlTypeManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameController/GameControlTypeManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/VehicleTrainController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/VehicleTrainController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/VehicleTrainState/VehicleTrainStateIdle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/VehicleTrainState/VehicleTrainStateIdle.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/VehicleTrainState/VehicleTrainStateMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/VehicleTrainState/VehicleTrainStateMove.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/VehicleTrainState/VehicleTrainStateStop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/VehicleTrainState/VehicleTrainStateStop.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/VehicleTrainStateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/VehicleTrainStateMachine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/01_Iri Station Baking Set-Default.CellData.bytes" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/01_Iri Station Baking Set-Default.CellData.bytes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/01_Iri Station Baking Set-Default.CellOptionalData.bytes" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/01_Iri Station Baking Set-Default.CellOptionalData.bytes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/01_Iri Station Baking Set-Default.CellProbeOcclusionData.bytes" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/01_Iri Station Baking Set-Default.CellProbeOcclusionData.bytes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/01_Iri Station Baking Set.CellBricksData.bytes" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/01_Iri Station Baking Set.CellBricksData.bytes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/01_Iri Station Baking Set.CellSharedData.bytes" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/01_Iri Station Baking Set.CellSharedData.bytes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/01_Iri Station Baking Set.CellSupportData.bytes" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/01_Iri Station Baking Set.CellSupportData.bytes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/01_Iri Station Baking Set.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/01_Iri Station Baking Set.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/LightingData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/LightingData.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/LightingData.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/LightingData.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/ReflectionProbe-0.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/ReflectionProbe-0.exr.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/URP-HighFidelity.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/URP-HighFidelity.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,7 +65,7 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Train-Movement-Implementaion",
+    "git-widget-placeholder": "Train-Movement-Implementation",
     "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -74,18 +74,11 @@
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.environmentSetup",
     "vue.rearranger.settings.migration": "true"
-  },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "/Users/seung-ki/Library/Application Support/JetBrains/Rider2024.1/resharper-host/DecompilerCache",
-      "/Users/seung-ki/Library/Application Support/JetBrains/Rider2024.1/resharper-host/SourcesCache",
-      "/Users/seung-ki/Library/Application Support/Symbols/src"
-    ]
   }
 }]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/6000.0.23f1/Unity.app/Contents/MacOS/Unity" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.23f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath &quot;$PROJECT_DIR$&quot; -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -93,7 +86,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/6000.0.23f1/Unity.app/Contents/MacOS/Unity" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.23f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath &quot;$PROJECT_DIR$&quot; -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -135,6 +128,7 @@
       <workItem from="1729400632098" duration="1452000" />
       <workItem from="1729404795436" duration="7741000" />
       <workItem from="1729513502123" duration="7964000" />
+      <workItem from="1729594453306" duration="5026000" />
     </task>
     <servers />
   </component>
