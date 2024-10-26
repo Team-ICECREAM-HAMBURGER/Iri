@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -9,7 +8,7 @@ public class VehicleTrainController : MonoBehaviour {
     [field: SerializeField] public GameControlTypeManager.TrafficStatus TrafficStatus { get; set; }
     [SerializeField] private GameObject engineCar;
     [SerializeField] private List<GameObject> jointCars;
-    [SerializeField] private RailTrafficLightController railTrafficLightController;
+    [FormerlySerializedAs("railTrafficLightController")] [SerializeField] private TrafficLightController trafficLightController;
     
     [Header("Vehicle Setting")]
     public float VehicleCurrentSpeed { get; private set; }     // n km/h
@@ -30,8 +29,7 @@ public class VehicleTrainController : MonoBehaviour {
         this.vehicleAcceleration /= 3.6f;   // km/h -> m/s
         
         this.VehicleStateMachine?.Init(this.VehicleStateMachine.vehicleTrainStateIdle);
-        
-        this.railTrafficLightController.OnTrafficLightControl.AddListener(TrafficStatusUpdate);
+        this.trafficLightController.OnTrafficLightControl.AddListener(OnTrafficStatusUpdate);
     }
 
     private void Awake() {
@@ -42,7 +40,7 @@ public class VehicleTrainController : MonoBehaviour {
         this.VehicleStateMachine?.Execute();
     }
 
-    private void TrafficStatusUpdate(GameControlTypeManager.TrafficStatus trafficStatusType) {
+    private void OnTrafficStatusUpdate(GameControlTypeManager.TrafficStatus trafficStatusType) {
         this.TrafficStatus = trafficStatusType;
     }
     

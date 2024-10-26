@@ -9,7 +9,7 @@ public class VehicleTrainStateIdle : IVehicleTrainState {
     }
     
     public void Enter() {
-        Debug.Log("Entered Vehicle Train State Idle");
+        // Debug.Log("Entered Vehicle Train State Idle");
     }
 
     public void Execute() {
@@ -21,6 +21,6 @@ public class VehicleTrainStateIdle : IVehicleTrainState {
     }
 
     public void Exit() {
-        Debug.Log("Exited Vehicle Train State Idle");
+        // Debug.Log("Exited Vehicle Train State Idle");
     }
 }

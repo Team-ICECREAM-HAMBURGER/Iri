@@ -9,8 +9,7 @@ public class VehicleTrainStateMove : IVehicleTrainState {
     }
     
     public void Enter() {
-        Debug.Log("Entered Vehicle Train State Move");
-        // throw new System.NotImplementedException();
+        // Debug.Log("Entered Vehicle Train State Move");
     }
 
     public void Execute() {
@@ -22,6 +21,6 @@ public class VehicleTrainStateMove : IVehicleTrainState {
     }
 
     public void Exit() {
-        Debug.Log("Exited Vehicle Train State Move");
+        // Debug.Log("Exited Vehicle Train State Move");
     }
 }

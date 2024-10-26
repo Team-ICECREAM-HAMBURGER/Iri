@@ -9,7 +9,7 @@ public class VehicleTrainStateStop : IVehicleTrainState {
     }
     
     public void Enter() {
-        Debug.Log("Entering Vehicle Train State Stop");
+        // Debug.Log("Entering Vehicle Train State Stop");
     }
 
     public void Execute() {
@@ -24,6 +24,6 @@ public class VehicleTrainStateStop : IVehicleTrainState {
     }
 
     public void Exit() {
-        Debug.Log("Exiting Vehicle Train State Stop");
+        // Debug.Log("Exiting Vehicle Train State Stop");
     }
 }
