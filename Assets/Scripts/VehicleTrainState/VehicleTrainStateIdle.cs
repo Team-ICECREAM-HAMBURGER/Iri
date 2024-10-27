@@ -1,5 +1,3 @@
-using UnityEngine;
-
 public class VehicleTrainStateIdle : IVehicleTrainState {
     private VehicleTrainController trainController;
 

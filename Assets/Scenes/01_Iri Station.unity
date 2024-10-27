@@ -922,6 +922,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 41025289}
   m_CullTransparentMesh: 1
+--- !u!1 &42133839 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7240507618024623081, guid: a21fcd1b49d49d340b6591369bd079e2,
+    type: 3}
+  m_PrefabInstance: {fileID: 2012728248702859577}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &44527658
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1340,12 +1346,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ff21f5104a67a643a05bd68101aef5e, type: 3}
---- !u!108 &44903430 stripped
-Light:
-  m_CorrespondingSourceObject: {fileID: 5326847089837354121, guid: a21fcd1b49d49d340b6591369bd079e2,
-    type: 3}
-  m_PrefabInstance: {fileID: 272130155}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &46535291
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2508,6 +2508,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 79816b6415e253d40b3c33eecebb11ae, type: 3}
+--- !u!1 &54857254 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6599523043647061561, guid: a21fcd1b49d49d340b6591369bd079e2,
+    type: 3}
+  m_PrefabInstance: {fileID: 2012728248702859577}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &59916204 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8932441817806888640, guid: 7f8e35e7ab64a98418dbfca1129b54d3,
@@ -2592,6 +2598,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c534413e5ff035f459067a70ee26c365, type: 3}
+--- !u!1 &63518373 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6599523043647061561, guid: a21fcd1b49d49d340b6591369bd079e2,
+    type: 3}
+  m_PrefabInstance: {fileID: 1466187054}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &66732408
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3320,6 +3332,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 75025312}
   m_CullTransparentMesh: 1
+--- !u!1 &76658430 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7240507618024623081, guid: a21fcd1b49d49d340b6591369bd079e2,
+    type: 3}
+  m_PrefabInstance: {fileID: 1466187054}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &79941573 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2342957336574201687, guid: db0e3aa5a6f69974e81601224929c9a5,
@@ -4192,6 +4210,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b78635e73082a745ab700af9c5c0a9b, type: 3}
+--- !u!1 &97624900 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8993873285763136853, guid: a21fcd1b49d49d340b6591369bd079e2,
+    type: 3}
+  m_PrefabInstance: {fileID: 2012728248702859577}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &98551915
 GameObject:
   m_ObjectHideFlags: 0
@@ -5344,6 +5368,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 79816b6415e253d40b3c33eecebb11ae, type: 3}
+--- !u!1 &120018080 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6599523043647061561, guid: a21fcd1b49d49d340b6591369bd079e2,
+    type: 3}
+  m_PrefabInstance: {fileID: 272130155}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &120654114
 GameObject:
   m_ObjectHideFlags: 0
@@ -5529,12 +5559,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8932441817806888640, guid: 7f8e35e7ab64a98418dbfca1129b54d3,
     type: 3}
   m_PrefabInstance: {fileID: 1341762703}
-  m_PrefabAsset: {fileID: 0}
---- !u!108 &129164520 stripped
-Light:
-  m_CorrespondingSourceObject: {fileID: 835224908871569350, guid: a21fcd1b49d49d340b6591369bd079e2,
-    type: 3}
-  m_PrefabInstance: {fileID: 7025214572698030299}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &130015881
 PrefabInstance:
@@ -6044,12 +6068,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9802e2520e1a541468274e5214dfd2cb, type: 3}
---- !u!108 &134753409 stripped
-Light:
-  m_CorrespondingSourceObject: {fileID: 6295788595111958298, guid: a21fcd1b49d49d340b6591369bd079e2,
-    type: 3}
-  m_PrefabInstance: {fileID: 2012728248702859577}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &136868139
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8110,6 +8128,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1129179311}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &182867556 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 465450673803007635, guid: a21fcd1b49d49d340b6591369bd079e2,
+    type: 3}
+  m_PrefabInstance: {fileID: 1466187054}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &187925582
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9127,6 +9151,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e509bd0d05456614db86d1c6893f05b5, type: 3}
+--- !u!1 &215912681 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6963965319724514597, guid: a21fcd1b49d49d340b6591369bd079e2,
+    type: 3}
+  m_PrefabInstance: {fileID: 7025214572698030299}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &216572459
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9708,12 +9738,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f8e35e7ab64a98418dbfca1129b54d3, type: 3}
---- !u!108 &231582794 stripped
-Light:
-  m_CorrespondingSourceObject: {fileID: 8942135625597691632, guid: a21fcd1b49d49d340b6591369bd079e2,
-    type: 3}
-  m_PrefabInstance: {fileID: 1466187054}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &234130951
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11231,12 +11255,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 264999426}
   m_CullTransparentMesh: 1
---- !u!108 &267587908 stripped
-Light:
-  m_CorrespondingSourceObject: {fileID: 835224908871569350, guid: a21fcd1b49d49d340b6591369bd079e2,
-    type: 3}
-  m_PrefabInstance: {fileID: 1466187054}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &268611710
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11515,6 +11533,54 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 272130164}
+    - targetCorrespondingSourceObject: {fileID: 7414534794855330112, guid: a21fcd1b49d49d340b6591369bd079e2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1772188108}
+    - targetCorrespondingSourceObject: {fileID: 1958722066194127806, guid: a21fcd1b49d49d340b6591369bd079e2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1981067190}
+    - targetCorrespondingSourceObject: {fileID: 6963965319724514597, guid: a21fcd1b49d49d340b6591369bd079e2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1349134211}
+    - targetCorrespondingSourceObject: {fileID: 1056319324392887658, guid: a21fcd1b49d49d340b6591369bd079e2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 374568334}
+    - targetCorrespondingSourceObject: {fileID: 465450673803007635, guid: a21fcd1b49d49d340b6591369bd079e2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2147224276}
+    - targetCorrespondingSourceObject: {fileID: 6599523043647061561, guid: a21fcd1b49d49d340b6591369bd079e2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1711802912}
+    - targetCorrespondingSourceObject: {fileID: 7052444474591178788, guid: a21fcd1b49d49d340b6591369bd079e2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1911075178}
+    - targetCorrespondingSourceObject: {fileID: 8993873285763136853, guid: a21fcd1b49d49d340b6591369bd079e2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1189185930}
+    - targetCorrespondingSourceObject: {fileID: 7240507618024623081, guid: a21fcd1b49d49d340b6591369bd079e2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 956065428}
+    - targetCorrespondingSourceObject: {fileID: 4755737799887122200, guid: a21fcd1b49d49d340b6591369bd079e2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 976868349}
+    - targetCorrespondingSourceObject: {fileID: 4404140574354861060, guid: a21fcd1b49d49d340b6591369bd079e2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1330581029}
+    - targetCorrespondingSourceObject: {fileID: 4465864235052599771, guid: a21fcd1b49d49d340b6591369bd079e2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 641407749}
   m_SourcePrefab: {fileID: 100100000, guid: a21fcd1b49d49d340b6591369bd079e2, type: 3}
 --- !u!4 &272130156 stripped
 Transform:
@@ -11587,24 +11653,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3975df98b15a846c89f033b88687d3e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnTrafficLightControl:
+  OnTrafficStatusControl:
     m_PersistentCalls:
       m_Calls: []
   trafficLightStatus: 0
-  trafficLights:
-  - {fileID: 1794030090}
-  - {fileID: 1772188105}
-  - {fileID: 1981067187}
-  - {fileID: 1349134208}
-  - {fileID: 341502985}
-  - {fileID: 2147224273}
-  - {fileID: 1711802909}
-  - {fileID: 316327392}
-  - {fileID: 44903430}
-  - {fileID: 795263351}
-  - {fileID: 976868346}
-  - {fileID: 760718856}
-  - {fileID: 416724488}
 --- !u!1001 &274611652
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12107,12 +12159,23 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1321295098}
   m_PrefabAsset: {fileID: 0}
---- !u!108 &291336080 stripped
-Light:
-  m_CorrespondingSourceObject: {fileID: 7926507873645083802, guid: a21fcd1b49d49d340b6591369bd079e2,
-    type: 3}
-  m_PrefabInstance: {fileID: 7025214572698030299}
+--- !u!114 &291336083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215912681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1c69fe185dd6784f86c86c35e40c766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <TrafficLightStatus>k__BackingField: 0
+  trafficLightManager: {fileID: 1260950067}
+  moveLightColor: {r: 0, g: 1, b: 0, a: 0}
+  stopLightColor: {r: 1, g: 0, b: 0, a: 0}
+  idleLightColor: {r: 1, g: 1, b: 0, a: 0}
 --- !u!1001 &292452143
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13901,12 +13964,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 314288659}
   m_CullTransparentMesh: 1
---- !u!108 &316327392 stripped
-Light:
-  m_CorrespondingSourceObject: {fileID: 7751098721366286142, guid: a21fcd1b49d49d340b6591369bd079e2,
-    type: 3}
-  m_PrefabInstance: {fileID: 272130155}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &318838433
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15225,12 +15282,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c534413e5ff035f459067a70ee26c365, type: 3}
---- !u!108 &341502985 stripped
-Light:
-  m_CorrespondingSourceObject: {fileID: 6295788595111958298, guid: a21fcd1b49d49d340b6591369bd079e2,
-    type: 3}
-  m_PrefabInstance: {fileID: 272130155}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &342274114 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2342957336574201687, guid: db0e3aa5a6f69974e81601224929c9a5,
@@ -16119,18 +16170,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2342957336574201687, guid: db0e3aa5a6f69974e81601224929c9a5,
     type: 3}
   m_PrefabInstance: {fileID: 1605746502}
-  m_PrefabAsset: {fileID: 0}
---- !u!108 &359479479 stripped
-Light:
-  m_CorrespondingSourceObject: {fileID: 3759320946204104591, guid: a21fcd1b49d49d340b6591369bd079e2,
-    type: 3}
-  m_PrefabInstance: {fileID: 2012728248702859577}
-  m_PrefabAsset: {fileID: 0}
---- !u!108 &359766042 stripped
-Light:
-  m_CorrespondingSourceObject: {fileID: 479457623713811528, guid: a21fcd1b49d49d340b6591369bd079e2,
-    type: 3}
-  m_PrefabInstance: {fileID: 1466187054}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &360431383 stripped
 Transform:
@@ -17357,6 +17396,29 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b78635e73082a745ab700af9c5c0a9b, type: 3}
+--- !u!1 &374568331 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1056319324392887658, guid: a21fcd1b49d49d340b6591369bd079e2,
+    type: 3}
+  m_PrefabInstance: {fileID: 272130155}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &374568334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 374568331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1c69fe185dd6784f86c86c35e40c766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <TrafficLightStatus>k__BackingField: 0
+  trafficLightManager: {fileID: 272130164}
+  moveLightColor: {r: 0, g: 1, b: 0, a: 0}
+  stopLightColor: {r: 1, g: 0, b: 0, a: 0}
+  idleLightColor: {r: 1, g: 1, b: 0, a: 0}
 --- !u!4 &375692539 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3784936039844939535, guid: 53eed026529bf4e48be4a041c2da30c5,
@@ -17441,11 +17503,29 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5eba218e52f35e34b92740f951a29eac, type: 3}
+--- !u!1 &378670415 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7052444474591178788, guid: a21fcd1b49d49d340b6591369bd079e2,
+    type: 3}
+  m_PrefabInstance: {fileID: 2012728248702859577}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &378913653 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8932441817806888640, guid: 7f8e35e7ab64a98418dbfca1129b54d3,
     type: 3}
   m_PrefabInstance: {fileID: 1405049519}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &379078544 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 465450673803007635, guid: a21fcd1b49d49d340b6591369bd079e2,
+    type: 3}
+  m_PrefabInstance: {fileID: 2012728248702859577}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &380045292 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1056319324392887658, guid: a21fcd1b49d49d340b6591369bd079e2,
+    type: 3}
+  m_PrefabInstance: {fileID: 1466187054}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &381448637
 PrefabInstance:
@@ -17623,12 +17703,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db0e3aa5a6f69974e81601224929c9a5, type: 3}
---- !u!108 &381536252 stripped
-Light:
-  m_CorrespondingSourceObject: {fileID: 4333778539009703815, guid: a21fcd1b49d49d340b6591369bd079e2,
-    type: 3}
-  m_PrefabInstance: {fileID: 7025214572698030299}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &381698847
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19168,6 +19242,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ff21f5104a67a643a05bd68101aef5e, type: 3}
+--- !u!1 &405115749 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6963965319724514597, guid: a21fcd1b49d49d340b6591369bd079e2,
+    type: 3}
+  m_PrefabInstance: {fileID: 2012728248702859577}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &408959217
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19395,12 +19475,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6793516713050559073, guid: b6f876c4bc439c7429e5ddab52c88b16,
     type: 3}
   m_PrefabInstance: {fileID: 416365303}
-  m_PrefabAsset: {fileID: 0}
---- !u!108 &416724488 stripped
-Light:
-  m_CorrespondingSourceObject: {fileID: 8942135625597691632, guid: a21fcd1b49d49d340b6591369bd079e2,
-    type: 3}
-  m_PrefabInstance: {fileID: 272130155}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &417507447 stripped
 Transform:
@@ -20540,7 +20614,7 @@ PrefabInstance:
     - target: {fileID: 8242920402213373290, guid: 7acc3f63908bf8d49954baba0bc708a6,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -38
+      value: 65.49
       objectReference: {fileID: 0}
     - target: {fileID: 8242920402213373290, guid: 7acc3f63908bf8d49954baba0bc708a6,
         type: 3}
@@ -20606,17 +20680,15 @@ PrefabInstance:
     - {fileID: 4899377532627797590, guid: 7acc3f63908bf8d49954baba0bc708a6, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6166110220624815176, guid: 7acc3f63908bf8d49954baba0bc708a6,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 768614844}
   m_SourcePrefab: {fileID: 100100000, guid: 7acc3f63908bf8d49954baba0bc708a6, type: 3}
 --- !u!4 &436935341 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8242920402213373290, guid: 7acc3f63908bf8d49954baba0bc708a6,
-    type: 3}
-  m_PrefabInstance: {fileID: 436935340}
-  m_PrefabAsset: {fileID: 0}
---- !u!108 &436935342 stripped
-Light:
-  m_CorrespondingSourceObject: {fileID: 4031625822855432641, guid: 7acc3f63908bf8d49954baba0bc708a6,
     type: 3}
   m_PrefabInstance: {fileID: 436935340}
   m_PrefabAsset: {fileID: 0}
@@ -21169,12 +21241,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 444203982}
   m_PrefabAsset: {fileID: 0}
---- !u!108 &444543921 stripped
-Light:
-  m_CorrespondingSourceObject: {fileID: 7555266001277644247, guid: a21fcd1b49d49d340b6591369bd079e2,
-    type: 3}
-  m_PrefabInstance: {fileID: 7025214572698030299}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &446081440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21700,17 +21766,15 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3142376793871570573, guid: 1b1a5492cbeaada4e90c9bb4364bdae6,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1911555386}
   m_SourcePrefab: {fileID: 100100000, guid: 1b1a5492cbeaada4e90c9bb4364bdae6, type: 3}
 --- !u!4 &449194047 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4787573537545909067, guid: 1b1a5492cbeaada4e90c9bb4364bdae6,
-    type: 3}
-  m_PrefabInstance: {fileID: 449194046}
-  m_PrefabAsset: {fileID: 0}
---- !u!108 &449194048 stripped
-Light:
-  m_CorrespondingSourceObject: {fileID: 1323434404527437164, guid: 1b1a5492cbeaada4e90c9bb4364bdae6,
     type: 3}
   m_PrefabInstance: {fileID: 449194046}
   m_PrefabAsset: {fileID: 0}
@@ -24565,6 +24629,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53eed026529bf4e48be4a041c2da30c5, type: 3}
+--- !u!1 &505773370 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4404140574354861060, guid: a21fcd1b49d49d340b6591369bd079e2,
+    type: 3}
+  m_PrefabInstance: {fileID: 7025214572698030299}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &507092276
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25653,6 +25723,29 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b78635e73082a745ab700af9c5c0a9b, type: 3}
+--- !u!1 &517676420 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1056319324392887658, guid: a21fcd1b49d49d340b6591369bd079e2,
+    type: 3}
+  m_PrefabInstance: {fileID: 2012728248702859577}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &517676422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 517676420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1c69fe185dd6784f86c86c35e40c766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <TrafficLightStatus>k__BackingField: 0
+  trafficLightManager: {fileID: 1594522758}
+  moveLightColor: {r: 0, g: 1, b: 0, a: 0}
+  stopLightColor: {r: 1, g: 0, b: 0, a: 0}
+  idleLightColor: {r: 1, g: 1, b: 0, a: 0}
 --- !u!1001 &520812789
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26077,6 +26170,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 452323613}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &523984651 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1958722066194127806, guid: a21fcd1b49d49d340b6591369bd079e2,
+    type: 3}
+  m_PrefabInstance: {fileID: 272130155}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &525564082
 GameObject:
   m_ObjectHideFlags: 0
@@ -26109,12 +26208,6 @@ Transform:
   - {fileID: 8899261554178699339}
   m_Father: {fileID: 1098417461}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!108 &527790667 stripped
-Light:
-  m_CorrespondingSourceObject: {fileID: 7751098721366286142, guid: a21fcd1b49d49d340b6591369bd079e2,
-    type: 3}
-  m_PrefabInstance: {fileID: 7025214572698030299}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &530687717
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28197,6 +28290,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 845063954}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &566492348 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7052444474591178788, guid: a21fcd1b49d49d340b6591369bd079e2,
+    type: 3}
+  m_PrefabInstance: {fileID: 1466187054}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &574116739 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6685137379141276054, guid: a21fcd1b49d49d340b6591369bd079e2,
@@ -28777,6 +28876,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9802e2520e1a541468274e5214dfd2cb, type: 3}
+--- !u!1 &579116463 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6963965319724514597, guid: a21fcd1b49d49d340b6591369bd079e2,
+    type: 3}
+  m_PrefabInstance: {fileID: 272130155}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &581176267
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29578,6 +29683,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6815783485010757080, guid: 8ff21f5104a67a643a05bd68101aef5e,
     type: 3}
   m_PrefabInstance: {fileID: 745065840}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &602277583 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4404140574354861060, guid: a21fcd1b49d49d340b6591369bd079e2,
+    type: 3}
+  m_PrefabInstance: {fileID: 2012728248702859577}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &603569177 stripped
 Transform:
@@ -31066,12 +31177,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 4564193807331126277}
   m_PrefabAsset: {fileID: 0}
---- !u!108 &621719129 stripped
-Light:
-  m_CorrespondingSourceObject: {fileID: 6295788595111958298, guid: a21fcd1b49d49d340b6591369bd079e2,
-    type: 3}
-  m_PrefabInstance: {fileID: 7025214572698030299}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &622199852
 GameObject:
   m_ObjectHideFlags: 0
@@ -32055,12 +32160,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7550c6d70e0d678488e326e20a1da4b4, type: 3}
---- !u!108 &636884878 stripped
-Light:
-  m_CorrespondingSourceObject: {fileID: 3759320946204104591, guid: a21fcd1b49d49d340b6591369bd079e2,
-    type: 3}
-  m_PrefabInstance: {fileID: 1466187054}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &637020583 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8739507862362431025, guid: a26efbec7aaa06d42910392cd651d5a4,
@@ -32269,6 +32368,29 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e509bd0d05456614db86d1c6893f05b5, type: 3}
+--- !u!1 &641407746 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4465864235052599771, guid: a21fcd1b49d49d340b6591369bd079e2,
+    type: 3}
+  m_PrefabInstance: {fileID: 272130155}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &641407749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 641407746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1c69fe185dd6784f86c86c35e40c766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <TrafficLightStatus>k__BackingField: 0
+  trafficLightManager: {fileID: 272130164}
+  moveLightColor: {r: 0, g: 1, b: 0, a: 0}
+  stopLightColor: {r: 1, g: 0, b: 0, a: 0}
+  idleLightColor: {r: 1, g: 1, b: 0, a: 0}
 --- !u!1001 &641957194
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32779,12 +32901,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 613364910}
   m_PrefabAsset: {fileID: 0}
---- !u!108 &648319622 stripped
-Light:
-  m_CorrespondingSourceObject: {fileID: 5326847089837354121, guid: a21fcd1b49d49d340b6591369bd079e2,
-    type: 3}
-  m_PrefabInstance: {fileID: 1466187054}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &648918790
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33278,6 +33394,29 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9802e2520e1a541468274e5214dfd2cb, type: 3}
+--- !u!1 &653739353 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8993873285763136853, guid: a21fcd1b49d49d340b6591369bd079e2,
+    type: 3}
+  m_PrefabInstance: {fileID: 1466187054}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &653739356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 653739353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1c69fe185dd6784f86c86c35e40c766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <TrafficLightStatus>k__BackingField: 0
+  trafficLightManager: {fileID: 1466187061}
+  moveLightColor: {r: 0, g: 1, b: 0, a: 0}
+  stopLightColor: {r: 1, g: 0, b: 0, a: 0}
+  idleLightColor: {r: 1, g: 1, b: 0, a: 0}
 --- !u!4 &653854968 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 999413045318190199, guid: 79816b6415e253d40b3c33eecebb11ae,
@@ -34229,6 +34368,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c534413e5ff035f459067a70ee26c365, type: 3}
+--- !u!1 &683618200 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6963965319724514597, guid: a21fcd1b49d49d340b6591369bd079e2,
+    type: 3}
+  m_PrefabInstance: {fileID: 1466187054}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &684298407 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8739507862362431025, guid: a26efbec7aaa06d42910392cd651d5a4,
@@ -35326,12 +35471,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 717581669}
   m_PrefabAsset: {fileID: 0}
---- !u!108 &718838315 stripped
-Light:
-  m_CorrespondingSourceObject: {fileID: 8942135625597691632, guid: a21fcd1b49d49d340b6591369bd079e2,
-    type: 3}
-  m_PrefabInstance: {fileID: 7025214572698030299}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &719297576 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8932441817806888640, guid: 7f8e35e7ab64a98418dbfca1129b54d3,
@@ -35741,12 +35880,23 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 793177638}
   m_PrefabAsset: {fileID: 0}
---- !u!108 &730333636 stripped
-Light:
-  m_CorrespondingSourceObject: {fileID: 7952548544109043527, guid: a21fcd1b49d49d340b6591369bd079e2,
-    type: 3}
-  m_PrefabInstance: {fileID: 7025214572698030299}
+--- !u!114 &730333639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 505773370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1c69fe185dd6784f86c86c35e40c766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <TrafficLightStatus>k__BackingField: 0
+  trafficLightManager: {fileID: 1260950067}
+  moveLightColor: {r: 0, g: 1, b: 0, a: 0}
+  stopLightColor: {r: 1, g: 0, b: 0, a: 0}
+  idleLightColor: {r: 1, g: 1, b: 0, a: 0}
 --- !u!4 &730798521 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6815783485010757080, guid: 8ff21f5104a67a643a05bd68101aef5e,
@@ -37881,12 +38031,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ff21f5104a67a643a05bd68101aef5e, type: 3}
---- !u!108 &760718856 stripped
-Light:
-  m_CorrespondingSourceObject: {fileID: 7952548544109043527, guid: a21fcd1b49d49d340b6591369bd079e2,
-    type: 3}
-  m_PrefabInstance: {fileID: 272130155}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &761878358
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38067,6 +38211,29 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 7329705853517704992}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &768614841 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6166110220624815176, guid: 7acc3f63908bf8d49954baba0bc708a6,
+    type: 3}
+  m_PrefabInstance: {fileID: 436935340}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &768614844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 768614841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1c69fe185dd6784f86c86c35e40c766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <TrafficLightStatus>k__BackingField: 0
+  trafficLightManager: {fileID: 1260950067}
+  moveLightColor: {r: 0, g: 1, b: 0, a: 0}
+  stopLightColor: {r: 1, g: 0, b: 0, a: 0}
+  idleLightColor: {r: 1, g: 1, b: 0, a: 0}
 --- !u!1 &768632099
 GameObject:
   m_ObjectHideFlags: 0
@@ -39116,18 +39283,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9802e2520e1a541468274e5214dfd2cb, type: 3}
---- !u!108 &795087959 stripped
-Light:
-  m_CorrespondingSourceObject: {fileID: 8942135625597691632, guid: a21fcd1b49d49d340b6591369bd079e2,
-    type: 3}
-  m_PrefabInstance: {fileID: 2012728248702859577}
-  m_PrefabAsset: {fileID: 0}
---- !u!108 &795263351 stripped
-Light:
-  m_CorrespondingSourceObject: {fileID: 7555266001277644247, guid: a21fcd1b49d49d340b6591369bd079e2,
-    type: 3}
-  m_PrefabInstance: {fileID: 272130155}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &795272299
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39620,17 +39775,15 @@ PrefabInstance:
     - {fileID: 4834422518716021853, guid: 7acc3f63908bf8d49954baba0bc708a6, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6166110220624815176, guid: 7acc3f63908bf8d49954baba0bc708a6,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1232583989}
   m_SourcePrefab: {fileID: 100100000, guid: 7acc3f63908bf8d49954baba0bc708a6, type: 3}
 --- !u!4 &801566919 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8242920402213373290, guid: 7acc3f63908bf8d49954baba0bc708a6,
-    type: 3}
-  m_PrefabInstance: {fileID: 801566918}
-  m_PrefabAsset: {fileID: 0}
---- !u!108 &801566920 stripped
-Light:
-  m_CorrespondingSourceObject: {fileID: 4031625822855432641, guid: 7acc3f63908bf8d49954baba0bc708a6,
     type: 3}
   m_PrefabInstance: {fileID: 801566918}
   m_PrefabAsset: {fileID: 0}
@@ -42825,6 +42978,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b78635e73082a745ab700af9c5c0a9b, type: 3}
+--- !u!1 &867867257 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1958722066194127806, guid: a21fcd1b49d49d340b6591369bd079e2,
+    type: 3}
+  m_PrefabInstance: {fileID: 2012728248702859577}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &870654715 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5589808606257838379, guid: a21fcd1b49d49d340b6591369bd079e2,
@@ -44135,11 +44294,23 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1577113238}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &906372789 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4404140574354861060, guid: a21fcd1b49d49d340b6591369bd079e2,
+    type: 3}
+  m_PrefabInstance: {fileID: 1466187054}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &906394766 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8932441817806888640, guid: 7f8e35e7ab64a98418dbfca1129b54d3,
     type: 3}
   m_PrefabInstance: {fileID: 130015881}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &908591672 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4755737799887122200, guid: a21fcd1b49d49d340b6591369bd079e2,
+    type: 3}
+  m_PrefabInstance: {fileID: 272130155}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &910294586 stripped
 Transform:
@@ -44469,6 +44640,29 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e509bd0d05456614db86d1c6893f05b5, type: 3}
+--- !u!1 &921056837 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4465864235052599771, guid: a21fcd1b49d49d340b6591369bd079e2,
+    type: 3}
+  m_PrefabInstance: {fileID: 2012728248702859577}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &921056839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921056837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1c69fe185dd6784f86c86c35e40c766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <TrafficLightStatus>k__BackingField: 0
+  trafficLightManager: {fileID: 1594522758}
+  moveLightColor: {r: 0, g: 1, b: 0, a: 0}
+  stopLightColor: {r: 1, g: 0, b: 0, a: 0}
+  idleLightColor: {r: 1, g: 1, b: 0, a: 0}
 --- !u!1 &921157034
 GameObject:
   m_ObjectHideFlags: 0
@@ -45742,6 +45936,52 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9802e2520e1a541468274e5214dfd2cb, type: 3}
+--- !u!1 &956065425 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7240507618024623081, guid: a21fcd1b49d49d340b6591369bd079e2,
+    type: 3}
+  m_PrefabInstance: {fileID: 272130155}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &956065428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 956065425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1c69fe185dd6784f86c86c35e40c766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <TrafficLightStatus>k__BackingField: 0
+  trafficLightManager: {fileID: 272130164}
+  moveLightColor: {r: 0, g: 1, b: 0, a: 0}
+  stopLightColor: {r: 1, g: 0, b: 0, a: 0}
+  idleLightColor: {r: 1, g: 1, b: 0, a: 0}
+--- !u!1 &957172456 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1958722066194127806, guid: a21fcd1b49d49d340b6591369bd079e2,
+    type: 3}
+  m_PrefabInstance: {fileID: 7025214572698030299}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &957172459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 957172456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1c69fe185dd6784f86c86c35e40c766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <TrafficLightStatus>k__BackingField: 0
+  trafficLightManager: {fileID: 1260950067}
+  moveLightColor: {r: 0, g: 1, b: 0, a: 0}
+  stopLightColor: {r: 1, g: 0, b: 0, a: 0}
+  idleLightColor: {r: 1, g: 1, b: 0, a: 0}
 --- !u!1 &960199080
 GameObject:
   m_ObjectHideFlags: 0
@@ -47011,12 +47251,23 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b78635e73082a745ab700af9c5c0a9b, type: 3}
---- !u!108 &976868346 stripped
-Light:
-  m_CorrespondingSourceObject: {fileID: 479457623713811528, guid: a21fcd1b49d49d340b6591369bd079e2,
-    type: 3}
-  m_PrefabInstance: {fileID: 272130155}
+--- !u!114 &976868349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 908591672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1c69fe185dd6784f86c86c35e40c766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <TrafficLightStatus>k__BackingField: 0
+  trafficLightManager: {fileID: 272130164}
+  moveLightColor: {r: 0, g: 1, b: 0, a: 0}
+  stopLightColor: {r: 1, g: 0, b: 0, a: 0}
+  idleLightColor: {r: 1, g: 1, b: 0, a: 0}
 --- !u!1001 &977136681
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -47705,6 +47956,29 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b78635e73082a745ab700af9c5c0a9b, type: 3}
+--- !u!1 &991173463 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7240507618024623081, guid: a21fcd1b49d49d340b6591369bd079e2,
+    type: 3}
+  m_PrefabInstance: {fileID: 7025214572698030299}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &991173466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 991173463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1c69fe185dd6784f86c86c35e40c766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <TrafficLightStatus>k__BackingField: 0
+  trafficLightManager: {fileID: 1260950067}
+  moveLightColor: {r: 0, g: 1, b: 0, a: 0}
+  stopLightColor: {r: 1, g: 0, b: 0, a: 0}
+  idleLightColor: {r: 1, g: 1, b: 0, a: 0}
 --- !u!4 &995873169 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2342957336574201687, guid: db0e3aa5a6f69974e81601224929c9a5,
@@ -48485,12 +48759,23 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c534413e5ff035f459067a70ee26c365, type: 3}
---- !u!108 &1011836714 stripped
-Light:
-  m_CorrespondingSourceObject: {fileID: 4333778539009703815, guid: a21fcd1b49d49d340b6591369bd079e2,
-    type: 3}
-  m_PrefabInstance: {fileID: 2012728248702859577}
+--- !u!114 &1011836716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 379078544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1c69fe185dd6784f86c86c35e40c766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <TrafficLightStatus>k__BackingField: 0
+  trafficLightManager: {fileID: 1594522758}
+  moveLightColor: {r: 0, g: 1, b: 0, a: 0}
+  stopLightColor: {r: 1, g: 0, b: 0, a: 0}
+  idleLightColor: {r: 1, g: 1, b: 0, a: 0}
 --- !u!1001 &1013243313
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -48786,6 +49071,12 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 72.5, y: 122.5}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1019038982 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7414534794855330112, guid: a21fcd1b49d49d340b6591369bd079e2,
+    type: 3}
+  m_PrefabInstance: {fileID: 7025214572698030299}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1021706035
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -51842,12 +52133,23 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1252570774}
   m_PrefabAsset: {fileID: 0}
---- !u!108 &1105358511 stripped
-Light:
-  m_CorrespondingSourceObject: {fileID: 7926507873645083802, guid: a21fcd1b49d49d340b6591369bd079e2,
-    type: 3}
-  m_PrefabInstance: {fileID: 2012728248702859577}
+--- !u!114 &1105358513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 405115749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1c69fe185dd6784f86c86c35e40c766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <TrafficLightStatus>k__BackingField: 0
+  trafficLightManager: {fileID: 1594522758}
+  moveLightColor: {r: 0, g: 1, b: 0, a: 0}
+  stopLightColor: {r: 1, g: 0, b: 0, a: 0}
+  idleLightColor: {r: 1, g: 1, b: 0, a: 0}
 --- !u!1 &1108354016
 GameObject:
   m_ObjectHideFlags: 0
@@ -53835,12 +54137,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 736632428}
   m_PrefabAsset: {fileID: 0}
---- !u!108 &1161458863 stripped
-Light:
-  m_CorrespondingSourceObject: {fileID: 479457623713811528, guid: a21fcd1b49d49d340b6591369bd079e2,
-    type: 3}
-  m_PrefabInstance: {fileID: 2012728248702859577}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1164858610
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -55133,6 +55429,29 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f8e35e7ab64a98418dbfca1129b54d3, type: 3}
+--- !u!1 &1189185927 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8993873285763136853, guid: a21fcd1b49d49d340b6591369bd079e2,
+    type: 3}
+  m_PrefabInstance: {fileID: 272130155}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1189185930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1189185927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1c69fe185dd6784f86c86c35e40c766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <TrafficLightStatus>k__BackingField: 0
+  trafficLightManager: {fileID: 272130164}
+  moveLightColor: {r: 0, g: 1, b: 0, a: 0}
+  stopLightColor: {r: 1, g: 0, b: 0, a: 0}
+  idleLightColor: {r: 1, g: 1, b: 0, a: 0}
 --- !u!4 &1189346697 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2659196175016021792, guid: 9802e2520e1a541468274e5214dfd2cb,
@@ -55280,12 +55599,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1189834191}
   m_CullTransparentMesh: 1
---- !u!108 &1189851536 stripped
-Light:
-  m_CorrespondingSourceObject: {fileID: 7555266001277644247, guid: a21fcd1b49d49d340b6591369bd079e2,
-    type: 3}
-  m_PrefabInstance: {fileID: 1466187054}
+--- !u!114 &1189851539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 76658430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1c69fe185dd6784f86c86c35e40c766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <TrafficLightStatus>k__BackingField: 0
+  trafficLightManager: {fileID: 1466187061}
+  moveLightColor: {r: 0, g: 1, b: 0, a: 0}
+  stopLightColor: {r: 1, g: 0, b: 0, a: 0}
+  idleLightColor: {r: 1, g: 1, b: 0, a: 0}
 --- !u!1001 &1193959691
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -55407,6 +55737,29 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 555917287}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1199355666 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4465864235052599771, guid: a21fcd1b49d49d340b6591369bd079e2,
+    type: 3}
+  m_PrefabInstance: {fileID: 1466187054}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1199355669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1199355666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1c69fe185dd6784f86c86c35e40c766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <TrafficLightStatus>k__BackingField: 0
+  trafficLightManager: {fileID: 1466187061}
+  moveLightColor: {r: 0, g: 1, b: 0, a: 0}
+  stopLightColor: {r: 1, g: 0, b: 0, a: 0}
+  idleLightColor: {r: 1, g: 1, b: 0, a: 0}
 --- !u!4 &1203414421 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8932441817806888640, guid: 7f8e35e7ab64a98418dbfca1129b54d3,
@@ -57091,6 +57444,29 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f8e35e7ab64a98418dbfca1129b54d3, type: 3}
+--- !u!1 &1232583987 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6166110220624815176, guid: 7acc3f63908bf8d49954baba0bc708a6,
+    type: 3}
+  m_PrefabInstance: {fileID: 801566918}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1232583989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1232583987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1c69fe185dd6784f86c86c35e40c766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <TrafficLightStatus>k__BackingField: 0
+  trafficLightManager: {fileID: 1594522758}
+  moveLightColor: {r: 0, g: 1, b: 0, a: 0}
+  stopLightColor: {r: 1, g: 0, b: 0, a: 0}
+  idleLightColor: {r: 1, g: 1, b: 0, a: 0}
 --- !u!1001 &1234058776
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -58675,11 +59051,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1258124066}
   m_CullTransparentMesh: 1
---- !u!108 &1259601725 stripped
-Light:
-  m_CorrespondingSourceObject: {fileID: 7441130577440270770, guid: a21fcd1b49d49d340b6591369bd079e2,
+--- !u!114 &1259601728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63518373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1c69fe185dd6784f86c86c35e40c766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <TrafficLightStatus>k__BackingField: 0
+  trafficLightManager: {fileID: 1466187061}
+  moveLightColor: {r: 0, g: 1, b: 0, a: 0}
+  stopLightColor: {r: 1, g: 0, b: 0, a: 0}
+  idleLightColor: {r: 1, g: 1, b: 0, a: 0}
+--- !u!1 &1260048284 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8993873285763136853, guid: a21fcd1b49d49d340b6591369bd079e2,
     type: 3}
-  m_PrefabInstance: {fileID: 1466187054}
+  m_PrefabInstance: {fileID: 7025214572698030299}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1260950062 stripped
 GameObject:
@@ -58746,24 +59139,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3975df98b15a846c89f033b88687d3e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnTrafficLightControl:
+  OnTrafficStatusControl:
     m_PersistentCalls:
       m_Calls: []
   trafficLightStatus: 0
-  trafficLights:
-  - {fileID: 436935342}
-  - {fileID: 2143844840}
-  - {fileID: 129164520}
-  - {fileID: 291336080}
-  - {fileID: 621719129}
-  - {fileID: 381536252}
-  - {fileID: 1966893238}
-  - {fileID: 527790667}
-  - {fileID: 1956180758}
-  - {fileID: 444543921}
-  - {fileID: 2016559666}
-  - {fileID: 730333636}
-  - {fileID: 718838315}
 --- !u!1001 &1260984559
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -59374,18 +59753,35 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 231277038}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1273644489 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3142376793871570573, guid: 1b1a5492cbeaada4e90c9bb4364bdae6,
+    type: 3}
+  m_PrefabInstance: {fileID: 1794030088}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1281489020 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8932441817806888640, guid: 7f8e35e7ab64a98418dbfca1129b54d3,
     type: 3}
   m_PrefabInstance: {fileID: 351762406}
   m_PrefabAsset: {fileID: 0}
---- !u!108 &1282144458 stripped
-Light:
-  m_CorrespondingSourceObject: {fileID: 7441130577440270770, guid: a21fcd1b49d49d340b6591369bd079e2,
-    type: 3}
-  m_PrefabInstance: {fileID: 2012728248702859577}
+--- !u!114 &1282144460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 54857254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1c69fe185dd6784f86c86c35e40c766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <TrafficLightStatus>k__BackingField: 0
+  trafficLightManager: {fileID: 1594522758}
+  moveLightColor: {r: 0, g: 1, b: 0, a: 0}
+  stopLightColor: {r: 1, g: 0, b: 0, a: 0}
+  idleLightColor: {r: 1, g: 1, b: 0, a: 0}
 --- !u!4 &1285675853 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6815783485010757080, guid: 8ff21f5104a67a643a05bd68101aef5e,
@@ -61554,6 +61950,29 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9802e2520e1a541468274e5214dfd2cb, type: 3}
+--- !u!1 &1330581026 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4404140574354861060, guid: a21fcd1b49d49d340b6591369bd079e2,
+    type: 3}
+  m_PrefabInstance: {fileID: 272130155}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1330581029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1330581026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1c69fe185dd6784f86c86c35e40c766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <TrafficLightStatus>k__BackingField: 0
+  trafficLightManager: {fileID: 272130164}
+  moveLightColor: {r: 0, g: 1, b: 0, a: 0}
+  stopLightColor: {r: 1, g: 0, b: 0, a: 0}
+  idleLightColor: {r: 1, g: 1, b: 0, a: 0}
 --- !u!1001 &1330847516
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -62710,12 +63129,23 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1666927861}
   m_PrefabAsset: {fileID: 0}
---- !u!108 &1349134208 stripped
-Light:
-  m_CorrespondingSourceObject: {fileID: 7926507873645083802, guid: a21fcd1b49d49d340b6591369bd079e2,
-    type: 3}
-  m_PrefabInstance: {fileID: 272130155}
+--- !u!114 &1349134211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 579116463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1c69fe185dd6784f86c86c35e40c766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <TrafficLightStatus>k__BackingField: 0
+  trafficLightManager: {fileID: 272130164}
+  moveLightColor: {r: 0, g: 1, b: 0, a: 0}
+  stopLightColor: {r: 1, g: 0, b: 0, a: 0}
+  idleLightColor: {r: 1, g: 1, b: 0, a: 0}
 --- !u!4 &1349829907 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2659196175016021792, guid: 9802e2520e1a541468274e5214dfd2cb,
@@ -62884,12 +63314,23 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c534413e5ff035f459067a70ee26c365, type: 3}
---- !u!108 &1357862927 stripped
-Light:
-  m_CorrespondingSourceObject: {fileID: 4333778539009703815, guid: a21fcd1b49d49d340b6591369bd079e2,
-    type: 3}
-  m_PrefabInstance: {fileID: 1466187054}
+--- !u!114 &1357862930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182867556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1c69fe185dd6784f86c86c35e40c766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <TrafficLightStatus>k__BackingField: 0
+  trafficLightManager: {fileID: 1466187061}
+  moveLightColor: {r: 0, g: 1, b: 0, a: 0}
+  stopLightColor: {r: 1, g: 0, b: 0, a: 0}
+  idleLightColor: {r: 1, g: 1, b: 0, a: 0}
 --- !u!1 &1360500097
 GameObject:
   m_ObjectHideFlags: 0
@@ -65125,12 +65566,23 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ff21f5104a67a643a05bd68101aef5e, type: 3}
---- !u!108 &1379624013 stripped
-Light:
-  m_CorrespondingSourceObject: {fileID: 7751098721366286142, guid: a21fcd1b49d49d340b6591369bd079e2,
-    type: 3}
-  m_PrefabInstance: {fileID: 1466187054}
+--- !u!114 &1379624016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 566492348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1c69fe185dd6784f86c86c35e40c766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <TrafficLightStatus>k__BackingField: 0
+  trafficLightManager: {fileID: 1466187061}
+  moveLightColor: {r: 0, g: 1, b: 0, a: 0}
+  stopLightColor: {r: 1, g: 0, b: 0, a: 0}
+  idleLightColor: {r: 1, g: 1, b: 0, a: 0}
 --- !u!1 &1380316048
 GameObject:
   m_ObjectHideFlags: 0
@@ -65539,18 +65991,40 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1013243313}
   m_PrefabAsset: {fileID: 0}
---- !u!108 &1390152602 stripped
-Light:
-  m_CorrespondingSourceObject: {fileID: 835224908871569350, guid: a21fcd1b49d49d340b6591369bd079e2,
-    type: 3}
-  m_PrefabInstance: {fileID: 2012728248702859577}
+--- !u!114 &1390152604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
---- !u!108 &1390274587 stripped
-Light:
-  m_CorrespondingSourceObject: {fileID: 6295788595111958298, guid: a21fcd1b49d49d340b6591369bd079e2,
-    type: 3}
-  m_PrefabInstance: {fileID: 1466187054}
+  m_GameObject: {fileID: 867867257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1c69fe185dd6784f86c86c35e40c766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <TrafficLightStatus>k__BackingField: 0
+  trafficLightManager: {fileID: 1594522758}
+  moveLightColor: {r: 0, g: 1, b: 0, a: 0}
+  stopLightColor: {r: 1, g: 0, b: 0, a: 0}
+  idleLightColor: {r: 1, g: 1, b: 0, a: 0}
+--- !u!114 &1390274590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 380045292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1c69fe185dd6784f86c86c35e40c766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <TrafficLightStatus>k__BackingField: 0
+  trafficLightManager: {fileID: 1466187061}
+  moveLightColor: {r: 0, g: 1, b: 0, a: 0}
+  stopLightColor: {r: 1, g: 0, b: 0, a: 0}
+  idleLightColor: {r: 1, g: 1, b: 0, a: 0}
 --- !u!1001 &1393319786
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -66865,6 +67339,29 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f225b653e1a0054d8c6edba843c2e5e, type: 3}
+--- !u!1 &1423892167 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4755737799887122200, guid: a21fcd1b49d49d340b6591369bd079e2,
+    type: 3}
+  m_PrefabInstance: {fileID: 1466187054}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1423892170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1423892167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1c69fe185dd6784f86c86c35e40c766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <TrafficLightStatus>k__BackingField: 0
+  trafficLightManager: {fileID: 1466187061}
+  moveLightColor: {r: 0, g: 1, b: 0, a: 0}
+  stopLightColor: {r: 1, g: 0, b: 0, a: 0}
+  idleLightColor: {r: 1, g: 1, b: 0, a: 0}
 --- !u!1 &1432535715
 GameObject:
   m_ObjectHideFlags: 0
@@ -67195,12 +67692,23 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
---- !u!108 &1438590773 stripped
-Light:
-  m_CorrespondingSourceObject: {fileID: 7952548544109043527, guid: a21fcd1b49d49d340b6591369bd079e2,
-    type: 3}
-  m_PrefabInstance: {fileID: 2012728248702859577}
+--- !u!114 &1438590775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 602277583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1c69fe185dd6784f86c86c35e40c766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <TrafficLightStatus>k__BackingField: 0
+  trafficLightManager: {fileID: 1594522758}
+  moveLightColor: {r: 0, g: 1, b: 0, a: 0}
+  stopLightColor: {r: 1, g: 0, b: 0, a: 0}
+  idleLightColor: {r: 1, g: 1, b: 0, a: 0}
 --- !u!1 &1439843739
 GameObject:
   m_ObjectHideFlags: 0
@@ -68618,6 +69126,54 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1466187061}
+    - targetCorrespondingSourceObject: {fileID: 7414534794855330112, guid: a21fcd1b49d49d340b6591369bd079e2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1524918138}
+    - targetCorrespondingSourceObject: {fileID: 1958722066194127806, guid: a21fcd1b49d49d340b6591369bd079e2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1653168183}
+    - targetCorrespondingSourceObject: {fileID: 6963965319724514597, guid: a21fcd1b49d49d340b6591369bd079e2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1531825987}
+    - targetCorrespondingSourceObject: {fileID: 1056319324392887658, guid: a21fcd1b49d49d340b6591369bd079e2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1390274590}
+    - targetCorrespondingSourceObject: {fileID: 465450673803007635, guid: a21fcd1b49d49d340b6591369bd079e2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1357862930}
+    - targetCorrespondingSourceObject: {fileID: 6599523043647061561, guid: a21fcd1b49d49d340b6591369bd079e2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1259601728}
+    - targetCorrespondingSourceObject: {fileID: 7052444474591178788, guid: a21fcd1b49d49d340b6591369bd079e2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1379624016}
+    - targetCorrespondingSourceObject: {fileID: 8993873285763136853, guid: a21fcd1b49d49d340b6591369bd079e2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 653739356}
+    - targetCorrespondingSourceObject: {fileID: 7240507618024623081, guid: a21fcd1b49d49d340b6591369bd079e2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1189851539}
+    - targetCorrespondingSourceObject: {fileID: 4755737799887122200, guid: a21fcd1b49d49d340b6591369bd079e2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1423892170}
+    - targetCorrespondingSourceObject: {fileID: 4404140574354861060, guid: a21fcd1b49d49d340b6591369bd079e2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1831024906}
+    - targetCorrespondingSourceObject: {fileID: 4465864235052599771, guid: a21fcd1b49d49d340b6591369bd079e2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1199355669}
   m_SourcePrefab: {fileID: 100100000, guid: a21fcd1b49d49d340b6591369bd079e2, type: 3}
 --- !u!4 &1466187055 stripped
 Transform:
@@ -68690,24 +69246,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3975df98b15a846c89f033b88687d3e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnTrafficLightControl:
+  OnTrafficStatusControl:
     m_PersistentCalls:
       m_Calls: []
   trafficLightStatus: 0
-  trafficLights:
-  - {fileID: 449194048}
-  - {fileID: 636884878}
-  - {fileID: 267587908}
-  - {fileID: 1531825984}
-  - {fileID: 1390274587}
-  - {fileID: 1357862927}
-  - {fileID: 1259601725}
-  - {fileID: 1379624013}
-  - {fileID: 648319622}
-  - {fileID: 1189851536}
-  - {fileID: 359766042}
-  - {fileID: 1831024903}
-  - {fileID: 231582794}
 --- !u!1001 &1467453590
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -69273,6 +69815,29 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 5303682784977773301}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1499042664 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4755737799887122200, guid: a21fcd1b49d49d340b6591369bd079e2,
+    type: 3}
+  m_PrefabInstance: {fileID: 2012728248702859577}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1499042666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1499042664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1c69fe185dd6784f86c86c35e40c766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <TrafficLightStatus>k__BackingField: 0
+  trafficLightManager: {fileID: 1594522758}
+  moveLightColor: {r: 0, g: 1, b: 0, a: 0}
+  stopLightColor: {r: 1, g: 0, b: 0, a: 0}
+  idleLightColor: {r: 1, g: 1, b: 0, a: 0}
 --- !u!1001 &1501239845
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -70156,12 +70721,23 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f225b653e1a0054d8c6edba843c2e5e, type: 3}
---- !u!108 &1516402742 stripped
-Light:
-  m_CorrespondingSourceObject: {fileID: 7751098721366286142, guid: a21fcd1b49d49d340b6591369bd079e2,
-    type: 3}
-  m_PrefabInstance: {fileID: 2012728248702859577}
+--- !u!114 &1516402744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 378670415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1c69fe185dd6784f86c86c35e40c766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <TrafficLightStatus>k__BackingField: 0
+  trafficLightManager: {fileID: 1594522758}
+  moveLightColor: {r: 0, g: 1, b: 0, a: 0}
+  stopLightColor: {r: 1, g: 0, b: 0, a: 0}
+  idleLightColor: {r: 1, g: 1, b: 0, a: 0}
 --- !u!4 &1516680194 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8932441817806888640, guid: 7f8e35e7ab64a98418dbfca1129b54d3,
@@ -70295,6 +70871,29 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c534413e5ff035f459067a70ee26c365, type: 3}
+--- !u!1 &1524918135 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7414534794855330112, guid: a21fcd1b49d49d340b6591369bd079e2,
+    type: 3}
+  m_PrefabInstance: {fileID: 1466187054}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1524918138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1524918135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1c69fe185dd6784f86c86c35e40c766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <TrafficLightStatus>k__BackingField: 0
+  trafficLightManager: {fileID: 1466187061}
+  moveLightColor: {r: 0, g: 1, b: 0, a: 0}
+  stopLightColor: {r: 1, g: 0, b: 0, a: 0}
+  idleLightColor: {r: 1, g: 1, b: 0, a: 0}
 --- !u!1 &1527543460
 GameObject:
   m_ObjectHideFlags: 0
@@ -70448,12 +71047,23 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c534413e5ff035f459067a70ee26c365, type: 3}
---- !u!108 &1531825984 stripped
-Light:
-  m_CorrespondingSourceObject: {fileID: 7926507873645083802, guid: a21fcd1b49d49d340b6591369bd079e2,
-    type: 3}
-  m_PrefabInstance: {fileID: 1466187054}
+--- !u!114 &1531825987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 683618200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1c69fe185dd6784f86c86c35e40c766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <TrafficLightStatus>k__BackingField: 0
+  trafficLightManager: {fileID: 1466187061}
+  moveLightColor: {r: 0, g: 1, b: 0, a: 0}
+  stopLightColor: {r: 1, g: 0, b: 0, a: 0}
+  idleLightColor: {r: 1, g: 1, b: 0, a: 0}
 --- !u!4 &1532871415 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1468605501506614798, guid: 528618d13927f9048946c8e8b2d4a35f,
@@ -71288,6 +71898,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9802e2520e1a541468274e5214dfd2cb, type: 3}
+--- !u!1 &1546940987 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 465450673803007635, guid: a21fcd1b49d49d340b6591369bd079e2,
+    type: 3}
+  m_PrefabInstance: {fileID: 272130155}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1550168628 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 999413045318190199, guid: 79816b6415e253d40b3c33eecebb11ae,
@@ -73928,24 +74544,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3975df98b15a846c89f033b88687d3e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnTrafficLightControl:
+  OnTrafficStatusControl:
     m_PersistentCalls:
       m_Calls: []
   trafficLightStatus: 0
-  trafficLights:
-  - {fileID: 801566920}
-  - {fileID: 359479479}
-  - {fileID: 1390152602}
-  - {fileID: 1105358511}
-  - {fileID: 134753409}
-  - {fileID: 1011836714}
-  - {fileID: 1282144458}
-  - {fileID: 1516402742}
-  - {fileID: 1984452482}
-  - {fileID: 2030119618}
-  - {fileID: 1161458863}
-  - {fileID: 1438590773}
-  - {fileID: 795087959}
 --- !u!4 &1594696201 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8932441817806888640, guid: 7f8e35e7ab64a98418dbfca1129b54d3,
@@ -74578,6 +75180,29 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1615554903}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1620184452 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4465864235052599771, guid: a21fcd1b49d49d340b6591369bd079e2,
+    type: 3}
+  m_PrefabInstance: {fileID: 7025214572698030299}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1620184455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1620184452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1c69fe185dd6784f86c86c35e40c766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <TrafficLightStatus>k__BackingField: 0
+  trafficLightManager: {fileID: 1260950067}
+  moveLightColor: {r: 0, g: 1, b: 0, a: 0}
+  stopLightColor: {r: 1, g: 0, b: 0, a: 0}
+  idleLightColor: {r: 1, g: 1, b: 0, a: 0}
 --- !u!1001 &1620773679
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -74750,6 +75375,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c534413e5ff035f459067a70ee26c365, type: 3}
+--- !u!1 &1625375613 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7414534794855330112, guid: a21fcd1b49d49d340b6591369bd079e2,
+    type: 3}
+  m_PrefabInstance: {fileID: 272130155}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1626149308
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -76087,6 +76718,29 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 3574929292464793492}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1653168180 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1958722066194127806, guid: a21fcd1b49d49d340b6591369bd079e2,
+    type: 3}
+  m_PrefabInstance: {fileID: 1466187054}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1653168183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1653168180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1c69fe185dd6784f86c86c35e40c766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <TrafficLightStatus>k__BackingField: 0
+  trafficLightManager: {fileID: 1466187061}
+  moveLightColor: {r: 0, g: 1, b: 0, a: 0}
+  stopLightColor: {r: 1, g: 0, b: 0, a: 0}
+  idleLightColor: {r: 1, g: 1, b: 0, a: 0}
 --- !u!4 &1654120476 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5481472516380395348, guid: eb5a4377d94a10a4191abdf5e81db262,
@@ -78073,12 +78727,23 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 917232069}
   m_PrefabAsset: {fileID: 0}
---- !u!108 &1711802909 stripped
-Light:
-  m_CorrespondingSourceObject: {fileID: 7441130577440270770, guid: a21fcd1b49d49d340b6591369bd079e2,
-    type: 3}
-  m_PrefabInstance: {fileID: 272130155}
+--- !u!114 &1711802912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 120018080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1c69fe185dd6784f86c86c35e40c766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <TrafficLightStatus>k__BackingField: 0
+  trafficLightManager: {fileID: 272130164}
+  moveLightColor: {r: 0, g: 1, b: 0, a: 0}
+  stopLightColor: {r: 1, g: 0, b: 0, a: 0}
+  idleLightColor: {r: 1, g: 1, b: 0, a: 0}
 --- !u!1 &1718884479
 GameObject:
   m_ObjectHideFlags: 0
@@ -78396,6 +79061,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   combineCollider: {fileID: 1640684998}
+--- !u!1 &1732964185 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7414534794855330112, guid: a21fcd1b49d49d340b6591369bd079e2,
+    type: 3}
+  m_PrefabInstance: {fileID: 2012728248702859577}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1732964187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1732964185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1c69fe185dd6784f86c86c35e40c766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <TrafficLightStatus>k__BackingField: 0
+  trafficLightManager: {fileID: 1594522758}
+  moveLightColor: {r: 0, g: 1, b: 0, a: 0}
+  stopLightColor: {r: 1, g: 0, b: 0, a: 0}
+  idleLightColor: {r: 1, g: 1, b: 0, a: 0}
 --- !u!4 &1733023501 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3784936039844939535, guid: 53eed026529bf4e48be4a041c2da30c5,
@@ -79832,6 +80520,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1766450164}
   m_CullTransparentMesh: 1
+--- !u!1 &1766561207 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6599523043647061561, guid: a21fcd1b49d49d340b6591369bd079e2,
+    type: 3}
+  m_PrefabInstance: {fileID: 7025214572698030299}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1766620085
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -80240,12 +80934,23 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1046144825}
   m_PrefabAsset: {fileID: 0}
---- !u!108 &1772188105 stripped
-Light:
-  m_CorrespondingSourceObject: {fileID: 3759320946204104591, guid: a21fcd1b49d49d340b6591369bd079e2,
-    type: 3}
-  m_PrefabInstance: {fileID: 272130155}
+--- !u!114 &1772188108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1625375613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1c69fe185dd6784f86c86c35e40c766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <TrafficLightStatus>k__BackingField: 0
+  trafficLightManager: {fileID: 272130164}
+  moveLightColor: {r: 0, g: 1, b: 0, a: 0}
+  stopLightColor: {r: 1, g: 0, b: 0, a: 0}
+  idleLightColor: {r: 1, g: 1, b: 0, a: 0}
 --- !u!1001 &1779578506
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -80894,7 +81599,11 @@ PrefabInstance:
     - {fileID: 1740469198668638210, guid: 1b1a5492cbeaada4e90c9bb4364bdae6, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3142376793871570573, guid: 1b1a5492cbeaada4e90c9bb4364bdae6,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1794030093}
   m_SourcePrefab: {fileID: 100100000, guid: 1b1a5492cbeaada4e90c9bb4364bdae6, type: 3}
 --- !u!4 &1794030089 stripped
 Transform:
@@ -80902,12 +81611,23 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1794030088}
   m_PrefabAsset: {fileID: 0}
---- !u!108 &1794030090 stripped
-Light:
-  m_CorrespondingSourceObject: {fileID: 1323434404527437164, guid: 1b1a5492cbeaada4e90c9bb4364bdae6,
-    type: 3}
-  m_PrefabInstance: {fileID: 1794030088}
+--- !u!114 &1794030093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1273644489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1c69fe185dd6784f86c86c35e40c766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <TrafficLightStatus>k__BackingField: 0
+  trafficLightManager: {fileID: 272130164}
+  moveLightColor: {r: 0, g: 1, b: 0, a: 0}
+  stopLightColor: {r: 1, g: 0, b: 0, a: 0}
+  idleLightColor: {r: 1, g: 1, b: 0, a: 0}
 --- !u!1001 &1799057089
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -82398,12 +83118,23 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1316546992}
   m_PrefabAsset: {fileID: 0}
---- !u!108 &1831024903 stripped
-Light:
-  m_CorrespondingSourceObject: {fileID: 7952548544109043527, guid: a21fcd1b49d49d340b6591369bd079e2,
-    type: 3}
-  m_PrefabInstance: {fileID: 1466187054}
+--- !u!114 &1831024906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 906372789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1c69fe185dd6784f86c86c35e40c766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <TrafficLightStatus>k__BackingField: 0
+  trafficLightManager: {fileID: 1466187061}
+  moveLightColor: {r: 0, g: 1, b: 0, a: 0}
+  stopLightColor: {r: 1, g: 0, b: 0, a: 0}
+  idleLightColor: {r: 1, g: 1, b: 0, a: 0}
 --- !u!1001 &1831511580
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -84588,6 +85319,35 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c534413e5ff035f459067a70ee26c365, type: 3}
+--- !u!1 &1868931738 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1056319324392887658, guid: a21fcd1b49d49d340b6591369bd079e2,
+    type: 3}
+  m_PrefabInstance: {fileID: 7025214572698030299}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1868931741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1868931738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1c69fe185dd6784f86c86c35e40c766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <TrafficLightStatus>k__BackingField: 0
+  trafficLightManager: {fileID: 1260950067}
+  moveLightColor: {r: 0, g: 1, b: 0, a: 0}
+  stopLightColor: {r: 1, g: 0, b: 0, a: 0}
+  idleLightColor: {r: 1, g: 1, b: 0, a: 0}
+--- !u!1 &1877940737 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4755737799887122200, guid: a21fcd1b49d49d340b6591369bd079e2,
+    type: 3}
+  m_PrefabInstance: {fileID: 7025214572698030299}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1878366610
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -86290,12 +87050,81 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1677792837}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1911075175 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7052444474591178788, guid: a21fcd1b49d49d340b6591369bd079e2,
+    type: 3}
+  m_PrefabInstance: {fileID: 272130155}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1911075178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1911075175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1c69fe185dd6784f86c86c35e40c766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <TrafficLightStatus>k__BackingField: 0
+  trafficLightManager: {fileID: 272130164}
+  moveLightColor: {r: 0, g: 1, b: 0, a: 0}
+  stopLightColor: {r: 1, g: 0, b: 0, a: 0}
+  idleLightColor: {r: 1, g: 1, b: 0, a: 0}
+--- !u!1 &1911555383 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3142376793871570573, guid: 1b1a5492cbeaada4e90c9bb4364bdae6,
+    type: 3}
+  m_PrefabInstance: {fileID: 449194046}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1911555386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1911555383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1c69fe185dd6784f86c86c35e40c766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <TrafficLightStatus>k__BackingField: 0
+  trafficLightManager: {fileID: 1466187061}
+  moveLightColor: {r: 0, g: 1, b: 0, a: 0}
+  stopLightColor: {r: 1, g: 0, b: 0, a: 0}
+  idleLightColor: {r: 1, g: 1, b: 0, a: 0}
 --- !u!4 &1911974034 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2659196175016021792, guid: 9802e2520e1a541468274e5214dfd2cb,
     type: 3}
   m_PrefabInstance: {fileID: 1226303233}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1914631530 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 465450673803007635, guid: a21fcd1b49d49d340b6591369bd079e2,
+    type: 3}
+  m_PrefabInstance: {fileID: 7025214572698030299}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1914631533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1914631530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1c69fe185dd6784f86c86c35e40c766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <TrafficLightStatus>k__BackingField: 0
+  trafficLightManager: {fileID: 1260950067}
+  moveLightColor: {r: 0, g: 1, b: 0, a: 0}
+  stopLightColor: {r: 1, g: 0, b: 0, a: 0}
+  idleLightColor: {r: 1, g: 1, b: 0, a: 0}
 --- !u!1 &1917747661
 GameObject:
   m_ObjectHideFlags: 0
@@ -88091,12 +88920,23 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53eed026529bf4e48be4a041c2da30c5, type: 3}
---- !u!108 &1956180758 stripped
-Light:
-  m_CorrespondingSourceObject: {fileID: 5326847089837354121, guid: a21fcd1b49d49d340b6591369bd079e2,
-    type: 3}
-  m_PrefabInstance: {fileID: 7025214572698030299}
+--- !u!114 &1956180761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1260048284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1c69fe185dd6784f86c86c35e40c766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <TrafficLightStatus>k__BackingField: 0
+  trafficLightManager: {fileID: 1260950067}
+  moveLightColor: {r: 0, g: 1, b: 0, a: 0}
+  stopLightColor: {r: 1, g: 0, b: 0, a: 0}
+  idleLightColor: {r: 1, g: 1, b: 0, a: 0}
 --- !u!1001 &1959447172
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -88473,12 +89313,23 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f8e35e7ab64a98418dbfca1129b54d3, type: 3}
---- !u!108 &1966893238 stripped
-Light:
-  m_CorrespondingSourceObject: {fileID: 7441130577440270770, guid: a21fcd1b49d49d340b6591369bd079e2,
-    type: 3}
-  m_PrefabInstance: {fileID: 7025214572698030299}
+--- !u!114 &1966893241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1766561207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1c69fe185dd6784f86c86c35e40c766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <TrafficLightStatus>k__BackingField: 0
+  trafficLightManager: {fileID: 1260950067}
+  moveLightColor: {r: 0, g: 1, b: 0, a: 0}
+  stopLightColor: {r: 1, g: 0, b: 0, a: 0}
+  idleLightColor: {r: 1, g: 1, b: 0, a: 0}
 --- !u!1001 &1966906664
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -89632,12 +90483,23 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a26efbec7aaa06d42910392cd651d5a4, type: 3}
---- !u!108 &1981067187 stripped
-Light:
-  m_CorrespondingSourceObject: {fileID: 835224908871569350, guid: a21fcd1b49d49d340b6591369bd079e2,
-    type: 3}
-  m_PrefabInstance: {fileID: 272130155}
+--- !u!114 &1981067190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 523984651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1c69fe185dd6784f86c86c35e40c766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <TrafficLightStatus>k__BackingField: 0
+  trafficLightManager: {fileID: 272130164}
+  moveLightColor: {r: 0, g: 1, b: 0, a: 0}
+  stopLightColor: {r: 1, g: 0, b: 0, a: 0}
+  idleLightColor: {r: 1, g: 1, b: 0, a: 0}
 --- !u!1001 &1982662885
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -90160,12 +91022,23 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1842033118}
   m_PrefabAsset: {fileID: 0}
---- !u!108 &1984452482 stripped
-Light:
-  m_CorrespondingSourceObject: {fileID: 5326847089837354121, guid: a21fcd1b49d49d340b6591369bd079e2,
-    type: 3}
-  m_PrefabInstance: {fileID: 2012728248702859577}
+--- !u!114 &1984452484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 97624900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1c69fe185dd6784f86c86c35e40c766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <TrafficLightStatus>k__BackingField: 0
+  trafficLightManager: {fileID: 1594522758}
+  moveLightColor: {r: 0, g: 1, b: 0, a: 0}
+  stopLightColor: {r: 1, g: 0, b: 0, a: 0}
+  idleLightColor: {r: 1, g: 1, b: 0, a: 0}
 --- !u!1 &1990121742
 GameObject:
   m_ObjectHideFlags: 0
@@ -91332,12 +92205,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2015034691}
   m_CullTransparentMesh: 1
---- !u!108 &2016559666 stripped
-Light:
-  m_CorrespondingSourceObject: {fileID: 479457623713811528, guid: a21fcd1b49d49d340b6591369bd079e2,
-    type: 3}
-  m_PrefabInstance: {fileID: 7025214572698030299}
+--- !u!114 &2016559669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1877940737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1c69fe185dd6784f86c86c35e40c766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <TrafficLightStatus>k__BackingField: 0
+  trafficLightManager: {fileID: 1260950067}
+  moveLightColor: {r: 0, g: 1, b: 0, a: 0}
+  stopLightColor: {r: 1, g: 0, b: 0, a: 0}
+  idleLightColor: {r: 1, g: 1, b: 0, a: 0}
 --- !u!1001 &2018325761
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -92590,12 +93474,23 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 230611517}
   m_PrefabAsset: {fileID: 0}
---- !u!108 &2030119618 stripped
-Light:
-  m_CorrespondingSourceObject: {fileID: 7555266001277644247, guid: a21fcd1b49d49d340b6591369bd079e2,
-    type: 3}
-  m_PrefabInstance: {fileID: 2012728248702859577}
+--- !u!114 &2030119620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 42133839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1c69fe185dd6784f86c86c35e40c766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <TrafficLightStatus>k__BackingField: 0
+  trafficLightManager: {fileID: 1594522758}
+  moveLightColor: {r: 0, g: 1, b: 0, a: 0}
+  stopLightColor: {r: 1, g: 0, b: 0, a: 0}
+  idleLightColor: {r: 1, g: 1, b: 0, a: 0}
 --- !u!1 &2030743186
 GameObject:
   m_ObjectHideFlags: 0
@@ -95666,6 +96561,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2117233364}
   m_CullTransparentMesh: 1
+--- !u!1 &2120464232 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7052444474591178788, guid: a21fcd1b49d49d340b6591369bd079e2,
+    type: 3}
+  m_PrefabInstance: {fileID: 7025214572698030299}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2120464235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2120464232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1c69fe185dd6784f86c86c35e40c766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <TrafficLightStatus>k__BackingField: 0
+  trafficLightManager: {fileID: 1260950067}
+  moveLightColor: {r: 0, g: 1, b: 0, a: 0}
+  stopLightColor: {r: 1, g: 0, b: 0, a: 0}
+  idleLightColor: {r: 1, g: 1, b: 0, a: 0}
 --- !u!4 &2120898521 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3798342013769100584, guid: dcc87c50c19ef414d8a6318ae61615f2,
@@ -96097,12 +97015,23 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 557183844}
   m_PrefabAsset: {fileID: 0}
---- !u!108 &2143844840 stripped
-Light:
-  m_CorrespondingSourceObject: {fileID: 3759320946204104591, guid: a21fcd1b49d49d340b6591369bd079e2,
-    type: 3}
-  m_PrefabInstance: {fileID: 7025214572698030299}
+--- !u!114 &2143844843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1019038982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1c69fe185dd6784f86c86c35e40c766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <TrafficLightStatus>k__BackingField: 0
+  trafficLightManager: {fileID: 1260950067}
+  moveLightColor: {r: 0, g: 1, b: 0, a: 0}
+  stopLightColor: {r: 1, g: 0, b: 0, a: 0}
+  idleLightColor: {r: 1, g: 1, b: 0, a: 0}
 --- !u!4 &2144220272 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3784936039844939535, guid: 53eed026529bf4e48be4a041c2da30c5,
@@ -96187,12 +97116,23 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c534413e5ff035f459067a70ee26c365, type: 3}
---- !u!108 &2147224273 stripped
-Light:
-  m_CorrespondingSourceObject: {fileID: 4333778539009703815, guid: a21fcd1b49d49d340b6591369bd079e2,
-    type: 3}
-  m_PrefabInstance: {fileID: 272130155}
+--- !u!114 &2147224276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1546940987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1c69fe185dd6784f86c86c35e40c766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <TrafficLightStatus>k__BackingField: 0
+  trafficLightManager: {fileID: 272130164}
+  moveLightColor: {r: 0, g: 1, b: 0, a: 0}
+  stopLightColor: {r: 1, g: 0, b: 0, a: 0}
+  idleLightColor: {r: 1, g: 1, b: 0, a: 0}
 --- !u!4 &193052557568832058 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7324120971144753121, guid: c534413e5ff035f459067a70ee26c365,
@@ -97170,6 +98110,54 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1594522758}
+    - targetCorrespondingSourceObject: {fileID: 7414534794855330112, guid: a21fcd1b49d49d340b6591369bd079e2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1732964187}
+    - targetCorrespondingSourceObject: {fileID: 1958722066194127806, guid: a21fcd1b49d49d340b6591369bd079e2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1390152604}
+    - targetCorrespondingSourceObject: {fileID: 6963965319724514597, guid: a21fcd1b49d49d340b6591369bd079e2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1105358513}
+    - targetCorrespondingSourceObject: {fileID: 1056319324392887658, guid: a21fcd1b49d49d340b6591369bd079e2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 517676422}
+    - targetCorrespondingSourceObject: {fileID: 465450673803007635, guid: a21fcd1b49d49d340b6591369bd079e2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1011836716}
+    - targetCorrespondingSourceObject: {fileID: 6599523043647061561, guid: a21fcd1b49d49d340b6591369bd079e2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1282144460}
+    - targetCorrespondingSourceObject: {fileID: 7052444474591178788, guid: a21fcd1b49d49d340b6591369bd079e2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1516402744}
+    - targetCorrespondingSourceObject: {fileID: 8993873285763136853, guid: a21fcd1b49d49d340b6591369bd079e2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1984452484}
+    - targetCorrespondingSourceObject: {fileID: 7240507618024623081, guid: a21fcd1b49d49d340b6591369bd079e2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2030119620}
+    - targetCorrespondingSourceObject: {fileID: 4755737799887122200, guid: a21fcd1b49d49d340b6591369bd079e2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1499042666}
+    - targetCorrespondingSourceObject: {fileID: 4404140574354861060, guid: a21fcd1b49d49d340b6591369bd079e2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1438590775}
+    - targetCorrespondingSourceObject: {fileID: 4465864235052599771, guid: a21fcd1b49d49d340b6591369bd079e2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 921056839}
   m_SourcePrefab: {fileID: 100100000, guid: a21fcd1b49d49d340b6591369bd079e2, type: 3}
 --- !u!4 &2024927111432595682 stripped
 Transform:
@@ -97459,7 +98447,7 @@ MonoBehaviour:
   - {fileID: 757334124}
   - {fileID: 757334123}
   - {fileID: 757334122}
-  trafficLightController: {fileID: 1260950067}
+  trafficLightManager: {fileID: 1260950067}
   vehicleMaxSpeed: 50
   vehicleAcceleration: 15
 --- !u!4 &2511299378366011150 stripped
@@ -97841,7 +98829,7 @@ MonoBehaviour:
   - {fileID: 1640684993}
   - {fileID: 1640684992}
   - {fileID: 1640684991}
-  trafficLightController: {fileID: 1466187061}
+  trafficLightManager: {fileID: 1466187061}
   vehicleMaxSpeed: 80
   vehicleAcceleration: 20
 --- !u!1001 &2713542426932630219
@@ -98320,7 +99308,7 @@ MonoBehaviour:
   - {fileID: 1367584881}
   - {fileID: 1367584880}
   - {fileID: 1367584879}
-  trafficLightController: {fileID: 272130164}
+  trafficLightManager: {fileID: 272130164}
   vehicleMaxSpeed: 80
   vehicleAcceleration: 20
 --- !u!1001 &3901258780961274526
@@ -100958,7 +101946,7 @@ PrefabInstance:
     - target: {fileID: 6685137379141276054, guid: a21fcd1b49d49d340b6591369bd079e2,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 6685137379141276054, guid: a21fcd1b49d49d340b6591369bd079e2,
         type: 3}
@@ -100968,12 +101956,12 @@ PrefabInstance:
     - target: {fileID: 6685137379141276054, guid: a21fcd1b49d49d340b6591369bd079e2,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1
+      value: -1.0950012
       objectReference: {fileID: 0}
     - target: {fileID: 6685137379141276054, guid: a21fcd1b49d49d340b6591369bd079e2,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6685137379141276054, guid: a21fcd1b49d49d340b6591369bd079e2,
         type: 3}
@@ -100983,7 +101971,7 @@ PrefabInstance:
     - target: {fileID: 6685137379141276054, guid: a21fcd1b49d49d340b6591369bd079e2,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6685137379141276054, guid: a21fcd1b49d49d340b6591369bd079e2,
         type: 3}
@@ -100998,7 +101986,7 @@ PrefabInstance:
     - target: {fileID: 6685137379141276054, guid: a21fcd1b49d49d340b6591369bd079e2,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 6685137379141276054, guid: a21fcd1b49d49d340b6591369bd079e2,
         type: 3}
@@ -101061,6 +102049,54 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1260950067}
+    - targetCorrespondingSourceObject: {fileID: 7414534794855330112, guid: a21fcd1b49d49d340b6591369bd079e2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2143844843}
+    - targetCorrespondingSourceObject: {fileID: 1958722066194127806, guid: a21fcd1b49d49d340b6591369bd079e2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 957172459}
+    - targetCorrespondingSourceObject: {fileID: 6963965319724514597, guid: a21fcd1b49d49d340b6591369bd079e2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 291336083}
+    - targetCorrespondingSourceObject: {fileID: 1056319324392887658, guid: a21fcd1b49d49d340b6591369bd079e2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1868931741}
+    - targetCorrespondingSourceObject: {fileID: 465450673803007635, guid: a21fcd1b49d49d340b6591369bd079e2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1914631533}
+    - targetCorrespondingSourceObject: {fileID: 6599523043647061561, guid: a21fcd1b49d49d340b6591369bd079e2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1966893241}
+    - targetCorrespondingSourceObject: {fileID: 7052444474591178788, guid: a21fcd1b49d49d340b6591369bd079e2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2120464235}
+    - targetCorrespondingSourceObject: {fileID: 8993873285763136853, guid: a21fcd1b49d49d340b6591369bd079e2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1956180761}
+    - targetCorrespondingSourceObject: {fileID: 7240507618024623081, guid: a21fcd1b49d49d340b6591369bd079e2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 991173466}
+    - targetCorrespondingSourceObject: {fileID: 4755737799887122200, guid: a21fcd1b49d49d340b6591369bd079e2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2016559669}
+    - targetCorrespondingSourceObject: {fileID: 4404140574354861060, guid: a21fcd1b49d49d340b6591369bd079e2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 730333639}
+    - targetCorrespondingSourceObject: {fileID: 4465864235052599771, guid: a21fcd1b49d49d340b6591369bd079e2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1620184455}
   m_SourcePrefab: {fileID: 100100000, guid: a21fcd1b49d49d340b6591369bd079e2, type: 3}
 --- !u!1001 &7093827798245626690
 PrefabInstance:
@@ -101619,7 +102655,7 @@ MonoBehaviour:
   - {fileID: 171519558}
   - {fileID: 171519557}
   - {fileID: 171519556}
-  trafficLightController: {fileID: 1594522758}
+  trafficLightManager: {fileID: 1594522758}
   vehicleMaxSpeed: 50
   vehicleAcceleration: 15
 --- !u!4 &7963123788732069867 stripped

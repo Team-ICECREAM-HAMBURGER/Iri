@@ -1,6 +1,6 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 public class VehicleTrainController : MonoBehaviour {
     [Header("Vehicle Component")]
@@ -8,7 +8,7 @@ public class VehicleTrainController : MonoBehaviour {
     [field: SerializeField] public GameControlTypeManager.TrafficStatus TrafficStatus { get; set; }
     [SerializeField] private GameObject engineCar;
     [SerializeField] private List<GameObject> jointCars;
-    [FormerlySerializedAs("railTrafficLightController")] [SerializeField] private TrafficLightController trafficLightController;
+    public TrafficLightManager trafficLightManager;
     
     [Header("Vehicle Setting")]
     public float VehicleCurrentSpeed { get; private set; }     // n km/h
@@ -29,7 +29,7 @@ public class VehicleTrainController : MonoBehaviour {
         this.vehicleAcceleration /= 3.6f;   // km/h -> m/s
         
         this.VehicleStateMachine?.Init(this.VehicleStateMachine.vehicleTrainStateIdle);
-        this.trafficLightController.OnTrafficLightControl.AddListener(OnTrafficStatusUpdate);
+        this.trafficLightManager.OnTrafficStatusControl.AddListener(OnTrafficStatusUpdate);
     }
 
     private void Awake() {
@@ -59,13 +59,13 @@ public class VehicleTrainController : MonoBehaviour {
         this.VehicleCurrentSpeed = this.vehicleRigidbody.linearVelocity.magnitude;
         
         if (Vector3.Dot(this.vehicleTransform.forward, this.vehicleTransform.up) >= 0.1f) {     // Vector's Inner Product
-            this.vehicleRigidbody.AddForce(-this.vehicleTransform.forward * (this.vehicleAcceleration * this.vehicleRigidbody.mass * this.jointCars.Count), ForceMode.Force);    // Acceleration(m/s) * deltaTime * Mass 
+            this.vehicleRigidbody.AddForce(-this.vehicleTransform.forward * (this.vehicleAcceleration * this.vehicleRigidbody.mass * this.jointCars.Count), ForceMode.Force);    // Acceleration(m/s) * deltaTime * Mass
         }
         else {
             this.VehicleCurrentSpeed = 0f;
         }
     }
-
+    
     public void Idle() {
         this.VehicleCurrentSpeed = 0f;
     }
