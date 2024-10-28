@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class VehicleTrainController : MonoBehaviour {
@@ -8,18 +10,28 @@ public class VehicleTrainController : MonoBehaviour {
     [field: SerializeField] public GameControlTypeManager.TrafficStatus TrafficStatus { get; set; }
     [SerializeField] private GameObject engineCar;
     [SerializeField] private List<GameObject> jointCars;
+    
+    [Space(25f)]
+    
+    [Header("Game System Component")]
     public TrafficLightManager trafficLightManager;
+    public TrainSpawnController trainSpawnController;
+    
+    [Space(25f)]
     
     [Header("Vehicle Setting")]
-    public float VehicleCurrentSpeed { get; private set; }     // n km/h
     [SerializeField] private float vehicleMaxSpeed;            // 80 km/h
     [SerializeField] private float vehicleAcceleration;        // 15 km/h
+    public float VehicleCurrentSpeed { get; private set; }     // n km/h
     
     public VehicleTrainStateMachine VehicleStateMachine { get; private set; }
     private Transform vehicleTransform;
     private Rigidbody vehicleRigidbody;
     
-    
+    private List<Vector3> jointCarResetPositions;
+    private Vector3 engineCarResetPosition;
+
+
     private void Init() {
         this.vehicleTransform = this.engineCar.transform;
         this.vehicleRigidbody = this.engineCar.GetComponent<Rigidbody>();
@@ -27,13 +39,25 @@ public class VehicleTrainController : MonoBehaviour {
         
         this.vehicleMaxSpeed /= 3.6f;       // km/h -> m/s
         this.vehicleAcceleration /= 3.6f;   // km/h -> m/s
+
+        this.engineCarResetPosition = this.engineCar.transform.localPosition;
+        this.jointCarResetPositions = this.jointCars.Select(car => car.transform.localPosition).ToList();
         
         this.VehicleStateMachine?.Init(this.VehicleStateMachine.vehicleTrainStateIdle);
         this.trafficLightManager.OnTrafficStatusControl.AddListener(OnTrafficStatusUpdate);
+        this.trainSpawnController.OnTransformReset.AddListener(OnTransformReset);
     }
 
     private void Awake() {
         Init();
+    }
+
+    private void OnEnable() {
+        OnTrafficStatusUpdate(this.TrafficStatus);
+    }
+
+    private void OnDisable() {
+        this.vehicleRigidbody.linearVelocity = Vector3.zero;
     }
 
     private void FixedUpdate() {
@@ -42,6 +66,14 @@ public class VehicleTrainController : MonoBehaviour {
 
     private void OnTrafficStatusUpdate(GameControlTypeManager.TrafficStatus trafficStatusType) {
         this.TrafficStatus = trafficStatusType;
+    }
+
+    private void OnTransformReset() {
+        this.engineCar.transform.SetLocalPositionAndRotation(this.engineCarResetPosition, Quaternion.identity);
+        
+        for (var i = 0; i < this.jointCars.Count(); i++) {
+            this.jointCars[i].transform.SetLocalPositionAndRotation(this.jointCarResetPositions[i], Quaternion.identity);
+        }
     }
     
     public void Move() {

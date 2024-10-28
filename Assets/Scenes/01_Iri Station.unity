@@ -4369,9 +4369,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 102904767}
+  - component: {fileID: 102904769}
+  - component: {fileID: 102904768}
   m_Layer: 0
   m_Name: Dangerous (F)
-  m_TagString: Untagged
+  m_TagString: Traffic_Dangerous_F
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4392,6 +4394,42 @@ Transform:
   - {fileID: 4874190151414438660}
   m_Father: {fileID: 1098417461}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &102904768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 102904766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1f77f144a244054f80d5e9046a1f188, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnTransformReset:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!65 &102904769
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 102904766}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 6, y: 6, z: 6}
+  m_Center: {x: -288, y: 0, z: -98}
 --- !u!4 &103938014 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2342957336574201687, guid: db0e3aa5a6f69974e81601224929c9a5,
@@ -7571,6 +7609,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 733371801}
     m_Modifications:
+    - target: {fileID: 470180425460325172, guid: f5780b409d0fba744b45c0cd20f0e8dc,
+        type: 3}
+      propertyPath: m_TagString
+      value: Traffic_Passanger_F
+      objectReference: {fileID: 0}
     - target: {fileID: 540300813762860313, guid: f5780b409d0fba744b45c0cd20f0e8dc,
         type: 3}
       propertyPath: m_Name
@@ -7581,10 +7624,40 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Traffic_Passanger_F
       objectReference: {fileID: 0}
+    - target: {fileID: 1294499906163653605, guid: f5780b409d0fba744b45c0cd20f0e8dc,
+        type: 3}
+      propertyPath: m_TagString
+      value: Traffic_Passanger_F
+      objectReference: {fileID: 0}
+    - target: {fileID: 3777217568716600467, guid: f5780b409d0fba744b45c0cd20f0e8dc,
+        type: 3}
+      propertyPath: m_TagString
+      value: Traffic_Passanger_F
+      objectReference: {fileID: 0}
+    - target: {fileID: 4753810898505821909, guid: f5780b409d0fba744b45c0cd20f0e8dc,
+        type: 3}
+      propertyPath: m_TagString
+      value: Traffic_Passanger_F
+      objectReference: {fileID: 0}
+    - target: {fileID: 7517907969381410061, guid: f5780b409d0fba744b45c0cd20f0e8dc,
+        type: 3}
+      propertyPath: m_TagString
+      value: Traffic_Passanger_F
+      objectReference: {fileID: 0}
+    - target: {fileID: 7588520263392946777, guid: f5780b409d0fba744b45c0cd20f0e8dc,
+        type: 3}
+      propertyPath: m_TagString
+      value: Traffic_Passanger_F
+      objectReference: {fileID: 0}
+    - target: {fileID: 8140006879855528057, guid: f5780b409d0fba744b45c0cd20f0e8dc,
+        type: 3}
+      propertyPath: m_TagString
+      value: Traffic_Passanger_F
+      objectReference: {fileID: 0}
     - target: {fileID: 8899261555154542397, guid: f5780b409d0fba744b45c0cd20f0e8dc,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 61.197308
+      value: 65
       objectReference: {fileID: 0}
     - target: {fileID: 8899261555154542397, guid: f5780b409d0fba744b45c0cd20f0e8dc,
         type: 3}
@@ -11657,7 +11730,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   trafficLightStatus: 0
-  standbySeconds: 0
+  standbySeconds: 3
 --- !u!1001 &274611652
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26186,9 +26259,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 525564083}
+  - component: {fileID: 525564085}
+  - component: {fileID: 525564084}
   m_Layer: 0
   m_Name: Passanger (R)
-  m_TagString: Untagged
+  m_TagString: Traffic_Passanger_R
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26209,6 +26284,42 @@ Transform:
   - {fileID: 8899261554178699339}
   m_Father: {fileID: 1098417461}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &525564084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 525564082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1f77f144a244054f80d5e9046a1f188, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnTransformReset:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!65 &525564085
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 525564082}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 6, y: 6, z: 6}
+  m_Center: {x: 168, y: 0, z: -74}
 --- !u!1001 &530687717
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35345,9 +35456,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 714658983}
+  - component: {fileID: 714658985}
+  - component: {fileID: 714658984}
   m_Layer: 0
   m_Name: Freight (F)
-  m_TagString: Untagged
+  m_TagString: Traffic_Freight_F
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35368,6 +35481,42 @@ Transform:
   - {fileID: 8847608291789243141}
   m_Father: {fileID: 1098417461}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &714658984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 714658982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1f77f144a244054f80d5e9046a1f188, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnTransformReset:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!65 &714658985
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 714658982}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 6, y: 6, z: 6}
+  m_Center: {x: -288, y: 0, z: -86}
 --- !u!1001 &717581669
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36056,9 +36205,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 733371801}
+  - component: {fileID: 733371803}
+  - component: {fileID: 733371802}
   m_Layer: 0
   m_Name: Passanger (F)
-  m_TagString: Untagged
+  m_TagString: Traffic_Passanger_F
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36079,6 +36230,42 @@ Transform:
   - {fileID: 1361588461998852943}
   m_Father: {fileID: 1098417461}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &733371802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 733371800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1f77f144a244054f80d5e9046a1f188, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnTransformReset:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!65 &733371803
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 733371800}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 6, y: 6, z: 6}
+  m_Center: {x: -288, y: 0.5, z: -62}
 --- !u!1001 &733692578
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37287,12 +37474,47 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 525564083}
     m_Modifications:
+    - target: {fileID: 470180425460325172, guid: f5780b409d0fba744b45c0cd20f0e8dc,
+        type: 3}
+      propertyPath: m_TagString
+      value: Traffic_Passanger_R
+      objectReference: {fileID: 0}
     - target: {fileID: 540300813762860313, guid: f5780b409d0fba744b45c0cd20f0e8dc,
         type: 3}
       propertyPath: m_Name
       value: Vehicle_Train (Passenger)
       objectReference: {fileID: 0}
     - target: {fileID: 540300813762860313, guid: f5780b409d0fba744b45c0cd20f0e8dc,
+        type: 3}
+      propertyPath: m_TagString
+      value: Traffic_Passanger_R
+      objectReference: {fileID: 0}
+    - target: {fileID: 1294499906163653605, guid: f5780b409d0fba744b45c0cd20f0e8dc,
+        type: 3}
+      propertyPath: m_TagString
+      value: Traffic_Passanger_R
+      objectReference: {fileID: 0}
+    - target: {fileID: 3777217568716600467, guid: f5780b409d0fba744b45c0cd20f0e8dc,
+        type: 3}
+      propertyPath: m_TagString
+      value: Traffic_Passanger_R
+      objectReference: {fileID: 0}
+    - target: {fileID: 4753810898505821909, guid: f5780b409d0fba744b45c0cd20f0e8dc,
+        type: 3}
+      propertyPath: m_TagString
+      value: Traffic_Passanger_R
+      objectReference: {fileID: 0}
+    - target: {fileID: 7517907969381410061, guid: f5780b409d0fba744b45c0cd20f0e8dc,
+        type: 3}
+      propertyPath: m_TagString
+      value: Traffic_Passanger_R
+      objectReference: {fileID: 0}
+    - target: {fileID: 7588520263392946777, guid: f5780b409d0fba744b45c0cd20f0e8dc,
+        type: 3}
+      propertyPath: m_TagString
+      value: Traffic_Passanger_R
+      objectReference: {fileID: 0}
+    - target: {fileID: 8140006879855528057, guid: f5780b409d0fba744b45c0cd20f0e8dc,
         type: 3}
       propertyPath: m_TagString
       value: Traffic_Passanger_R
@@ -59149,7 +59371,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   trafficLightStatus: 0
-  standbySeconds: 0
+  standbySeconds: 3
 --- !u!1001 &1260984559
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -64280,6 +64502,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 714658983}
     m_Modifications:
+    - target: {fileID: 1961726915191345070, guid: 18c47b67fd7f3b04e84ec7844466be14,
+        type: 3}
+      propertyPath: m_TagString
+      value: Traffic_Freight_F
+      objectReference: {fileID: 0}
     - target: {fileID: 2029381489382024687, guid: 18c47b67fd7f3b04e84ec7844466be14,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -64330,12 +64557,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4580313349072362822, guid: 18c47b67fd7f3b04e84ec7844466be14,
+        type: 3}
+      propertyPath: m_TagString
+      value: Traffic_Freight_F
+      objectReference: {fileID: 0}
+    - target: {fileID: 5419302121228220694, guid: 18c47b67fd7f3b04e84ec7844466be14,
+        type: 3}
+      propertyPath: m_TagString
+      value: Traffic_Freight_F
+      objectReference: {fileID: 0}
+    - target: {fileID: 5585582879205978197, guid: 18c47b67fd7f3b04e84ec7844466be14,
+        type: 3}
+      propertyPath: m_TagString
+      value: Traffic_Freight_F
+      objectReference: {fileID: 0}
+    - target: {fileID: 6632326688967041453, guid: 18c47b67fd7f3b04e84ec7844466be14,
+        type: 3}
+      propertyPath: m_TagString
+      value: Traffic_Freight_F
+      objectReference: {fileID: 0}
+    - target: {fileID: 6984954347713808419, guid: 18c47b67fd7f3b04e84ec7844466be14,
+        type: 3}
+      propertyPath: m_TagString
+      value: Traffic_Freight_F
+      objectReference: {fileID: 0}
     - target: {fileID: 8424193848400607440, guid: 18c47b67fd7f3b04e84ec7844466be14,
         type: 3}
       propertyPath: m_Name
       value: Vehicle_Train (Freight)
       objectReference: {fileID: 0}
     - target: {fileID: 8424193848400607440, guid: 18c47b67fd7f3b04e84ec7844466be14,
+        type: 3}
+      propertyPath: m_TagString
+      value: Traffic_Freight_F
+      objectReference: {fileID: 0}
+    - target: {fileID: 8803117493287323382, guid: 18c47b67fd7f3b04e84ec7844466be14,
         type: 3}
       propertyPath: m_TagString
       value: Traffic_Freight_F
@@ -69257,7 +69514,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   trafficLightStatus: 0
-  standbySeconds: 0
+  standbySeconds: 3
 --- !u!1001 &1467453590
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -75918,6 +76175,41 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Traffic_Dangerous_F
       objectReference: {fileID: 0}
+    - target: {fileID: 2023291892975184142, guid: ef6bb891461dfec43a094a3873381052,
+        type: 3}
+      propertyPath: m_TagString
+      value: Traffic_Dangerous_F
+      objectReference: {fileID: 0}
+    - target: {fileID: 2328014690789679586, guid: ef6bb891461dfec43a094a3873381052,
+        type: 3}
+      propertyPath: m_TagString
+      value: Traffic_Dangerous_F
+      objectReference: {fileID: 0}
+    - target: {fileID: 2427632583955470558, guid: ef6bb891461dfec43a094a3873381052,
+        type: 3}
+      propertyPath: m_TagString
+      value: Traffic_Dangerous_F
+      objectReference: {fileID: 0}
+    - target: {fileID: 4640380438254097208, guid: ef6bb891461dfec43a094a3873381052,
+        type: 3}
+      propertyPath: m_TagString
+      value: Traffic_Dangerous_F
+      objectReference: {fileID: 0}
+    - target: {fileID: 5000490885328729550, guid: ef6bb891461dfec43a094a3873381052,
+        type: 3}
+      propertyPath: m_TagString
+      value: Traffic_Dangerous_F
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655078173086341277, guid: ef6bb891461dfec43a094a3873381052,
+        type: 3}
+      propertyPath: m_TagString
+      value: Traffic_Dangerous_F
+      objectReference: {fileID: 0}
+    - target: {fileID: 5882466106877840435, guid: ef6bb891461dfec43a094a3873381052,
+        type: 3}
+      propertyPath: m_TagString
+      value: Traffic_Dangerous_F
+      objectReference: {fileID: 0}
     - target: {fileID: 7381502416232433460, guid: ef6bb891461dfec43a094a3873381052,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -75967,6 +76259,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8653580371521054114, guid: ef6bb891461dfec43a094a3873381052,
+        type: 3}
+      propertyPath: m_TagString
+      value: Traffic_Dangerous_F
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -87160,7 +87457,7 @@ Transform:
   m_GameObject: {fileID: 1917747661}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -21.715332, y: 20.963573, z: 56.51655}
+  m_LocalPosition: {x: -21.715332, y: 20.963573, z: 56.51658}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -87179,7 +87476,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mode: 0
-  size: {x: 465.4524, y: 31.229404, z: 390.39252}
+  size: {x: 465.4524, y: 31.229404, z: 390.39258}
   overrideRendererFilters: 0
   minRendererVolumeSize: 0.1
   objectLayerMask:
@@ -98517,6 +98814,7 @@ MonoBehaviour:
   - {fileID: 757334123}
   - {fileID: 757334122}
   trafficLightManager: {fileID: 1260950067}
+  trainSpawnController: {fileID: 525564084}
   vehicleMaxSpeed: 50
   vehicleAcceleration: 15
 --- !u!4 &2511299378366011150 stripped
@@ -98899,6 +99197,7 @@ MonoBehaviour:
   - {fileID: 1640684992}
   - {fileID: 1640684991}
   trafficLightManager: {fileID: 1466187061}
+  trainSpawnController: {fileID: 102904768}
   vehicleMaxSpeed: 80
   vehicleAcceleration: 20
 --- !u!1001 &2713542426932630219
@@ -99378,6 +99677,7 @@ MonoBehaviour:
   - {fileID: 1367584880}
   - {fileID: 1367584879}
   trafficLightManager: {fileID: 272130164}
+  trainSpawnController: {fileID: 714658984}
   vehicleMaxSpeed: 80
   vehicleAcceleration: 20
 --- !u!1001 &3901258780961274526
@@ -102725,6 +103025,7 @@ MonoBehaviour:
   - {fileID: 171519557}
   - {fileID: 171519556}
   trafficLightManager: {fileID: 1594522758}
+  trainSpawnController: {fileID: 733371802}
   vehicleMaxSpeed: 50
   vehicleAcceleration: 15
 --- !u!4 &7963123788732069867 stripped
