@@ -3,13 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 
 public class TrainSpawnController : MonoBehaviour {
     [HideInInspector] public UnityEvent OnTransformReset;
     
-    [SerializeField] private float spawnTimeNormal;
+    [field: SerializeField] public float SpawnTimeNormal { get; set; }
     [SerializeField] private float marginTime;
     
     private List<GameObject> trains;
@@ -46,7 +45,7 @@ public class TrainSpawnController : MonoBehaviour {
     }
 
     private IEnumerator TrainRespawnCoroutine(GameObject train) {
-        yield return new WaitForSeconds(this.spawnTimeNormal + Random.Range(-this.marginTime, this.marginTime));
+        yield return new WaitForSeconds(this.SpawnTimeNormal + Random.Range(-this.marginTime, this.marginTime));
         
         train.SetActive(true);
     }

@@ -20,9 +20,10 @@ public class VehicleTrainController : MonoBehaviour {
     [Header("Vehicle Setting")]
     [SerializeField] private float vehicleMaxSpeed;            // 80 km/h
     [SerializeField] private float vehicleAcceleration;        // 15 km/h
-    public float VehicleCurrentSpeed { get; private set; }     // n km/h
     
+    public float VehicleCurrentSpeed { get; private set; }     // n km/h
     public VehicleTrainStateMachine VehicleStateMachine { get; private set; }
+    
     private Transform vehicleTransform;
     private Rigidbody vehicleRigidbody;
     

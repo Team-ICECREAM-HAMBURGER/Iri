@@ -5,9 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ddc2bca3-3552-44fb-9935-884ccdc772c1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TrainInformationMonitor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TrainInformationMonitor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TrainInformationState.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TrainInformationState/ITrainInformationState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TrainInformationState/ITrainInformationState.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TrainInformationState/TrainInformationStateIdle.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TrainInformationState/TrainInformationStateIdle.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TrainInformationState/TrainInformationStateMachine.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TrainInformationState/TrainInformationStateMachine.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TrainInformationState/TrainInformationStateMove.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TrainInformationState/TrainInformationStateMove.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TrainInformationState/TrainInformationStateStop.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TrainInformationState/TrainInformationStateStop.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Iri/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Iri/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Vehicle_Train (Passenger).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Vehicle_Train (Passenger).prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TrafficLightState/TrafficLightStateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TrafficLightState/TrafficLightStateMachine.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/TrainSpawnController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TrainSpawnController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/VehicleTrainController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/VehicleTrainController.cs" afterDir="false" />
     </list>
@@ -120,7 +133,7 @@
       <workItem from="1729928225172" duration="16203000" />
       <workItem from="1729995380698" duration="12000" />
       <workItem from="1730113331798" duration="7256000" />
-      <workItem from="1730462091628" duration="4195000" />
+      <workItem from="1730462091628" duration="12829000" />
     </task>
     <servers />
   </component>

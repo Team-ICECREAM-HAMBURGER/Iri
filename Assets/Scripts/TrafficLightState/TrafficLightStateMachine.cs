@@ -5,10 +5,11 @@ public class TrafficLightStateMachine {
     public TrafficLightStateStop trafficLightStateStop;
     public TrafficLightStateIdle trafficLightStateIdle;
 
+    
     public TrafficLightStateMachine(TrafficLightController trafficLightController) {
-        this.trafficLightStateMove = new TrafficLightStateMove(trafficLightController);
-        this.trafficLightStateStop = new TrafficLightStateStop(trafficLightController);
-        this.trafficLightStateIdle = new TrafficLightStateIdle(trafficLightController);
+        this.trafficLightStateMove = new (trafficLightController);
+        this.trafficLightStateStop = new (trafficLightController);
+        this.trafficLightStateIdle = new (trafficLightController);
         
         this.CurrentTrafficLightState = this.trafficLightStateStop;
     }
