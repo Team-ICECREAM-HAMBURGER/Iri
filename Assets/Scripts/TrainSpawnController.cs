@@ -1,4 +1,4 @@
-using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -7,13 +7,16 @@ using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 
 public class TrainSpawnController : MonoBehaviour {
-    private List<GameObject> trains;
-
     [HideInInspector] public UnityEvent OnTransformReset;
+    
+    [SerializeField] private float spawnTimeNormal;
+    [SerializeField] private float marginTime;
+    
+    private List<GameObject> trains;
     
     
     private void Init() {
-        this.trains = this.transform.Cast<Transform>().Select(child => { child.gameObject.SetActive(false); return child.gameObject; }).ToList();
+        this.trains = this.transform.Cast<Transform>().Select(child => child.gameObject).ToList();
     }
 
     private void Awake() {
@@ -23,6 +26,7 @@ public class TrainSpawnController : MonoBehaviour {
     private void OnTriggerEnter(Collider other) {
         if (other.transform.CompareTag(this.gameObject.tag)) {
             TrainTransformReset(other.transform.parent.gameObject);
+            StartCoroutine(TrainRespawnCoroutine(TrainRandomSelect(this.trains)));
         }
     }
 
@@ -34,6 +38,16 @@ public class TrainSpawnController : MonoBehaviour {
     private GameObject TrainRandomSelect(List<GameObject> trains) {
         var index = Random.Range(0, trains.Count);
         
+        while (trains[index].activeSelf) {
+            index = Random.Range(0, trains.Count);
+        }
+        
         return trains[index];
+    }
+
+    private IEnumerator TrainRespawnCoroutine(GameObject train) {
+        yield return new WaitForSeconds(this.spawnTimeNormal + Random.Range(-this.marginTime, this.marginTime));
+        
+        train.SetActive(true);
     }
 }
