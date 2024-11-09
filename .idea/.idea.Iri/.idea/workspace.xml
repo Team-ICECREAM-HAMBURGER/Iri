@@ -4,25 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ddc2bca3-3552-44fb-9935-884ccdc772c1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TrainInformationMonitor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TrainInformationMonitor.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TrainInformationState.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TrainInformationState/ITrainInformationState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TrainInformationState/ITrainInformationState.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TrainInformationState/TrainInformationStateIdle.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TrainInformationState/TrainInformationStateIdle.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TrainInformationState/TrainInformationStateMachine.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TrainInformationState/TrainInformationStateMachine.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TrainInformationState/TrainInformationStateMove.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TrainInformationState/TrainInformationStateMove.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TrainInformationState/TrainInformationStateStop.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TrainInformationState/TrainInformationStateStop.cs.meta" afterDir="false" />
+    <list default="true" id="ddc2bca3-3552-44fb-9935-884ccdc772c1" name="Changes" comment="열차 전광판 제작에 앞서 열차 상태 표시 세분화&#10;&#10;열차의 상태 표현을 이동, 접근, 정차, 대기, 통과로 세분화하였다.&#10;- 트리거를 앞/뒤에 하나씩 배치하여 트리거에 닿으면 접근/통과 상태로 변경됨.&#10;- VehicleTrainStateApproach.cs, VehicleTrainStatePass.cs가 그것.&#10;- 별개의 상태 머신을 새로 만들지 않고 기존의 VehicleTrainStateMachine.cs에 클래스를 새로 추가하는 방법으로 구현함.&#10;- TrafficType이 늘어났으며, 신호등 조작에 사용되는 Type은 MOVE, STOP, IDLE 뿐이므로 따로 수정하지 않음.&#10;&#10;이제 열차의 상태를 받아서 전광판에 표시할 텍스트를 조작하도록 하면 된다.&#10;&#10;TODO를 참고하여 이벤트를 2개(접근 트리거, 통과 트리거) 사용 중인데, 이를 1개로 합칠 수 있는지 검토해볼 것.">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TrafficStatusTrigger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TrafficStatusTrigger.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/VehicleTrainState/VehicleTrainStateApproach.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/VehicleTrainState/VehicleTrainStateApproach.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/VehicleTrainState/VehicleTrainStatePass.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/VehicleTrainState/VehicleTrainStatePass.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Iri/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Iri/.idea/projectSettingsUpdater.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Iri/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Iri/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TrafficLightState/TrafficLightStateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TrafficLightState/TrafficLightStateMachine.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TrainSpawnController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TrainSpawnController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameController/GameControlTypeManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameController/GameControlTypeManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TrafficLightManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TrafficLightManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TrainInformationState.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TrainInformationState/ITrainInformationState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TrainInformationState/ITrainInformationState.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TrainInformationState/TrainInformationStateIdle.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TrainInformationState/TrainInformationStateIdle.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TrainInformationState/TrainInformationStateMachine.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TrainInformationState/TrainInformationStateMachine.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TrainInformationState/TrainInformationStateMove.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TrainInformationState/TrainInformationStateMove.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TrainInformationState/TrainInformationStateStop.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TrainInformationState/TrainInformationStateStop.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/VehicleTrainController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/VehicleTrainController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/VehicleTrainState/VehicleTrainStateIdle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/VehicleTrainState/VehicleTrainStateIdle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/VehicleTrainState/VehicleTrainStateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/VehicleTrainState/VehicleTrainStateMachine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/VehicleTrainState/VehicleTrainStateMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/VehicleTrainState/VehicleTrainStateMove.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/VehicleTrainState/VehicleTrainStateStop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/VehicleTrainState/VehicleTrainStateStop.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +56,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../Crashy-Road_2023/Assets/Scripts/EnemyVehicleController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Crashy-Road_2023/Assets/Scripts/PlayerVehicleController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/RailTrafficLightController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/seung-ki/Documents/GitHub/Team ICECREAM HAMBURGER/Iri/Assets/Scenes/01_Iri Station.unity" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -65,7 +74,7 @@
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Train-Movement-Implementation&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Train-Movement-Implementaion&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -74,11 +83,18 @@
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.environmentSetup&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;/Users/seung-ki/Library/Application Support/JetBrains/Rider2024.1/resharper-host/DecompilerCache&quot;,
+      &quot;/Users/seung-ki/Library/Application Support/JetBrains/Rider2024.1/resharper-host/SourcesCache&quot;,
+      &quot;/Users/seung-ki/Library/Application Support/Symbols/src&quot;
+    ]
   }
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.23f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/6000.0.23f1/Unity.app/Contents/MacOS/Unity" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath &quot;$PROJECT_DIR$&quot; -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -86,7 +102,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.23f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/6000.0.23f1/Unity.app/Contents/MacOS/Unity" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath &quot;$PROJECT_DIR$&quot; -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -134,6 +150,8 @@
       <workItem from="1729995380698" duration="12000" />
       <workItem from="1730113331798" duration="7256000" />
       <workItem from="1730462091628" duration="12829000" />
+      <workItem from="1730787930741" duration="1125000" />
+      <workItem from="1731125708922" duration="13959000" />
     </task>
     <servers />
   </component>
@@ -168,5 +186,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="열차 전광판 제작에 앞서 열차 상태 표시 세분화&#10;&#10;열차의 상태 표현을 이동, 접근, 정차, 대기, 통과로 세분화하였다.&#10;- 트리거를 앞/뒤에 하나씩 배치하여 트리거에 닿으면 접근/통과 상태로 변경됨.&#10;- VehicleTrainStateApproach.cs, VehicleTrainStatePass.cs가 그것.&#10;- 별개의 상태 머신을 새로 만들지 않고 기존의 VehicleTrainStateMachine.cs에 클래스를 새로 추가하는 방법으로 구현함.&#10;- TrafficType이 늘어났으며, 신호등 조작에 사용되는 Type은 MOVE, STOP, IDLE 뿐이므로 따로 수정하지 않음.&#10;&#10;이제 열차의 상태를 받아서 전광판에 표시할 텍스트를 조작하도록 하면 된다.&#10;&#10;TODO를 참고하여 이벤트를 2개(접근 트리거, 통과 트리거) 사용 중인데, 이를 1개로 합칠 수 있는지 검토해볼 것." />
+    <option name="LAST_COMMIT_MESSAGE" value="열차 전광판 제작에 앞서 열차 상태 표시 세분화&#10;&#10;열차의 상태 표현을 이동, 접근, 정차, 대기, 통과로 세분화하였다.&#10;- 트리거를 앞/뒤에 하나씩 배치하여 트리거에 닿으면 접근/통과 상태로 변경됨.&#10;- VehicleTrainStateApproach.cs, VehicleTrainStatePass.cs가 그것.&#10;- 별개의 상태 머신을 새로 만들지 않고 기존의 VehicleTrainStateMachine.cs에 클래스를 새로 추가하는 방법으로 구현함.&#10;- TrafficType이 늘어났으며, 신호등 조작에 사용되는 Type은 MOVE, STOP, IDLE 뿐이므로 따로 수정하지 않음.&#10;&#10;이제 열차의 상태를 받아서 전광판에 표시할 텍스트를 조작하도록 하면 된다.&#10;&#10;TODO를 참고하여 이벤트를 2개(접근 트리거, 통과 트리거) 사용 중인데, 이를 1개로 합칠 수 있는지 검토해볼 것." />
   </component>
 </project>

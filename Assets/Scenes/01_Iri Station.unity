@@ -2714,6 +2714,79 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 3901258780961274526}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &68826447
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 68826448}
+  - component: {fileID: 68826449}
+  - component: {fileID: 68826450}
+  m_Layer: 0
+  m_Name: Traffic Status Trigger (4)
+  m_TagString: Traffic_Dangerous_F
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &68826448
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 68826447}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 67, y: 0, z: -31}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 672049652}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &68826449
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 68826447}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 5, z: 3}
+  m_Center: {x: 0, y: 5, z: 0}
+--- !u!114 &68826450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 68826447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96fe578b55b746e2a31807d8df7383a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerStatus: 3
+  OnTrafficApproach:
+    m_PersistentCalls:
+      m_Calls: []
+  OnTriggerSwitch:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &70099726 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8932441817806888640, guid: 7f8e35e7ab64a98418dbfca1129b54d3,
@@ -25219,6 +25292,79 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9802e2520e1a541468274e5214dfd2cb, type: 3}
+--- !u!1 &508013506
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 508013507}
+  - component: {fileID: 508013508}
+  - component: {fileID: 508013509}
+  m_Layer: 0
+  m_Name: Traffic Status Trigger (3)
+  m_TagString: Traffic_Freight_F
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &508013507
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 508013506}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 67, y: 0, z: -19}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 672049652}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &508013508
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 508013506}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 5, z: 3}
+  m_Center: {x: 0, y: 5, z: 0}
+--- !u!114 &508013509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 508013506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96fe578b55b746e2a31807d8df7383a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerStatus: 3
+  OnTrafficApproach:
+    m_PersistentCalls:
+      m_Calls: []
+  OnTriggerSwitch:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &510213726
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28539,6 +28685,79 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 561776807}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &564351960
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 564351961}
+  - component: {fileID: 564351963}
+  - component: {fileID: 564351962}
+  m_Layer: 0
+  m_Name: Traffic Status Trigger (5)
+  m_TagString: Traffic_Passanger_F
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &564351961
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 564351960}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -58, y: 0, z: 5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 672049652}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &564351962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 564351960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96fe578b55b746e2a31807d8df7383a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerStatus: 4
+  OnTrafficApproach:
+    m_PersistentCalls:
+      m_Calls: []
+  OnTriggerSwitch:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!65 &564351963
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 564351960}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 5, z: 3}
+  m_Center: {x: 0, y: 5, z: 0}
 --- !u!1 &564881811
 GameObject:
   m_ObjectHideFlags: 0
@@ -34575,12 +34794,20 @@ Transform:
   m_Children:
   - {fileID: 1594522753}
   - {fileID: 801566919}
+  - {fileID: 1138906631}
+  - {fileID: 564351961}
   - {fileID: 574116739}
   - {fileID: 436935341}
+  - {fileID: 1655696973}
+  - {fileID: 1444700752}
   - {fileID: 272130156}
   - {fileID: 1794030089}
+  - {fileID: 508013507}
+  - {fileID: 1294415722}
   - {fileID: 1466187055}
   - {fileID: 449194047}
+  - {fileID: 68826448}
+  - {fileID: 1115888924}
   m_Father: {fileID: 205471591}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &678817721 stripped
@@ -52840,7 +53067,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1098417461}
-  - component: {fileID: 1098417462}
   m_Layer: 0
   m_Name: Train
   m_TagString: Untagged
@@ -52867,24 +53093,6 @@ Transform:
   - {fileID: 102904767}
   m_Father: {fileID: 1600779202}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1098417462
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1098417460}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f62ef335c2fd5b74e8635ad5ecd09068, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  trainSpawnControllers:
-  - {fileID: 733371802}
-  - {fileID: 525564084}
-  - {fileID: 714658984}
-  - {fileID: 102904768}
-  trainInformationMonitor: {fileID: 611586988}
 --- !u!1 &1102747878
 GameObject:
   m_ObjectHideFlags: 0
@@ -53114,6 +53322,79 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9802e2520e1a541468274e5214dfd2cb, type: 3}
+--- !u!1 &1115888921
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1115888924}
+  - component: {fileID: 1115888923}
+  - component: {fileID: 1115888922}
+  m_Layer: 0
+  m_Name: Traffic Status Trigger (8)
+  m_TagString: Traffic_Dangerous_F
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1115888922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1115888921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96fe578b55b746e2a31807d8df7383a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerStatus: 4
+  OnTrafficApproach:
+    m_PersistentCalls:
+      m_Calls: []
+  OnTriggerSwitch:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!65 &1115888923
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1115888921}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 5, z: 3}
+  m_Center: {x: 0, y: 5, z: 0}
+--- !u!4 &1115888924
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1115888921}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -58, y: 0, z: -31}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 672049652}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1116178648 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4020272423865372180, guid: 2b78635e73082a745ab700af9c5c0a9b,
@@ -54196,6 +54477,79 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db0e3aa5a6f69974e81601224929c9a5, type: 3}
+--- !u!1 &1138906630
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1138906631}
+  - component: {fileID: 1138906632}
+  - component: {fileID: 1138906633}
+  m_Layer: 0
+  m_Name: Traffic Status Trigger (1)
+  m_TagString: Traffic_Passanger_F
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1138906631
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1138906630}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 67, y: 0, z: 5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 672049652}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1138906632
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1138906630}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 5, z: 3}
+  m_Center: {x: 0, y: 5, z: 0}
+--- !u!114 &1138906633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1138906630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96fe578b55b746e2a31807d8df7383a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerStatus: 3
+  OnTrafficApproach:
+    m_PersistentCalls:
+      m_Calls: []
+  OnTriggerSwitch:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &1139561443
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -60827,6 +61181,79 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 405031680}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1294415721
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1294415722}
+  - component: {fileID: 1294415724}
+  - component: {fileID: 1294415723}
+  m_Layer: 0
+  m_Name: Traffic Status Trigger (7)
+  m_TagString: Traffic_Freight_F
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1294415722
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294415721}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -58, y: 0, z: -19}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 672049652}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1294415723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294415721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96fe578b55b746e2a31807d8df7383a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerStatus: 4
+  OnTrafficApproach:
+    m_PersistentCalls:
+      m_Calls: []
+  OnTriggerSwitch:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!65 &1294415724
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294415721}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 5, z: 3}
+  m_Center: {x: 0, y: 5, z: 0}
 --- !u!1001 &1302135580
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -68879,6 +69306,79 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1439843739}
   m_CullTransparentMesh: 1
+--- !u!1 &1444700751
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1444700752}
+  - component: {fileID: 1444700754}
+  - component: {fileID: 1444700753}
+  m_Layer: 0
+  m_Name: Traffic Status Trigger (6)
+  m_TagString: Traffic_Passanger_R
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1444700752
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1444700751}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 83, y: 0, z: -7}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 672049652}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1444700753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1444700751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96fe578b55b746e2a31807d8df7383a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerStatus: 4
+  OnTrafficApproach:
+    m_PersistentCalls:
+      m_Calls: []
+  OnTriggerSwitch:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!65 &1444700754
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1444700751}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 5, z: 3}
+  m_Center: {x: 0, y: 5, z: 0}
 --- !u!1001 &1445986023
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -77915,6 +78415,79 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1654829017}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1655696972
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1655696973}
+  - component: {fileID: 1655696974}
+  - component: {fileID: 1655696975}
+  m_Layer: 0
+  m_Name: Traffic Status Trigger (2)
+  m_TagString: Traffic_Passanger_R
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1655696973
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1655696972}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -33, y: 0, z: -7}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 672049652}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1655696974
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1655696972}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 5, z: 3}
+  m_Center: {x: 0, y: 5, z: 0}
+--- !u!114 &1655696975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1655696972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96fe578b55b746e2a31807d8df7383a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerStatus: 3
+  OnTrafficApproach:
+    m_PersistentCalls:
+      m_Calls: []
+  OnTriggerSwitch:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &1657992495
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -88289,7 +88862,7 @@ Transform:
   m_GameObject: {fileID: 1917747661}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -21.715317, y: 20.963573, z: 56.51655}
+  m_LocalPosition: {x: -21.715332, y: 20.963573, z: 56.51655}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -88308,7 +88881,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mode: 0
-  size: {x: 465.45242, y: 31.229404, z: 390.39252}
+  size: {x: 465.4524, y: 31.229404, z: 390.39252}
   overrideRendererFilters: 0
   minRendererVolumeSize: 0.1
   objectLayerMask:
@@ -99710,8 +100283,11 @@ MonoBehaviour:
   - {fileID: 757334123}
   - {fileID: 757334122}
   trafficLightManager: {fileID: 1260950067}
+  trafficApproachTrigger: {fileID: 1655696975}
+  trafficPassTrigger: {fileID: 1444700753}
   trainSpawnController: {fileID: 525564084}
   vehicleMaxSpeed: 50
+  vehicleApproachSpeed: 0
   vehicleAcceleration: 15
 --- !u!4 &2511299378366011150 stripped
 Transform:
@@ -100093,8 +100669,11 @@ MonoBehaviour:
   - {fileID: 1640684992}
   - {fileID: 1640684991}
   trafficLightManager: {fileID: 1466187061}
+  trafficApproachTrigger: {fileID: 68826450}
+  trafficPassTrigger: {fileID: 1115888922}
   trainSpawnController: {fileID: 102904768}
   vehicleMaxSpeed: 80
+  vehicleApproachSpeed: 0
   vehicleAcceleration: 20
 --- !u!1001 &2713542426932630219
 PrefabInstance:
@@ -100615,8 +101194,11 @@ MonoBehaviour:
   - {fileID: 1367584880}
   - {fileID: 1367584879}
   trafficLightManager: {fileID: 272130164}
+  trafficApproachTrigger: {fileID: 508013509}
+  trafficPassTrigger: {fileID: 1294415723}
   trainSpawnController: {fileID: 714658984}
   vehicleMaxSpeed: 80
+  vehicleApproachSpeed: 0
   vehicleAcceleration: 20
 --- !u!1001 &3901258780961274526
 PrefabInstance:
@@ -104005,8 +104587,11 @@ MonoBehaviour:
   - {fileID: 171519557}
   - {fileID: 171519556}
   trafficLightManager: {fileID: 1594522758}
+  trafficApproachTrigger: {fileID: 1138906633}
+  trafficPassTrigger: {fileID: 564351962}
   trainSpawnController: {fileID: 733371802}
   vehicleMaxSpeed: 50
+  vehicleApproachSpeed: 0
   vehicleAcceleration: 15
 --- !u!4 &7963123788732069867 stripped
 Transform:

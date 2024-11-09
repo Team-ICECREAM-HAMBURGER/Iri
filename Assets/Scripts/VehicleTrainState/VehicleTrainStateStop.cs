@@ -1,9 +1,9 @@
 public class VehicleTrainStateStop : IVehicleTrainState {
-    private VehicleTrainController trainController;
+    private VehicleTrainController vehicleTrainController;
 
 
-    public VehicleTrainStateStop(VehicleTrainController trainController) {
-        this.trainController = trainController;
+    public VehicleTrainStateStop(VehicleTrainController vehicleTrainController) {
+        this.vehicleTrainController = vehicleTrainController;
     }
     
     public void Enter() {
@@ -11,10 +11,10 @@ public class VehicleTrainStateStop : IVehicleTrainState {
     }
 
     public void Execute() {
-        this.trainController.Stop();
+        this.vehicleTrainController.Stop();
 
-        if (this.trainController.TrafficStatus == GameControlTypeManager.TrafficStatus.IDLE) {
-            this.trainController.VehicleStateMachine.TransitionTo(this.trainController.VehicleStateMachine.vehicleTrainStateIdle);
+        if (this.vehicleTrainController.TrafficStatus == GameControlTypeManager.TrafficStatus.IDLE) {
+            this.vehicleTrainController.VehicleStateMachine.TransitionTo(this.vehicleTrainController.VehicleStateMachine.vehicleTrainStateIdle);
         }
     }
     

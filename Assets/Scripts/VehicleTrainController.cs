@@ -1,6 +1,8 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class VehicleTrainController : MonoBehaviour {
     [Header("Vehicle Component")]
@@ -13,12 +15,15 @@ public class VehicleTrainController : MonoBehaviour {
     
     [Header("Game System Component")]
     public TrafficLightManager trafficLightManager;
+    public TrafficStatusTrigger trafficApproachTrigger;
+    public TrafficStatusTrigger trafficPassTrigger;
     public TrainSpawnController trainSpawnController;
     
     [Space(25f)]
     
     [Header("Vehicle Setting")]
     [SerializeField] private float vehicleMaxSpeed;            // 80 km/h
+    [SerializeField] private float vehicleApproachSpeed;
     [SerializeField] private float vehicleAcceleration;        // 15 km/h
     
     public float VehicleCurrentSpeed { get; private set; }     // n km/h
@@ -37,13 +42,20 @@ public class VehicleTrainController : MonoBehaviour {
         this.VehicleStateMachine = new VehicleTrainStateMachine(this);
         
         this.vehicleMaxSpeed /= 3.6f;       // km/h -> m/s
+        this.vehicleApproachSpeed = (this.vehicleMaxSpeed * 0.9f);
         this.vehicleAcceleration /= 3.6f;   // km/h -> m/s
-
+        
         this.engineCarResetPosition = this.engineCar.transform.localPosition;
         this.jointCarResetPositions = this.jointCars.Select(car => car.transform.localPosition).ToList();
         
         this.VehicleStateMachine?.Init(this.VehicleStateMachine.vehicleTrainStateIdle);
+        
         this.trafficLightManager.OnTrafficStatusControl.AddListener(OnTrafficStatusUpdate);
+
+        // TODO: 중복 코드 정리
+        this.trafficApproachTrigger.OnTrafficApproach.AddListener(OnTrafficStatusUpdate);
+        this.trafficPassTrigger.OnTrafficApproach.AddListener(OnTrafficStatusUpdate);
+        
         this.trainSpawnController.OnTransformReset.AddListener(OnTransformReset);
     }
 
@@ -56,7 +68,11 @@ public class VehicleTrainController : MonoBehaviour {
     }
 
     private void OnDisable() {
+        OnTrafficStatusUpdate(GameControlTypeManager.TrafficStatus.MOVE);
+        
         this.vehicleRigidbody.linearVelocity = Vector3.zero;
+        this.trafficApproachTrigger.OnTriggerSwitch?.Invoke();
+        this.trafficPassTrigger.OnTriggerSwitch?.Invoke();
     }
 
     private void FixedUpdate() {
@@ -99,5 +115,21 @@ public class VehicleTrainController : MonoBehaviour {
     
     public void Idle() {
         this.VehicleCurrentSpeed = 0f;
+    }
+
+    public void Approach() {
+        this.VehicleCurrentSpeed = this.vehicleRigidbody.linearVelocity.magnitude;
+        
+        if (this.VehicleCurrentSpeed < this.vehicleApproachSpeed) {
+            this.vehicleRigidbody.AddForce(this.vehicleTransform.forward * (this.vehicleAcceleration * this.vehicleRigidbody.mass * this.jointCars.Count), ForceMode.Force);    // Acceleration(m/s) * deltaTime * Mass 
+        }
+        else {
+            this.vehicleRigidbody.linearVelocity = this.vehicleRigidbody.linearVelocity.normalized * Mathf.Lerp(this.VehicleCurrentSpeed, this.vehicleApproachSpeed, 0.5f);
+        }
+        // Move();
+    }
+
+    public void Pass() {
+        Move();
     }
 }

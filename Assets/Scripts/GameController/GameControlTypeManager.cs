@@ -6,8 +6,10 @@ public static class GameControlTypeManager {
     }
 
     public enum TrafficStatus {
-        MOVE,
-        STOP,
-        IDLE
+        MOVE,       // 출발
+        STOP,       // 정차; 도착
+        IDLE,       // 정차; 대기
+        APPROACH,   // 접근
+        PASS,       // 통과
     }
 }

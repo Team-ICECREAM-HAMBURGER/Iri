@@ -34,7 +34,7 @@ public class TrafficLightManager : MonoBehaviour, IGameControlClickableObject {
     private GameControlTypeManager.TrafficStatus TrafficLightStatusUpdate(GameControlTypeManager.TrafficStatus currentTrafficStatusType) {
         currentTrafficStatusType += 1;
         
-        if ((int)currentTrafficStatusType >= (Enum.GetValues(typeof(GameControlTypeManager.TrafficStatus)).Length)) {
+        if ((int)currentTrafficStatusType == (int)GameControlTypeManager.TrafficStatus.APPROACH) {
             currentTrafficStatusType = 0;
         }
         

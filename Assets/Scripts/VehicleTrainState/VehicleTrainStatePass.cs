@@ -1,22 +1,18 @@
-public class VehicleTrainStateMove : IVehicleTrainState {
+public class VehicleTrainStatePass : IVehicleTrainState {
     private VehicleTrainController vehicleTrainController;
 
-    
-    public VehicleTrainStateMove(VehicleTrainController vehicleTrainController) {
+
+    public VehicleTrainStatePass(VehicleTrainController vehicleTrainController) {
         this.vehicleTrainController = vehicleTrainController;
     }
     
     public void Enter() {
-        // Debug.Log("Entered Vehicle Train State Move");
+        
     }
 
     public void Execute() {
-        this.vehicleTrainController.Move();
-
-        if (this.vehicleTrainController.TrafficStatus == GameControlTypeManager.TrafficStatus.APPROACH) {
-            this.vehicleTrainController.VehicleStateMachine.TransitionTo(this.vehicleTrainController.VehicleStateMachine.vehicleTrainStateApproach);
-        }
-
+        this.vehicleTrainController.Pass();
+        
         if (this.vehicleTrainController.TrafficStatus == GameControlTypeManager.TrafficStatus.STOP) {
             this.vehicleTrainController.VehicleStateMachine.TransitionTo(this.vehicleTrainController.VehicleStateMachine.vehicleTrainStateStop);
         }
@@ -26,6 +22,6 @@ public class VehicleTrainStateMove : IVehicleTrainState {
     }
 
     public void Exit() {
-        // Debug.Log("Exited Vehicle Train State Move");
+        
     }
 }
