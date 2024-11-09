@@ -8,9 +8,10 @@ public class VehicleTrainController : MonoBehaviour {
     [Header("Vehicle Component")]
     [field: SerializeField] public GameControlTypeManager.vehicleType VehicleType { get; set; }
     [field: SerializeField] public GameControlTypeManager.TrafficStatus TrafficStatus { get; set; }
+    [SerializeField] private GameControlDictionary.TrafficStatusText trafficStatusText;
     [SerializeField] private GameObject engineCar;
     [SerializeField] private List<GameObject> jointCars;
-    
+
     [Space(25f)]
     
     [Header("Game System Component")]
@@ -28,10 +29,9 @@ public class VehicleTrainController : MonoBehaviour {
     
     public float VehicleCurrentSpeed { get; private set; }     // n km/h
     public VehicleTrainStateMachine VehicleStateMachine { get; private set; }
-    
+
     private Transform vehicleTransform;
     private Rigidbody vehicleRigidbody;
-    
     private List<Vector3> jointCarResetPositions;
     private Vector3 engineCarResetPosition;
 
@@ -81,6 +81,7 @@ public class VehicleTrainController : MonoBehaviour {
 
     private void OnTrafficStatusUpdate(GameControlTypeManager.TrafficStatus trafficStatusType) {
         this.TrafficStatus = trafficStatusType;
+        TrainInformationMonitor.OnTrafficStatusUpdate.Invoke(this.VehicleType, this.TrafficStatus, this.trafficStatusText[this.TrafficStatus]);
     }
 
     private void OnTransformReset() {

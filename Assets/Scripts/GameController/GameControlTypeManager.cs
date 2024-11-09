@@ -1,6 +1,7 @@
 public static class GameControlTypeManager {
     public enum vehicleType {
-        TRAIN_PASSENGER,
+        TRAIN_PASSENGER_F,
+        TRAIN_PASSENGER_R,
         TRAIN_FREIGHT,
         TRAIN_DANGEROUS
     }

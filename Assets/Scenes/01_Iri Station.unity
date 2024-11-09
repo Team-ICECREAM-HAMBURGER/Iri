@@ -31185,6 +31185,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3619d4b96299dc44fac3c25ad9787216, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  trafficStatus:
+    m_keys: 00000000010000000200000003000000
+    m_values: 00000000000000000000000000000000
+  trafficStatusTmp:
+    m_keys: 00000000010000000200000003000000
+    m_values:
+    - {fileID: 1257530192}
+    - {fileID: 344026042}
+    - {fileID: 605479526}
+    - {fileID: 437561893}
 --- !u!1001 &613364910
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -100272,8 +100282,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1623aa736eb58764680c5622d9599ede, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <VehicleType>k__BackingField: 0
+  <VehicleType>k__BackingField: 1
   <TrafficStatus>k__BackingField: 0
+  trafficStatusText:
+    m_keys: 0000000001000000020000000300000004000000
+    m_values:
+    - "\uCD9C\uBC1C"
+    - "\uB3C4\uCC29"
+    - "\uB300\uAE30"
+    - "\uC811\uADFC"
+    - "\uD1B5\uACFC"
   engineCar: {fileID: 3777217569357683685}
   jointCars:
   - {fileID: 757334127}
@@ -100657,8 +100675,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1623aa736eb58764680c5622d9599ede, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <VehicleType>k__BackingField: 2
+  <VehicleType>k__BackingField: 3
   <TrafficStatus>k__BackingField: 0
+  trafficStatusText:
+    m_keys: 0000000001000000020000000300000004000000
+    m_values:
+    - "\uCD9C\uBC1C"
+    - "\uB3C4\uCC29"
+    - "\uB300\uAE30"
+    - "\uC811\uADFC"
+    - "\uD1B5\uACFC"
   engineCar: {fileID: 8392018691063123971}
   jointCars:
   - {fileID: 1640684997}
@@ -101183,8 +101209,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1623aa736eb58764680c5622d9599ede, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <VehicleType>k__BackingField: 1
+  <VehicleType>k__BackingField: 2
   <TrafficStatus>k__BackingField: 0
+  trafficStatusText:
+    m_keys: 0000000001000000020000000300000004000000
+    m_values:
+    - "\uCD9C\uBC1C"
+    - "\uB3C4\uCC29"
+    - "\uB300\uAE30"
+    - "\uC811\uADFC"
+    - "\uD1B5\uACFC"
   engineCar: {fileID: 3302811958627819516}
   jointCars:
   - {fileID: 1367584884}
@@ -104578,6 +104612,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <VehicleType>k__BackingField: 0
   <TrafficStatus>k__BackingField: 0
+  trafficStatusText:
+    m_keys: 0000000001000000020000000300000004000000
+    m_values:
+    - "\uCD9C\uBC1C"
+    - "\uB3C4\uCC29"
+    - "\uB300\uAE30"
+    - "\uC811\uADFC"
+    - "\uD1B5\uACFC"
   engineCar: {fileID: 6705452045245554913}
   jointCars:
   - {fileID: 171519561}
