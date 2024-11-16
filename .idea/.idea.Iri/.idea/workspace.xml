@@ -4,104 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ddc2bca3-3552-44fb-9935-884ccdc772c1" name="Changes" comment="열차 전광판 제작에 앞서 열차 상태 표시 세분화&#10;&#10;열차의 상태 표현을 이동, 접근, 정차, 대기, 통과로 세분화하였다.&#10;- 트리거를 앞/뒤에 하나씩 배치하여 트리거에 닿으면 접근/통과 상태로 변경됨.&#10;- VehicleTrainStateApproach.cs, VehicleTrainStatePass.cs가 그것.&#10;- 별개의 상태 머신을 새로 만들지 않고 기존의 VehicleTrainStateMachine.cs에 클래스를 새로 추가하는 방법으로 구현함.&#10;- TrafficType이 늘어났으며, 신호등 조작에 사용되는 Type은 MOVE, STOP, IDLE 뿐이므로 따로 수정하지 않음.&#10;&#10;이제 열차의 상태를 받아서 전광판에 표시할 텍스트를 조작하도록 하면 된다.&#10;&#10;TODO를 참고하여 이벤트를 2개(접근 트리거, 통과 트리거) 사용 중인데, 이를 1개로 합칠 수 있는지 검토해볼 것.">
-      <change afterPath="$PROJECT_DIR$/Assets/Animations.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Menu Expand Animation Controller.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Menu Expand Animation Controller.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Menu Expand Level 0 Animation Clip.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Menu Expand Level 0 Animation Clip.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Menu Expand Level 1 Animation Clip.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Menu Expand Level 1 Animation Clip.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Menu Expand Level 2 Animation Clip.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Menu Expand Level 2 Animation Clip.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/00-Game_Credit.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/00-Game_Credit.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/00-Game_Loading.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/00-Game_Loading.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/01-Title.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/01-Title.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/02-Iri_Station.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/02-Iri_Station.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameCamChanger.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameCamChanger.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameController/GameControlObjectDragDropManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameController/GameControlObjectDragDropManager.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Settings/02-Iri_Station.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Settings/02-Iri_Station/02-Iri_Station Baking Set-Default.CellData.bytes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Settings/02-Iri_Station/02-Iri_Station Baking Set-Default.CellData.bytes.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Settings/02-Iri_Station/02-Iri_Station Baking Set-Default.CellOptionalData.bytes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Settings/02-Iri_Station/02-Iri_Station Baking Set-Default.CellOptionalData.bytes.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Settings/02-Iri_Station/02-Iri_Station Baking Set-Default.CellProbeOcclusionData.bytes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Settings/02-Iri_Station/02-Iri_Station Baking Set-Default.CellProbeOcclusionData.bytes.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Settings/02-Iri_Station/02-Iri_Station Baking Set.CellBricksData.bytes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Settings/02-Iri_Station/02-Iri_Station Baking Set.CellBricksData.bytes.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Settings/02-Iri_Station/02-Iri_Station Baking Set.CellSharedData.bytes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Settings/02-Iri_Station/02-Iri_Station Baking Set.CellSharedData.bytes.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Settings/02-Iri_Station/02-Iri_Station Baking Set.CellSupportData.bytes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Settings/02-Iri_Station/02-Iri_Station Baking Set.CellSupportData.bytes.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Settings/02-Iri_Station/02-Iri_Station Baking Set.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Settings/02-Iri_Station/02-Iri_Station Baking Set.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Settings/02-Iri_Station/Global Volume Profile.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Settings/02-Iri_Station/Global Volume Profile.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Settings/02-Iri_Station/Lighting Settings.lighting" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Settings/02-Iri_Station/Lighting Settings.lighting.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Settings/02-Iri_Station/LightingData.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Settings/02-Iri_Station/LightingData.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Settings/02-Iri_Station/ReflectionProbe-0.exr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Settings/02-Iri_Station/ReflectionProbe-0.exr.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Settings/InputSystem.inputsettings.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Settings/InputSystem.inputsettings.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Settings/MainActions.inputactions" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Settings/MainActions.inputactions.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/NanumGothicCoding-Regular SDF.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/NanumGothicCoding-Regular SDF.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/NotoSansKR-Light SDF.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/NotoSansKR-Light SDF.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Iri/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Iri/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/External Resources/Assetes/Feel/MMTools/Demos/MMTween/Fonts/Lato/SDF/Lato-BlackItalic SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/External Resources/Assetes/Feel/MMTools/Demos/MMTween/Fonts/Lato/SDF/Lato-BlackItalic SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/External Resources/Assetes/Feel/MMTools/Demos/MMTween/Fonts/Lato/SDF/Lato-BoldItalic SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/External Resources/Assetes/Feel/MMTools/Demos/MMTween/Fonts/Lato/SDF/Lato-BoldItalic SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/External Resources/Assetes/Feel/MMTools/Demos/MMTween/Fonts/Lato/SDF/Lato-Hairline SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/External Resources/Assetes/Feel/MMTools/Demos/MMTween/Fonts/Lato/SDF/Lato-Hairline SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/External Resources/Assetes/Feel/MMTools/Demos/MMTween/Fonts/Lato/SDF/Lato-HairlineItalic SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/External Resources/Assetes/Feel/MMTools/Demos/MMTween/Fonts/Lato/SDF/Lato-HairlineItalic SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/External Resources/Assetes/Feel/MMTools/Demos/MMTween/Fonts/Lato/SDF/Lato-HeavyItalic SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/External Resources/Assetes/Feel/MMTools/Demos/MMTween/Fonts/Lato/SDF/Lato-HeavyItalic SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/External Resources/Assetes/Feel/MMTools/Demos/MMTween/Fonts/Lato/SDF/Lato-Light SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/External Resources/Assetes/Feel/MMTools/Demos/MMTween/Fonts/Lato/SDF/Lato-Light SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/External Resources/Assetes/Feel/MMTools/Demos/MMTween/Fonts/Lato/SDF/Lato-LightItalic SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/External Resources/Assetes/Feel/MMTools/Demos/MMTween/Fonts/Lato/SDF/Lato-LightItalic SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/External Resources/Assetes/Feel/MMTools/Demos/MMTween/Fonts/Lato/SDF/Lato-MediumItalic SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/External Resources/Assetes/Feel/MMTools/Demos/MMTween/Fonts/Lato/SDF/Lato-MediumItalic SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/External Resources/Assetes/Feel/MMTools/Demos/MMTween/Fonts/Lato/SDF/Lato-Semibold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/External Resources/Assetes/Feel/MMTools/Demos/MMTween/Fonts/Lato/SDF/Lato-Semibold SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/External Resources/Assetes/Feel/MMTools/Demos/MMTween/Fonts/Lato/SDF/Lato-SemiboldItalic SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/External Resources/Assetes/Feel/MMTools/Demos/MMTween/Fonts/Lato/SDF/Lato-SemiboldItalic SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/External Resources/Assetes/Feel/MMTools/Demos/MMTween/Fonts/Lato/SDF/Lato-Thin SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/External Resources/Assetes/Feel/MMTools/Demos/MMTween/Fonts/Lato/SDF/Lato-Thin SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/01_Iri Station Baking Set-Default.CellData.bytes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/01_Iri Station Baking Set-Default.CellData.bytes.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/01_Iri Station Baking Set-Default.CellOptionalData.bytes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/01_Iri Station Baking Set-Default.CellOptionalData.bytes.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/01_Iri Station Baking Set-Default.CellProbeOcclusionData.bytes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/01_Iri Station Baking Set-Default.CellProbeOcclusionData.bytes.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/01_Iri Station Baking Set.CellBricksData.bytes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/01_Iri Station Baking Set.CellBricksData.bytes.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/01_Iri Station Baking Set.CellSharedData.bytes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/01_Iri Station Baking Set.CellSharedData.bytes.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/01_Iri Station Baking Set.CellSupportData.bytes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/01_Iri Station Baking Set.CellSupportData.bytes.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/01_Iri Station Baking Set.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/01_Iri Station Baking Set.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/Global Volume Profile.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/Global Volume Profile.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/Lighting Settings.lighting" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/Lighting Settings.lighting.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/LightingData.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/LightingData.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/ReflectionProbe-0.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01_Iri Station/ReflectionProbe-0.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameController/GameControlObjectClickManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameController/GameControlObjectClickManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/Iri.inputactions" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/Iri.inputactions.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
-    </list>
+    <list default="true" id="ddc2bca3-3552-44fb-9935-884ccdc772c1" name="Changes" comment="열차 전광판 제작에 앞서 열차 상태 표시 세분화&#10;&#10;열차의 상태 표현을 이동, 접근, 정차, 대기, 통과로 세분화하였다.&#10;- 트리거를 앞/뒤에 하나씩 배치하여 트리거에 닿으면 접근/통과 상태로 변경됨.&#10;- VehicleTrainStateApproach.cs, VehicleTrainStatePass.cs가 그것.&#10;- 별개의 상태 머신을 새로 만들지 않고 기존의 VehicleTrainStateMachine.cs에 클래스를 새로 추가하는 방법으로 구현함.&#10;- TrafficType이 늘어났으며, 신호등 조작에 사용되는 Type은 MOVE, STOP, IDLE 뿐이므로 따로 수정하지 않음.&#10;&#10;이제 열차의 상태를 받아서 전광판에 표시할 텍스트를 조작하도록 하면 된다.&#10;&#10;TODO를 참고하여 이벤트를 2개(접근 트리거, 통과 트리거) 사용 중인데, 이를 1개로 합칠 수 있는지 검토해볼 것." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -144,21 +47,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Train-Info-Monitor-Implementation&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.environmentSetup&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.environmentSetup",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.23f1\Editor\Unity.exe" />
