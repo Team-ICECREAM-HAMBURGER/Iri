@@ -1,8 +1,9 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class GameControlObjectClickManager : MonoBehaviour {
-    private void OnClick() {
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+    private void OnSelect() {
+        Ray ray = Camera.main.ScreenPointToRay(Mouse.current.position.ReadValue());
 
         if (Physics.Raycast(ray, out RaycastHit hit)) {
             if (hit.transform.gameObject.layer == LayerMask.NameToLayer("Clickable Object")) {
