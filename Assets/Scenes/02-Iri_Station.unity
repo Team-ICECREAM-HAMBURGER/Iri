@@ -7253,7 +7253,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -41.211}
+  m_AnchoredPosition: {x: 0, y: -41.21106}
   m_SizeDelta: {x: -1615.262, y: 82.4228}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &167960832
@@ -8912,7 +8912,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -100, y: -100}
+  m_AnchoredPosition: {x: -200, y: -80}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &203884647
@@ -39581,10 +39581,10 @@ RectTransform:
   - {fileID: 1455685232}
   m_Father: {fileID: 1430897147}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 170.02515}
-  m_SizeDelta: {x: 0, y: -340}
+  m_SizeDelta: {x: 0, y: 1020}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &763230767
 MonoBehaviour:
@@ -69832,6 +69832,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1430897147}
   - component: {fileID: 1430897148}
+  - component: {fileID: 1430897149}
   m_Layer: 5
   m_Name: Expand Menu
   m_TagString: Untagged
@@ -69858,7 +69859,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 1182.4747}
+  m_AnchoredPosition: {x: 0, y: 1190.0001}
   m_SizeDelta: {x: 0, y: 1360}
   m_Pivot: {x: 0.49999997, y: 0.50000006}
 --- !u!95 &1430897148
@@ -69883,6 +69884,21 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1430897149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1430897146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f0562704978c8a478ff21459232444e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetRectTransform: {fileID: 1430897147}
+  targetCanvas: {fileID: 177584151}
+  animator: {fileID: 1430897148}
 --- !u!1 &1432535715
 GameObject:
   m_ObjectHideFlags: 0
