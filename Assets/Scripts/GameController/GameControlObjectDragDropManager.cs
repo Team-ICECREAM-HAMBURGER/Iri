@@ -46,22 +46,18 @@ public class GameControlObjectDragDropManager : MonoBehaviour, IPointerDownHandl
         // TODO: MENU DRAG
         this.swipeEndPosition = (eventData.position / this.targetCanvas.scaleFactor);
         this.swipeDirection = (this.swipeEndPosition - this.swipeStartPosition).normalized.y;
-
-        Debug.Log(this.swipeDirection);
         
-        switch (this.swipeDirection) {
-            case > 0:
-                this.swipeLevel -= 1;
-                break;
-            case < 0:
-                this.swipeLevel += 1;
-                break;
+        if (this.swipeDirection < 0) {
+            this.swipeLevel += 1;
         }
+        else if (this.swipeDirection > 0) {
+            this.swipeLevel -= 1;
+        }        
         
-        Debug.Log(this.swipeLevel);
+        this.swipeLevel = Mathf.Clamp(this.swipeLevel, 0, 2);
         
         this.animator.SetFloat("direction", this.swipeDirection);
-        this.animator.SetBool("isEndLevel", (this.swipeLevel is -1 or 3));  // TODO: 번호가 이상하게 바뀌고 있음;
+        this.animator.SetInteger("swipeLevel", this.swipeLevel);
         this.animator.SetTrigger("onSwipe");
     }
 }

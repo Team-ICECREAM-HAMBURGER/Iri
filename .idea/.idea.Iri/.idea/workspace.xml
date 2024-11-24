@@ -5,18 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ddc2bca3-3552-44fb-9935-884ccdc772c1" name="Changes" comment="열차 전광판 제작에 앞서 열차 상태 표시 세분화&#10;&#10;열차의 상태 표현을 이동, 접근, 정차, 대기, 통과로 세분화하였다.&#10;- 트리거를 앞/뒤에 하나씩 배치하여 트리거에 닿으면 접근/통과 상태로 변경됨.&#10;- VehicleTrainStateApproach.cs, VehicleTrainStatePass.cs가 그것.&#10;- 별개의 상태 머신을 새로 만들지 않고 기존의 VehicleTrainStateMachine.cs에 클래스를 새로 추가하는 방법으로 구현함.&#10;- TrafficType이 늘어났으며, 신호등 조작에 사용되는 Type은 MOVE, STOP, IDLE 뿐이므로 따로 수정하지 않음.&#10;&#10;이제 열차의 상태를 받아서 전광판에 표시할 텍스트를 조작하도록 하면 된다.&#10;&#10;TODO를 참고하여 이벤트를 2개(접근 트리거, 통과 트리거) 사용 중인데, 이를 1개로 합칠 수 있는지 검토해볼 것.">
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Menu Expand Controller.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Menu Expand Controller.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Menu Expand Level 0.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Menu Expand Level 0.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Menu Expand Level 1.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Menu Expand Level 1.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Menu Expand Level 2.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Menu Expand Level 2.anim.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Iri/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Iri/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Menu Expand Animation Controller.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Menu Expand Animation Controller.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/02-Iri_Station.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/02-Iri_Station.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Menu Expand Controller.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Menu Expand Controller.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameController/GameControlObjectDragDropManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameController/GameControlObjectDragDropManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
