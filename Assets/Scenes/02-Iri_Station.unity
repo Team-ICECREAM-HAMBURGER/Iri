@@ -46567,6 +46567,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 921157035}
+  - component: {fileID: 921157037}
+  - component: {fileID: 921157036}
   m_Layer: 5
   m_Name: Newspaper
   m_TagString: Untagged
@@ -46595,6 +46597,44 @@ RectTransform:
   m_AnchoredPosition: {x: -650, y: -395}
   m_SizeDelta: {x: 1000, y: 900}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &921157036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921157034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f0562704978c8a478ff21459232444e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetRectTransform: {fileID: 921157035}
+  targetCanvas: {fileID: 177584151}
+  animator: {fileID: 921157037}
+  swipeLevel: 0
+--- !u!95 &921157037
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921157034}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 12f8a61c60ae54f788f3c9c1aa17336a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &922060062
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -47691,7 +47731,7 @@ MonoBehaviour:
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
   m_TextWrappingMode: 1
-  m_wordWrappingRatios: 0.4
+  m_wordWrappingRatios: 1
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
@@ -69899,6 +69939,7 @@ MonoBehaviour:
   targetRectTransform: {fileID: 1430897147}
   targetCanvas: {fileID: 177584151}
   animator: {fileID: 1430897148}
+  swipeLevel: 2
 --- !u!1 &1432535715
 GameObject:
   m_ObjectHideFlags: 0
@@ -95324,7 +95365,7 @@ MonoBehaviour:
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
   m_TextWrappingMode: 1
-  m_wordWrappingRatios: 0.4
+  m_wordWrappingRatios: 1
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}

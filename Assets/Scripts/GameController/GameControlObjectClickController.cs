@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class GameControlObjectClickManager : MonoBehaviour {
+public class GameControlObjectClickController : MonoBehaviour {
     private void OnSelect() {
         Ray ray = Camera.main.ScreenPointToRay(Mouse.current.position.ReadValue());
 
