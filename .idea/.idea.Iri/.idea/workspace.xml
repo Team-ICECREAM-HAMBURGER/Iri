@@ -4,25 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ddc2bca3-3552-44fb-9935-884ccdc772c1" name="Changes" comment="열차 전광판 제작에 앞서 열차 상태 표시 세분화&#10;&#10;열차의 상태 표현을 이동, 접근, 정차, 대기, 통과로 세분화하였다.&#10;- 트리거를 앞/뒤에 하나씩 배치하여 트리거에 닿으면 접근/통과 상태로 변경됨.&#10;- VehicleTrainStateApproach.cs, VehicleTrainStatePass.cs가 그것.&#10;- 별개의 상태 머신을 새로 만들지 않고 기존의 VehicleTrainStateMachine.cs에 클래스를 새로 추가하는 방법으로 구현함.&#10;- TrafficType이 늘어났으며, 신호등 조작에 사용되는 Type은 MOVE, STOP, IDLE 뿐이므로 따로 수정하지 않음.&#10;&#10;이제 열차의 상태를 받아서 전광판에 표시할 텍스트를 조작하도록 하면 된다.&#10;&#10;TODO를 참고하여 이벤트를 2개(접근 트리거, 통과 트리거) 사용 중인데, 이를 1개로 합칠 수 있는지 검토해볼 것.">
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/News Expand Level 0.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/News Expand Level 0.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/News Expand Level 1.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/News Expand Level 1.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/NewsExpand Controller.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/NewsExpand Controller.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameController/GameControlDragDropController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameController/GameControlDragDropController.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameController/GameControlPointerManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameController/GameControlPointerManager.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Iri/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Iri/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Menu Expand Controller.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Menu Expand Controller.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/02-Iri_Station.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/02-Iri_Station.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameController/GameControlObjectClickManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameController/GameControlObjectClickController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameController/GameControlObjectClickManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameController/GameControlObjectClickController.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameController/GameControlObjectDragDropManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameController/GameControlExpandMenuController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameController/GameControlObjectDragDropManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameController/GameControlExpandMenuController.cs.meta" afterDir="false" />
-    </list>
+    <list default="true" id="ddc2bca3-3552-44fb-9935-884ccdc772c1" name="Changes" comment="뉴스 펼치기 기능 구현&#10;&#10;추상 클래스, GameControlPointerManager.cs&#10;확장 메뉴 펼치기 기능 구현 클래스, GameControlExpandMenuController.cs&#10;드래그&amp;드랍 기능 구현 클래스, GameControlDragDropController.cs&#10;- GameControlPointerManager.cs 추상 클래스에는 Unity.EventSystems 라이브러리가 포함되어 있으며, OnPointerDown(), OnBeginDrag(), OnDrag(), OnEndDrag() 추상 메서드가 있다.&#10;- 자식 클래스(GameControlExpandMenuController.cs, GameControlDragDropController.cs)는 추상 메서드를 구현하는 방식으로 기능을 구현한다.&#10;- 뉴스 펼치기 기능도 확장 메뉴 펼치기 기능과 동일한 방식으로 구현되므로, 스크립트를 컴포넌트로 붙여서 재활용.&#10;- 뉴스를 펼치는 방향과 확장 메뉴를 펼치는 방향이 반대이기 때문에, swipeLevel을 SerializeField로 선언하여 시작 레벨 값을 설정하도록 변경함.&#10;(대신 레벨 값이 변화할 떄는 swipeDirection이 음수일 때 -1, 양수일 때 +1로 설정)&#10;&#10;GameControlDragDropController.cs는 오브젝트를 선택하여 드래그&amp;드랍하는 기능을 구현하는 클래스.&#10;- 추후 검문 패널에서 증거물 오브젝트를 마우스로 클릭해 움직이는 기능을 구현할 때 해당 클래스를 활용한다.&#10;&#10;패널이 펼쳐지고 닫히는 애니메이션 속도를 증가시켜서 답답함을 해소하고자 함.&#10;- 지속적인 QA가 필요한 부분.&#10;- 검문 패널이 닫힐 때, 스프링처럼 튕겼다가 다시 돌아오는 애니메이션 효과를 추가하면 더 자연스러울 것 같다." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,6 +28,8 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../Crashy-Road_2023/Assets/Scripts/EnemyVehicleController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Crashy-Road_2023/Assets/Scripts/PlayerVehicleController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/seung-ki/Documents/GitHub/Team ICECREAM HAMBURGER/Iri/Assets/Scenes/02-Iri_Station.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/seung-ki/Documents/GitHub/Team ICECREAM HAMBURGER/Iri/Assets/Scenes/02-Iri_Station.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem/InputSystem/Actions/InputActionMap.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem/InputSystem/Plugins/PlayerInput/DefaultInputActions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem/InputSystem/Plugins/UI/InputSystemUIInputModule.cs" root0="SKIP_HIGHLIGHTING" />
@@ -147,6 +131,15 @@
       <workItem from="1731743907939" duration="12883000" />
       <workItem from="1731760514610" duration="10383000" />
     </task>
+    <task id="LOCAL-00001" summary="뉴스 펼치기 기능 구현&#10;&#10;추상 클래스, GameControlPointerManager.cs&#10;확장 메뉴 펼치기 기능 구현 클래스, GameControlExpandMenuController.cs&#10;드래그&amp;드랍 기능 구현 클래스, GameControlDragDropController.cs&#10;- GameControlPointerManager.cs 추상 클래스에는 Unity.EventSystems 라이브러리가 포함되어 있으며, OnPointerDown(), OnBeginDrag(), OnDrag(), OnEndDrag() 추상 메서드가 있다.&#10;- 자식 클래스(GameControlExpandMenuController.cs, GameControlDragDropController.cs)는 추상 메서드를 구현하는 방식으로 기능을 구현한다.&#10;- 뉴스 펼치기 기능도 확장 메뉴 펼치기 기능과 동일한 방식으로 구현되므로, 스크립트를 컴포넌트로 붙여서 재활용.&#10;- 뉴스를 펼치는 방향과 확장 메뉴를 펼치는 방향이 반대이기 때문에, swipeLevel을 SerializeField로 선언하여 시작 레벨 값을 설정하도록 변경함.&#10;(대신 레벨 값이 변화할 떄는 swipeDirection이 음수일 때 -1, 양수일 때 +1로 설정)&#10;&#10;GameControlDragDropController.cs는 오브젝트를 선택하여 드래그&amp;드랍하는 기능을 구현하는 클래스.&#10;- 추후 검문 패널에서 증거물 오브젝트를 마우스로 클릭해 움직이는 기능을 구현할 때 해당 클래스를 활용한다.&#10;&#10;패널이 펼쳐지고 닫히는 애니메이션 속도를 증가시켜서 답답함을 해소하고자 함.&#10;- 지속적인 QA가 필요한 부분.&#10;- 검문 패널이 닫힐 때, 스프링처럼 튕겼다가 다시 돌아오는 애니메이션 효과를 추가하면 더 자연스러울 것 같다.">
+      <option name="closed" value="true" />
+      <created>1732455964936</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1732455964936</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,6 +174,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="열차 전광판 제작에 앞서 열차 상태 표시 세분화&#10;&#10;열차의 상태 표현을 이동, 접근, 정차, 대기, 통과로 세분화하였다.&#10;- 트리거를 앞/뒤에 하나씩 배치하여 트리거에 닿으면 접근/통과 상태로 변경됨.&#10;- VehicleTrainStateApproach.cs, VehicleTrainStatePass.cs가 그것.&#10;- 별개의 상태 머신을 새로 만들지 않고 기존의 VehicleTrainStateMachine.cs에 클래스를 새로 추가하는 방법으로 구현함.&#10;- TrafficType이 늘어났으며, 신호등 조작에 사용되는 Type은 MOVE, STOP, IDLE 뿐이므로 따로 수정하지 않음.&#10;&#10;이제 열차의 상태를 받아서 전광판에 표시할 텍스트를 조작하도록 하면 된다.&#10;&#10;TODO를 참고하여 이벤트를 2개(접근 트리거, 통과 트리거) 사용 중인데, 이를 1개로 합칠 수 있는지 검토해볼 것." />
-    <option name="LAST_COMMIT_MESSAGE" value="열차 전광판 제작에 앞서 열차 상태 표시 세분화&#10;&#10;열차의 상태 표현을 이동, 접근, 정차, 대기, 통과로 세분화하였다.&#10;- 트리거를 앞/뒤에 하나씩 배치하여 트리거에 닿으면 접근/통과 상태로 변경됨.&#10;- VehicleTrainStateApproach.cs, VehicleTrainStatePass.cs가 그것.&#10;- 별개의 상태 머신을 새로 만들지 않고 기존의 VehicleTrainStateMachine.cs에 클래스를 새로 추가하는 방법으로 구현함.&#10;- TrafficType이 늘어났으며, 신호등 조작에 사용되는 Type은 MOVE, STOP, IDLE 뿐이므로 따로 수정하지 않음.&#10;&#10;이제 열차의 상태를 받아서 전광판에 표시할 텍스트를 조작하도록 하면 된다.&#10;&#10;TODO를 참고하여 이벤트를 2개(접근 트리거, 통과 트리거) 사용 중인데, 이를 1개로 합칠 수 있는지 검토해볼 것." />
+    <MESSAGE value="뉴스 펼치기 기능 구현&#10;&#10;추상 클래스, GameControlPointerManager.cs&#10;확장 메뉴 펼치기 기능 구현 클래스, GameControlExpandMenuController.cs&#10;드래그&amp;드랍 기능 구현 클래스, GameControlDragDropController.cs&#10;- GameControlPointerManager.cs 추상 클래스에는 Unity.EventSystems 라이브러리가 포함되어 있으며, OnPointerDown(), OnBeginDrag(), OnDrag(), OnEndDrag() 추상 메서드가 있다.&#10;- 자식 클래스(GameControlExpandMenuController.cs, GameControlDragDropController.cs)는 추상 메서드를 구현하는 방식으로 기능을 구현한다.&#10;- 뉴스 펼치기 기능도 확장 메뉴 펼치기 기능과 동일한 방식으로 구현되므로, 스크립트를 컴포넌트로 붙여서 재활용.&#10;- 뉴스를 펼치는 방향과 확장 메뉴를 펼치는 방향이 반대이기 때문에, swipeLevel을 SerializeField로 선언하여 시작 레벨 값을 설정하도록 변경함.&#10;(대신 레벨 값이 변화할 떄는 swipeDirection이 음수일 때 -1, 양수일 때 +1로 설정)&#10;&#10;GameControlDragDropController.cs는 오브젝트를 선택하여 드래그&amp;드랍하는 기능을 구현하는 클래스.&#10;- 추후 검문 패널에서 증거물 오브젝트를 마우스로 클릭해 움직이는 기능을 구현할 때 해당 클래스를 활용한다.&#10;&#10;패널이 펼쳐지고 닫히는 애니메이션 속도를 증가시켜서 답답함을 해소하고자 함.&#10;- 지속적인 QA가 필요한 부분.&#10;- 검문 패널이 닫힐 때, 스프링처럼 튕겼다가 다시 돌아오는 애니메이션 효과를 추가하면 더 자연스러울 것 같다." />
+    <option name="LAST_COMMIT_MESSAGE" value="뉴스 펼치기 기능 구현&#10;&#10;추상 클래스, GameControlPointerManager.cs&#10;확장 메뉴 펼치기 기능 구현 클래스, GameControlExpandMenuController.cs&#10;드래그&amp;드랍 기능 구현 클래스, GameControlDragDropController.cs&#10;- GameControlPointerManager.cs 추상 클래스에는 Unity.EventSystems 라이브러리가 포함되어 있으며, OnPointerDown(), OnBeginDrag(), OnDrag(), OnEndDrag() 추상 메서드가 있다.&#10;- 자식 클래스(GameControlExpandMenuController.cs, GameControlDragDropController.cs)는 추상 메서드를 구현하는 방식으로 기능을 구현한다.&#10;- 뉴스 펼치기 기능도 확장 메뉴 펼치기 기능과 동일한 방식으로 구현되므로, 스크립트를 컴포넌트로 붙여서 재활용.&#10;- 뉴스를 펼치는 방향과 확장 메뉴를 펼치는 방향이 반대이기 때문에, swipeLevel을 SerializeField로 선언하여 시작 레벨 값을 설정하도록 변경함.&#10;(대신 레벨 값이 변화할 떄는 swipeDirection이 음수일 때 -1, 양수일 때 +1로 설정)&#10;&#10;GameControlDragDropController.cs는 오브젝트를 선택하여 드래그&amp;드랍하는 기능을 구현하는 클래스.&#10;- 추후 검문 패널에서 증거물 오브젝트를 마우스로 클릭해 움직이는 기능을 구현할 때 해당 클래스를 활용한다.&#10;&#10;패널이 펼쳐지고 닫히는 애니메이션 속도를 증가시켜서 답답함을 해소하고자 함.&#10;- 지속적인 QA가 필요한 부분.&#10;- 검문 패널이 닫힐 때, 스프링처럼 튕겼다가 다시 돌아오는 애니메이션 효과를 추가하면 더 자연스러울 것 같다." />
   </component>
 </project>
