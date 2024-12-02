@@ -17613,6 +17613,7 @@ GameObject:
   m_Component:
   - component: {fileID: 370270990}
   - component: {fileID: 370270991}
+  - component: {fileID: 370270992}
   m_Layer: 5
   m_Name: Ticket (Passenger)
   m_TagString: Untagged
@@ -17650,6 +17651,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 370270989}
   m_CullTransparentMesh: 1
+--- !u!114 &370270992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 370270989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c244b23adc046d3994cf117eb264753, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetRectTransform: {fileID: 370270990}
+  targetCanvas: {fileID: 177584151}
 --- !u!1001 &371110800
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -57982,6 +57997,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1194538564}
+  - component: {fileID: 1194538565}
   m_Layer: 5
   m_Name: Inspection report
   m_TagString: Untagged
@@ -58010,6 +58026,20 @@ RectTransform:
   m_AnchoredPosition: {x: 110, y: 40}
   m_SizeDelta: {x: 400, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1194538565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1194538563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c244b23adc046d3994cf117eb264753, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetRectTransform: {fileID: 1194538564}
+  targetCanvas: {fileID: 177584151}
 --- !u!4 &1195059262 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3784936039844939535, guid: 53eed026529bf4e48be4a041c2da30c5,
@@ -69899,7 +69929,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 1190.0001}
+  m_AnchoredPosition: {x: 0, y: -139.99988}
   m_SizeDelta: {x: 0, y: 1360}
   m_Pivot: {x: 0.49999997, y: 0.50000006}
 --- !u!95 &1430897148
@@ -98774,6 +98804,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2086738142}
   - component: {fileID: 2086738144}
+  - component: {fileID: 2086738145}
   m_Layer: 5
   m_Name: Manual
   m_TagString: Untagged
@@ -98799,7 +98830,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -651, y: -47}
+  m_AnchoredPosition: {x: -682.7974, y: -45.046326}
   m_SizeDelta: {x: 400, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2086738144
@@ -98810,6 +98841,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2086738141}
   m_CullTransparentMesh: 1
+--- !u!114 &2086738145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2086738141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c244b23adc046d3994cf117eb264753, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetRectTransform: {fileID: 2086738142}
+  targetCanvas: {fileID: 177584151}
 --- !u!1001 &2089911537
 PrefabInstance:
   m_ObjectHideFlags: 0
