@@ -18,7 +18,6 @@ public class TrafficStatusTrigger : MonoBehaviour {
     
     private void OnTriggerEnter(Collider other) {
         if (other.CompareTag(this.tag)) {
-            Debug.Log(this.triggerStatus);
             this.OnTrafficApproach?.Invoke(this.triggerStatus);
             TriggerSwitch();
         }

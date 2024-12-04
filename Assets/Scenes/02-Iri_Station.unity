@@ -6529,7 +6529,7 @@ GameObject:
   - component: {fileID: 137965093}
   - component: {fileID: 137965092}
   m_Layer: 5
-  m_Name: OK Stamp
+  m_Name: OK Stamp Ink
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17666,6 +17666,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetRectTransform: {fileID: 370270990}
   targetCanvas: {fileID: 177584151}
+  canvasGroup: {fileID: 0}
 --- !u!114 &370270993
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20691,8 +20692,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 5, y: -5}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 5, y: -2.5}
+  m_SizeDelta: {x: 0, y: -5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &425012255
 MonoBehaviour:
@@ -35264,7 +35265,7 @@ GameObject:
   - component: {fileID: 666184686}
   - component: {fileID: 666184685}
   m_Layer: 5
-  m_Name: NO Stamp
+  m_Name: NO Stamp Ink
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39732,8 +39733,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -0.00048828125, y: 12.484833}
-  m_SizeDelta: {x: 0.00085449, y: 80.77}
+  m_AnchoredPosition: {x: -0.0004272461, y: 14.984894}
+  m_SizeDelta: {x: 0.0009765625, y: 80.77}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &768632101
 MonoBehaviour:
@@ -58013,8 +58014,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1194538564}
+  - component: {fileID: 1194538568}
+  - component: {fileID: 1194538569}
   - component: {fileID: 1194538565}
   - component: {fileID: 1194538566}
+  - component: {fileID: 1194538567}
   m_Layer: 5
   m_Name: Inspection report
   m_TagString: Untagged
@@ -58040,7 +58044,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 110, y: 40}
+  m_AnchoredPosition: {x: -174.98904, y: 206.4769}
   m_SizeDelta: {x: 400, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1194538565
@@ -58057,6 +58061,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetRectTransform: {fileID: 1194538564}
   targetCanvas: {fileID: 177584151}
+  canvasGroup: {fileID: 1194538568}
 --- !u!114 &1194538566
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58072,6 +58077,54 @@ MonoBehaviour:
   itemPositionResetManager: {fileID: 1380316050}
   targetRectTransform: {fileID: 1194538564}
   targetCanvas: {fileID: 177584151}
+--- !u!114 &1194538567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1194538563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90f24e2bf4ce31f48b7d55e0fafd9c76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mobileConsoleStampController: {fileID: 1455685235}
+  animator: {fileID: 1194538569}
+--- !u!225 &1194538568
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1194538563}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!95 &1194538569
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1194538563}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 373c62132883c11459456267048020fa, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!4 &1195059262 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3784936039844939535, guid: 53eed026529bf4e48be4a041c2da30c5,
@@ -68907,7 +68960,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1672527901}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1455685235}
+        m_TargetAssemblyTypeName: MobileConsoleStampController, Assembly-CSharp
+        m_MethodName: OnStampNo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &1396131245
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -68956,8 +69021,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -50}
-  m_SizeDelta: {x: -0.0001, y: 35}
+  m_AnchoredPosition: {x: 0, y: -47.5}
+  m_SizeDelta: {x: -0.00024414062, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1396832544
 MonoBehaviour:
@@ -71270,6 +71335,7 @@ GameObject:
   - component: {fileID: 1455685232}
   - component: {fileID: 1455685234}
   - component: {fileID: 1455685233}
+  - component: {fileID: 1455685235}
   m_Layer: 5
   m_Name: Mobile Console
   m_TagString: Untagged
@@ -71300,7 +71366,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 500, y: 70}
-  m_SizeDelta: {x: 400, y: 200}
+  m_SizeDelta: {x: 400, y: 205}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1455685233
 MonoBehaviour:
@@ -71340,6 +71406,24 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1455685235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1455685231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 341ce03f9fb3dfd46be66a75780501ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnPaperStampOk:
+    m_PersistentCalls:
+      m_Calls: []
+  OnPaperStampNo:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &1456778135
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -74007,8 +74091,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.00048828125, y: -23.565033}
-  m_SizeDelta: {x: 0.00082397, y: 47.13}
+  m_AnchoredPosition: {x: -0.0004272461, y: -23.564959}
+  m_SizeDelta: {x: 0.0009765625, y: 47.13}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1533443115
 MonoBehaviour:
@@ -83920,7 +84004,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1650769263}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1455685235}
+        m_TargetAssemblyTypeName: MobileConsoleStampController, Assembly-CSharp
+        m_MethodName: OnStampOk
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &1766450168
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -95822,8 +95918,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.0009765625, y: -0.000091552734}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -0.0010375977, y: 2.4999695}
+  m_SizeDelta: {x: 0, y: -5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2015034694
 MonoBehaviour:
@@ -98616,7 +98712,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 10.5}
+  m_AnchoredPosition: {x: 0, y: 15.500061}
   m_SizeDelta: {x: 0, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2081381230
@@ -99077,6 +99173,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetRectTransform: {fileID: 2086738142}
   targetCanvas: {fileID: 177584151}
+  canvasGroup: {fileID: 0}
 --- !u!114 &2086738146
 MonoBehaviour:
   m_ObjectHideFlags: 0
