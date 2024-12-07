@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class ItemInspectionReportController : MonoBehaviour {ㅅ
+public class ItemInspectionReportController : MonoBehaviour {
     [Space(10f)]
     
     [SerializeField] private MobileConsoleStampController mobileConsoleStampController;
