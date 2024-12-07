@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 
 public class GameControlDragDropController : GameControlPointerManager {
+    [Space(10f)]
     [SerializeField] private CanvasGroup canvasGroup;
     
     

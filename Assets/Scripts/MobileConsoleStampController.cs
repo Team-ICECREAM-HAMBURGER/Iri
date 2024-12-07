@@ -2,15 +2,17 @@ using UnityEngine;
 using UnityEngine.Events;
 
 public class MobileConsoleStampController : MonoBehaviour {
-    [HideInInspector] public UnityEvent OnPaperStampOk;
-    [HideInInspector] public UnityEvent OnPaperStampNo;
+    [HideInInspector] public UnityEvent<RectTransform> OnPaperStampOk;
+    [HideInInspector] public UnityEvent<RectTransform> OnPaperStampNo;
+    
+    [SerializeField] private RectTransform rectTransform;
     
     
     public void OnStampOk() {
-        this.OnPaperStampOk.Invoke();
+        this.OnPaperStampOk.Invoke(this.rectTransform);
     }
 
     public void OnStampNo() {
-        this.OnPaperStampNo.Invoke();
+        this.OnPaperStampNo.Invoke(this.rectTransform);
     }
 }
