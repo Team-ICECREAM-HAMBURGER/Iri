@@ -13,4 +13,9 @@ public static class GameControlTypeManager {
         APPROACH,   // 접근
         PASS,       // 통과
     }
+
+    public enum StampType {
+        OK,
+        NO
+    }
 }

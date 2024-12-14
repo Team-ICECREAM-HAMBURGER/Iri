@@ -1,4 +1,5 @@
 using TMPro;
+using UnityEngine;
 
 public class GameControlDictionary {
     [System.Serializable] public class TrafficStatus : SerializableDictionary<GameControlTypeManager.vehicleType, GameControlTypeManager.TrafficStatus> { }

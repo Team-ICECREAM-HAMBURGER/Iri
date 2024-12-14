@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class GameControlObjectPoolingController : MonoBehaviour {
     public class PoolingObject {
@@ -7,22 +8,23 @@ public class GameControlObjectPoolingController : MonoBehaviour {
         public bool isActive;
     }
 
-    private Stack<PoolingObject> objectPoolStack;
+    private List<PoolingObject> objectPoolList;
 
-    [SerializeField] private GameObject objectPrefab;
+    [SerializeField] private GameObject poolingObjectPrefab;
     [SerializeField] private Transform parentTransform;
     
     [Space(10f)]
     
-    [SerializeField] private int poolStackCapacity;
-    [SerializeField] private int maxCapacity;
     [SerializeField] private int increaseCapacity;
-
-    private int activeCount;
+    [SerializeField] private int maxCapacity;
     
+    private int activeCount;
+    private int returnCount;
+    private int currentCapacity;
+
     
     private void Init() {
-        this.objectPoolStack = new();
+        this.objectPoolList = new();
         AddPoolItem();
     }
     
@@ -31,36 +33,62 @@ public class GameControlObjectPoolingController : MonoBehaviour {
     }
 
     public GameObject GetPooledObject() {
-        if (this.objectPoolStack == null) {
+        if (this.objectPoolList == null) {
             return null;
         }
 
-        if (this.maxCapacity == this.activeCount) {
+        if (this.currentCapacity == this.activeCount) {
+            if (this.maxCapacity == this.currentCapacity) {
+                ReturnToPoolStack();    // TODO: 어떻게 해야 자연스러운 연출을 유지하면서 메모리 관리를 할 것인가?
+            }
+            
             AddPoolItem();
         }
 
-        foreach (var VARIABLE in this.objectPoolStack) {
+        foreach (var VARIABLE in this.objectPoolList) {
             if (!VARIABLE.isActive) {
                 VARIABLE.isActive = true;
                 VARIABLE.prefab.SetActive(true);
-                this.activeCount++;
 
+                this.activeCount++;
+                
                 return VARIABLE.prefab;
             }
         }
-
+        
         return null;
     }
 
-    private void ReturnToPoolStack(GameObject targetObject) {   // Object DeActive
-        if (this.objectPoolStack == null) {
+    private void ReturnToPoolStack() {
+        if (this.objectPoolList == null) {
             return;
         }
 
-        foreach (var VARIABLE in this.objectPoolStack) {
+        foreach (var VARIABLE in this.objectPoolList) {
+            if (VARIABLE.isActive) {
+                VARIABLE.prefab.SetActive(false);
+                VARIABLE.isActive = false;
+                
+                this.activeCount--;
+                this.returnCount++;
+            }
+
+            if (this.returnCount == this.increaseCapacity) {
+                return;
+            }
+        }
+    }
+
+    private void ReturnToPoolStack(GameObject targetObject) {   // Object DeActive
+        if (this.objectPoolList == null) {
+            return;
+        }
+
+        foreach (var VARIABLE in this.objectPoolList) {
             if (VARIABLE.prefab == targetObject) {
                 VARIABLE.prefab.SetActive(false);
                 VARIABLE.isActive = false;
+                
                 this.activeCount--;
 
                 return;
@@ -69,17 +97,17 @@ public class GameControlObjectPoolingController : MonoBehaviour {
     }
 
     private void AddPoolItem() {
-        this.maxCapacity += this.increaseCapacity;
-
         for (var i = 0; i < this.increaseCapacity; i++) {
             var objectInstance = new PoolingObject {
-                prefab = GameObject.Instantiate(this.objectPrefab, this.parentTransform)
+                prefab = GameObject.Instantiate(this.poolingObjectPrefab, this.parentTransform)
             };
             
             objectInstance.prefab.SetActive(false);
             objectInstance.isActive = false;
             
-            this.objectPoolStack.Push(objectInstance);
+            this.objectPoolList.Add(objectInstance);
         }
+        
+        this.currentCapacity += this.increaseCapacity;
     }
 }
