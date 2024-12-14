@@ -2,18 +2,18 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class GameControlObjectPoolingController : MonoBehaviour {
-    private class PoolingObject {
+    public class PoolingObject {
         public GameObject prefab;
         public bool isActive;
     }
-    
+
     private Stack<PoolingObject> objectPoolStack;
 
     [SerializeField] private GameObject objectPrefab;
+    [SerializeField] private Transform parentTransform;
     
     [Space(10f)]
     
-    [SerializeField] private bool collectionCheck;
     [SerializeField] private int poolStackCapacity;
     [SerializeField] private int maxCapacity;
     [SerializeField] private int increaseCapacity;
@@ -30,7 +30,7 @@ public class GameControlObjectPoolingController : MonoBehaviour {
         Init();
     }
 
-    private GameObject GetPooledObject() {    // Object Active
+    public GameObject GetPooledObject() {
         if (this.objectPoolStack == null) {
             return null;
         }
@@ -73,7 +73,7 @@ public class GameControlObjectPoolingController : MonoBehaviour {
 
         for (var i = 0; i < this.increaseCapacity; i++) {
             var objectInstance = new PoolingObject {
-                prefab = GameObject.Instantiate(this.objectPrefab)
+                prefab = GameObject.Instantiate(this.objectPrefab, this.parentTransform)
             };
             
             objectInstance.prefab.SetActive(false);
