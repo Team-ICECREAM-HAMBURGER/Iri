@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class ItemInspectionReportStampController : MonoBehaviour {
     [Space(10f)]
@@ -9,6 +10,8 @@ public class ItemInspectionReportStampController : MonoBehaviour {
     
     [SerializeField] private GameControlObjectPoolingController okStampObjectPoolingController;
     [SerializeField] private GameControlObjectPoolingController noStampObjectPoolingController;
+
+    public bool IsOkPaper { get; private set; }
     
     private RectTransform okStampRectTransform;
     private RectTransform noStampRectTransform;
@@ -16,6 +19,8 @@ public class ItemInspectionReportStampController : MonoBehaviour {
     
     
     private void Init() {
+        this.IsOkPaper = false;
+        
         this.mobileConsoleStampController.OnPaperStampOk.AddListener(OnPaperStampOk);
         this.mobileConsoleStampController.OnPaperStampNo.AddListener(OnPaperStampNo);
         
@@ -38,6 +43,8 @@ public class ItemInspectionReportStampController : MonoBehaviour {
         
         this.okStampRectTransform.position = rectTransform.position;
         this.okStampRectTransform.gameObject.SetActive(true);
+
+        this.IsOkPaper = true;
         
         // this.okStampRectTransform.position = rectTransform.position;
         // this.okStampRectTransform.gameObject.SetActive(true);
@@ -54,7 +61,9 @@ public class ItemInspectionReportStampController : MonoBehaviour {
 
         this.noStampRectTransform.position = rectTransform.position;
         this.noStampRectTransform.gameObject.SetActive(true);
-        
+
+        this.IsOkPaper = false;
+
         // this.noStampRectTransform.position = rectTransform.position;
         // this.noStampRectTransform.gameObject.SetActive(true);
     }
