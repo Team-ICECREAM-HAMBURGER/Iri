@@ -10,8 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 158870748316104713}
   - component: {fileID: 953227167031246185}
-  - component: {fileID: 8706530014586611016}
-  - component: {fileID: 1156780289925062550}
   m_Layer: 5
   m_Name: Manual
   m_TagString: Untagged
@@ -48,36 +46,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1283909079927195583}
   m_CullTransparentMesh: 1
---- !u!114 &8706530014586611016
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1283909079927195583}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c244b23adc046d3994cf117eb264753, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetRectTransform: {fileID: 158870748316104713}
-  targetCanvas: {fileID: 0}
-  canvasGroup: {fileID: 0}
---- !u!114 &1156780289925062550
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1283909079927195583}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dbdb5b8d409f42dfa9efd9f619bc9a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemPositionResetManager: {fileID: 0}
-  targetRectTransform: {fileID: 158870748316104713}
-  targetCanvas: {fileID: 0}
 --- !u!1 &2191602575978973198
 GameObject:
   m_ObjectHideFlags: 0
@@ -296,7 +264,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "\uD558\uB8E8\uC758 \uC2DC\uC791\uC744 \uD658\uC601\uD569\uB2C8\uB2E4,
-    \uC5ED\uC0AC\uAC10\uB3C5\uAD00.\n\n\uBCF8 \uAD50\uBCF8\uC740 '\uAE30\uBCF8\uD589\uB3D9\uC9C0\uCE68\uC11C'\uB85C\uC368,
+    \uC5ED\uC0AC\uAC10\uB3C5\uAD00.\n\n\uBCF8 \uAD50\uBCF8\uC740 <b>'\uAE30\uBCF8\uD589\uB3D9\uC9C0\uCE68\uC11C'</b>\uB85C\uC368,
     \uBCF5\uBB34 \uC911\uC5D0\uB294 \uD56D\uC0C1 \uC18C\uC9C0\uD574\uC57C \uD569\uB2C8\uB2E4.\n\uADFC\uBB34\uB97C
     \uC2DC\uC791\uD558\uAE30 \uC804, \uC774 \uAD50\uBCF8\uC758 \uAE30\uBCF8\uC9C0\uCE68\uC744
     \uBA3C\uC800 \uC219\uC9C0\uD558\uC2ED\uC2DC\uC624.\n\uBCF8 \uAD50\uBCF8\uC740
@@ -304,8 +272,8 @@ MonoBehaviour:
     \uB0B4\uC6A9\uC744 \uB2F4\uACE0 \uC788\uC74D\uB2C8\uB2E4.\n\n\uC544\uBB34\uCABC\uB85D
     \uBCF8 \uAD50\uBCF8\uC758 \uB0B4\uC6A9\uC744 \uC798 \uC219\uC9C0\uD558\uC2DC\uC5B4
     \uBAA8\uB4E0 \uB300\uD55C\uAD6D\uBBFC\uB4E4\uC5D0\uAC8C \uBAA8\uBC94\uC774 \uB418\uB294
-    \uC5ED\uC0AC\uAC10\uB3C5\uAD00\uC73C\uB85C \uAC70\uB4ED\uB098\uAE38 \uBC14\uB77C\uACA0\uC74D\uB2C8\uB2E4.\n\n\uB2E4\uC74C
-    ->"
+    \uC5ED\uC0AC\uAC10\uB3C5\uAD00\uC73C\uB85C \uAC70\uB4ED\uB098\uAE38 \uBC14\uB77C\uACA0\uC74D\uB2C8\uB2E4.\n\n<align=right>\uB2E4\uC74C
+    -></align>"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 09edd1ff914075c459710a2fae2f8859, type: 2}
   m_sharedMaterial: {fileID: -521092375055503404, guid: 09edd1ff914075c459710a2fae2f8859,
@@ -345,9 +313,9 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 5
   m_wordSpacing: 5
-  m_lineSpacing: 30
+  m_lineSpacing: 40
   m_lineSpacingMax: 0
-  m_paragraphSpacing: 15
+  m_paragraphSpacing: 30
   m_charWidthMaxAdj: 0
   m_TextWrappingMode: 1
   m_wordWrappingRatios: 0.4
