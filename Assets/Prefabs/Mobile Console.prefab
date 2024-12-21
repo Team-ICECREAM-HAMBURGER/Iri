@@ -890,8 +890,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uCC9C\uACF5\uC9C0\uB97C \uAE30\uAE30 \uC544\uB798\uC5D0 \uB193\uC73C\uC2DC\uC624\n(\uC11C\uB958\uC758
-    \uC0BD\uC785 \uBC29\uD5A5\uC5D0 \uC8FC\uC758\uD560 \uAC83)"
+  m_text: "\uBCF4\uACE0\uC11C\uB97C \uAE30\uAE30 \uC544\uB798\uC5D0 \uB193\uC73C\uC2DC\uC624\n(\uC11C\uB958\uC758
+    \uBC29\uD5A5\uC5D0 \uC8FC\uC758\uD560 \uAC83)"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 09edd1ff914075c459710a2fae2f8859, type: 2}
   m_sharedMaterial: {fileID: -521092375055503404, guid: 09edd1ff914075c459710a2fae2f8859,
