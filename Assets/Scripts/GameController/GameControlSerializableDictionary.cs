@@ -1,7 +1,7 @@
 using TMPro;
 using UnityEngine;
 
-public class GameControlDictionary {
+public class GameControlSerializableDictionary {
     [System.Serializable] public class TrafficStatus : SerializableDictionary<GameControlTypeManager.vehicleType, GameControlTypeManager.TrafficStatus> { }
     [System.Serializable] public class TrafficStatusTmp : SerializableDictionary<GameControlTypeManager.vehicleType, TMP_Text> { }
     [System.Serializable] public class TrafficStatusText : SerializableDictionary<GameControlTypeManager.TrafficStatus, string> { }

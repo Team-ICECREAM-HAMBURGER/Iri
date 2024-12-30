@@ -4,8 +4,8 @@ using UnityEngine.Events;
 public class TrainInformationMonitor : MonoBehaviour {
     public static UnityEvent<GameControlTypeManager.vehicleType, GameControlTypeManager.TrafficStatus, string> OnTrafficStatusUpdate;
     
-    [SerializeField] private GameControlDictionary.TrafficStatus trafficStatus;
-    [SerializeField] private GameControlDictionary.TrafficStatusTmp trafficStatusTmp;
+    [SerializeField] private GameControlSerializableDictionary.TrafficStatus trafficStatus;
+    [SerializeField] private GameControlSerializableDictionary.TrafficStatusTmp trafficStatusTmp;
 
     
     private void Init() {

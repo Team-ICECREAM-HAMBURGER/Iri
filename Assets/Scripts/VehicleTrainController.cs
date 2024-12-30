@@ -8,7 +8,7 @@ public class VehicleTrainController : MonoBehaviour {
     [Header("Vehicle Component")]
     [field: SerializeField] public GameControlTypeManager.vehicleType VehicleType { get; set; }
     [field: SerializeField] public GameControlTypeManager.TrafficStatus TrafficStatus { get; set; }
-    [SerializeField] private GameControlDictionary.TrafficStatusText trafficStatusText;
+    [SerializeField] private GameControlSerializableDictionary.TrafficStatusText trafficStatusText;
     [SerializeField] private GameObject engineCar;
     [SerializeField] private List<GameObject> jointCars;
 

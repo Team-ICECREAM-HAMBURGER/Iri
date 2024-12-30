@@ -4,9 +4,9 @@ using UnityEditor;
 using System.Reflection;
 using System;
 
-[CustomPropertyDrawer(typeof(GameControlDictionary.TrafficStatus))]
-[CustomPropertyDrawer(typeof(GameControlDictionary.TrafficStatusTmp))]
-[CustomPropertyDrawer(typeof(GameControlDictionary.TrafficStatusText))]
+[CustomPropertyDrawer(typeof(GameControlSerializableDictionary.TrafficStatus))]
+[CustomPropertyDrawer(typeof(GameControlSerializableDictionary.TrafficStatusTmp))]
+[CustomPropertyDrawer(typeof(GameControlSerializableDictionary.TrafficStatusText))]
 public class SerializableDictionaryPropertyDrawer : PropertyDrawer
 {
 	const string KeysFieldName = "m_keys";
