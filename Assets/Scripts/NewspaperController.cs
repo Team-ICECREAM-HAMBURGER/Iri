@@ -1,32 +1,24 @@
-using System;
-using System.Collections.Generic;
+using System.Text;
 using UnityEngine;
-
-[CreateAssetMenu(fileName = "NewspaperArticleScriptableObject", menuName = "ScriptableObjects/NewspaperArticleScriptableObject", order = 1)]
-[Serializable] public class NewspaperArticleScriptableObject : ScriptableObject{
-    public string title;
-    [TextArea] public string content;
-}
 
 public class NewspaperController : MonoBehaviour {
     [SerializeField] private GameControlJsonController gameControlJsonController;
-    [SerializeField] private List<ScriptableObject> newspaperArticleScriptableObjects;
+    // [SerializeField] private List<ScriptableObject> newspaperArticleScriptableObjects;
+    [SerializeField] private GameControlSerializableDictionary.NewsArticle newspaperArticle;
+
+    private StringBuilder serializedObject;
     
     
     private void Init() {
+        this.serializedObject = new();
+        
         if (!this.gameControlJsonController.FileExistsCheck()) {
+            foreach (var VARIABLE in this.newspaperArticle) {
+                this.serializedObject.Append(this.gameControlJsonController.ObjectToJson(VARIABLE.Value));
+            }
             
-            
-            
-            
-            
-            
-            
-            // var serializedObject = this.gameControlJsonController.ObjectToJson(new NewspaperArticleData("Title", "Content"));
-            // this.gameControlJsonController.WriteJsonFile(serializedObject);
+            this.gameControlJsonController.WriteJsonFile(this.serializedObject.ToString());
         }
-        
-        
     }
 
     private void Awake() {

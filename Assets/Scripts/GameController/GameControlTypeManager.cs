@@ -18,4 +18,14 @@ public static class GameControlTypeManager {
         OK,
         NO
     }
+
+    public enum NewsArticleType {
+        STORY_NEW_IRI_MAN,
+        STORY_YEONGDONG,
+        //
+        SUB_DRUG_COP_KILLER,
+        SUB_FIREWORKS,
+        SUB_HATE_SHARE,
+        SUB_PABLO
+    }
 }
