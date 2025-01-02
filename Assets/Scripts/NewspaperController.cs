@@ -1,23 +1,20 @@
-using System.Text;
 using UnityEngine;
 
 public class NewspaperController : MonoBehaviour {
-    [SerializeField] private GameControlJsonController gameControlJsonController;
-    // [SerializeField] private List<ScriptableObject> newspaperArticleScriptableObjects;
-    [SerializeField] private GameControlSerializableDictionary.NewsArticle newspaperArticle;
+    [SerializeField] private GameObject newsPaperArticlePrefab;
+    [SerializeField] private Transform newPaperArticlePanelTransform;
+    
+    [Space(25f)]
 
-    private StringBuilder serializedObject;
+    [SerializeField] private GameControlSerializableDictionary.NewsArticle newspaperArticles;
     
     
     private void Init() {
-        this.serializedObject = new();
-        
-        if (!this.gameControlJsonController.FileExistsCheck()) {
-            foreach (var VARIABLE in this.newspaperArticle) {
-                this.serializedObject.Append(this.gameControlJsonController.ObjectToJson(VARIABLE.Value));
-            }
+        foreach (var VARIABLE in this.newspaperArticles) {
+            var obj = Instantiate(newsPaperArticlePrefab, newPaperArticlePanelTransform);
+            var objComponent = obj.GetComponent<NewspaperArticle>();
             
-            this.gameControlJsonController.WriteJsonFile(this.serializedObject.ToString());
+            objComponent.Init(VARIABLE.Value);
         }
     }
 

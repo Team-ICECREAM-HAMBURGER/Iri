@@ -1,14 +1,13 @@
-using System;
 using System.IO;
 using System.Text;
 using UnityEngine;
 using Newtonsoft.Json;
 
 public class GameControlJsonController : MonoBehaviour {
-    [SerializeField] private string fileName;
+    private string existCheckName;
     private string fileStreamPath;
     
-
+    
     // OBJ -> JSON
     public string ObjectToJson(object objectData) {
         return JsonConvert.SerializeObject(objectData, Formatting.Indented);
@@ -19,8 +18,8 @@ public class GameControlJsonController : MonoBehaviour {
         return JsonConvert.DeserializeObject<T>(jsonData);
     }
 
-    public void WriteJsonFile(string fileData) {
-        this.fileStreamPath = $"{Application.persistentDataPath}/{this.fileName}.json";
+    public void WriteJsonFile(string fileData, string fileName) {
+        this.fileStreamPath = $"{Application.persistentDataPath}/{fileName}.json";
         
         var fileStream = new FileStream(this.fileStreamPath, FileMode.Create);
         var data = Encoding.UTF8.GetBytes(fileData);
@@ -29,8 +28,8 @@ public class GameControlJsonController : MonoBehaviour {
         fileStream.Close();
     }
 
-    public T LoadJsonFile<T>() {
-        this.fileStreamPath = $"{Application.persistentDataPath}/{this.fileName}.json";
+    public T LoadJsonFile<T>(string fileName) {
+        this.fileStreamPath = $"{Application.persistentDataPath}/{fileName}.json";
         
         if (!File.Exists(this.fileStreamPath)) {
             throw new FileNotFoundException();
@@ -48,8 +47,8 @@ public class GameControlJsonController : MonoBehaviour {
     }
 
     public bool FileExistsCheck() {
-        this.fileStreamPath = $"{Application.persistentDataPath}/{this.fileName}.json";
+        var files = Directory.GetFiles(Application.persistentDataPath, "*.json");
 
-        return File.Exists(this.fileStreamPath);
+        return (files.Length > 0);
     }
 }
