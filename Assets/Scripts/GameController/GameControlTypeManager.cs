@@ -19,9 +19,9 @@ public static class GameControlTypeManager {
         NO
     }
 
-    public enum NewsArticleType {
+    public enum StoryChapterType {
         STORY_NEW_IRI_MAN,
-        STORY_YEONGDONG,
+        STORY_YEONGDONG_FIN,
         //
         SUB_DRUG_COP_KILLER,
         SUB_FIREWORKS,

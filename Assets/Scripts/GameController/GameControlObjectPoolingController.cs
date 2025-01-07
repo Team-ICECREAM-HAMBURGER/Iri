@@ -38,10 +38,6 @@ public class GameControlObjectPoolingController : MonoBehaviour {
         }
 
         if (this.currentCapacity == this.activeCount) {
-            // if (this.maxCapacity == this.currentCapacity) {
-            //     ReturnToPoolStack();    // TODO: 어떻게 해야 자연스러운 연출을 유지하면서 메모리 관리를 할 것인가?
-            // }
-            
             AddPoolItem();
         }
 
