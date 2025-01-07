@@ -14,7 +14,6 @@ public class NewspaperController : MonoBehaviour {
         while (randomIndexes.Count < this.newsPaperArticles.Count) {
             var index = Random.Range(0, this.newspaperArticleData.Count);
             randomIndexes.Add(index);
-            Debug.Log(index);
         }
 
         var randomIndexesList = randomIndexes.ToList();

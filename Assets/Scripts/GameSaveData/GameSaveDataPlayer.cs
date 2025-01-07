@@ -1,9 +1,10 @@
 public class GameSaveDataPlayer {
-    public readonly string fileName = "Player_Save_Data";
+    public readonly string tag;
     public string playerName;
 
 
-    public void Init(string playerName) {
+    public GameSaveDataPlayer(string tag, string playerName) {
+        this.tag = tag;
         this.playerName = playerName;
     }
 }

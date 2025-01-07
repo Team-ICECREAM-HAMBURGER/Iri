@@ -48,6 +48,6 @@ public static class GameControlTypeManager {
         COLD,       // 추움 (Stack)
         
         SAD,        // 슬픔 (Trigger)
-        DIED,       // 사망 (Trigger)
+        DIE,        // 사망 (Trigger)
     }
 }

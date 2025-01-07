@@ -79906,6 +79906,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameControlJsonSerializationController: {fileID: 1795487415}
+  playerFamilyScriptableObject:
+    m_keys: 00000000010000000200000003000000
+    m_values:
+    - {fileID: 11400000, guid: 4df47826dc3bda14cb29dc977eb32b01, type: 2}
+    - {fileID: 11400000, guid: 2f2a07dac1421b34ba69947333b0f064, type: 2}
+    - {fileID: 11400000, guid: 6dc6d690e4df9a04daff2005fbc269b6, type: 2}
+    - {fileID: 11400000, guid: dda9506abf3d44e42a79f12693a6c24b, type: 2}
 --- !u!1001 &1799057089
 PrefabInstance:
   m_ObjectHideFlags: 0
