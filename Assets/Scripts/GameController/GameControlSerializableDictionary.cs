@@ -6,4 +6,5 @@ public class GameControlSerializableDictionary {
     [System.Serializable] public class TrafficStatusTmp : SerializableDictionary<GameControlTypeManager.vehicleType, TMP_Text> { }
     [System.Serializable] public class TrafficStatusText : SerializableDictionary<GameControlTypeManager.TrafficStatus, string> { }
     [System.Serializable] public class NewsArticle : SerializableDictionary<GameControlTypeManager.StoryChapterType, NewspaperArticleScriptableObject> { }
+    [System.Serializable] public class PlayerFamily : SerializableDictionary<GameControlTypeManager.FamilyType, GameSaveDataFamily> { }
 }

@@ -3,7 +3,7 @@ using System.Text;
 using UnityEngine;
 using Newtonsoft.Json;
 
-public class GameControlJsonController : MonoBehaviour {
+public class GameControlJsonSerializationController : MonoBehaviour {
     private string existCheckName;
     private string fileStreamPath;
     
@@ -46,8 +46,8 @@ public class GameControlJsonController : MonoBehaviour {
         return JsonConvert.DeserializeObject<T>(loadedJsonData);
     }
 
-    public bool FileExistsCheck() {
-        var files = Directory.GetFiles(Application.persistentDataPath, "*.json");
+    public bool FileExistsCheck(string fileName) {
+        var files = Directory.GetFiles(Application.persistentDataPath, $"{fileName}.json");
 
         return (files.Length > 0);
     }

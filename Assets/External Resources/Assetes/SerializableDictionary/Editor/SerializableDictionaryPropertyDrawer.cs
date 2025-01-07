@@ -8,6 +8,7 @@ using System;
 [CustomPropertyDrawer(typeof(GameControlSerializableDictionary.TrafficStatusTmp))]
 [CustomPropertyDrawer(typeof(GameControlSerializableDictionary.TrafficStatusText))]
 [CustomPropertyDrawer(typeof(GameControlSerializableDictionary.NewsArticle))]
+[CustomPropertyDrawer(typeof(GameControlSerializableDictionary.PlayerFamily))]
 public class SerializableDictionaryPropertyDrawer : PropertyDrawer
 {
 	const string KeysFieldName = "m_keys";

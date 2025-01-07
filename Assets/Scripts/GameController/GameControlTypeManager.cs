@@ -28,4 +28,26 @@ public static class GameControlTypeManager {
         SUB_HATE_SHARE,
         SUB_PABLO
     }
+
+    public enum FamilyType {
+        OLD_MOTHER,     // 0
+        WIFE,           // 1
+        EL_DAUGHTER,    // 2
+        SEC_SON         // 3
+        
+        // EL_SON,         
+        // SEC_DAUGHTER,
+    }
+    
+    public enum FamilyStatusType {
+        GOOD,       // 좋음 (Monitor)
+        BAD,        // 위독 (Monitor)
+        
+        STARVING,   // 굶음 (Stack)
+        SICK,       // 아픔 (Stack)
+        COLD,       // 추움 (Stack)
+        
+        SAD,        // 슬픔 (Trigger)
+        DIED,       // 사망 (Trigger)
+    }
 }
