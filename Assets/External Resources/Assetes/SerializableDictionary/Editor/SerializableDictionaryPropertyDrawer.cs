@@ -8,8 +8,10 @@ using System;
 [CustomPropertyDrawer(typeof(GameControlSerializableDictionary.TrafficStatusTmp))]
 [CustomPropertyDrawer(typeof(GameControlSerializableDictionary.TrafficStatusText))]
 [CustomPropertyDrawer(typeof(GameControlSerializableDictionary.NewsArticle))]
-[CustomPropertyDrawer(typeof(GameControlSerializableDictionary.PlayerFamily))]
-[CustomPropertyDrawer(typeof(GameControlSerializableDictionary.PlayerFamilyScriptableObject))]
+[CustomPropertyDrawer(typeof(GameControlSerializableDictionary.FamilySaveData))]
+[CustomPropertyDrawer(typeof(GameControlSerializableDictionary.FamilySaveDataScriptableObject))]
+// [CustomPropertyDrawer(typeof(GameControlSerializableDictionary.ChapterSaveDataScriptableObject))]
+[CustomPropertyDrawer(typeof(GameControlSerializableDictionary.EventSaveDataScriptableObject))]
 public class SerializableDictionaryPropertyDrawer : PropertyDrawer
 {
 	const string KeysFieldName = "m_keys";

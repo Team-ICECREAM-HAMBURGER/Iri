@@ -21,7 +21,7 @@ public class NewspaperController : MonoBehaviour {
         
         // 뉴스 기사 호출
         foreach (var VARIABLE in randomIndexesList) {
-            this.newsPaperArticles[i].Init(this.newspaperArticleData[(GameControlTypeManager.StoryChapterType)VARIABLE]);
+            this.newsPaperArticles[i].Init(this.newspaperArticleData[(GameControlTypeManager.NewsArticleType)VARIABLE]);
             i++;
         }
     }

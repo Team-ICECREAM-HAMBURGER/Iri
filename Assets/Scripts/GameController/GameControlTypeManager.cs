@@ -19,7 +19,7 @@ public static class GameControlTypeManager {
         NO
     }
 
-    public enum StoryChapterType {
+    public enum NewsArticleType {
         STORY_NEW_IRI_MAN,
         STORY_YEONGDONG_FIN,
         //
@@ -27,6 +27,55 @@ public static class GameControlTypeManager {
         SUB_FIREWORKS,
         SUB_HATE_SHARE,
         SUB_PABLO
+    }
+
+    public enum ChapterType {
+        DAY0_0,
+        DAY1_0,
+        DAY2_0,
+        DAY3_0,
+        DAY4_0,
+        DAY5_0,
+        DAY6_0,
+        DAY7_0,
+
+        DAY8_0,
+        DAY9_0,
+        DAY10_0,
+        DAY11_0,
+        DAY12_0,
+        DAY13_0,
+        DAY14_0,
+
+        DAY15_0,
+        DAY16_0,
+        DAY17_0,
+        DAY18_0,
+        DAY19_0,
+        DAY20_0,
+        DAY21_0,
+
+        DAY22_0,
+        DAY23_0,
+        DAY24_0,
+        DAY25_0,
+        DAY26_0,
+        DAY27_0,
+        DAY28_0,
+        DAY29_0,
+        DAY30_0,
+        DAY31_0
+    }
+
+    public enum EventType {
+        DAY7_1,
+        DAY7_2,
+        
+        DAY14_1,
+        DAY14_2,
+        
+        DAY21_1,
+        DAY21_2,
     }
 
     public enum FamilyType {

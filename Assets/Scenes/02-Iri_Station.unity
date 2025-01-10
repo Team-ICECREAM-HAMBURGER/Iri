@@ -79906,13 +79906,46 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameControlJsonSerializationController: {fileID: 1795487415}
-  playerFamilyScriptableObject:
+  familyDataScriptableObject:
     m_keys: 00000000010000000200000003000000
     m_values:
     - {fileID: 11400000, guid: 4df47826dc3bda14cb29dc977eb32b01, type: 2}
     - {fileID: 11400000, guid: 2f2a07dac1421b34ba69947333b0f064, type: 2}
     - {fileID: 11400000, guid: 6dc6d690e4df9a04daff2005fbc269b6, type: 2}
     - {fileID: 11400000, guid: dda9506abf3d44e42a79f12693a6c24b, type: 2}
+  chapterDataScriptableObject:
+  - {fileID: 11400000, guid: 9e7bbdb3c94f9fa448569abbd9400355, type: 2}
+  - {fileID: 11400000, guid: 3759c20fda003094698c6cf8a21c20f9, type: 2}
+  - {fileID: 11400000, guid: e4fbb59f61b345349bc2a826a3fa5edf, type: 2}
+  - {fileID: 11400000, guid: 19acedb67bdbf134abdc54021985f486, type: 2}
+  - {fileID: 11400000, guid: 2a708be623d86b947a070efff0e90f82, type: 2}
+  - {fileID: 11400000, guid: 7b986eeda64cfec45bde0bb6a74cdbba, type: 2}
+  - {fileID: 11400000, guid: acb5b7a49c14c0a40b6e36336490a4a6, type: 2}
+  - {fileID: 11400000, guid: 94e12d9025da35a4384ba1863c735788, type: 2}
+  - {fileID: 11400000, guid: cacf7b19e656a3e46aba8f711dd21fbe, type: 2}
+  - {fileID: 11400000, guid: fa4a39a926799b44b8ae6b336b825a0e, type: 2}
+  - {fileID: 11400000, guid: 2ee2dd29ad9346d4bb4c22462aeca03c, type: 2}
+  - {fileID: 11400000, guid: 608cfca48b324ef4a91598e63caa29cf, type: 2}
+  - {fileID: 11400000, guid: 41126c6f6d79cab48acf131a7ef8f10c, type: 2}
+  - {fileID: 11400000, guid: a5b689f507e974749897b5e6115e7a36, type: 2}
+  - {fileID: 11400000, guid: 297e6931aa767244f9ebae975fc30017, type: 2}
+  - {fileID: 11400000, guid: 718b0df5ac32a974ea1041bad19c6619, type: 2}
+  - {fileID: 11400000, guid: 5463b3980e019fa4d93bab872c46f77d, type: 2}
+  - {fileID: 11400000, guid: cbb5cd55c017b434094c00553a2dd656, type: 2}
+  - {fileID: 11400000, guid: 81b2a7e3ebf3f0b4c960cb4cdf7f0e31, type: 2}
+  - {fileID: 11400000, guid: 316f565b19d5baa4bb4cbc31d86faed9, type: 2}
+  - {fileID: 11400000, guid: 1bb4e687236c35d49a8360c17f7a079b, type: 2}
+  - {fileID: 11400000, guid: 6ff5ecd2ad9231b47b2192add3835f49, type: 2}
+  - {fileID: 11400000, guid: 8b0cc2d48d0534d438f9ef75a17aabe5, type: 2}
+  - {fileID: 11400000, guid: 7d1546d6458bf2c41880edd5cb18e79b, type: 2}
+  - {fileID: 11400000, guid: 5e837cef620f8914780f81d78d0560ec, type: 2}
+  - {fileID: 11400000, guid: d5eeeafbcba966143bc714f1acde00a4, type: 2}
+  - {fileID: 11400000, guid: 09ebba40e56729546912fd4349913eeb, type: 2}
+  - {fileID: 11400000, guid: 9f69168faa570854091103db558b6565, type: 2}
+  - {fileID: 11400000, guid: 205a31fe9fc733a4fba35aeef8f83791, type: 2}
+  - {fileID: 11400000, guid: 68bd6ac4cc5c96148b84f30eef26de8e, type: 2}
+  - {fileID: 11400000, guid: 8bd262c6b54262d45a1b8e623c7c046c, type: 2}
+  - {fileID: 11400000, guid: 82f69499449f092459dc28b7a3dffa2c, type: 2}
 --- !u!1001 &1799057089
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -85795,7 +85828,7 @@ Transform:
   m_GameObject: {fileID: 1917747661}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -65.1044, y: 8.114697, z: -0.6962738}
+  m_LocalPosition: {x: -65.1044, y: 8.114697, z: -0.6962433}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -85814,7 +85847,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mode: 0
-  size: {x: 465.4524, y: 31.229404, z: 390.39252}
+  size: {x: 465.4524, y: 31.229404, z: 390.39258}
   overrideRendererFilters: 0
   minRendererVolumeSize: 0.1
   objectLayerMask:
