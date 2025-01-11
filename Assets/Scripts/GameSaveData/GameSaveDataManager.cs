@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Serialization;
 
 public class GameSaveDataManager : MonoBehaviour {
     [SerializeField] private GameControlJsonSerializationController gameControlJsonSerializationController;
@@ -10,21 +11,26 @@ public class GameSaveDataManager : MonoBehaviour {
     [SerializeField] private GameControlSerializableDictionary.FamilySaveDataScriptableObject 
         familyDataScriptableObject;
     
+    [FormerlySerializedAs("chapterDataScriptableObject")]
     [Space(10f)]
     
     [SerializeField] private List<GameSaveDataChapterScriptableObject> 
-        chapterDataScriptableObject;
+        chapterDataScriptableObjects;
     // [SerializeField] private GameControlSerializableDictionary.EventSaveDataScriptableObject 
     //     eventDataScriptableObject;
     
     private GameSaveDataPlayer playerData;
     private GameControlSerializableDictionary.FamilySaveData familyData;
     private GameSaveDataChapter headChapterData;
+    
+    private List<GameControlLinkedTreeNode<GameSaveDataChapter>> chapterNodes;
+    private GameControlLinkedTree<GameSaveDataChapter> chapterDataTree;
     // private GameSaveDataEvent eventData;
     
     private string playerDataFileName;
     private string familyDataFileName;
     private string chapterDataFileName;
+    private string chapterTreeDataFileName;
     private string eventDataFileName;
         
     private string jsonSerializedData;
@@ -36,6 +42,7 @@ public class GameSaveDataManager : MonoBehaviour {
         this.playerDataFileName = "Player_Save_Data";
         this.familyDataFileName = "Family_Save_Data";
         this.chapterDataFileName = "Chapter_Save_Data";
+        this.chapterTreeDataFileName = "Chapter_Tree_Save_Data";
         // this.eventDataFileName = "Event_Save_Data";
         
         // Player Data Init
@@ -46,7 +53,7 @@ public class GameSaveDataManager : MonoBehaviour {
         
         // Game Story Data Init
         InitStoryData();
-        
+
         // Game Event Data Init
         // InitEventData();
     }
@@ -103,18 +110,46 @@ public class GameSaveDataManager : MonoBehaviour {
     }
 
     private void InitStoryData() {
+        this.chapterNodes = new();
         this.headChapterData = new(this.chapterDataFileName, 
-            this.chapterDataScriptableObject[0].chapterName, 
-            this.chapterDataScriptableObject[0].chapterType, 
-            this.chapterDataScriptableObject[0].savedDateTime);
-
+            this.chapterDataScriptableObjects[0].chapterName, 
+            this.chapterDataScriptableObjects[0].chapterType, 
+            this.chapterDataScriptableObjects[0].savedDateTime);
+        this.chapterDataTree = new GameControlLinkedTree<GameSaveDataChapter>(this.headChapterData);
+        
+        foreach (var VARIABLE in this.chapterDataScriptableObjects) {
+            this.chapterNodes.Add(new GameControlLinkedTreeNode<GameSaveDataChapter>(
+                new GameSaveDataChapter(this.chapterDataFileName,
+                VARIABLE.chapterName,
+                VARIABLE.chapterType,
+                VARIABLE.savedDateTime)));
+        }
+        
+        InitStoryDataTree(1, this.chapterNodes.Count, this.chapterDataTree.root);
+        
         if (!SaveDataExistsCheck(this.chapterDataFileName)) {
             CreateNewSaveData(this.headChapterData, this.chapterDataFileName);    
         }
         else {
             this.headChapterData = LoadSaveData<GameSaveDataChapter>(this.chapterDataFileName);
         }
-        
+
+        if (!SaveDataExistsCheck(this.chapterTreeDataFileName)) {
+            CreateNewSaveData(this.chapterDataTree, this.chapterTreeDataFileName);
+        }
+        else {
+            this.chapterDataTree = LoadSaveData<GameControlLinkedTree<GameSaveDataChapter>>(this.chapterTreeDataFileName);
+        }
+    }
+
+    private void InitStoryDataTree(int depth, int chapterCount, GameControlLinkedTreeNode<GameSaveDataChapter> node) {
+        var i = depth;
+
+        if (i < chapterCount) {
+            node.AddChild(this.chapterNodes[i]);
+            i += 1;
+            InitStoryDataTree(i, chapterCount, node.children[0]);
+        }
     }
     
     // private void InitEventData() {

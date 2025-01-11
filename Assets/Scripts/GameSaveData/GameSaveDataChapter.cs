@@ -14,10 +14,10 @@ public class GameSaveDataChapter {
         this.chapterType = chapterType;
         this.savedDateTime = savedDateTime;
     }
-
-    public void ChapterUpdate(GameSaveDataChapterScriptableObject chapter) {
-        this.chapterName = chapter.chapterName;
-        this.chapterType = chapter.chapterType;
-        this.savedDateTime = chapter.savedDateTime;
-    }
+    
+    // public void ChapterUpdate(GameSaveDataChapterScriptableObject chapter) {
+    //     this.chapterName = chapter.chapterName;
+    //     this.chapterType = chapter.chapterType;
+    //     this.savedDateTime = chapter.savedDateTime;
+    // }
 }
