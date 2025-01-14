@@ -8,22 +8,16 @@ public class GameSaveDataManager : MonoBehaviour {
     
     [Space(25f)] 
     
-    [SerializeField] private GameControlSerializableDictionary.FamilySaveDataScriptableObject 
-        familyDataScriptableObject;
+    [SerializeField] private GameControlSerializableDictionary.FamilySaveDataScriptableObject familyDataScriptableObject;
     
-    [FormerlySerializedAs("chapterDataScriptableObject")]
     [Space(10f)]
     
-    [SerializeField] private List<GameSaveDataChapterScriptableObject> 
-        chapterDataScriptableObjects;
-    // [SerializeField] private GameControlSerializableDictionary.EventSaveDataScriptableObject 
-    //     eventDataScriptableObject;
-    
+    [SerializeField] private List<GameSaveDataChapterScriptableObject> chapterDataScriptableObjects;
+
     private GameSaveDataPlayer playerData;
     private GameControlSerializableDictionary.FamilySaveData familyData;
     private GameSaveDataChapter headChapterData;
-    
-    private List<GameControlLinkedTreeNode<GameSaveDataChapter>> chapterNodes;
+    private Dictionary<GameControlTypeManager.ChapterType, GameControlLinkedTreeNode<GameSaveDataChapter>> chapterNode;
     private GameControlLinkedTree<GameSaveDataChapter> chapterDataTree;
     // private GameSaveDataEvent eventData;
     
@@ -37,6 +31,7 @@ public class GameSaveDataManager : MonoBehaviour {
     
     public static UnityEvent OnGameDataSave;
 
+    public bool isTest; // TODO: 챕터 변경 기능 테스트용
     
     private void Init() {
         this.playerDataFileName = "Player_Save_Data";
@@ -110,22 +105,24 @@ public class GameSaveDataManager : MonoBehaviour {
     }
 
     private void InitStoryData() {
-        this.chapterNodes = new();
+        this.chapterNode = new();
         this.headChapterData = new(this.chapterDataFileName, 
             this.chapterDataScriptableObjects[0].chapterName, 
             this.chapterDataScriptableObjects[0].chapterType, 
             this.chapterDataScriptableObjects[0].savedDateTime);
+        
+        // TODO: 트리를 굳이 처음부터 만들어야 하는가? headChapter를 JSON 역직렬화로?
         this.chapterDataTree = new GameControlLinkedTree<GameSaveDataChapter>(this.headChapterData);
         
         foreach (var VARIABLE in this.chapterDataScriptableObjects) {
-            this.chapterNodes.Add(new GameControlLinkedTreeNode<GameSaveDataChapter>(
+            this.chapterNode.Add(VARIABLE.chapterType, new GameControlLinkedTreeNode<GameSaveDataChapter>(
                 new GameSaveDataChapter(this.chapterDataFileName,
                 VARIABLE.chapterName,
                 VARIABLE.chapterType,
                 VARIABLE.savedDateTime)));
         }
         
-        InitStoryDataTree(1, this.chapterNodes.Count, this.chapterDataTree.root);
+        InitStoryDataTree(1, this.chapterNode.Count, this.chapterDataTree.root);
         
         if (!SaveDataExistsCheck(this.chapterDataFileName)) {
             CreateNewSaveData(this.headChapterData, this.chapterDataFileName);    
@@ -133,20 +130,13 @@ public class GameSaveDataManager : MonoBehaviour {
         else {
             this.headChapterData = LoadSaveData<GameSaveDataChapter>(this.chapterDataFileName);
         }
-
-        if (!SaveDataExistsCheck(this.chapterTreeDataFileName)) {
-            CreateNewSaveData(this.chapterDataTree, this.chapterTreeDataFileName);
-        }
-        else {
-            this.chapterDataTree = LoadSaveData<GameControlLinkedTree<GameSaveDataChapter>>(this.chapterTreeDataFileName);
-        }
     }
 
     private void InitStoryDataTree(int depth, int chapterCount, GameControlLinkedTreeNode<GameSaveDataChapter> node) {
         var i = depth;
 
         if (i < chapterCount) {
-            node.AddChild(this.chapterNodes[i]);
+            node.AddChild(this.chapterNode[(GameControlTypeManager.ChapterType)i]);
             i += 1;
             InitStoryDataTree(i, chapterCount, node.children[0]);
         }
@@ -181,5 +171,13 @@ public class GameSaveDataManager : MonoBehaviour {
     
     private void Awake() {
         Init();
+    }
+
+    
+    private void Update() {
+        if (this.isTest) {  // TODO: 챕터 변경 기능 테스트용; 인덱스 3을 바꾸면 다른 데이터로 변경 가능. chapterNodes를 참조 중
+            this.headChapterData = this.chapterDataTree.DFS(this.chapterDataTree.root, this.chapterNode[GameControlTypeManager.ChapterType.DAY31_0].data).data;
+            CreateNewSaveData(this.headChapterData, this.chapterDataFileName);
+        }
     }
 }

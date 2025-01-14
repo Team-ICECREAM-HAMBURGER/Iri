@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4dc4efdac1094264aaf34a8e99b1c5de, type: 3}
   m_Name: Day 31
   m_EditorClassIdentifier: 
-  tag: 
-  chapterName: 
+  tag: Ending
+  chapterName: "\uC5D4\uB529"
   chapterType: 31
