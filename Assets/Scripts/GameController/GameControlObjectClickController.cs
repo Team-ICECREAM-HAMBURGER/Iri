@@ -1,10 +1,41 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
+using UnityEngine.Serialization;
+using UnityEngine.UI;
 
 public class GameControlObjectClickController : MonoBehaviour {
+    [SerializeField] private List<GraphicRaycaster> graphicRaycasters;  // GraphicRaycaster를 필드로 추가
+    
+    private List<RaycastResult> raycastResults;
+
+
+    private void Init() {
+        this.raycastResults = new List<RaycastResult>();
+    }
+
+    private void Awake() {
+        Init();
+    }
+    
+    private bool IsPointerOverUI() {
+        PointerEventData pointerEventData = new PointerEventData(EventSystem.current) {
+            position = Mouse.current.position.ReadValue()
+        };
+
+        // UI 이벤트를 처리할 RaycastResult 리스트
+        foreach (var VARIABLE in this.graphicRaycasters) {
+            VARIABLE.Raycast(pointerEventData, this.raycastResults);
+        }
+        
+        // UI가 클릭된 경우 true
+        return (this.raycastResults.Count > 0);
+    }
+    
     private void OnSelect() {
-        if (EventSystem.current.IsPointerOverGameObject()) {    // UI 오브젝트 클릭 시 true
+        if (IsPointerOverUI()) {    // UI 오브젝트 클릭 시 true
+            this.raycastResults.Clear();
             return;
         }
         

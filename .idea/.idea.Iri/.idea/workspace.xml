@@ -5,10 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ddc2bca3-3552-44fb-9935-884ccdc772c1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Building_Office.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Building_Office.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Building_Station.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Building_Station.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/OfficeController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/OfficeController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Event_Button_Icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Event_Button_Icon.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Iri/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Iri/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Building_Station (Big).prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Building_Station (Big).prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Building_Station (Small).prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Building_Station (Small).prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/02-Iri_Station.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/02-Iri_Station.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Chapters/Day 31.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Chapters/Day 31.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameController/GameControlLinkedTree.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameController/GameControlLinkedTree.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DayController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DayController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DaysManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DaysManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameCamChanger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameCamChanger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameController/GameControlObjectClickController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameController/GameControlObjectClickController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameSaveData/GameSaveDataChapterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameSaveData/GameSaveDataChapterController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameSaveData/GameSaveDataManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameSaveData/GameSaveDataManager.cs" afterDir="false" />
     </list>
@@ -167,7 +185,9 @@
       <workItem from="1736584950687" duration="1968000" />
       <workItem from="1736586950939" duration="7186000" />
       <workItem from="1736854622768" duration="1336000" />
-      <workItem from="1736855983341" duration="4332000" />
+      <workItem from="1736855983341" duration="4613000" />
+      <workItem from="1736866272830" duration="855000" />
+      <workItem from="1736940635548" duration="13954000" />
     </task>
     <task id="LOCAL-00001" summary="뉴스 펼치기 기능 구현&#10;&#10;추상 클래스, GameControlPointerManager.cs&#10;확장 메뉴 펼치기 기능 구현 클래스, GameControlExpandMenuController.cs&#10;드래그&amp;드랍 기능 구현 클래스, GameControlDragDropController.cs&#10;- GameControlPointerManager.cs 추상 클래스에는 Unity.EventSystems 라이브러리가 포함되어 있으며, OnPointerDown(), OnBeginDrag(), OnDrag(), OnEndDrag() 추상 메서드가 있다.&#10;- 자식 클래스(GameControlExpandMenuController.cs, GameControlDragDropController.cs)는 추상 메서드를 구현하는 방식으로 기능을 구현한다.&#10;- 뉴스 펼치기 기능도 확장 메뉴 펼치기 기능과 동일한 방식으로 구현되므로, 스크립트를 컴포넌트로 붙여서 재활용.&#10;- 뉴스를 펼치는 방향과 확장 메뉴를 펼치는 방향이 반대이기 때문에, swipeLevel을 SerializeField로 선언하여 시작 레벨 값을 설정하도록 변경함.&#10;(대신 레벨 값이 변화할 떄는 swipeDirection이 음수일 때 -1, 양수일 때 +1로 설정)&#10;&#10;GameControlDragDropController.cs는 오브젝트를 선택하여 드래그&amp;드랍하는 기능을 구현하는 클래스.&#10;- 추후 검문 패널에서 증거물 오브젝트를 마우스로 클릭해 움직이는 기능을 구현할 때 해당 클래스를 활용한다.&#10;&#10;패널이 펼쳐지고 닫히는 애니메이션 속도를 증가시켜서 답답함을 해소하고자 함.&#10;- 지속적인 QA가 필요한 부분.&#10;- 검문 패널이 닫힐 때, 스프링처럼 튕겼다가 다시 돌아오는 애니메이션 효과를 추가하면 더 자연스러울 것 같다.">
       <option name="closed" value="true" />
@@ -201,7 +221,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736525455608</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="스토리 챕터 진행도 저장 기능 구현 중&#10;&#10;- 트리에서 헤드 노드를 어떤 챕터로 전환할 것인지 설정해주면 해당 챕터 데이터로 바꾸는 기능 구현 중.&#10;-- 트리에서 제공한 정보를 가지고 DFS로 노드(챕터) 검색.&#10;--- 편향 트리 형태이기 때문에 DFS를 선택함.&#10;-- 노드 검색이 끝나면 해당 노드의 데이터를 headChapterData 변수에 대입.&#10;-- 갱신된 headChapterData 변수 데이터를 가지고 JSON 직렬화 진행.&#10;-- 게임을 다시 시작해서 Init()을 거치면 갱신된 headChapterData를 반영하게 된다.&#10;- TODO 태그 참고할 것.">
+      <option name="closed" value="true" />
+      <created>1736865876986</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1736865876986</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -245,7 +273,8 @@
     <MESSAGE value="라이터 헤드 분리 기능 추가&#10;&#10;라이터 헤드에 버튼을 추가하여, 버튼을 누르면 헤드가 분리되고 결합되는 기능을 추가함.&#10;- 헤드를 분리하면 숨겨진 쪽지나 메시지가 나타나야 함.&#10;-- 쪽지나 메시지는 무작위로 달라져야 함. (내장된 부품에 각인했다는 설정으로)" />
     <MESSAGE value="뉴스 기사 ScriptableObject로 불러오기 구현&#10;&#10;1. 진행사항&#10;- 도대체 JSON으로 저장해야 한다는 생각을 왜 했던 것인가????&#10;-- ScriptableObject는 Project 폴더 안에 저장되므로 굳이 외부로 빼내서 저장하고 불러오고 할 필요가 없었다.&#10;-- 아니 도대체 왜 JSON으로 직렬화해서 빼내야 한다고 생각했지???&#10;- ScriptableObject 데이터를 딕셔너리에 연결해두고, NewspaperController.cs의 Init() 과정에서 프리팹에 붙은 NewspaperArticle.cs 컴포넌트를 가져와서 Init() 메서드를 호출한다.&#10;- 이제 기사를 불러오는 것까지는 완료. 무작위로, 어떤 기사를 불러올 것인지를 설정하는 것만 남았다.&#10;-- 아니 이렇게 간단하게 될 일을 가지고 도대체 난 오늘 하루종일 뭘 한 거냐고... 코드 누가 이렇게 짜래, 진짜...&#10;&#10;///&#10;&#10;2. 문제점&#10;- ScriptableObject 내용을 불러오는 것은 완성되었으나, 프리팹을 Instantiate()로 생성하지말고 미리 배치해두고 내용을 바꿀 수는 없는가?&#10;- 무작위로 불러와야하는 서브 스토리와 스토리 분기와 시점에 맞게 불러와야 하는 메인 스토리가 나눠지는데, 등장하는 기사를 어떻게 조정하는가?&#10;-- 뭐가 됐든 간에, 이전에 떴던 기사가 또 뜨는 중복 문제가 발생해서는 절대 안된다. (몰입 방해)&#10;- 기사는 최대 4개까지 띄울 수 있다. 수는 어떻게 조정할 것인가?&#10;&#10;///&#10;&#10;3. 중요사항&#10;- 코드 짜기 전에 구조를 좀 더 고민해보고 짜자.&#10;-- 시간 아까워 진짜...&#10;- 기사 띄울 때 수량 조절, 무작위 및 등장 시점 조정은 더 고민해봐야.&#10;&#10;///&#10;&#10;4. 다음 단계&#10;- 기사를 띄울 때 수량 4개로 조정 필요&#10;- 미리 배치해둔 오브젝트에 데이터만 교환하는 방법 고려 (Instantiate() 삭제 방법)&#10;- 기사 띄우는 시점 조정 방법 고려&#10;- 하이라키 정리 (2차)" />
     <MESSAGE value="챕터 세이브 데이터 직렬화 구현&#10;&#10;1. 진행사항&#10;- 게임 스토리 챕터를 직렬화.&#10;-- Day0 ~ Day 31까지 스크립터블 오브젝트 제작.&#10;-- 스크립터블 오브젝트를 리스트로 저장 (챕터는 순서대로 진행됨)&#10;-- 헤드 챕터 데이터 정보를 하나의 객체로 저장하여 현재 진행사항을 파악&#10;- GameDaysManager와 트리 구조이며, GameDayController가 하나의 노드&#10;-- 헤드 챕터 데이터 정보를 통해서 전체 스토리 트리에서 헤드 노드를 찾아내 설정하여 현재 진행 중인 스토리 챕터 지점을 파악.&#10;- 이벤트와 챕터는 별개로 분리하여 관리.&#10;-- 챕터와 이벤트를 조립하는 방식으로 구현, 어떤 이벤트를 어떤 챕터에 등장시킬 것인지 제어가 가능하도록...&#10;-- 이벤트는 따로 직렬화하여 저장할 필요가 없음.&#10;--- 이벤트는 지정된 것들 중에서 타이밍에 맞게 불러와 '조립'하여 사용하므로.&#10;- 제네릭 타입으로 반복되는 코드 정리&#10;-- CreateNewSaveData&lt;T&gt;(), LoadSaveData&lt;T&gt;() 메서드.&#10;--- 매개변수로 받은 타입의 Object, 파일 이름을 가지고 JSON으로 직렬화. (CreateNewSaveData)&#10;--- 매개변수로 받은 파일 이름을 가지고 역직렬화, T 타입의 Object 반환. (LoadSaveData)&#10;- 게임 챕터 업데이트 시(게임 진행 시) 스크립터블 오브젝트를 매개변수로 받아서 챕터 이름, 타입, 시간 등을 불러와 대입하여 갱신.&#10;&#10; ///&#10; &#10; 2. 문제점&#10; - 아직 트리 구현이 되지 않았음.&#10; -- GameControlLinkedTree.cs, GameControlLinkedTreeNode.cs 구현 필요.&#10; - saveDataTime이 제대로 저장되지 않음. (포멧 설정, 날짜 설정, 시간 설정 방법 확인 필요)&#10; - ENUM 값이 무분별하게 사용되는 느낌이 있음. (Day0 ~ 31까지 벌써 32개나 되는 ENUM이 사용됨.)&#10; -- ENUN 수가 많은 것이 성능에 문제가 되지 않는지 파악 필요.&#10; &#10; ///&#10; &#10; 3. 중요사항&#10; - 챕터 스크립터블 오브젝트 내용을 작성해야 함.&#10;&#10; ///&#10; &#10; 4. 다음 단계&#10; - 트리 구현&#10; - 게임 내 분기에 맞게 챕터를 호출하여 동작 테스트&#10; - 증거품 제출 기능 구현&#10; - 뉴스 텍스트 호출 분기 제어 기능 구현" />
-    <option name="LAST_COMMIT_MESSAGE" value="챕터 세이브 데이터 직렬화 구현&#10;&#10;1. 진행사항&#10;- 게임 스토리 챕터를 직렬화.&#10;-- Day0 ~ Day 31까지 스크립터블 오브젝트 제작.&#10;-- 스크립터블 오브젝트를 리스트로 저장 (챕터는 순서대로 진행됨)&#10;-- 헤드 챕터 데이터 정보를 하나의 객체로 저장하여 현재 진행사항을 파악&#10;- GameDaysManager와 트리 구조이며, GameDayController가 하나의 노드&#10;-- 헤드 챕터 데이터 정보를 통해서 전체 스토리 트리에서 헤드 노드를 찾아내 설정하여 현재 진행 중인 스토리 챕터 지점을 파악.&#10;- 이벤트와 챕터는 별개로 분리하여 관리.&#10;-- 챕터와 이벤트를 조립하는 방식으로 구현, 어떤 이벤트를 어떤 챕터에 등장시킬 것인지 제어가 가능하도록...&#10;-- 이벤트는 따로 직렬화하여 저장할 필요가 없음.&#10;--- 이벤트는 지정된 것들 중에서 타이밍에 맞게 불러와 '조립'하여 사용하므로.&#10;- 제네릭 타입으로 반복되는 코드 정리&#10;-- CreateNewSaveData&lt;T&gt;(), LoadSaveData&lt;T&gt;() 메서드.&#10;--- 매개변수로 받은 타입의 Object, 파일 이름을 가지고 JSON으로 직렬화. (CreateNewSaveData)&#10;--- 매개변수로 받은 파일 이름을 가지고 역직렬화, T 타입의 Object 반환. (LoadSaveData)&#10;- 게임 챕터 업데이트 시(게임 진행 시) 스크립터블 오브젝트를 매개변수로 받아서 챕터 이름, 타입, 시간 등을 불러와 대입하여 갱신.&#10;&#10; ///&#10; &#10; 2. 문제점&#10; - 아직 트리 구현이 되지 않았음.&#10; -- GameControlLinkedTree.cs, GameControlLinkedTreeNode.cs 구현 필요.&#10; - saveDataTime이 제대로 저장되지 않음. (포멧 설정, 날짜 설정, 시간 설정 방법 확인 필요)&#10; - ENUM 값이 무분별하게 사용되는 느낌이 있음. (Day0 ~ 31까지 벌써 32개나 되는 ENUM이 사용됨.)&#10; -- ENUN 수가 많은 것이 성능에 문제가 되지 않는지 파악 필요.&#10; &#10; ///&#10; &#10; 3. 중요사항&#10; - 챕터 스크립터블 오브젝트 내용을 작성해야 함.&#10;&#10; ///&#10; &#10; 4. 다음 단계&#10; - 트리 구현&#10; - 게임 내 분기에 맞게 챕터를 호출하여 동작 테스트&#10; - 증거품 제출 기능 구현&#10; - 뉴스 텍스트 호출 분기 제어 기능 구현" />
+    <MESSAGE value="스토리 챕터 진행도 저장 기능 구현 중&#10;&#10;- 트리에서 헤드 노드를 어떤 챕터로 전환할 것인지 설정해주면 해당 챕터 데이터로 바꾸는 기능 구현 중.&#10;-- 트리에서 제공한 정보를 가지고 DFS로 노드(챕터) 검색.&#10;--- 편향 트리 형태이기 때문에 DFS를 선택함.&#10;-- 노드 검색이 끝나면 해당 노드의 데이터를 headChapterData 변수에 대입.&#10;-- 갱신된 headChapterData 변수 데이터를 가지고 JSON 직렬화 진행.&#10;-- 게임을 다시 시작해서 Init()을 거치면 갱신된 headChapterData를 반영하게 된다.&#10;- TODO 태그 참고할 것." />
+    <option name="LAST_COMMIT_MESSAGE" value="스토리 챕터 진행도 저장 기능 구현 중&#10;&#10;- 트리에서 헤드 노드를 어떤 챕터로 전환할 것인지 설정해주면 해당 챕터 데이터로 바꾸는 기능 구현 중.&#10;-- 트리에서 제공한 정보를 가지고 DFS로 노드(챕터) 검색.&#10;--- 편향 트리 형태이기 때문에 DFS를 선택함.&#10;-- 노드 검색이 끝나면 해당 노드의 데이터를 headChapterData 변수에 대입.&#10;-- 갱신된 headChapterData 변수 데이터를 가지고 JSON 직렬화 진행.&#10;-- 게임을 다시 시작해서 Init()을 거치면 갱신된 headChapterData를 반영하게 된다.&#10;- TODO 태그 참고할 것." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
