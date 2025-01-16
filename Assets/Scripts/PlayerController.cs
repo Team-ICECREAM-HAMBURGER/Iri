@@ -22,8 +22,8 @@ public class PlayerController : MonoBehaviour {
     }
     
     private void PunchIn() {
-        // TODO: 게임 챕터 데이터, 세이브 데이터 정보를 기반으로 workTime 설정
         Debug.Log("Punch In");
+        
         this.punchInTime = Time.time;
         GameDayTimeUpdate(this.punchInTime);
     }
@@ -31,6 +31,7 @@ public class PlayerController : MonoBehaviour {
     private void PunchOut() {
         Debug.Log("Punch Out");
         // TODO: 챕터 전환 코드 이식
+        
     }
     
     private void GameDayTimeUpdate(float targetTime) {

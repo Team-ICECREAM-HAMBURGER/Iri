@@ -14,7 +14,7 @@ public class GameSaveDataManager : MonoBehaviour {
 
     private GameSaveDataPlayer playerData;
     private GameControlSerializableDictionary.FamilySaveData familyData;
-    private GameSaveDataChapter headChapterData;
+    public GameSaveDataChapter HeadChapterData { get; private set; }
     private Dictionary<GameControlTypeManager.ChapterType, GameControlLinkedTreeNode<GameSaveDataChapter>> chapterNode;
     private GameControlLinkedTree<GameSaveDataChapter> chapterDataTree;
     // private GameSaveDataEvent eventData;
@@ -102,29 +102,31 @@ public class GameSaveDataManager : MonoBehaviour {
 
     private void InitStoryData() {
         this.chapterNode = new();
-        this.headChapterData = new(this.chapterDataFileName, 
+        this.HeadChapterData = new(this.chapterDataFileName, 
             this.chapterDataScriptableObjects[0].chapterName, 
             this.chapterDataScriptableObjects[0].chapterType, 
+            this.chapterDataScriptableObjects[0].vehicleType,
             this.chapterDataScriptableObjects[0].savedDateTime);
         
         if (!SaveDataExistsCheck(this.chapterDataFileName)) {
-            CreateNewSaveData(this.headChapterData, this.chapterDataFileName);    
+            CreateNewSaveData(this.HeadChapterData, this.chapterDataFileName);    
         }
         else {
-            this.headChapterData = LoadSaveData<GameSaveDataChapter>(this.chapterDataFileName);
+            this.HeadChapterData = LoadSaveData<GameSaveDataChapter>(this.chapterDataFileName);
         }
         
-        this.chapterDataTree = new GameControlLinkedTree<GameSaveDataChapter>(this.headChapterData);
+        this.chapterDataTree = new GameControlLinkedTree<GameSaveDataChapter>(this.HeadChapterData);
         
         foreach (var VARIABLE in this.chapterDataScriptableObjects) {
             this.chapterNode.Add(VARIABLE.chapterType, new GameControlLinkedTreeNode<GameSaveDataChapter>(
                 new GameSaveDataChapter(this.chapterDataFileName,
                     VARIABLE.chapterName,
                     VARIABLE.chapterType,
+                    VARIABLE.vehicleType,
                     VARIABLE.savedDateTime)));
         }
         
-        InitStoryDataTree((int)this.headChapterData.chapterType, this.chapterNode.Count, this.chapterDataTree.root);
+        InitStoryDataTree((int)this.HeadChapterData.chapterType, this.chapterNode.Count, this.chapterDataTree.root);
     }
 
     private void InitStoryDataTree(int depth, int chapterCount, GameControlLinkedTreeNode<GameSaveDataChapter> node) {
@@ -165,9 +167,9 @@ public class GameSaveDataManager : MonoBehaviour {
     }
 
     public void ChapterUpdate(GameControlTypeManager.ChapterType chapterType) {
-        this.headChapterData = 
+        this.HeadChapterData = 
             this.chapterDataTree.DFS(this.chapterDataTree.root, this.chapterNode[chapterType].data).data;
-        CreateNewSaveData(this.headChapterData, this.chapterDataFileName);
+        CreateNewSaveData(this.HeadChapterData, this.chapterDataFileName);
     }
     
     private void Awake() {

@@ -1,8 +1,6 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 public class VehicleTrainController : MonoBehaviour {
     [Header("Vehicle Component")]
@@ -11,7 +9,7 @@ public class VehicleTrainController : MonoBehaviour {
     [SerializeField] private GameControlSerializableDictionary.TrafficStatusText trafficStatusText;
     [SerializeField] private GameObject engineCar;
     [SerializeField] private List<GameObject> jointCars;
-
+    
     [Space(25f)]
     
     [Header("Game System Component")]
@@ -19,6 +17,7 @@ public class VehicleTrainController : MonoBehaviour {
     public TrafficStatusTrigger trafficApproachTrigger;
     public TrafficStatusTrigger trafficPassTrigger;
     public TrainSpawnController trainSpawnController;
+    public BoxCollider boxCollider;
     
     [Space(25f)]
     
