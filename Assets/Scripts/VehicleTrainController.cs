@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class VehicleTrainController : MonoBehaviour {
     [Header("Vehicle Component")]
@@ -16,7 +17,7 @@ public class VehicleTrainController : MonoBehaviour {
     public TrafficLightManager trafficLightManager;
     public TrafficStatusTrigger trafficApproachTrigger;
     public TrafficStatusTrigger trafficPassTrigger;
-    public TrainSpawnController trainSpawnController;
+    [FormerlySerializedAs("trainSpawnController")] public TrainSpawnManager trainSpawnManager;
     public BoxCollider boxCollider;
     
     [Space(25f)]
@@ -55,7 +56,7 @@ public class VehicleTrainController : MonoBehaviour {
         this.trafficApproachTrigger.OnTrafficApproach.AddListener(OnTrafficStatusUpdate);
         this.trafficPassTrigger.OnTrafficApproach.AddListener(OnTrafficStatusUpdate);
         
-        this.trainSpawnController.OnTransformReset.AddListener(OnTransformReset);
+        this.trainSpawnManager.OnTransformReset.AddListener(OnTransformReset);
     }
 
     private void Awake() {
@@ -83,7 +84,11 @@ public class VehicleTrainController : MonoBehaviour {
         TrainInformationMonitor.OnTrafficStatusUpdate.Invoke(this.VehicleType, this.TrafficStatus, this.trafficStatusText[this.TrafficStatus]);
     }
 
-    private void OnTransformReset() {
+    private void OnTransformReset(string trainTag) {
+        if (!trainTag.Equals(this.gameObject.tag)) {
+            return;
+        }
+        
         this.engineCar.transform.SetLocalPositionAndRotation(this.engineCarResetPosition, Quaternion.identity);
         
         for (var i = 0; i < this.jointCars.Count(); i++) {

@@ -2718,7 +2718,7 @@ GameObject:
   - component: {fileID: 68826450}
   m_Layer: 0
   m_Name: Traffic Status Trigger (4)
-  m_TagString: Traffic_Dangerous_F
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7032,7 +7032,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 733371801}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 470180425460325172, guid: f5780b409d0fba744b45c0cd20f0e8dc,
         type: 3}
@@ -10799,7 +10799,7 @@ PrefabInstance:
     - target: {fileID: 5589808606257838379, guid: a21fcd1b49d49d340b6591369bd079e2,
         type: 3}
       propertyPath: m_TagString
-      value: Traffic_Freight_F
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 5702096848066154947, guid: a21fcd1b49d49d340b6591369bd079e2,
         type: 3}
@@ -19754,7 +19754,7 @@ PrefabInstance:
     - target: {fileID: 8732317784300576720, guid: 7acc3f63908bf8d49954baba0bc708a6,
         type: 3}
       propertyPath: m_TagString
-      value: Traffic_Passanger_R
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4899377532627797590, guid: 7acc3f63908bf8d49954baba0bc708a6, type: 3}
@@ -20842,6 +20842,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Prop_Lamp Rail (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5276864615182739953, guid: 1b1a5492cbeaada4e90c9bb4364bdae6,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -23897,7 +23902,7 @@ GameObject:
   - component: {fileID: 508013509}
   m_Layer: 0
   m_Name: Traffic Status Trigger (3)
-  m_TagString: Traffic_Freight_F
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27254,7 +27259,7 @@ GameObject:
   - component: {fileID: 564351962}
   m_Layer: 0
   m_Name: Traffic Status Trigger (5)
-  m_TagString: Traffic_Passanger_F
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33258,6 +33263,75 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b78635e73082a745ab700af9c5c0a9b, type: 3}
+--- !u!1 &659431125
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 659431128}
+  - component: {fileID: 659431127}
+  - component: {fileID: 659431126}
+  m_Layer: 0
+  m_Name: Train Spawn Controller (Dangerous_F)
+  m_TagString: Traffic_Dangerous_F
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &659431126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 659431125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27eb5713c1244cd4883705522b7384fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trainSpawnManager: {fileID: 733371802}
+  spawnTime: 10
+  spawnTimeMargin: 10
+--- !u!65 &659431127
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 659431125}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 6, y: 6, z: 6}
+  m_Center: {x: -288, y: 0, z: -98}
+--- !u!4 &659431128
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 659431125}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &661286222 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4020272423865372180, guid: 2b78635e73082a745ab700af9c5c0a9b,
@@ -34862,14 +34936,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 733371801}
-  - component: {fileID: 733371803}
-  - component: {fileID: 733371806}
-  - component: {fileID: 733371805}
-  - component: {fileID: 733371804}
   - component: {fileID: 733371802}
   m_Layer: 0
-  m_Name: Train Spawn Controller
-  m_TagString: Traffic_Passanger_F
+  m_Name: Train Spawn Manager
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34886,11 +34956,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 7933753732712366445}
-  - {fileID: 2408747580492067110}
-  - {fileID: 3784840534460844014}
-  - {fileID: 3535768181180609563}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &733371802
@@ -34908,6 +34974,9 @@ MonoBehaviour:
   OnTransformReset:
     m_PersistentCalls:
       m_Calls: []
+  OnTrainRespawn:
+    m_PersistentCalls:
+      m_Calls: []
   gameSaveDataManager: {fileID: 1155382838}
   playerController: {fileID: 607718758}
   trains:
@@ -34915,92 +34984,6 @@ MonoBehaviour:
   - {fileID: 540300814471330415}
   - {fileID: 1299416863822487098}
   - {fileID: 3535768181180609562}
-  marginTime: 5
-  <SpawnTimeNormal>k__BackingField: 7
---- !u!65 &733371803
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 733371800}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 6, y: 6, z: 6}
-  m_Center: {x: -288, y: 0.5, z: -62}
---- !u!65 &733371804
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 733371800}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 6, y: 6, z: 6}
-  m_Center: {x: -288, y: 0, z: -98}
---- !u!65 &733371805
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 733371800}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 6, y: 6, z: 6}
-  m_Center: {x: -288, y: 0, z: -86}
---- !u!65 &733371806
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 733371800}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 6, y: 6, z: 6}
-  m_Center: {x: 168, y: 0, z: -74}
 --- !u!1001 &733692578
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36213,7 +36196,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 733371801}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 470180425460325172, guid: f5780b409d0fba744b45c0cd20f0e8dc,
         type: 3}
@@ -38984,6 +38967,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prop_Lamp Rail (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8732317784300576720, guid: 7acc3f63908bf8d49954baba0bc708a6,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7032047876203219707, guid: 7acc3f63908bf8d49954baba0bc708a6, type: 3}
     - {fileID: 4834422518716021853, guid: 7acc3f63908bf8d49954baba0bc708a6, type: 3}
@@ -40233,6 +40221,75 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 847083986}
   m_CullTransparentMesh: 1
+--- !u!1 &849682229
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 849682232}
+  - component: {fileID: 849682231}
+  - component: {fileID: 849682230}
+  m_Layer: 0
+  m_Name: Train Spawn Controller (Passenger_F)
+  m_TagString: Traffic_Passanger_F
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &849682230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 849682229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27eb5713c1244cd4883705522b7384fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trainSpawnManager: {fileID: 733371802}
+  spawnTime: 5
+  spawnTimeMargin: 3
+--- !u!65 &849682231
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 849682229}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 6, y: 6, z: 6}
+  m_Center: {x: -288, y: 0.5, z: -62}
+--- !u!4 &849682232
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 849682229}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &850598908
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -51454,7 +51511,7 @@ GameObject:
   - component: {fileID: 1115888922}
   m_Layer: 0
   m_Name: Traffic Status Trigger (8)
-  m_TagString: Traffic_Dangerous_F
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -52805,7 +52862,7 @@ GameObject:
   - component: {fileID: 1138906633}
   m_Layer: 0
   m_Name: Traffic Status Trigger (1)
-  m_TagString: Traffic_Passanger_F
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -59156,6 +59213,75 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2336281610368108255}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1292248538
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1292248541}
+  - component: {fileID: 1292248540}
+  - component: {fileID: 1292248539}
+  m_Layer: 0
+  m_Name: Train Spawn Controller (Freight_F)
+  m_TagString: Traffic_Freight_F
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1292248539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292248538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27eb5713c1244cd4883705522b7384fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trainSpawnManager: {fileID: 733371802}
+  spawnTime: 10
+  spawnTimeMargin: 5
+--- !u!65 &1292248540
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292248538}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 6, y: 6, z: 6}
+  m_Center: {x: -288, y: 0, z: -86}
+--- !u!4 &1292248541
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292248538}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1293681773 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6815783485010757080, guid: 8ff21f5104a67a643a05bd68101aef5e,
@@ -59175,7 +59301,7 @@ GameObject:
   - component: {fileID: 1294415723}
   m_Layer: 0
   m_Name: Traffic Status Trigger (7)
-  m_TagString: Traffic_Freight_F
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63591,7 +63717,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 733371801}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1961726915191345070, guid: 18c47b67fd7f3b04e84ec7844466be14,
         type: 3}
@@ -66836,7 +66962,7 @@ GameObject:
   - component: {fileID: 1444700753}
   m_Layer: 0
   m_Name: Traffic Status Trigger (6)
-  m_TagString: Traffic_Passanger_R
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -68024,7 +68150,7 @@ PrefabInstance:
     - target: {fileID: 5589808606257838379, guid: a21fcd1b49d49d340b6591369bd079e2,
         type: 3}
       propertyPath: m_TagString
-      value: Traffic_Dangerous_F
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 5702096848066154947, guid: a21fcd1b49d49d340b6591369bd079e2,
         type: 3}
@@ -74859,7 +74985,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 733371801}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1496696072424990762, guid: ef6bb891461dfec43a094a3873381052,
         type: 3}
@@ -75827,7 +75953,7 @@ GameObject:
   - component: {fileID: 1655696975}
   m_Layer: 0
   m_Name: Traffic Status Trigger (2)
-  m_TagString: Traffic_Passanger_R
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -80356,7 +80482,7 @@ PrefabInstance:
     - target: {fileID: 5276864615182739953, guid: 1b1a5492cbeaada4e90c9bb4364bdae6,
         type: 3}
       propertyPath: m_TagString
-      value: Traffic_Freight_F
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1740469198668638210, guid: 1b1a5492cbeaada4e90c9bb4364bdae6, type: 3}
@@ -85884,6 +86010,75 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameControlCircularLinkedListController: {fileID: 6588788239084548349}
+--- !u!1 &1895580765
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1895580768}
+  - component: {fileID: 1895580767}
+  - component: {fileID: 1895580766}
+  m_Layer: 0
+  m_Name: Train Spawn Controller (Passenger_R)
+  m_TagString: Traffic_Passanger_R
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1895580766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1895580765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27eb5713c1244cd4883705522b7384fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trainSpawnManager: {fileID: 733371802}
+  spawnTime: 5
+  spawnTimeMargin: 3
+--- !u!65 &1895580767
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1895580765}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 6, y: 6, z: 6}
+  m_Center: {x: 168, y: 0, z: -74}
+--- !u!4 &1895580768
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1895580765}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1896659584
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -96876,7 +97071,7 @@ PrefabInstance:
     - target: {fileID: 5589808606257838379, guid: a21fcd1b49d49d340b6591369bd079e2,
         type: 3}
       propertyPath: m_TagString
-      value: Traffic_Passanger_F
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 5702096848066154947, guid: a21fcd1b49d49d340b6591369bd079e2,
         type: 3}
@@ -97387,17 +97582,11 @@ MonoBehaviour:
   trafficLightManager: {fileID: 1260950067}
   trafficApproachTrigger: {fileID: 1655696975}
   trafficPassTrigger: {fileID: 1444700753}
-  trainSpawnController: {fileID: 733371802}
+  trainSpawnManager: {fileID: 733371802}
   boxCollider: {fileID: 0}
   vehicleMaxSpeed: 50
   vehicleApproachSpeed: 0
   vehicleAcceleration: 15
---- !u!4 &2408747580492067110 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8899261555154542397, guid: f5780b409d0fba744b45c0cd20f0e8dc,
-    type: 3}
-  m_PrefabInstance: {fileID: 757334121}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &2420598003888106941
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -97803,7 +97992,7 @@ MonoBehaviour:
   trafficLightManager: {fileID: 1466187061}
   trafficApproachTrigger: {fileID: 68826450}
   trafficPassTrigger: {fileID: 1115888922}
-  trainSpawnController: {fileID: 733371802}
+  trainSpawnManager: {fileID: 733371802}
   boxCollider: {fileID: 0}
   vehicleMaxSpeed: 80
   vehicleApproachSpeed: 0
@@ -98041,12 +98230,6 @@ Transform:
 --- !u!1 &3535768181180609562 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1496696072424990762, guid: ef6bb891461dfec43a094a3873381052,
-    type: 3}
-  m_PrefabInstance: {fileID: 1640684990}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &3535768181180609563 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7381502416232433460, guid: ef6bb891461dfec43a094a3873381052,
     type: 3}
   m_PrefabInstance: {fileID: 1640684990}
   m_PrefabAsset: {fileID: 0}
@@ -98349,17 +98532,11 @@ MonoBehaviour:
   trafficLightManager: {fileID: 272130164}
   trafficApproachTrigger: {fileID: 508013509}
   trafficPassTrigger: {fileID: 1294415723}
-  trainSpawnController: {fileID: 733371802}
+  trainSpawnManager: {fileID: 733371802}
   boxCollider: {fileID: 0}
   vehicleMaxSpeed: 80
   vehicleApproachSpeed: 0
   vehicleAcceleration: 20
---- !u!4 &3784840534460844014 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2029381489382024687, guid: 18c47b67fd7f3b04e84ec7844466be14,
-    type: 3}
-  m_PrefabInstance: {fileID: 1367584878}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3901258780961274526
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -101764,7 +101941,7 @@ PrefabInstance:
     - target: {fileID: 5589808606257838379, guid: a21fcd1b49d49d340b6591369bd079e2,
         type: 3}
       propertyPath: m_TagString
-      value: Traffic_Passanger_R
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 5702096848066154947, guid: a21fcd1b49d49d340b6591369bd079e2,
         type: 3}
@@ -102733,17 +102910,11 @@ MonoBehaviour:
   trafficLightManager: {fileID: 1594522758}
   trafficApproachTrigger: {fileID: 1138906633}
   trafficPassTrigger: {fileID: 564351962}
-  trainSpawnController: {fileID: 733371802}
+  trainSpawnManager: {fileID: 733371802}
   boxCollider: {fileID: 0}
   vehicleMaxSpeed: 50
   vehicleApproachSpeed: 0
   vehicleAcceleration: 15
---- !u!4 &7933753732712366445 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8899261555154542397, guid: f5780b409d0fba744b45c0cd20f0e8dc,
-    type: 3}
-  m_PrefabInstance: {fileID: 171519555}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7963123788732069867 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7837938072474208565, guid: 5f225b653e1a0054d8c6edba843c2e5e,
@@ -103282,6 +103453,14 @@ SceneRoots:
   - {fileID: 8041614040307809264}
   - {fileID: 1098417461}
   - {fileID: 733371801}
+  - {fileID: 849682232}
+  - {fileID: 171519555}
+  - {fileID: 1895580768}
+  - {fileID: 757334121}
+  - {fileID: 1292248541}
+  - {fileID: 1367584878}
+  - {fileID: 659431128}
+  - {fileID: 1640684990}
   - {fileID: 719853313}
   - {fileID: 4013368484658716075}
   - {fileID: 513467396}
