@@ -3,7 +3,8 @@ using UnityEngine.EventSystems;
 
 public class GameControlDragDropController : GameControlPointerManager {
     [Space(10f)]
-    [SerializeField] private CanvasGroup canvasGroup;
+    
+    [SerializeField] private CanvasGroup canvasGroup;   // For Drag Drop Snap
     
     
     public override void OnPointerDown(PointerEventData eventData) {

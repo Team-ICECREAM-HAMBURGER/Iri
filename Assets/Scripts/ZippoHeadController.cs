@@ -1,11 +1,10 @@
 using UnityEngine;
-using UnityEngine.EventSystems;
 
-public class ZippoController : MonoBehaviour {
+public class ZippoHeadController : MonoBehaviour {
     [SerializeField] private Animator animator;
     
     
-    public void OnHeadDisassembly() {
+    public void OnHeadControl() {
         this.animator.SetBool("isDisassembly", !this.animator.GetBool("isDisassembly"));
     }
 }

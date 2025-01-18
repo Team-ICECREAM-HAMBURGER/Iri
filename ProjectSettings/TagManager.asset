@@ -8,7 +8,7 @@ TagManager:
   - Traffic_Passanger_R
   - Traffic_Freight_F
   - Traffic_Dangerous_F
-  - Item_Paper
+  - Item
   layers:
   - Default
   - TransparentFX

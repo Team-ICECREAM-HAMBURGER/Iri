@@ -150,7 +150,7 @@ GameObject:
   - component: {fileID: 6377348638441664915}
   m_Layer: 5
   m_Name: Ticket (Passenger)
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

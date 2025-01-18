@@ -17,8 +17,7 @@ public class VehicleTrainController : MonoBehaviour {
     public TrafficLightManager trafficLightManager;
     public TrafficStatusTrigger trafficApproachTrigger;
     public TrafficStatusTrigger trafficPassTrigger;
-    [FormerlySerializedAs("trainSpawnController")] public TrainSpawnManager trainSpawnManager;
-    public BoxCollider boxCollider;
+    public TrainSpawnManager trainSpawnManager;
     
     [Space(25f)]
     
