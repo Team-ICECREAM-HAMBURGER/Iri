@@ -1,41 +1,43 @@
-using System.Collections.Generic;
+using System.Collections;
 using UnityEngine;
-using UnityEngine.EventSystems;
+using UnityEngine.Events;
 
-public class ItemTossController : MonoBehaviour, IDropHandler, IPointerUpHandler, IPointerEnterHandler, IPointerExitHandler {
-    [SerializeField] private List<GameObject> tossIndicatorObject;
+public class ItemTossController : MonoBehaviour {
+    [HideInInspector] public UnityEvent OnItemToss;
     
+    [Space(25f)]
     
-    public void OnDrop(PointerEventData eventData) {
-        if (eventData.pointerDrag != null) {
-            eventData.pointerDrag.GetComponent<ItemTossAnimationController>().OnItemToss.Invoke();
-            TossIndicatorControl(false);
-        }
+    [SerializeField] private Vector3 endPositionVector3;
+    [SerializeField] private float duration;
+    
+
+    private void Init() {
+        this.OnItemToss.AddListener(ItemToss);
     }
 
-    public void OnPointerEnter(PointerEventData eventData) {
-        if (eventData.pointerDrag != null) {
-            TossIndicatorControl(true);
-        }
-    }
-
-    public void OnPointerUp(PointerEventData eventData) {
-        if (eventData.pointerDrag != null) {
-            TossIndicatorControl(false);
-        }
+    private void Awake() {
+        Init();
     }
     
-    public void OnPointerExit(PointerEventData eventData) {
-        if (eventData.pointerDrag != null) {
-            TossIndicatorControl(false);
-        }
+    private void ItemToss() {
+        StartCoroutine(ItemTossCoroutine());
     }
+    
+    private IEnumerator ItemTossCoroutine() {
+        var startPosition = this.gameObject.transform.position;
+        var endPosition = (this.gameObject.transform.position + this.endPositionVector3);
+        var elapsedTime = 0f;
+        
+        while (elapsedTime < this.duration) {
+            var time = (elapsedTime / this.duration);
 
-    private void TossIndicatorControl(bool isActive) {
-        if (this.tossIndicatorObject != null) {
-            foreach (var VARIABLE in this.tossIndicatorObject) {
-                VARIABLE.SetActive(isActive);
-            }
+            this.gameObject.transform.position = Vector3.Lerp(startPosition, endPosition, time);
+            elapsedTime += Time.deltaTime;
+            
+            yield return null;
         }
+        
+        this.gameObject.transform.position = endPosition;
+        this.gameObject.SetActive(false);
     }
 }

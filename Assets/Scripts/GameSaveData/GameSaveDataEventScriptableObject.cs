@@ -1,4 +1,3 @@
-
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "GameSaveDataEventScriptableObject", menuName = "ScriptableObjects/GameSaveDataEventScriptableObject", order = 1)]

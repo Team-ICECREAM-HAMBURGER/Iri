@@ -26,7 +26,7 @@ public class TrainSpawnManager : MonoBehaviour {
     }
 
     private void InitTrainSpawn() {
-        foreach (var VARIABLE in this.gameSaveDataManager.HeadChapterData.vehicleType) {
+        foreach (var VARIABLE in this.gameSaveDataManager.HeadChapterData.vehicleTypes) {
             this.spawnTrains.Add(this.trains[(int)VARIABLE]);
             StartCoroutine(TrainSpawnCoroutine(this.spawnTrains[(int)VARIABLE]));
         }

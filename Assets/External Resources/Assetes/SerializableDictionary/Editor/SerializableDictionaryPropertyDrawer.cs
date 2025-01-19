@@ -9,6 +9,7 @@ using System;
 [CustomPropertyDrawer(typeof(GameControlSerializableDictionary.TrafficStatusText))]
 [CustomPropertyDrawer(typeof(GameControlSerializableDictionary.NewsArticle))]
 [CustomPropertyDrawer(typeof(GameControlSerializableDictionary.FamilySaveData))]
+[CustomPropertyDrawer(typeof(GameControlSerializableDictionary.ItemData))]
 [CustomPropertyDrawer(typeof(GameControlSerializableDictionary.FamilySaveDataScriptableObject))]
 // [CustomPropertyDrawer(typeof(GameControlSerializableDictionary.ChapterSaveDataScriptableObject))]
 [CustomPropertyDrawer(typeof(GameControlSerializableDictionary.EventSaveDataScriptableObject))]

@@ -1,22 +1,28 @@
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class GameCamChanger : MonoBehaviour {
     [SerializeField] private Camera[] cameras;
 
     [Space(10f)] 
     
-    [SerializeField] private Canvas flipTargetCanvas;
+    [SerializeField] private List<Canvas> flipTargetCanvases;
     [SerializeField] private Vector3 targetCanvasFlipPreset;
     
     private int index;
     private bool isFlipped;
-    private Vector3 targetCanvasOriginalPreset;
+    private List<Vector3> targetCanvasOriginalPresets;
     
 
     private void Init() {
         this.index = 0;
         this.isFlipped = false;
-        this.targetCanvasOriginalPreset = this.flipTargetCanvas.transform.rotation.eulerAngles;
+        this.targetCanvasOriginalPresets = new List<Vector3>();
+
+        foreach (var VARIABLE in this.flipTargetCanvases) {
+            this.targetCanvasOriginalPresets.Add(VARIABLE.transform.rotation.eulerAngles);
+        }
     }
 
     private void Awake() {
@@ -33,14 +39,21 @@ public class GameCamChanger : MonoBehaviour {
         
         this.cameras[this.index].gameObject.SetActive(true);
         
-        // TODO: World UI Canvas Flip; 뒤집을 Canvas가 정말 1개로 끝인가?
         if (this.isFlipped) {
             this.isFlipped = false;
-            this.flipTargetCanvas.transform.rotation = Quaternion.Euler(this.targetCanvasOriginalPreset);
+            var i = 0;
+
+            foreach (var VARIABLE in this.flipTargetCanvases) {
+                VARIABLE.transform.rotation = Quaternion.Euler(this.targetCanvasOriginalPresets[i]);
+                i++;
+            }
         }
         else {
             this.isFlipped = true;        
-            this.flipTargetCanvas.transform.rotation = Quaternion.Euler(this.targetCanvasFlipPreset);
+            
+            foreach (var VARIABLE in this.flipTargetCanvases) {
+                VARIABLE.transform.rotation = Quaternion.Euler(this.targetCanvasFlipPreset);
+            }
         }
     }
 }

@@ -16,3 +16,9 @@ MonoBehaviour:
   chapterName: 
   chapterType: 1
   vehicleType: 0000000001000000
+  passengerScriptableObjects:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

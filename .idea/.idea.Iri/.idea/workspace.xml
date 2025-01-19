@@ -5,46 +5,96 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ddc2bca3-3552-44fb-9935-884ccdc772c1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Zippo Head Animation Controller.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Zippo Head Animation Controller.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Zippo Head Assembly.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Zippo Head Assembly.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Zippo Head Disassembly.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Zippo Head Disassembly.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ItemTossAnimationController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ItemTossAnimationController.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ItemTossController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/ID Card (High).prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/ID Card (High).prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/ID Card (Normal).prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/ID Card (Normal).prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Passengers.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Passengers/Passenger_FAKE.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Passengers/Passenger_FAKE/Passenger_FAKE Cargo Weight.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Passengers/Passenger_FAKE/Passenger_FAKE Cargo Weight.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Passengers/Passenger_FAKE/Passenger_FAKE ID Card (High).asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Passengers/Passenger_FAKE/Passenger_FAKE ID Card (High).asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Passengers/Passenger_FAKE/Passenger_FAKE ID Card (Normal).asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Passengers/Passenger_FAKE/Passenger_FAKE ID Card (Normal).asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Passengers/Passenger_NO.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Passengers/Passenger_NO/Passenger_No Ticket.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Passengers/Passenger_NO/Passenger_No Ticket.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Passengers/Passenger_OK.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Passengers/Passenger_OK/Passenger_OK High.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Passengers/Passenger_OK/Passenger_OK High.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Passengers/Passenger_OK/Passenger_OK Normal.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Passengers/Passenger_OK/Passenger_OK Normal.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Passengers/Passenger_OK/Passenger_OK Veccine.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Passengers/Passenger_OK/Passenger_OK Veccine.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameSaveData/GameSaveDataPassenger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameSaveData/GameSaveDataPassenger.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameSaveData/GameSaveDataPassengerScriptableObject.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameSaveData/GameSaveDataPassengerScriptableObject.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ItemTossManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ItemTossManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TrainInvestigationButtonController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TrainInvestigationButtonController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TrainPassengerController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TrainPassengerController.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Iri/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Iri/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Zippo Animation Controller.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Zippo Animation Controller.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Zippo Assembly.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Zippo Assembly.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Zippo Disassembly.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Zippo Disassembly.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Asylum Grant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Asylum Grant.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Book (Brown).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Book (Brown).prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Entry Permit.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Entry Permit.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/High-Ranking Authorization.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/High-Ranking Authorization.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/ID Card.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/ID Card.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Inspection Log.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Inspection Log.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Inspection report.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Inspection report.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Manual.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Manual.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ticket (Passenger).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ticket (Passenger).prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Vaccination Certificate.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Vaccination Certificate.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Zippo.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Zippo.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/External Resources/Assetes/SerializableDictionary/Editor/SerializableDictionaryPropertyDrawer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/External Resources/Assetes/SerializableDictionary/Editor/SerializableDictionaryPropertyDrawer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/High-Ranking Authorization.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/High-Ranking Authorization.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/ID Card.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/ID Card.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/02-Iri_Station.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/02-Iri_Station.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameController/GameControlDragDropController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameController/GameControlDragDropController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameController/GameControlDragDropSnapController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameController/GameControlDragDropSnapController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ItemTossController.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Chapters/Day 0.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Chapters/Day 0.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Chapters/Day 1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Chapters/Day 1.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Chapters/Day 10.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Chapters/Day 10.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Chapters/Day 11.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Chapters/Day 11.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Chapters/Day 12.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Chapters/Day 12.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Chapters/Day 13.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Chapters/Day 13.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Chapters/Day 14.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Chapters/Day 14.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Chapters/Day 15.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Chapters/Day 15.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Chapters/Day 16.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Chapters/Day 16.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Chapters/Day 17.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Chapters/Day 17.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Chapters/Day 18.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Chapters/Day 18.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Chapters/Day 19.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Chapters/Day 19.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Chapters/Day 2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Chapters/Day 2.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Chapters/Day 20.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Chapters/Day 20.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Chapters/Day 21.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Chapters/Day 21.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Chapters/Day 22.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Chapters/Day 22.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Chapters/Day 23.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Chapters/Day 23.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Chapters/Day 24.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Chapters/Day 24.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Chapters/Day 25.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Chapters/Day 25.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Chapters/Day 26.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Chapters/Day 26.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Chapters/Day 27.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Chapters/Day 27.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Chapters/Day 28.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Chapters/Day 28.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Chapters/Day 29.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Chapters/Day 29.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Chapters/Day 3.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Chapters/Day 3.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Chapters/Day 30.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Chapters/Day 30.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Chapters/Day 31.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Chapters/Day 31.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Chapters/Day 4.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Chapters/Day 4.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Chapters/Day 5.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Chapters/Day 5.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Chapters/Day 6.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Chapters/Day 6.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Chapters/Day 7.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Chapters/Day 7.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Chapters/Day 8.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Chapters/Day 8.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Chapters/Day 9.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Chapters/Day 9.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameCamChanger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameCamChanger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameController/GameControlObjectClickController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameController/GameControlObjectClickController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameController/GameControlSerializableDictionary.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameController/GameControlSerializableDictionary.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameController/GameControlTypeManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameController/GameControlTypeManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameSaveData/GameSaveDataChapter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameSaveData/GameSaveDataChapter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameSaveData/GameSaveDataChapterScriptableObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameSaveData/GameSaveDataChapterScriptableObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameSaveData/GameSaveDataEventScriptableObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameSaveData/GameSaveDataEventScriptableObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameSaveData/GameSaveDataManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameSaveData/GameSaveDataManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ItemPositionResetController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ItemRefreshController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ItemPositionResetController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ItemRefreshController.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ItemPositionResetManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ItemRefreshManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ItemPositionResetManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ItemRefreshManager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ItemTossAnimationController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ItemTossAnimationController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ItemTossController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ItemTossController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ItemTossController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ItemTossController.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TrainSpawnManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TrainSpawnManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/VehicleTrainController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/VehicleTrainController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ZippoController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ZippoHeadController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ZippoController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ZippoHeadController.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/URP-Balanced.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/URP-Balanced.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/URP-HighFidelity.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/URP-HighFidelity.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/URP-Performant.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/URP-Performant.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRenderPipelineGlobalSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/UniversalRenderPipelineGlobalSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +154,7 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Train-Spawn-Control-Implementation",
+    "git-widget-placeholder": "Paper-Submit-Control-Implementation",
     "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -113,13 +163,6 @@
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "terminal",
     "vue.rearranger.settings.migration": "true"
-  },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "/Users/seung-ki/Library/Application Support/JetBrains/Rider2024.1/resharper-host/DecompilerCache",
-      "/Users/seung-ki/Library/Application Support/JetBrains/Rider2024.1/resharper-host/SourcesCache",
-      "/Users/seung-ki/Library/Application Support/Symbols/src"
-    ]
   }
 }]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -132,7 +175,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/6000.0.23f1/Unity.app/Contents/MacOS/Unity" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.23f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath &quot;$PROJECT_DIR$&quot; -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -140,7 +183,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/6000.0.23f1/Unity.app/Contents/MacOS/Unity" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.23f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath &quot;$PROJECT_DIR$&quot; -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -224,6 +267,7 @@
       <workItem from="1737032387851" duration="9719000" />
       <workItem from="1737115658319" duration="8204000" />
       <workItem from="1737169819771" duration="11152000" />
+      <workItem from="1737262806048" duration="36624000" />
     </task>
     <task id="LOCAL-00001" summary="뉴스 펼치기 기능 구현&#10;&#10;추상 클래스, GameControlPointerManager.cs&#10;확장 메뉴 펼치기 기능 구현 클래스, GameControlExpandMenuController.cs&#10;드래그&amp;드랍 기능 구현 클래스, GameControlDragDropController.cs&#10;- GameControlPointerManager.cs 추상 클래스에는 Unity.EventSystems 라이브러리가 포함되어 있으며, OnPointerDown(), OnBeginDrag(), OnDrag(), OnEndDrag() 추상 메서드가 있다.&#10;- 자식 클래스(GameControlExpandMenuController.cs, GameControlDragDropController.cs)는 추상 메서드를 구현하는 방식으로 기능을 구현한다.&#10;- 뉴스 펼치기 기능도 확장 메뉴 펼치기 기능과 동일한 방식으로 구현되므로, 스크립트를 컴포넌트로 붙여서 재활용.&#10;- 뉴스를 펼치는 방향과 확장 메뉴를 펼치는 방향이 반대이기 때문에, swipeLevel을 SerializeField로 선언하여 시작 레벨 값을 설정하도록 변경함.&#10;(대신 레벨 값이 변화할 떄는 swipeDirection이 음수일 때 -1, 양수일 때 +1로 설정)&#10;&#10;GameControlDragDropController.cs는 오브젝트를 선택하여 드래그&amp;드랍하는 기능을 구현하는 클래스.&#10;- 추후 검문 패널에서 증거물 오브젝트를 마우스로 클릭해 움직이는 기능을 구현할 때 해당 클래스를 활용한다.&#10;&#10;패널이 펼쳐지고 닫히는 애니메이션 속도를 증가시켜서 답답함을 해소하고자 함.&#10;- 지속적인 QA가 필요한 부분.&#10;- 검문 패널이 닫힐 때, 스프링처럼 튕겼다가 다시 돌아오는 애니메이션 효과를 추가하면 더 자연스러울 것 같다.">
       <option name="closed" value="true" />

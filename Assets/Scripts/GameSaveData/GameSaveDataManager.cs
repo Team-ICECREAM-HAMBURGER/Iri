@@ -43,7 +43,7 @@ public class GameSaveDataManager : MonoBehaviour {
         InitFamilyData();
         
         // Game Story Data Init
-        InitStoryData();
+        InitChapterData();
 
         // Game Event Data Init
         // InitEventData();
@@ -100,12 +100,13 @@ public class GameSaveDataManager : MonoBehaviour {
         }
     }
 
-    private void InitStoryData() {
+    private void InitChapterData() {
         this.chapterNode = new();
         this.HeadChapterData = new(this.chapterDataFileName, 
             this.chapterDataScriptableObjects[0].chapterName, 
             this.chapterDataScriptableObjects[0].chapterType, 
             this.chapterDataScriptableObjects[0].vehicleType,
+            this.chapterDataScriptableObjects[0].passengerScriptableObjects,
             this.chapterDataScriptableObjects[0].savedDateTime);
         
         if (!SaveDataExistsCheck(this.chapterDataFileName)) {
@@ -123,19 +124,20 @@ public class GameSaveDataManager : MonoBehaviour {
                     VARIABLE.chapterName,
                     VARIABLE.chapterType,
                     VARIABLE.vehicleType,
+                    VARIABLE.passengerScriptableObjects,
                     VARIABLE.savedDateTime)));
         }
         
-        InitStoryDataTree((int)this.HeadChapterData.chapterType, this.chapterNode.Count, this.chapterDataTree.root);
+        InitChapterDataTree((int)this.HeadChapterData.chapterType, this.chapterNode.Count, this.chapterDataTree.root);
     }
 
-    private void InitStoryDataTree(int depth, int chapterCount, GameControlLinkedTreeNode<GameSaveDataChapter> node) {
+    private void InitChapterDataTree(int depth, int chapterCount, GameControlLinkedTreeNode<GameSaveDataChapter> node) {
         var i = depth;
 
         if (i < chapterCount) {
             node.AddChild(this.chapterNode[(GameControlTypeManager.ChapterType)i]);
             i += 1;
-            InitStoryDataTree(i, chapterCount, node.children[0]);
+            InitChapterDataTree(i, chapterCount, node.children[0]);
         }
     }
     

@@ -39,6 +39,7 @@ public class GameControlObjectClickController : MonoBehaviour {
             return;
         }
         
+        Physics.queriesHitTriggers = true; // 트리거도 Raycast에 반응하도록 설정
         Ray ray = Camera.main.ScreenPointToRay(Mouse.current.position.ReadValue());
 
         if (Physics.Raycast(ray, out RaycastHit hit)) {

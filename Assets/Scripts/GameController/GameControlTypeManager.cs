@@ -99,4 +99,26 @@ public static class GameControlTypeManager {
         SAD,        // 슬픔 (Trigger)
         DIE,        // 사망 (Trigger)
     }
+
+    public enum PassengerType {
+        PASSENGER_OK,
+        PASSENGER_NO_TICKET,
+        PASSENGER_FAKE_ID_CARD_NORMAL,
+        PASSENGER_FAKE_ID_CARD_HIGH,
+        PASSENGER_FAKE_CARGO_WEIGHT,
+        PASSENGER_FAKE_CARGO_TYPE,
+    }
+    
+    public enum ItemType {
+        INSPECTION_LOG,
+        INSPECTION_REPORT,
+        ENTRY_PERMIT,
+        VACCINATION_CERTIFICATE,
+        ASYLUM_GRANT,
+        ID_CARD_HIGH,
+        ID_CARD_NORMAL,
+        TICKET_PASSENGER,
+        BOOK_BROWN,
+        ZIPPO,
+    }
 }

@@ -1,9 +1,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using UnityEngine.Serialization;
+using UnityEngine.Events;
 
 public class VehicleTrainController : MonoBehaviour {
+    [HideInInspector] public UnityEvent<GameControlTypeManager.TrafficStatus> OnVehicleTrainStopped;
+    
+    
     [Header("Vehicle Component")]
     [field: SerializeField] public GameControlTypeManager.vehicleType VehicleType { get; set; }
     [field: SerializeField] public GameControlTypeManager.TrafficStatus TrafficStatus { get; set; }
@@ -81,6 +84,8 @@ public class VehicleTrainController : MonoBehaviour {
     private void OnTrafficStatusUpdate(GameControlTypeManager.TrafficStatus trafficStatusType) {
         this.TrafficStatus = trafficStatusType;
         TrainInformationMonitor.OnTrafficStatusUpdate.Invoke(this.VehicleType, this.TrafficStatus, this.trafficStatusText[this.TrafficStatus]);
+        
+        this.OnVehicleTrainStopped.Invoke(this.TrafficStatus);
     }
 
     private void OnTransformReset(string trainTag) {
