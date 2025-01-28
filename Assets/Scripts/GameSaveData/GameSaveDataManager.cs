@@ -137,6 +137,7 @@ public class GameSaveDataManager : MonoBehaviour {
         if (i < chapterCount) {
             node.AddChild(this.chapterNode[(GameControlTypeManager.ChapterType)i]);
             i += 1;
+            
             InitChapterDataTree(i, chapterCount, node.children[0]);
         }
     }

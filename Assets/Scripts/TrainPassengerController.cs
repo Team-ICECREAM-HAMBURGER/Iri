@@ -4,17 +4,19 @@ using UnityEngine;
 public class TrainPassengerController : MonoBehaviour {
     [SerializeField] private VehicleTrainController vehicleTrainController;
     [SerializeField] private GameSaveDataManager gameSaveDataManager;
-    [SerializeField] private ItemRefreshManager itemRefreshManager;
+    [SerializeField] private ItemControlManager itemControlManager;
     
     private List<GameSaveDataPassenger> passengers;
     private Stack<GameSaveDataPassenger> targetPassengers;
+    private Stack<GameControlSerializableDictionary.ItemSaveDataScriptableObject> passengersItemStack;
     private GameControlTypeManager.vehicleType vehicleType;
-    
+
     
     private void Init() {
         this.vehicleType = this.vehicleTrainController.VehicleType;
         this.passengers = new();
         this.targetPassengers = new();
+        this.passengersItemStack = new();
     }
 
     private void Awake() {
@@ -36,12 +38,12 @@ public class TrainPassengerController : MonoBehaviour {
                 var obj = new GameSaveDataPassenger(VARIABLE);
                 
                 this.passengers.Add(obj);
-                weightTotal += obj.weight;
+                weightTotal += obj.randomSelectWeight;
             }
         }
 
         foreach (var VARIABLE in this.passengers) {
-            weights.Add((VARIABLE, (VARIABLE.weight / weightTotal)));
+            weights.Add((VARIABLE, (VARIABLE.randomSelectWeight / weightTotal)));
         }
         
         weights.Sort((x, y) => x.Item2.CompareTo(y.Item2));
@@ -60,6 +62,10 @@ public class TrainPassengerController : MonoBehaviour {
             }
         }
         
-        this.itemRefreshManager.InitPassengerStack(this.targetPassengers);
+        foreach (var VARIABLE in this.targetPassengers) {
+            this.passengersItemStack.Push(VARIABLE.itemSaveDataScriptableObject);
+        }
+        
+        this.itemControlManager.InitPassengerItemStack(this.passengersItemStack);
     }
 }

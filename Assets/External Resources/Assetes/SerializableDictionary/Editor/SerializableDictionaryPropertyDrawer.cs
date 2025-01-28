@@ -7,11 +7,17 @@ using System;
 [CustomPropertyDrawer(typeof(GameControlSerializableDictionary.TrafficStatus))]
 [CustomPropertyDrawer(typeof(GameControlSerializableDictionary.TrafficStatusTmp))]
 [CustomPropertyDrawer(typeof(GameControlSerializableDictionary.TrafficStatusText))]
+
 [CustomPropertyDrawer(typeof(GameControlSerializableDictionary.NewsArticle))]
+
 [CustomPropertyDrawer(typeof(GameControlSerializableDictionary.FamilySaveData))]
-[CustomPropertyDrawer(typeof(GameControlSerializableDictionary.ItemData))]
 [CustomPropertyDrawer(typeof(GameControlSerializableDictionary.FamilySaveDataScriptableObject))]
-// [CustomPropertyDrawer(typeof(GameControlSerializableDictionary.ChapterSaveDataScriptableObject))]
+
+[CustomPropertyDrawer(typeof(GameControlSerializableDictionary.ItemLabel))]
+
+[CustomPropertyDrawer(typeof(GameControlSerializableDictionary.ItemSaveData))]
+[CustomPropertyDrawer(typeof(GameControlSerializableDictionary.ItemSaveDataScriptableObject))]
+
 [CustomPropertyDrawer(typeof(GameControlSerializableDictionary.EventSaveDataScriptableObject))]
 public class SerializableDictionaryPropertyDrawer : PropertyDrawer
 {

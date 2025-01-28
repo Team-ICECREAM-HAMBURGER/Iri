@@ -64,7 +64,7 @@ public static class GameControlTypeManager {
         DAY28_0,
         DAY29_0,
         DAY30_0,
-        DAY31_0
+        DAY31_0,
     }
 
     public enum EventType {
@@ -120,5 +120,20 @@ public static class GameControlTypeManager {
         TICKET_PASSENGER,
         BOOK_BROWN,
         ZIPPO,
+    }
+
+    public enum ItemLabelType {
+        NAME,
+        TITLE,
+        DOB,
+        APPROVAL_NUMBER,
+        PURPOSE,
+        ADDRESS,
+        DATE,
+        CODE,
+        HEIGHT,
+        WEIGHT,
+        GENDER,
+        NOTE
     }
 }

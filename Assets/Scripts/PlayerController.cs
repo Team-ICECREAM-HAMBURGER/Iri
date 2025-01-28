@@ -3,18 +3,22 @@ using UnityEngine;
 using UnityEngine.Events;
 
 public class PlayerController : MonoBehaviour {
-    [SerializeField] private float workTime;
-    [SerializeField] private float timeScale;
-
+    [SerializeField] private GameSaveDataChapterController gameSaveDataChapterController;
+    [SerializeField] private GameTimeController gameTimeController;
+    
+    [Space(10f)]
+    
     [HideInInspector] public UnityEvent OnPunchIn;
+    [HideInInspector] public UnityEvent OnPunchOut;
 
-    private float punchInTime; 
-    private float currentTime;
-
+    private bool isPunched;
+    
     
     private void Init() {
-        this.workTime *= this.timeScale;
+        this.isPunched = false;
+        
         this.OnPunchIn.AddListener(PunchIn);
+        this.OnPunchOut.AddListener(PunchOut);
     }
 
     private void Awake() {
@@ -24,26 +28,21 @@ public class PlayerController : MonoBehaviour {
     private void PunchIn() {
         Debug.Log("Punch In");
         
-        this.punchInTime = Time.time;
-        GameDayTimeUpdate(this.punchInTime);
+        if (!this.isPunched) {
+            this.gameSaveDataChapterController.OnInitChapter.Invoke();
+            this.gameTimeController.OnTimeUpdate.Invoke(Time.time);
+            this.isPunched = true;
+        }
     }
 
+    // EventController/Manager -> Event Control -> ChapterUpdate //
+    
     private void PunchOut() {
         Debug.Log("Punch Out");
-        // TODO: 챕터 전환 코드 이식
-        
-    }
-    
-    private void GameDayTimeUpdate(float targetTime) {
-        StartCoroutine(GameDayTimeUpdateRoutine(targetTime));
-    }
-    
-    IEnumerator GameDayTimeUpdateRoutine(float targetTime) {
-        while (this.currentTime < this.workTime) {
-            this.currentTime = (Time.time - targetTime);
-            yield return new WaitForSecondsRealtime(1);
+
+        if (this.isPunched) {
+            this.gameSaveDataChapterController.OnUpdatedChapterSave.Invoke();
+            this.isPunched = false;
         }
-        
-        PunchOut();
     }
 }
