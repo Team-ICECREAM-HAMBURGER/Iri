@@ -23,6 +23,8 @@ public class ItemInspectionReportStampController : MonoBehaviour {
         this.mobileConsoleStampController.OnPaperStampOk.AddListener(OnPaperStampOk);
         this.mobileConsoleStampController.OnPaperStampNo.AddListener(OnPaperStampNo);
         
+        this.mobileConsoleStampController.OnPaperStampReset.AddListener(OnPaperStampReset);
+        
         // this.okStampRectTransform.gameObject.SetActive(false);
         // this.noStampRectTransform.gameObject.SetActive(false);
     }
@@ -65,5 +67,12 @@ public class ItemInspectionReportStampController : MonoBehaviour {
 
         // this.noStampRectTransform.position = rectTransform.position;
         // this.noStampRectTransform.gameObject.SetActive(true);
+    }
+
+    private void OnPaperStampReset() {
+        this.IsOkPaper = false;
+        
+        this.okStampObjectPoolingController.ReturnToPoolStack();
+        this.noStampObjectPoolingController.ReturnToPoolStack();
     }
 }

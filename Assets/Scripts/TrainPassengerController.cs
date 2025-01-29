@@ -8,7 +8,7 @@ public class TrainPassengerController : MonoBehaviour {
     
     private List<GameSaveDataPassenger> passengers;
     private Stack<GameSaveDataPassenger> targetPassengers;
-    private Stack<GameControlSerializableDictionary.ItemSaveDataScriptableObject> passengersItemStack;
+    private Stack<(GameSaveDataPassenger, GameControlSerializableDictionary.ItemSaveDataScriptableObject)> passengersItemStack;
     private GameControlTypeManager.vehicleType vehicleType;
 
     
@@ -63,7 +63,7 @@ public class TrainPassengerController : MonoBehaviour {
         }
         
         foreach (var VARIABLE in this.targetPassengers) {
-            this.passengersItemStack.Push(VARIABLE.itemSaveDataScriptableObject);
+            this.passengersItemStack.Push((VARIABLE, VARIABLE.itemSaveDataScriptableObject));
         }
         
         this.itemControlManager.InitPassengerItemStack(this.passengersItemStack);

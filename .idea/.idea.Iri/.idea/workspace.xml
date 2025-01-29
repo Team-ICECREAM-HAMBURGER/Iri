@@ -5,96 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ddc2bca3-3552-44fb-9935-884ccdc772c1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Passengers/Hong Gill-Dong.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Passengers/Hong Gill-Dong/Hong Gil-Dong.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Passengers/Hong Gill-Dong/Hong Gil-Dong.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Passengers/Hong Gill-Dong/ID Card Normal.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Passengers/Hong Gill-Dong/ID Card Normal.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameSaveData/GameSaveDataItem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameSaveData/GameSaveDataItem.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameSaveData/GameSaveDataItemScriptableObject.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameSaveData/GameSaveDataItemScriptableObject.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameTimeController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameTimeController.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ItemController.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ItemController/ItemAsylumGrantController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ItemController/ItemAsylumGrantController.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ItemController/ItemBookController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ItemController/ItemBookController.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ItemController/ItemController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ItemController/ItemController.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ItemController/ItemEntryPermitController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ItemController/ItemEntryPermitController.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ItemController/ItemIdCardHighController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ItemController/ItemIdCardHighController.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ItemController/ItemIdCardNormalController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ItemController/ItemIdCardNormalController.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ItemController/ItemInspectionLogController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ItemController/ItemInspectionLogController.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ItemController/ItemInspectionReportController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ItemController/ItemInspectionReportController.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ItemController/ItemTicketPassengerController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ItemController/ItemTicketPassengerController.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ItemController/ItemVaccinationCertificateController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ItemController/ItemVaccinationCertificateController.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ItemController/ItemZippoController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ItemController/ItemZippoController.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Iri/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Iri/.idea/projectSettingsUpdater.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Passengers/Hong Gill-Dong/Inspection Log.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Passengers/Hong Gill-Dong/Inspection Log.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Passengers/Hong Gill-Dong/Inspection Report.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Passengers/Hong Gill-Dong/Inspection Report.asset.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Iri/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Iri/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/External Resources/Assetes/SerializableDictionary/Editor/SerializableDictionaryPropertyDrawer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/External Resources/Assetes/SerializableDictionary/Editor/SerializableDictionaryPropertyDrawer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Asylum Grant.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Asylum Grant.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Book (Brown).prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Book (Brown).prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Entry Permit.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Entry Permit.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/ID Card (High).prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/ID Card (High).prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/ID Card (Normal).prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/ID Card (Normal).prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Inspection Log.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Inspection Log.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Inspection report.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Inspection report.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ticket (Passenger).prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ticket (Passenger).prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Vaccination Certificate.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Vaccination Certificate.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Zippo.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Zippo.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/02-Iri_Station.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/02-Iri_Station.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Chapters/Day 0.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Chapters/Day 0.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Passengers/Passenger_FAKE.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Passengers/Passenger_FAKE/Passenger_FAKE Cargo Weight.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Passengers/Passenger_FAKE/Passenger_FAKE Cargo Weight.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Passengers/Passenger_FAKE/Passenger_FAKE ID Card (High).asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Passengers/Passenger_FAKE/Passenger_FAKE ID Card (High).asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Passengers/Passenger_FAKE/Passenger_FAKE ID Card (Normal).asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Passengers/Passenger_FAKE/Passenger_FAKE ID Card (Normal).asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Passengers/Passenger_NO.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Passengers/Passenger_NO/Passenger_No Ticket.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Passengers/Passenger_NO/Passenger_No Ticket.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Passengers/Passenger_OK.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Passengers/Passenger_OK/Passenger_OK High.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Passengers/Passenger_OK/Passenger_OK High.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Passengers/Passenger_OK/Passenger_OK Normal.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Passengers/Passenger_OK/Passenger_OK Normal.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Passengers/Passenger_OK/Passenger_OK Veccine.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Passengers/Passenger_OK/Passenger_OK Veccine.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameController/GameControlSerializableDictionary.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameController/GameControlSerializableDictionary.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameController/GameControlTypeManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameController/GameControlTypeManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameSaveData/GameSaveDataChapterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameSaveData/GameSaveDataChapterController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameSaveData/GameSaveDataManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameSaveData/GameSaveDataManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Passengers/Hong Gill-Dong/Hong Gil-Dong.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Passengers/Hong Gill-Dong/Hong Gil-Dong.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameController/GameControlObjectPoolingController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameController/GameControlObjectPoolingController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameSaveData/GameSaveDataPassenger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameSaveData/GameSaveDataPassenger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameSaveData/GameSaveDataPassengerScriptableObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameSaveData/GameSaveDataPassengerScriptableObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ItemInspectionReportStampController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ItemController/ItemInspectionReportStampController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ItemInspectionReportStampController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ItemController/ItemInspectionReportStampController.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ItemRefreshController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ItemRefreshController.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ItemRefreshManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ItemController/ItemControlManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ItemRefreshManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ItemController/ItemControlManager.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/OfficeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/OfficeController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ItemController/ItemAsylumGrantController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ItemController/ItemAsylumGrantController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ItemController/ItemBookController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ItemController/ItemBookController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ItemController/ItemControlManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ItemController/ItemControlManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ItemController/ItemController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ItemController/ItemController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ItemController/ItemEntryPermitController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ItemController/ItemEntryPermitController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ItemController/ItemIdCardHighController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ItemController/ItemIdCardHighController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ItemController/ItemIdCardNormalController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ItemController/ItemIdCardNormalController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ItemController/ItemInspectionLogController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ItemController/ItemInspectionLogController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ItemController/ItemInspectionReportController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ItemController/ItemInspectionReportController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ItemController/ItemInspectionReportStampController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ItemController/ItemInspectionReportStampController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ItemController/ItemTicketPassengerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ItemController/ItemTicketPassengerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ItemController/ItemVaccinationCertificateController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ItemController/ItemVaccinationCertificateController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ItemController/ItemZippoController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ItemController/ItemZippoController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MobileConsoleStampController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MobileConsoleStampController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/TrainPassengerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TrainPassengerController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -152,28 +85,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Paper-Submit-Control-Implementation&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "Item-Refresh-Control-Implementation",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;/Users/seung-ki/Library/Application Support/JetBrains/Rider2024.1/resharper-host/DecompilerCache&quot;,
-      &quot;/Users/seung-ki/Library/Application Support/JetBrains/Rider2024.1/resharper-host/SourcesCache&quot;,
-      &quot;/Users/seung-ki/Library/Application Support/Symbols/src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "/Users/seung-ki/Library/Application Support/JetBrains/Rider2024.1/resharper-host/DecompilerCache",
+      "/Users/seung-ki/Library/Application Support/JetBrains/Rider2024.1/resharper-host/SourcesCache",
+      "/Users/seung-ki/Library/Application Support/Symbols/src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="$USER_HOME$/Desktop/Test.app/Contents/MacOS/Iri" />
@@ -279,6 +212,7 @@
       <workItem from="1737262806048" duration="36624000" />
       <workItem from="1737956365647" duration="27107000" />
       <workItem from="1737993483465" duration="35656000" />
+      <workItem from="1738147138077" duration="7179000" />
     </task>
     <task id="LOCAL-00001" summary="뉴스 펼치기 기능 구현&#10;&#10;추상 클래스, GameControlPointerManager.cs&#10;확장 메뉴 펼치기 기능 구현 클래스, GameControlExpandMenuController.cs&#10;드래그&amp;드랍 기능 구현 클래스, GameControlDragDropController.cs&#10;- GameControlPointerManager.cs 추상 클래스에는 Unity.EventSystems 라이브러리가 포함되어 있으며, OnPointerDown(), OnBeginDrag(), OnDrag(), OnEndDrag() 추상 메서드가 있다.&#10;- 자식 클래스(GameControlExpandMenuController.cs, GameControlDragDropController.cs)는 추상 메서드를 구현하는 방식으로 기능을 구현한다.&#10;- 뉴스 펼치기 기능도 확장 메뉴 펼치기 기능과 동일한 방식으로 구현되므로, 스크립트를 컴포넌트로 붙여서 재활용.&#10;- 뉴스를 펼치는 방향과 확장 메뉴를 펼치는 방향이 반대이기 때문에, swipeLevel을 SerializeField로 선언하여 시작 레벨 값을 설정하도록 변경함.&#10;(대신 레벨 값이 변화할 떄는 swipeDirection이 음수일 때 -1, 양수일 때 +1로 설정)&#10;&#10;GameControlDragDropController.cs는 오브젝트를 선택하여 드래그&amp;드랍하는 기능을 구현하는 클래스.&#10;- 추후 검문 패널에서 증거물 오브젝트를 마우스로 클릭해 움직이는 기능을 구현할 때 해당 클래스를 활용한다.&#10;&#10;패널이 펼쳐지고 닫히는 애니메이션 속도를 증가시켜서 답답함을 해소하고자 함.&#10;- 지속적인 QA가 필요한 부분.&#10;- 검문 패널이 닫힐 때, 스프링처럼 튕겼다가 다시 돌아오는 애니메이션 효과를 추가하면 더 자연스러울 것 같다.">
       <option name="closed" value="true" />

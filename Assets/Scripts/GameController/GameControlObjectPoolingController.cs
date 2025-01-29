@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 public class GameControlObjectPoolingController : MonoBehaviour {
     public class PoolingObject {
@@ -55,7 +54,7 @@ public class GameControlObjectPoolingController : MonoBehaviour {
         return null;
     }
 
-    private void ReturnToPoolStack() {
+    public void ReturnToPoolStack() {
         if (this.objectPoolList == null) {
             return;
         }

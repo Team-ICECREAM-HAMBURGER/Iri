@@ -4,6 +4,7 @@ using UnityEngine.Events;
 public class MobileConsoleStampController : MonoBehaviour {
     [HideInInspector] public UnityEvent<RectTransform> OnPaperStampOk;
     [HideInInspector] public UnityEvent<RectTransform> OnPaperStampNo;
+    [HideInInspector] public UnityEvent OnPaperStampReset;
     
     [SerializeField] private RectTransform rectTransform;
     
@@ -14,5 +15,9 @@ public class MobileConsoleStampController : MonoBehaviour {
 
     public void OnStampNo() {
         this.OnPaperStampNo.Invoke(this.rectTransform);
+    }
+
+    public void OnStampReset() {
+        this.OnPaperStampReset.Invoke();
     }
 }

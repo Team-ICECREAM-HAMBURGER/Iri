@@ -9,13 +9,15 @@ public class ItemEntryPermitController : ItemController {
     [SerializeField] private TMP_Text expireDate;
 
 
-    protected override void ItemRefresh(GameControlSerializableDictionary.ItemSaveData passengerItemSaveData) {
-        if (passengerItemSaveData.TryGetValue(this.itemType, out var data)) {
+    protected override void ItemRefresh(
+        (GameSaveDataPassenger, GameControlSerializableDictionary.ItemSaveData) passengerItemSaveData) {
+        if (passengerItemSaveData.Item2.TryGetValue(this.itemType, out var data)) {
             this.purpose.text = data.informationValue[GameControlTypeManager.ItemLabelType.PURPOSE];
             this.name.text = data.informationValue[GameControlTypeManager.ItemLabelType.NAME];
             this.dob.text = data.informationValue[GameControlTypeManager.ItemLabelType.DOB];
             this.expireDate.text = data.informationValue[GameControlTypeManager.ItemLabelType.DATE];
             
+            this.itemRefreshTransform.anchoredPosition = this.itemRefreshPosition;
             this.gameObject.SetActive(true);
         }
     }

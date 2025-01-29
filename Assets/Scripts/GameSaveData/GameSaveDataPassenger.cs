@@ -1,12 +1,9 @@
-using System.Collections.Generic;
-
 public class GameSaveDataPassenger {
     public float randomSelectWeight;
     
     public string name;
     public string dob;
     public string gender;
-    public string purpose;
     public string note;
     
     public GameControlSerializableDictionary.ItemSaveDataScriptableObject itemSaveDataScriptableObject;
@@ -15,7 +12,7 @@ public class GameSaveDataPassenger {
 
     
     public GameSaveDataPassenger(float randomSelectWeight, 
-        string name, string dob, string gender, string purpose, string note, 
+        string name, string dob, string gender, string note, 
         GameControlSerializableDictionary.ItemSaveDataScriptableObject itemSaveDataScriptableObject, 
         GameControlTypeManager.vehicleType vehicleType, 
         GameControlTypeManager.PassengerType passengerType) {
@@ -24,7 +21,6 @@ public class GameSaveDataPassenger {
         this.name = name;
         this.dob = dob;
         this.gender = gender;
-        this.purpose = purpose;
         this.note = note;
         
         this.itemSaveDataScriptableObject = itemSaveDataScriptableObject;
@@ -38,7 +34,6 @@ public class GameSaveDataPassenger {
         this.name = data.name;
         this.dob = data.dob;
         this.gender = data.gender;
-        this.purpose = data.purpose;
         this.note = data.note;
         
         this.itemSaveDataScriptableObject = data.itemSaveDataScriptableObject;

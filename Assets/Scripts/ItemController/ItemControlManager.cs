@@ -4,9 +4,10 @@ using UnityEngine;
 using UnityEngine.Events;
 
 public class ItemControlManager : MonoBehaviour {
-    public UnityEvent<GameControlSerializableDictionary.ItemSaveData> OnItemRefresh;
+    public UnityEvent<(GameSaveDataPassenger, GameControlSerializableDictionary.ItemSaveData)> OnItemRefresh;
     
-    private GameControlSerializableDictionary.ItemSaveData passengerItemSaveData; 
+    private GameControlSerializableDictionary.ItemSaveData passengerItemSaveData;
+    private GameSaveDataPassenger passengerSaveData;
     
     
     private void Init() {
@@ -14,12 +15,14 @@ public class ItemControlManager : MonoBehaviour {
     }
     
     public void InitPassengerItemStack(
-        Stack<GameControlSerializableDictionary.ItemSaveDataScriptableObject> data) {
-        foreach (var _VARIABLE in data.SelectMany(VARIABLE => VARIABLE)) {
+        Stack<(GameSaveDataPassenger, GameControlSerializableDictionary.ItemSaveDataScriptableObject)> data) {
+        foreach (var _VARIABLE 
+                 in data.SelectMany(VARIABLE => {
+                     this.passengerSaveData = VARIABLE.Item1; return VARIABLE.Item2; })) {
             this.passengerItemSaveData.TryAdd(_VARIABLE.Key, new GameSaveDataItem(_VARIABLE.Value));
         }
         
-        this.OnItemRefresh.Invoke(this.passengerItemSaveData);
+        this.OnItemRefresh.Invoke((this.passengerSaveData, this.passengerItemSaveData));
     }
 
     private void Awake() {
@@ -27,6 +30,6 @@ public class ItemControlManager : MonoBehaviour {
     }
     
     public void OnClick() {
-        this.OnItemRefresh.Invoke(this.passengerItemSaveData);
+        this.OnItemRefresh.Invoke((this.passengerSaveData, this.passengerItemSaveData));
     }
 }

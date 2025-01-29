@@ -15,13 +15,15 @@ MonoBehaviour:
   randomSelectWeight: 100
   name: "\uD64D\uAE38\uB3D9"
   dob: 001234-348
-  gender: "\uB0A8"
-  purpose: "\uBC29\uBB38"
-  note: "\uBA4D\uBB49\uC774\uC758 \uBCF5\uC218\uB97C \uAFC8\uAFB8\uB294 \uACF0\uB3CC\uACF0\uB3CC\uC774\uB97C
-    \uB3D5\uAE30 \uC704\uD574 \uB098\uD0C0\uB09C \uC815\uC758\uC758 \uAE40\uCE58\uCC0C\uAC1C"
+  gender: "\uB0A8\uC131"
+  note: "\uBA4D\uBB49\uC774\uC758 \uBCF5\uC218\uB97C \uAFC8\uAFB8\uB294 \uACF0\uB3CC\uC774\uB97C
+    \uB3D5\uAE30 \uC704\uD574 \uC5EC\uD589\uAE38\uC5D0 \uC624\uB978 \uC815\uC758\uC758
+    \uC0AC\uB3C4(\uB77C\uACE0 \uC8FC\uC7A5\uD558\uB294 \uC911)"
   itemSaveDataScriptableObject:
-    m_keys: 06000000
+    m_keys: 060000000000000001000000
     m_values:
     - {fileID: 11400000, guid: 623095ab243634c029e5ff21973b82ab, type: 2}
+    - {fileID: 11400000, guid: 80b4ad55d7c894d4982971b83f9d3b6d, type: 2}
+    - {fileID: 11400000, guid: a069fdf621b72405ab6bb8801fb6b2e3, type: 2}
   vehicleType: 0
   passengerType: 0

@@ -9,7 +9,6 @@ public class GameSaveDataPassengerScriptableObject : ScriptableObject {
     public new string name;
     public string dob;
     public string gender;
-    public string purpose;
     [TextArea] public string note;
     
     [Space(10f)]

@@ -9,13 +9,14 @@ public class ItemInspectionLogController : ItemController {
     [SerializeField] private TMP_Text note;
 
 
-    protected override void ItemRefresh(GameControlSerializableDictionary.ItemSaveData passengerItemSaveData) {
-        if (passengerItemSaveData.TryGetValue(this.itemType, out var data)) {
-            this.name.text = data.informationValue[GameControlTypeManager.ItemLabelType.NAME];
-            this.gender.text = data.informationValue[GameControlTypeManager.ItemLabelType.GENDER];
-            this.dob.text = data.informationValue[GameControlTypeManager.ItemLabelType.DOB];
-            this.note.text = data.informationValue[GameControlTypeManager.ItemLabelType.NOTE];
+    protected override void ItemRefresh((GameSaveDataPassenger, GameControlSerializableDictionary.ItemSaveData) passengerItemSaveData) {
+        if (passengerItemSaveData.Item2.ContainsKey(this.itemType)) {
+            this.name.text = passengerItemSaveData.Item1.name;
+            this.gender.text = passengerItemSaveData.Item1.gender;
+            this.dob.text = passengerItemSaveData.Item1.dob;
+            this.note.text = passengerItemSaveData.Item1.note;
 
+            this.itemRefreshTransform.anchoredPosition = this.itemRefreshPosition;
             this.gameObject.SetActive(true);
         }
     }
