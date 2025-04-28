@@ -93,7 +93,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: 36cd6ab84d4e3194db501424232e354c,
+  m_LightingDataAsset: {fileID: 112000000, guid: 39888471f4f9a4043acd95c85260954b,
     type: 2}
   m_LightingSettings: {fileID: 4890085278179872738, guid: 5d93bcc0c67bd2749832af66ff41f69a,
     type: 2}
@@ -89153,7 +89153,7 @@ MonoBehaviour:
   lowestSubdivLevelOverride: 4
   highestSubdivLevelOverride: 5
   overridesSubdivLevels: 1
-  mightNeedRebaking: 1
+  mightNeedRebaking: 0
   cachedTransform:
     e00: 1
     e01: 0
@@ -89162,7 +89162,7 @@ MonoBehaviour:
     e10: 0
     e11: 1
     e12: 0
-    e13: -8.1146965
+    e13: -8.114697
     e20: 0
     e21: 0
     e22: 1
@@ -89171,7 +89171,7 @@ MonoBehaviour:
     e31: 0
     e32: 0
     e33: 1
-  cachedHashCode: 1855493644
+  cachedHashCode: 1842620958
   fillEmptySpaces: 0
   version: 2
   globalVolume: 0
