@@ -5,18 +5,26 @@
             <ui:Label text="열차" name="TrainLabel" class="trainMonitorText" style="background-color: rgb(0, 0, 0);" />
             <ui:Label text="타는곳" name="PlatformLabel" class="trainMonitorText" style="background-color: rgba(0, 0, 0, 0);" />
             <ui:Label text="현위치" name="LocationLabel" class="trainMonitorText" style="background-color: rgba(0, 0, 0, 0); width: auto; margin-right: 30px;" />
-            <ui:Label text="여객(상)" name="Train_1_Name" class="trainMonitorText trainNameText trainMonitorTextColor" style="background-color: rgb(77, 78, 108); margin-right: 0; margin-left: 20px;" />
-            <ui:Label text="01번" name="Train_1_Platform" class="trainMonitorText trainPlatformText trainMonitorTextColor" style="background-color: rgb(77, 78, 108); margin-right: 0; margin-left: 0; padding-left: 90px;" />
-            <ui:Label text="출발" name="Train_1_Location" parse-escape-sequences="true" class="trainMonitorText trainLocationText trainMonitorTextColor" style="background-color: rgb(77, 78, 108); margin-right: 0; margin-left: 0; width: auto; padding-left: 150px;" />
-            <ui:Label text="여객(하)" name="Train_2_Name" class="trainMonitorText trainNameText trainMonitorTextColor" style="background-color: rgb(34, 40, 49); margin-right: 0; margin-left: 20px;" />
-            <ui:Label text="02번" name="Train_2_Platform" class="trainMonitorText trainPlatformText trainMonitorTextColor" style="background-color: rgb(34, 40, 49); margin-right: 0; margin-left: 0; padding-left: 90px;" />
-            <ui:Label text="출발" name="Train_2_Location" parse-escape-sequences="true" class="trainMonitorText trainLocationText trainMonitorTextColor" style="background-color: rgb(34, 40, 49); margin-right: 0; margin-left: 0; width: auto; padding-left: 150px;" />
-            <ui:Label text="화물(상)" name="Train_3_Name" class="trainMonitorText trainNameText trainMonitorTextColor" style="background-color: rgb(77, 78, 108); margin-right: 0; margin-left: 20px;" />
-            <ui:Label text="03번" name="Train_3_Platform" class="trainMonitorText trainPlatformText trainMonitorTextColor" style="background-color: rgb(77, 78, 108); margin-right: 0; margin-left: 0; padding-left: 90px;" />
-            <ui:Label text="출발" name="Train_3_Location" parse-escape-sequences="true" class="trainMonitorText trainLocationText trainMonitorTextColor" style="background-color: rgb(77, 78, 108); margin-right: 0; margin-left: 0; width: auto; padding-left: 150px;" />
-            <ui:Label text="특수(상)" name="Train_4_Name" class="trainMonitorText trainNameText trainMonitorTextColor" style="background-color: rgb(34, 40, 49); margin-right: 0; margin-left: 20px; -unity-text-outline-color: rgb(0, 0, 0);" />
-            <ui:Label text="04번" name="Train_4_Platform" class="trainMonitorText trainPlatformText" style="background-color: rgb(34, 40, 49); margin-right: 0; margin-left: 0; padding-left: 90px;" />
-            <ui:Label text="출발" name="Train_4_Location" parse-escape-sequences="true" class="trainMonitorText trainLocationText" style="background-color: rgb(34, 40, 49); margin-right: 0; margin-left: 0; width: auto; padding-left: 150px;" />
+            <ui:Button text="Button" name="Train0Button" class="trainSelectButton" style="padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">
+                <ui:Label text="여객(상)" name="Train0_Name" class="trainMonitorText trainNameText trainMonitorTextColor" style="background-color: rgb(77, 78, 108); margin-right: 0; margin-left: 20px;" />
+                <ui:Label text="01번" name="Train0_Platform" class="trainMonitorText trainPlatformText trainMonitorTextColor" style="background-color: rgb(77, 78, 108); margin-right: 0; margin-left: 0; padding-left: 90px;" />
+                <ui:Label text="출발" name="Train0_Location" parse-escape-sequences="true" class="trainMonitorText trainLocationText trainMonitorTextColor" style="background-color: rgb(77, 78, 108); margin-right: 0; margin-left: 0; width: auto; padding-left: 150px;" />
+            </ui:Button>
+            <ui:Button text="Button" name="Train1Button" class="trainSelectButton" style="flex-direction: row;">
+                <ui:Label text="여객(하)" name="Train1_Name" class="trainMonitorText trainNameText trainMonitorTextColor" style="background-color: rgb(34, 40, 49); margin-right: 0; margin-left: 20px;" />
+                <ui:Label text="02번" name="Train1_Platform" class="trainMonitorText trainPlatformText trainMonitorTextColor" style="background-color: rgb(34, 40, 49); margin-right: 0; margin-left: 0; padding-left: 90px;" />
+                <ui:Label text="출발" name="Train1_Location" parse-escape-sequences="true" class="trainMonitorText trainLocationText trainMonitorTextColor" style="background-color: rgb(34, 40, 49); margin-right: 0; margin-left: 0; width: auto; padding-left: 150px;" />
+            </ui:Button>
+            <ui:Button text="Button" name="Train2Button" class="trainSelectButton" style="flex-direction: row;">
+                <ui:Label text="화물(상)" name="Train2_Name" class="trainMonitorText trainNameText trainMonitorTextColor" style="background-color: rgb(77, 78, 108); margin-right: 0; margin-left: 20px;" />
+                <ui:Label text="03번" name="Train2_Platform" class="trainMonitorText trainPlatformText trainMonitorTextColor" style="background-color: rgb(77, 78, 108); margin-right: 0; margin-left: 0; padding-left: 90px;" />
+                <ui:Label text="출발" name="Train2_Location" parse-escape-sequences="true" class="trainMonitorText trainLocationText trainMonitorTextColor" style="background-color: rgb(77, 78, 108); margin-right: 0; margin-left: 0; width: auto; padding-left: 150px;" />
+            </ui:Button>
+            <ui:Button text="Button" name="Train3Button" class="trainSelectButton" style="flex-direction: row;">
+                <ui:Label text="특수(상)" name="Train3_Name" class="trainMonitorText trainNameText trainMonitorTextColor" style="background-color: rgb(34, 40, 49); margin-right: 0; margin-left: 20px; -unity-text-outline-color: rgb(0, 0, 0);" />
+                <ui:Label text="04번" name="Train3_Platform" class="trainMonitorText trainPlatformText" style="background-color: rgb(34, 40, 49); margin-right: 0; margin-left: 0; padding-left: 90px;" />
+                <ui:Label text="출발" name="Train3_Location" parse-escape-sequences="true" class="trainMonitorText trainLocationText" style="background-color: rgb(34, 40, 49); margin-right: 0; margin-left: 0; width: auto; padding-left: 150px;" />
+            </ui:Button>
         </ui:Button>
         <ui:VisualElement name="GameMenuPanel" style="flex-grow: 1; align-items: center; flex-wrap: nowrap; align-self: flex-start; justify-content: flex-start; align-content: flex-start; background-position-y: top 0; flex-direction: column; flex-shrink: 1; height: 460px; margin-bottom: 0; transform-origin: center; width: 426px; right: auto; background-color: rgb(34, 40, 49); margin-right: 0; border-bottom-right-radius: 20px; background-size: 100% 100%; background-position-x: left 0;">
             <ui:Button text="Button" name="PauseButton" class="button" style="width: 65px; height: 65px; background-image: url(&quot;project://database/Assets/Sprites/Pause_Button_Icon.png?fileID=21300000&amp;guid=6444659801acd92429f6ba272a373156&amp;type=3#Pause_Button_Icon&quot;); margin-bottom: 20px; margin-top: 20px; -unity-background-image-tint-color: rgb(255, 255, 255); background-color: rgba(255, 255, 255, 0); border-left-color: rgba(149, 149, 149, 0); border-right-color: rgba(149, 149, 149, 0); border-top-color: rgba(149, 149, 149, 0); border-bottom-color: rgba(149, 149, 149, 0);" />

@@ -1,30 +1,27 @@
 using UnityEngine;
 using UnityEngine.UIElements;
 
-public class GameControlExpandMenuController : MonoBehaviour /*GameControlPointerManager*/ {
-    [SerializeField] private UIDocument uiDocument;
-    [SerializeField] private string expandMenuParentName;
-    [SerializeField] private string expandMenuName;
+public abstract class GameControlExpandMenuController : MonoBehaviour /*GameControlPointerManager*/ {
+    [SerializeField] protected UIDocument uiDocument;
+    [SerializeField] protected string expandMenuParentName;
+    [SerializeField] protected string expandMenuName;
     
     [Space(10f)] 
-    [SerializeField] private string expandStyleClassName;
+    [SerializeField] protected string expandStyleClassName;
     
-    private Button expandMenu;
-    private VisualElement settingParent;
+    protected Button expandMenu;
+    protected VisualElement settingParent;
 
-    private void Init() {
-        this.expandMenu = this.uiDocument.rootVisualElement.Q<Button>(this.expandMenuName) as Button;
+    
+    protected void Init() {
+        this.expandMenu = this.uiDocument.rootVisualElement.Q<Button>(this.expandMenuName);
         this.settingParent = this.uiDocument.rootVisualElement.Q<VisualElement>(this.expandMenuParentName);
         
         this.expandMenu.RegisterCallback<ClickEvent>(OnExpandMenuClicked);
         this.settingParent.AddToClassList(this.expandStyleClassName);
     }
-
-    private void Awake() {
-        Init();
-    }
     
-    private void OnExpandMenuClicked(ClickEvent clickEvent) {
+    protected void OnExpandMenuClicked(ClickEvent clickEvent) {
         // Debug.Log("OnExpandMenuClicked");
         if (this.settingParent.ClassListContains(this.expandStyleClassName)) {
             this.settingParent.RemoveFromClassList(this.expandStyleClassName);
@@ -34,43 +31,7 @@ public class GameControlExpandMenuController : MonoBehaviour /*GameControlPointe
         }
     }
 
-    private void OnDisable() {
+    protected void OnDisable() {
         this.expandMenu.UnregisterCallback<ClickEvent>(OnExpandMenuClicked);
     }
-
-    // [SerializeField] private Animator animator;
-    // [SerializeField] private int swipeLevel;
-    //
-    // private float swipeDirection;
-    // private Vector2 swipeStartPosition;
-    // private Vector2 swipeEndPosition;
-    //
-    //
-    // public override void OnPointerDown(PointerEventData eventData) {
-    // }
-    //
-    // public override void OnBeginDrag(PointerEventData eventData) {
-    //     this.swipeStartPosition = (eventData.position / this.targetCanvas.scaleFactor);
-    // }
-    //
-    // public override void OnDrag(PointerEventData eventData) {
-    // }
-    //
-    // public override void OnEndDrag(PointerEventData eventData) {
-    //     this.swipeEndPosition = (eventData.position / this.targetCanvas.scaleFactor);
-    //     this.swipeDirection = (this.swipeEndPosition - this.swipeStartPosition).normalized.y;
-    //     
-    //     if (this.swipeDirection < 0) {
-    //         this.swipeLevel -= 1;
-    //     }
-    //     else if (this.swipeDirection > 0) {
-    //         this.swipeLevel += 1;
-    //     }        
-    //     
-    //     this.swipeLevel = Mathf.Clamp(this.swipeLevel, 0, 2);
-    //     
-    //     this.animator.SetFloat("direction", this.swipeDirection);
-    //     this.animator.SetInteger("swipeLevel", this.swipeLevel);
-    //     this.animator.SetTrigger("onSwipe");
-    // }
 }
