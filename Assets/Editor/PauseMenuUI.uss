@@ -1,0 +1,13 @@
+:root {
+}
+
+.newsMotoText {
+    -unity-font-definition: url("project://database/Assets/TextMesh%20Pro/Fonts/DungGeunMo.ttf?fileID=12800000&guid=823981f5b044a344eb48ad30015386c5&type=3#DungGeunMo");
+    font-size: 20px;
+    -unity-text-align: middle-center;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    letter-spacing: 25px;
+    -unity-font-style: normal;
+}

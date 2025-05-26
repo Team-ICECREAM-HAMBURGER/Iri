@@ -18,8 +18,6 @@ public class VehicleTrainController : MonoBehaviour {
     
     [Header("Game System Component")]
     public TrafficLightManager trafficLightManager;
-    public TrafficStatusTrigger trafficApproachTrigger;
-    public TrafficStatusTrigger trafficPassTrigger;
     public TrainSpawnManager trainSpawnManager;
     
     [Space(25f)]
@@ -53,10 +51,6 @@ public class VehicleTrainController : MonoBehaviour {
         this.VehicleStateMachine?.Init(this.VehicleStateMachine.vehicleTrainStateIdle);
         
         this.trafficLightManager.OnTrafficStatusControl.AddListener(OnTrafficStatusUpdate);
-
-        // TODO: 중복 코드 정리
-        this.trafficApproachTrigger.OnTrafficApproach.AddListener(OnTrafficStatusUpdate);
-        this.trafficPassTrigger.OnTrafficApproach.AddListener(OnTrafficStatusUpdate);
         
         this.trainSpawnManager.OnTransformReset.AddListener(OnTransformReset);
     }
@@ -73,8 +67,6 @@ public class VehicleTrainController : MonoBehaviour {
         OnTrafficStatusUpdate(GameControlTypeManager.TrafficStatus.MOVE);
         
         this.vehicleRigidbody.linearVelocity = Vector3.zero;
-        this.trafficApproachTrigger.OnTriggerSwitch?.Invoke();
-        this.trafficPassTrigger.OnTriggerSwitch?.Invoke();
     }
 
     private void FixedUpdate() {

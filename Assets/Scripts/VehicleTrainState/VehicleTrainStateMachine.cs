@@ -4,16 +4,13 @@ public class VehicleTrainStateMachine {
     public VehicleTrainStateIdle vehicleTrainStateIdle;
     public VehicleTrainStateMove vehicleTrainStateMove;
     public VehicleTrainStateStop vehicleTrainStateStop;
-    public VehicleTrainStateApproach vehicleTrainStateApproach;
-    public VehicleTrainStatePass vehicleTrainStatePass;
     
     
     public VehicleTrainStateMachine(VehicleTrainController vehicleTrainController) {
         this.vehicleTrainStateIdle = new VehicleTrainStateIdle(vehicleTrainController);
         this.vehicleTrainStateMove = new VehicleTrainStateMove(vehicleTrainController);
         this.vehicleTrainStateStop = new VehicleTrainStateStop(vehicleTrainController);
-        this.vehicleTrainStateApproach = new VehicleTrainStateApproach(vehicleTrainController);
-        this.vehicleTrainStatePass = new VehicleTrainStatePass(vehicleTrainController);
+
         
         this.CurrentTrainState = this.vehicleTrainStateStop;
     }
