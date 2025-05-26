@@ -9332,7 +9332,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiDocument: {fileID: 758855749}
-  expandMenuName: NewsButton
+  expandMenuParentName: NewsParent
+  expandMenuName: News
+  expandStyleClassName: newsDown
 --- !u!114 &758855752
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9346,7 +9348,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiDocument: {fileID: 758855749}
-  expandMenuName: TrainMonitorButotn
+  expandMenuParentName: TrainMonitorParent
+  expandMenuName: TrainMonitor
+  expandStyleClassName: trainMonitorUp
 --- !u!114 &758855753
 MonoBehaviour:
   m_ObjectHideFlags: 0

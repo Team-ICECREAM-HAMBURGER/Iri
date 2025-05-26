@@ -3,15 +3,21 @@ using UnityEngine.UIElements;
 
 public class GameControlExpandMenuController : MonoBehaviour /*GameControlPointerManager*/ {
     [SerializeField] private UIDocument uiDocument;
+    [SerializeField] private string expandMenuParentName;
     [SerializeField] private string expandMenuName;
     
+    [Space(10f)] 
+    [SerializeField] private string expandStyleClassName;
+    
     private Button expandMenu;
-
+    private VisualElement settingParent;
 
     private void Init() {
         this.expandMenu = this.uiDocument.rootVisualElement.Q<Button>(this.expandMenuName) as Button;
+        this.settingParent = this.uiDocument.rootVisualElement.Q<VisualElement>(this.expandMenuParentName);
+        
         this.expandMenu.RegisterCallback<ClickEvent>(OnExpandMenuClicked);
-
+        this.settingParent.AddToClassList(this.expandStyleClassName);
     }
 
     private void Awake() {
@@ -19,8 +25,13 @@ public class GameControlExpandMenuController : MonoBehaviour /*GameControlPointe
     }
     
     private void OnExpandMenuClicked(ClickEvent clickEvent) {
-        Debug.Log("OnExpandMenuClicked");
-        
+        // Debug.Log("OnExpandMenuClicked");
+        if (this.settingParent.ClassListContains(this.expandStyleClassName)) {
+            this.settingParent.RemoveFromClassList(this.expandStyleClassName);
+        }
+        else {
+            this.settingParent.AddToClassList(this.expandStyleClassName);
+        }
     }
 
     private void OnDisable() {
