@@ -13,7 +13,7 @@ public class TrafficLightStateIdle : ITrafficLightState {
     public void Execute() {
         this.trafficLightController.Idle();
 
-        if (this.trafficLightController.TrafficLightStatus == GameControlTypeManager.TrafficStatus.MOVE) {
+        if (this.trafficLightController.TrafficLightStatus == GameControlTypeManager.TrainLocationType.MOVE) {
             this.trafficLightController.TrafficLightStateMachine.TransitionTo(this.trafficLightController.TrafficLightStateMachine.trafficLightStateMove);
         }
     }

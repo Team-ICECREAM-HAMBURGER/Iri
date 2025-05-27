@@ -4,12 +4,12 @@ using UnityEngine;
 using UnityEngine.Events;
 
 public class TrafficLightManager : MonoBehaviour, IGameControlClickableObject {
-    [HideInInspector] public UnityEvent<GameControlTypeManager.TrafficStatus> OnTrafficStatusControl;
-    [SerializeField] private GameControlTypeManager.TrafficStatus trafficLightStatus;
+    [HideInInspector] public UnityEvent<GameControlTypeManager.TrainLocationType> OnTrafficStatusControl;
+    [SerializeField] private GameControlTypeManager.TrainLocationType trafficLightStatus;
     [SerializeField] private float standbySeconds;
     
     public void OnClick() {
-        if (this.trafficLightStatus == GameControlTypeManager.TrafficStatus.STOP) {
+        if (this.trafficLightStatus == GameControlTypeManager.TrainLocationType.STOP) {
             return;
         }
         
@@ -17,10 +17,10 @@ public class TrafficLightManager : MonoBehaviour, IGameControlClickableObject {
         TrafficLightControl(this.trafficLightStatus);
     }
 
-    private void TrafficLightControl(GameControlTypeManager.TrafficStatus trafficLightStatus) {
+    private void TrafficLightControl(GameControlTypeManager.TrainLocationType trafficLightStatus) {
         this.OnTrafficStatusControl?.Invoke(trafficLightStatus);
 
-        if (trafficLightStatus == GameControlTypeManager.TrafficStatus.STOP) {
+        if (trafficLightStatus == GameControlTypeManager.TrainLocationType.STOP) {
             StartCoroutine(TrafficStandbyCoroutine());
         }
     }
@@ -31,13 +31,13 @@ public class TrafficLightManager : MonoBehaviour, IGameControlClickableObject {
         TrafficLightControl(this.trafficLightStatus);
     }
     
-    private GameControlTypeManager.TrafficStatus TrafficLightStatusUpdate(GameControlTypeManager.TrafficStatus currentTrafficStatusType) {
-        currentTrafficStatusType += 1;
+    private GameControlTypeManager.TrainLocationType TrafficLightStatusUpdate(GameControlTypeManager.TrainLocationType currentTrainLocationTypeType) {
+        currentTrainLocationTypeType += 1;
         
-        if ((int)currentTrafficStatusType == 3) { 
-            currentTrafficStatusType = 0;
+        if ((int)currentTrainLocationTypeType == 3) { 
+            currentTrainLocationTypeType = 0;
         }
         
-        return currentTrafficStatusType;
+        return currentTrainLocationTypeType;
     }
 }

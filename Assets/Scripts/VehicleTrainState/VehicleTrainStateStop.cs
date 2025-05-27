@@ -13,7 +13,7 @@ public class VehicleTrainStateStop : IVehicleTrainState {
     public void Execute() {
         this.vehicleTrainController.Stop();
 
-        if (this.vehicleTrainController.TrafficStatus == GameControlTypeManager.TrafficStatus.IDLE) {
+        if (this.vehicleTrainController.TrainLocationType == GameControlTypeManager.TrainLocationType.IDLE) {
             this.vehicleTrainController.VehicleStateMachine.TransitionTo(this.vehicleTrainController.VehicleStateMachine.vehicleTrainStateIdle);
         }
     }

@@ -5,14 +5,14 @@ public class GameSaveDataChapter {
     public readonly string tag;
     public string chapterName;
     public GameControlTypeManager.ChapterType chapterType;
-    public List<GameControlTypeManager.vehicleType> vehicleTypes;
+    public List<GameControlTypeManager.TrainType> vehicleTypes;
     public List<GameSaveDataPassengerScriptableObject> passengerScriptableObjects;
     public DateTime savedDateTime;
     
     
     public GameSaveDataChapter(string tag, string chapterName, 
         GameControlTypeManager.ChapterType chapterType, 
-        List<GameControlTypeManager.vehicleType> vehicleTypes, 
+        List<GameControlTypeManager.TrainType> vehicleTypes, 
         List<GameSaveDataPassengerScriptableObject> passengerScriptableObjects,
         DateTime savedDateTime) {
         this.tag = tag;

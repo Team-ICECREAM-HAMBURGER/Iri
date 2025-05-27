@@ -9,11 +9,11 @@ public class TrainPassengerController : MonoBehaviour {
     private List<GameSaveDataPassenger> passengers;
     private Stack<GameSaveDataPassenger> targetPassengers;
     private Stack<(GameSaveDataPassenger, GameControlSerializableDictionary.ItemSaveDataScriptableObject)> passengersItemStack;
-    private GameControlTypeManager.vehicleType vehicleType;
+    private GameControlTypeManager.TrainType trainType;
 
     
     private void Init() {
-        this.vehicleType = this.vehicleTrainController.VehicleType;
+        this.trainType = this.vehicleTrainController.TrainType;
         this.passengers = new();
         this.targetPassengers = new();
         this.passengersItemStack = new();
@@ -34,7 +34,7 @@ public class TrainPassengerController : MonoBehaviour {
         // 일반 승객 등장 처리; (무작위 등장 승객)
         foreach (var VARIABLE 
                  in this.gameSaveDataManager.HeadChapterData.passengerScriptableObjects) {
-            if (this.vehicleType == VARIABLE.vehicleType) {
+            if (this.trainType == VARIABLE.trainType) {
                 var obj = new GameSaveDataPassenger(VARIABLE);
                 
                 this.passengers.Add(obj);

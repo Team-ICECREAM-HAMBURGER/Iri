@@ -4,13 +4,12 @@ using UnityEngine;
 using UnityEngine.Events;
 
 public class VehicleTrainController : MonoBehaviour {
-    [HideInInspector] public UnityEvent<GameControlTypeManager.TrafficStatus> OnVehicleTrainStopped;
-    
+    [HideInInspector] public UnityEvent<GameControlTypeManager.TrainLocationType> OnVehicleTrainStopped;
     
     [Header("Vehicle Component")]
-    [field: SerializeField] public GameControlTypeManager.vehicleType VehicleType { get; set; }
-    [field: SerializeField] public GameControlTypeManager.TrafficStatus TrafficStatus { get; set; }
-    [SerializeField] private GameControlSerializableDictionary.TrafficStatusText trafficStatusText;
+    [field: SerializeField] public GameControlTypeManager.TrainType TrainType { get; set; }
+    [field: SerializeField] public GameControlTypeManager.TrainLocationType TrainLocationType { get; set; }
+    
     [SerializeField] private GameObject engineCar;
     [SerializeField] private List<GameObject> jointCars;
     
@@ -60,12 +59,11 @@ public class VehicleTrainController : MonoBehaviour {
     }
 
     private void OnEnable() {
-        OnTrafficStatusUpdate(this.TrafficStatus);
+        OnTrafficStatusUpdate(this.TrainLocationType);
     }
 
     private void OnDisable() {
-        OnTrafficStatusUpdate(GameControlTypeManager.TrafficStatus.MOVE);
-        
+        OnTrafficStatusUpdate(GameControlTypeManager.TrainLocationType.MOVE);
         this.vehicleRigidbody.linearVelocity = Vector3.zero;
     }
 
@@ -73,11 +71,12 @@ public class VehicleTrainController : MonoBehaviour {
         this.VehicleStateMachine?.Execute();
     }
 
-    private void OnTrafficStatusUpdate(GameControlTypeManager.TrafficStatus trafficStatusType) {
-        this.TrafficStatus = trafficStatusType;
-        TrainInformationMonitor.OnTrafficStatusUpdate.Invoke(this.VehicleType, this.TrafficStatus, this.trafficStatusText[this.TrafficStatus]);
+    private void OnTrafficStatusUpdate(GameControlTypeManager.TrainLocationType trainLocationType) {
+        this.TrainLocationType = trainLocationType;
+        TrainInformationMonitorController.OnTrainLocationInfoUpdate.Invoke(
+            this.TrainType, this.TrainLocationType);
         
-        this.OnVehicleTrainStopped.Invoke(this.TrafficStatus);
+        this.OnVehicleTrainStopped.Invoke(this.TrainLocationType);
     }
 
     private void OnTransformReset(string trainTag) {
@@ -96,7 +95,9 @@ public class VehicleTrainController : MonoBehaviour {
         this.VehicleCurrentSpeed = this.vehicleRigidbody.linearVelocity.magnitude;
         
         if (this.VehicleCurrentSpeed < this.vehicleMaxSpeed) {
-            this.vehicleRigidbody.AddForce(this.vehicleTransform.forward * (this.vehicleAcceleration * this.vehicleRigidbody.mass * this.jointCars.Count), ForceMode.Force);    // Acceleration(m/s) * deltaTime * Mass 
+            this.vehicleRigidbody.AddForce(
+                this.vehicleTransform.forward 
+                * (this.vehicleAcceleration * this.vehicleRigidbody.mass * this.jointCars.Count), ForceMode.Force);    
         }
         else {
             this.vehicleRigidbody.linearVelocity = this.vehicleRigidbody.linearVelocity.normalized * this.vehicleMaxSpeed;
@@ -106,8 +107,11 @@ public class VehicleTrainController : MonoBehaviour {
     public void Stop() {
         this.VehicleCurrentSpeed = this.vehicleRigidbody.linearVelocity.magnitude;
         
-        if (Vector3.Dot(this.vehicleTransform.forward, this.vehicleTransform.up) >= 0.1f) {     // Vector's Inner Product
-            this.vehicleRigidbody.AddForce(-this.vehicleTransform.forward * (this.vehicleAcceleration * this.vehicleRigidbody.mass * this.jointCars.Count), ForceMode.Force);    // Acceleration(m/s) * deltaTime * Mass
+        // Vector's Inner Product
+        if (Vector3.Dot(this.vehicleTransform.forward, this.vehicleTransform.up) >= 0.1f) {     
+            this.vehicleRigidbody.AddForce(
+                -this.vehicleTransform.forward 
+                * (this.vehicleAcceleration * this.vehicleRigidbody.mass * this.jointCars.Count), ForceMode.Force);
         }
         else {
             this.VehicleCurrentSpeed = 0f;
@@ -122,10 +126,14 @@ public class VehicleTrainController : MonoBehaviour {
         this.VehicleCurrentSpeed = this.vehicleRigidbody.linearVelocity.magnitude;
         
         if (this.VehicleCurrentSpeed < this.vehicleApproachSpeed) {
-            this.vehicleRigidbody.AddForce(this.vehicleTransform.forward * (this.vehicleAcceleration * this.vehicleRigidbody.mass * this.jointCars.Count), ForceMode.Force);    // Acceleration(m/s) * deltaTime * Mass 
+            this.vehicleRigidbody.AddForce(
+                this.vehicleTransform.forward 
+                * (this.vehicleAcceleration * this.vehicleRigidbody.mass * this.jointCars.Count), ForceMode.Force);
         }
         else {
-            this.vehicleRigidbody.linearVelocity = this.vehicleRigidbody.linearVelocity.normalized * Mathf.Lerp(this.VehicleCurrentSpeed, this.vehicleApproachSpeed, 0.5f);
+            this.vehicleRigidbody.linearVelocity = 
+                this.vehicleRigidbody.linearVelocity.normalized 
+                * Mathf.Lerp(this.VehicleCurrentSpeed, this.vehicleApproachSpeed, 0.5f);
         }
         // Move();
     }

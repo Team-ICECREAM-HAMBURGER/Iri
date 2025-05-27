@@ -7,7 +7,7 @@ public class TrainInvestigationButtonManager : MonoBehaviour {
     [SerializeField] private VehicleTrainController vehicleTrainController;
     [SerializeField] private List<TrainInvestigationButtonController> trainInvestigationButtonControllers;
 
-    [HideInInspector] public UnityEvent<TrainInvestigationButtonController, GameControlTypeManager.TrafficStatus> OnTrainStopped;
+    [HideInInspector] public UnityEvent<TrainInvestigationButtonController, GameControlTypeManager.TrainLocationType> OnTrainStopped;
     
     private int currentTrainInvestigationIndex;
     
@@ -21,7 +21,7 @@ public class TrainInvestigationButtonManager : MonoBehaviour {
         Init();
     }
 
-    private void TrainStopped(GameControlTypeManager.TrafficStatus trafficStatus) {
-        OnTrainStopped.Invoke(this.trainInvestigationButtonControllers[this.currentTrainInvestigationIndex], trafficStatus);
+    private void TrainStopped(GameControlTypeManager.TrainLocationType trainLocationType) {
+        OnTrainStopped.Invoke(this.trainInvestigationButtonControllers[this.currentTrainInvestigationIndex], trainLocationType);
     }
 }

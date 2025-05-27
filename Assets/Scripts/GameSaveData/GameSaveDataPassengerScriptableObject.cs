@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 
 [CreateAssetMenu(fileName = "GameSaveDataPassengerScriptableObject", menuName = "ScriptableObjects/GameSaveDataPassengerScriptableObject", order = 1)]
 public class GameSaveDataPassengerScriptableObject : ScriptableObject {
@@ -15,8 +16,8 @@ public class GameSaveDataPassengerScriptableObject : ScriptableObject {
     
     public GameControlSerializableDictionary.ItemSaveDataScriptableObject itemSaveDataScriptableObject;
     
-    [Space(10f)]
+    [FormerlySerializedAs("vehicleType")] [Space(10f)]
     
-    public GameControlTypeManager.vehicleType vehicleType;
+    public GameControlTypeManager.TrainType trainType;
     public GameControlTypeManager.PassengerType passengerType;
 }

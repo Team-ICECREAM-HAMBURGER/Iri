@@ -2,9 +2,9 @@ using UnityEngine;
 using UnityEngine.Events;
 
 public class TrafficStatusTrigger : MonoBehaviour {
-    [SerializeField] private GameControlTypeManager.TrafficStatus triggerStatus;
+    [SerializeField] private GameControlTypeManager.TrainLocationType triggerStatus;
     
-    [HideInInspector] public UnityEvent<GameControlTypeManager.TrafficStatus> OnTrafficApproach;
+    [HideInInspector] public UnityEvent<GameControlTypeManager.TrainLocationType> OnTrafficApproach;
     [HideInInspector] public UnityEvent OnTriggerSwitch;
 
 

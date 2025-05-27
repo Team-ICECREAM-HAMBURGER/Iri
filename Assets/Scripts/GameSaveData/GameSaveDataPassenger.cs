@@ -7,14 +7,14 @@ public class GameSaveDataPassenger {
     public string note;
     
     public GameControlSerializableDictionary.ItemSaveDataScriptableObject itemSaveDataScriptableObject;
-    public GameControlTypeManager.vehicleType vehicleType;
+    public GameControlTypeManager.TrainType trainType;
     public GameControlTypeManager.PassengerType passengerType;
 
     
     public GameSaveDataPassenger(float randomSelectWeight, 
         string name, string dob, string gender, string note, 
         GameControlSerializableDictionary.ItemSaveDataScriptableObject itemSaveDataScriptableObject, 
-        GameControlTypeManager.vehicleType vehicleType, 
+        GameControlTypeManager.TrainType trainType, 
         GameControlTypeManager.PassengerType passengerType) {
         this.randomSelectWeight = randomSelectWeight;
        
@@ -24,7 +24,7 @@ public class GameSaveDataPassenger {
         this.note = note;
         
         this.itemSaveDataScriptableObject = itemSaveDataScriptableObject;
-        this.vehicleType = vehicleType;
+        this.trainType = trainType;
         this.passengerType = passengerType;
     }
 
@@ -37,7 +37,7 @@ public class GameSaveDataPassenger {
         this.note = data.note;
         
         this.itemSaveDataScriptableObject = data.itemSaveDataScriptableObject;
-        this.vehicleType = data.vehicleType;
+        this.trainType = data.trainType;
         this.passengerType = data.passengerType;
     }
 }

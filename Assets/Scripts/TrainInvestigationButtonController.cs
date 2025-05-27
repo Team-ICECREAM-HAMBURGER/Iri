@@ -18,8 +18,8 @@ public class TrainInvestigationButtonController : MonoBehaviour, IGameControlCli
         Init();
     }
 
-    private void ButtonSetActive(TrainInvestigationButtonController obj, GameControlTypeManager.TrafficStatus tp) {
-        if (this == obj && tp == GameControlTypeManager.TrafficStatus.IDLE) {
+    private void ButtonSetActive(TrainInvestigationButtonController obj, GameControlTypeManager.TrainLocationType tp) {
+        if (this == obj && tp == GameControlTypeManager.TrainLocationType.IDLE) {
             this.investigationIconObject.SetActive(true);
         }
         else {
