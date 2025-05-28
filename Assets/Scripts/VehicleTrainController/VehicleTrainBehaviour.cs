@@ -4,20 +4,22 @@ using UnityEngine;
 
 public class VehicleTrainBehaviour : MonoBehaviour { 
     [Header("Train Components")] 
+    [SerializeField] private GameControlTypeManager.VehicleTrainType vehicleType;
+    [Space(10f)]
     [SerializeField] private GameObject engineCar;
     [SerializeField] private List<GameObject> jointCars;
     [Space(10f)]
     [SerializeField] private float vehicleMaxSpeed;
     [SerializeField] private float vehicleAcceleration;
-    [Space(10f)]
     [SerializeField] private float vehicleCurrentSpeed;
-    private Transform vehicleTransform;
-    private Rigidbody vehicleRigidbody;
+    
     public List<Vector3> JointCarResetPositions { get; private set; }
     public Vector3 EngineCarResetPosition { get; private set; }
     
     private VehicleTrainStateMachine vehicleStateMachine;
-    
+    private Transform vehicleTransform;
+    private Rigidbody vehicleRigidbody;
+
     
     private void Init() {
         // Train Component Init //
@@ -43,6 +45,7 @@ public class VehicleTrainBehaviour : MonoBehaviour {
     }
 
     public void Move() {
+        VehicleTrafficStateUpdate(GameControlTypeManager.TrafficState.MOVE);
         this.vehicleCurrentSpeed = this.vehicleRigidbody.linearVelocity.magnitude;
         
         if (this.vehicleCurrentSpeed < this.vehicleMaxSpeed) {
@@ -57,6 +60,7 @@ public class VehicleTrainBehaviour : MonoBehaviour {
     }
     
     public void Stop() {
+        VehicleTrafficStateUpdate(GameControlTypeManager.TrafficState.STOP);
         this.vehicleCurrentSpeed = this.vehicleRigidbody.linearVelocity.magnitude;
         
         if (Vector3.Dot(this.vehicleTransform.forward, this.vehicleTransform.up) >= 0.1f) {
@@ -70,6 +74,11 @@ public class VehicleTrainBehaviour : MonoBehaviour {
     }
 
     public void Idle() {
+        VehicleTrafficStateUpdate(GameControlTypeManager.TrafficState.IDLE);
         this.vehicleCurrentSpeed = 0f;
+    }
+
+    private void VehicleTrafficStateUpdate(GameControlTypeManager.TrafficState trafficState) {
+        TrainInfoMonitorBehaviour.OnTrafficStatusUpdate.Invoke(this.vehicleType, trafficState);
     }
 }

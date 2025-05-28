@@ -1,7 +1,6 @@
 public class VehicleTrainStateMove : IVehicleTrainState {
     private VehicleTrainBehaviour vehicleTrainBehaviour;
     
-    
     public VehicleTrainStateMove(VehicleTrainBehaviour vehicleTrainBehaviour) {
         this.vehicleTrainBehaviour = vehicleTrainBehaviour;
     }
@@ -12,15 +11,6 @@ public class VehicleTrainStateMove : IVehicleTrainState {
 
     public void Execute() {
         this.vehicleTrainBehaviour.Move();
-        
-        // switch (this.vehicleTrainMovementController.TrafficState) {
-        //     case GameControlTypeManager.TrafficState.STOP:
-        //         this.vehicleTrainMovementController.VehicleStateMachine.TransitionTo(this.vehicleTrainMovementController.VehicleStateMachine.vehicleTrainStateStop);
-        //         break;
-        //     case GameControlTypeManager.TrafficState.IDLE:
-        //         this.vehicleTrainMovementController.VehicleStateMachine.TransitionTo(this.vehicleTrainMovementController.VehicleStateMachine.vehicleTrainStateIdle);
-        //         break;
-        // }
     }
 
     public void Exit() {

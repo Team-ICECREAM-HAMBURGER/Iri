@@ -12,10 +12,6 @@ public class VehicleTrainStateIdle : IVehicleTrainState {
 
     public void Execute() {
         this.vehicleTrainBehaviour.Idle();
-        
-        // if (this.vehicleTrainMovementController.TrafficState == GameControlTypeManager.TrafficState.MOVE) {
-        //     this.vehicleTrainMovementController.VehicleStateMachine.TransitionTo(this.vehicleTrainMovementController.VehicleStateMachine.vehicleTrainStateMove);
-        // }
     }
 
     public void Exit() {

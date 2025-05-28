@@ -4,7 +4,7 @@ using UnityEditor;
 using System.Reflection;
 using System;
 
-[CustomPropertyDrawer(typeof(GameControlSerializableDictionary.TrafficStatus))]
+// [CustomPropertyDrawer(typeof(GameControlSerializableDictionary.TrafficStatus))]
 [CustomPropertyDrawer(typeof(GameControlSerializableDictionary.TrafficStatusTmp))]
 [CustomPropertyDrawer(typeof(GameControlSerializableDictionary.TrafficStatusText))]
 
