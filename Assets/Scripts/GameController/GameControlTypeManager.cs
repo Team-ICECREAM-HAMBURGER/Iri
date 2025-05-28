@@ -1,12 +1,12 @@
 public static class GameControlTypeManager {
-    public enum vehicleType {
+    public enum VehicleTrainType {
         TRAIN_PASSENGER_F,
         TRAIN_PASSENGER_R,
         TRAIN_FREIGHT,
         TRAIN_DANGEROUS
     }
 
-    public enum TrafficStatus {
+    public enum TrafficState {
         MOVE,       // 출발
         STOP,       // 정차; 도착
         IDLE,       // 정차; 대기

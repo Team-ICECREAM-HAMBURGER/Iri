@@ -2,42 +2,43 @@ using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Serialization;
 
 public class TrafficLightManager : MonoBehaviour, IGameControlClickableObject {
-    [HideInInspector] public UnityEvent<GameControlTypeManager.TrafficStatus> OnTrafficStatusControl;
-    [SerializeField] private GameControlTypeManager.TrafficStatus trafficLightStatus;
+    [HideInInspector] public UnityEvent<GameControlTypeManager.TrafficState> OnTrafficStatusControl;
+    [FormerlySerializedAs("trafficLightStatus")] [SerializeField] private GameControlTypeManager.TrafficState trafficLightState;
     [SerializeField] private float standbySeconds;
     
     public void OnClick() {
-        if (this.trafficLightStatus == GameControlTypeManager.TrafficStatus.STOP) {
+        if (this.trafficLightState == GameControlTypeManager.TrafficState.STOP) {
             return;
         }
         
-        this.trafficLightStatus = TrafficLightStatusUpdate(this.trafficLightStatus);
-        TrafficLightControl(this.trafficLightStatus);
+        this.trafficLightState = TrafficLightStatusUpdate(this.trafficLightState);
+        TrafficLightControl(this.trafficLightState);
     }
 
-    private void TrafficLightControl(GameControlTypeManager.TrafficStatus trafficLightStatus) {
-        this.OnTrafficStatusControl?.Invoke(trafficLightStatus);
+    private void TrafficLightControl(GameControlTypeManager.TrafficState trafficLightState) {
+        this.OnTrafficStatusControl?.Invoke(trafficLightState);
 
-        if (trafficLightStatus == GameControlTypeManager.TrafficStatus.STOP) {
+        if (trafficLightState == GameControlTypeManager.TrafficState.STOP) {
             StartCoroutine(TrafficStandbyCoroutine());
         }
     }
 
     private IEnumerator TrafficStandbyCoroutine() {
         yield return new WaitForSeconds(this.standbySeconds);
-        this.trafficLightStatus = TrafficLightStatusUpdate(this.trafficLightStatus);
-        TrafficLightControl(this.trafficLightStatus);
+        this.trafficLightState = TrafficLightStatusUpdate(this.trafficLightState);
+        TrafficLightControl(this.trafficLightState);
     }
     
-    private GameControlTypeManager.TrafficStatus TrafficLightStatusUpdate(GameControlTypeManager.TrafficStatus currentTrafficStatusType) {
-        currentTrafficStatusType += 1;
+    private GameControlTypeManager.TrafficState TrafficLightStatusUpdate(GameControlTypeManager.TrafficState currentTrafficStateType) {
+        currentTrafficStateType += 1;
         
-        if ((int)currentTrafficStatusType == (int)GameControlTypeManager.TrafficStatus.APPROACH) {
-            currentTrafficStatusType = 0;
+        if ((int)currentTrafficStateType == (int)GameControlTypeManager.TrafficState.APPROACH) {
+            currentTrafficStateType = 0;
         }
         
-        return currentTrafficStatusType;
+        return currentTrafficStateType;
     }
 }

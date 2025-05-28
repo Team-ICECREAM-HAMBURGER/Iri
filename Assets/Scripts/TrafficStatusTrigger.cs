@@ -1,10 +1,11 @@
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Serialization;
 
 public class TrafficStatusTrigger : MonoBehaviour {
-    [SerializeField] private GameControlTypeManager.TrafficStatus triggerStatus;
+    [FormerlySerializedAs("triggerStatus")] [SerializeField] private GameControlTypeManager.TrafficState triggerState;
     
-    [HideInInspector] public UnityEvent<GameControlTypeManager.TrafficStatus> OnTrafficApproach;
+    [HideInInspector] public UnityEvent<GameControlTypeManager.TrafficState> OnTrafficApproach;
     [HideInInspector] public UnityEvent OnTriggerSwitch;
 
 
@@ -18,7 +19,7 @@ public class TrafficStatusTrigger : MonoBehaviour {
     
     private void OnTriggerEnter(Collider other) {
         if (other.CompareTag(this.tag)) {
-            this.OnTrafficApproach?.Invoke(this.triggerStatus);
+            this.OnTrafficApproach?.Invoke(this.triggerState);
             TriggerSwitch();
         }
     }

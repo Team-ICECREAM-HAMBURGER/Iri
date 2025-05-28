@@ -1,9 +1,10 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Serialization;
 
 public class GameTimeController : MonoBehaviour {
-    [SerializeField] private PlayerController playerController;
+    [FormerlySerializedAs("playerController")] [SerializeField] private PlayerBehaviour playerBehaviour;
     
     [Space(10f)]
     
@@ -37,6 +38,6 @@ public class GameTimeController : MonoBehaviour {
         }
 
         this.currentTime = 0f;
-        this.playerController.OnPunchOut.Invoke();
+        this.playerBehaviour.OnPunchOut.Invoke();
     }
 }

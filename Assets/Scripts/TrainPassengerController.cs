@@ -1,19 +1,20 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class TrainPassengerController : MonoBehaviour {
-    [SerializeField] private VehicleTrainController vehicleTrainController;
+    [FormerlySerializedAs("vehicleTrainController")] [FormerlySerializedAs("vehicleTrainMovementController")] [SerializeField] private VehicleTrainBehaviour vehicleTrainBehaviour;
     [SerializeField] private GameSaveDataManager gameSaveDataManager;
     [SerializeField] private ItemControlManager itemControlManager;
     
     private List<GameSaveDataPassenger> passengers;
     private Stack<GameSaveDataPassenger> targetPassengers;
     private Stack<(GameSaveDataPassenger, GameControlSerializableDictionary.ItemSaveDataScriptableObject)> passengersItemStack;
-    private GameControlTypeManager.vehicleType vehicleType;
+    private GameControlTypeManager.VehicleTrainType vehicleTrainType;
 
     
     private void Init() {
-        this.vehicleType = this.vehicleTrainController.VehicleType;
+        // this.vehicleTrainType = this.vehicleTrainMovementController.VehicleTrainType;
         this.passengers = new();
         this.targetPassengers = new();
         this.passengersItemStack = new();
@@ -34,7 +35,7 @@ public class TrainPassengerController : MonoBehaviour {
         // 일반 승객 등장 처리; (무작위 등장 승객)
         foreach (var VARIABLE 
                  in this.gameSaveDataManager.HeadChapterData.passengerScriptableObjects) {
-            if (this.vehicleType == VARIABLE.vehicleType) {
+            if (this.vehicleTrainType == VARIABLE.vehicleTrainType) {
                 var obj = new GameSaveDataPassenger(VARIABLE);
                 
                 this.passengers.Add(obj);

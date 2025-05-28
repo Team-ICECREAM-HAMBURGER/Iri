@@ -2,9 +2,11 @@ using TMPro;
 using UnityEngine;
 
 public class GameControlSerializableDictionary {
-    [System.Serializable] public class TrafficStatus : SerializableDictionary<GameControlTypeManager.vehicleType, GameControlTypeManager.TrafficStatus> { }
-    [System.Serializable] public class TrafficStatusTmp : SerializableDictionary<GameControlTypeManager.vehicleType, TMP_Text> { }
-    [System.Serializable] public class TrafficStatusText : SerializableDictionary<GameControlTypeManager.TrafficStatus, string> { }
+    [System.Serializable] public class TrafficStatus : SerializableDictionary<GameControlTypeManager.VehicleTrainType, GameControlTypeManager.TrafficState> { }
+    [System.Serializable] public class TrafficStatusTmp : SerializableDictionary<GameControlTypeManager.VehicleTrainType, TMP_Text> { }
+    [System.Serializable] public class TrafficStatusText : SerializableDictionary<GameControlTypeManager.TrafficState, string> { }
+    
+    [System.Serializable] public class SpawnableTrain : SerializableDictionary<GameControlTypeManager.VehicleTrainType, GameObject> { }
     
     [System.Serializable] public class NewsArticle : SerializableDictionary<GameControlTypeManager.NewsArticleType, NewspaperArticleScriptableObject> { }
     

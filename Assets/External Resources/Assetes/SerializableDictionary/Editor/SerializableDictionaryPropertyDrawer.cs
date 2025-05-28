@@ -8,6 +8,8 @@ using System;
 [CustomPropertyDrawer(typeof(GameControlSerializableDictionary.TrafficStatusTmp))]
 [CustomPropertyDrawer(typeof(GameControlSerializableDictionary.TrafficStatusText))]
 
+[CustomPropertyDrawer(typeof(GameControlSerializableDictionary.SpawnableTrain))]
+
 [CustomPropertyDrawer(typeof(GameControlSerializableDictionary.NewsArticle))]
 
 [CustomPropertyDrawer(typeof(GameControlSerializableDictionary.FamilySaveData))]

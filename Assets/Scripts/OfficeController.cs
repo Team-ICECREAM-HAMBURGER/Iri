@@ -1,7 +1,8 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class OfficeController : MonoBehaviour, IGameControlClickableObject {
-    [SerializeField] private PlayerController playerController;
+    [FormerlySerializedAs("playerController")] [SerializeField] private PlayerBehaviour playerBehaviour;
     
     [Space(10f)]
     
@@ -9,7 +10,7 @@ public class OfficeController : MonoBehaviour, IGameControlClickableObject {
     
     
     public void OnClick() {
-        this.playerController.OnPunchIn.Invoke();
+        this.playerBehaviour.OnPunchIn.Invoke();
         this.punchInCanvas.enabled = false;
     }
 }

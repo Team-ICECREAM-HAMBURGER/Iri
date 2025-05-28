@@ -13,7 +13,7 @@ public class TrafficLightStateMove : ITrafficLightState {
     public void Execute() {
         this.trafficLightController.Move();
 
-        if (this.trafficLightController.TrafficLightStatus == GameControlTypeManager.TrafficStatus.STOP) {
+        if (this.trafficLightController.TrafficLightState == GameControlTypeManager.TrafficState.STOP) {
             this.trafficLightController.TrafficLightStateMachine.TransitionTo(this.trafficLightController.TrafficLightStateMachine.trafficLightStateStop);
         }
     }

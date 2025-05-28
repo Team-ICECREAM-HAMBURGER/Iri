@@ -16,7 +16,7 @@ public class TrafficLightStateStop : ITrafficLightState {
     public void Execute() {
         this.trafficLightController.Stop();
 
-        if (this.trafficLightController.TrafficLightStatus == GameControlTypeManager.TrafficStatus.IDLE) {
+        if (this.trafficLightController.TrafficLightState == GameControlTypeManager.TrafficState.IDLE) {
             this.trafficLightController.TrafficLightStateMachine.TransitionTo(this.trafficLightController.TrafficLightStateMachine.trafficLightStateIdle);
         }
     }

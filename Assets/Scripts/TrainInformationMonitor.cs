@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.Events;
 
 public class TrainInformationMonitor : MonoBehaviour {
-    public static UnityEvent<GameControlTypeManager.vehicleType, GameControlTypeManager.TrafficStatus, string> OnTrafficStatusUpdate;
+    public static UnityEvent<GameControlTypeManager.VehicleTrainType, GameControlTypeManager.TrafficState, string> OnTrafficStatusUpdate;
     
     [SerializeField] private GameControlSerializableDictionary.TrafficStatus trafficStatus;
     [SerializeField] private GameControlSerializableDictionary.TrafficStatusTmp trafficStatusTmp;
@@ -17,8 +17,8 @@ public class TrainInformationMonitor : MonoBehaviour {
         Init();
     }
 
-    private void TrafficStatusUpdate(GameControlTypeManager.vehicleType vehicleType, GameControlTypeManager.TrafficStatus trafficStatus, string trafficStatusText) {
-        this.trafficStatus[vehicleType] = trafficStatus;
-        this.trafficStatusTmp[vehicleType].text = trafficStatusText;
+    private void TrafficStatusUpdate(GameControlTypeManager.VehicleTrainType vehicleTrainType, GameControlTypeManager.TrafficState trafficState, string trafficStatusText) {
+        this.trafficStatus[vehicleTrainType] = trafficState;
+        this.trafficStatusTmp[vehicleTrainType].text = trafficStatusText;
     }
 }

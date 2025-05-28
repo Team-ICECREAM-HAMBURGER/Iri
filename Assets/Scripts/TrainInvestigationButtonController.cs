@@ -1,7 +1,8 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class TrainInvestigationButtonController : MonoBehaviour, IGameControlClickableObject {
-    [SerializeField] private VehicleTrainController vehicleTrainController;
+    [FormerlySerializedAs("vehicleTrainController")] [FormerlySerializedAs("vehicleTrainMovementController")] [SerializeField] private VehicleTrainBehaviour vehicleTrainBehaviour;
     [SerializeField] private TrainPassengerController trainPassengerController;
     
     [Space(10f)]
@@ -11,15 +12,15 @@ public class TrainInvestigationButtonController : MonoBehaviour, IGameControlCli
     
     private void Init() {
         this.investigationIconObject.SetActive(false);
-        this.vehicleTrainController.OnVehicleTrainStopped.AddListener(TrainStopped);
+        // this.vehicleTrainMovementController.OnVehicleTrainStopped.AddListener(TrainStopped);
     }
 
     private void Awake() {
         Init();
     }
 
-    private void TrainStopped(GameControlTypeManager.TrafficStatus trafficStatus) {
-        if (trafficStatus == GameControlTypeManager.TrafficStatus.IDLE) {
+    private void TrainStopped(GameControlTypeManager.TrafficState trafficState) {
+        if (trafficState == GameControlTypeManager.TrafficState.IDLE) {
             this.investigationIconObject.SetActive(true);
         }
         else {

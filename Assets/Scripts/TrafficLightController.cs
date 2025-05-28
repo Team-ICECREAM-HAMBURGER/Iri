@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class TrafficLightController : MonoBehaviour {
     [Header("Traffic Light Component")]
-    [field:SerializeField] public GameControlTypeManager.TrafficStatus TrafficLightStatus { get; set; }
+    [field:SerializeField] public GameControlTypeManager.TrafficState TrafficLightState { get; set; }
     [SerializeField] private TrafficLightManager trafficLightManager;
 
     [Header("Traffic Light Setting")] 
@@ -31,8 +31,8 @@ public class TrafficLightController : MonoBehaviour {
         this.TrafficLightStateMachine?.Execute();
     }
     
-    private void OnTrafficLightStatusUpdate(GameControlTypeManager.TrafficStatus trafficLightStatusType) {
-        this.TrafficLightStatus = trafficLightStatusType;
+    private void OnTrafficLightStatusUpdate(GameControlTypeManager.TrafficState trafficLightStateType) {
+        this.TrafficLightState = trafficLightStateType;
     }
     
     public void Move() {

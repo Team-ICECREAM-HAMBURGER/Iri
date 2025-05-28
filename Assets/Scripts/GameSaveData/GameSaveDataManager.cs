@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class GameSaveDataManager : MonoBehaviour {
     [SerializeField] private GameControlJsonSerializationController gameControlJsonSerializationController;
@@ -27,7 +28,8 @@ public class GameSaveDataManager : MonoBehaviour {
     private string jsonSerializedData;
     // public UnityEvent OnGameDataSave;
     // public bool isTest; // TODO: 챕터 변경 기능 테스트용
-    
+
+    public UnityEvent OnDataLoad;
     
     private void Init() {
         this.playerDataFileName = "Player_Save_Data";

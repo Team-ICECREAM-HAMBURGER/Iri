@@ -8,7 +8,7 @@ public class GameSaveDataChapterScriptableObject : ScriptableObject {
     public string tag;
     public string chapterName;
     public GameControlTypeManager.ChapterType chapterType;
-    public List<GameControlTypeManager.vehicleType> vehicleType;
+    public List<GameControlTypeManager.VehicleTrainType> vehicleType;
     public List<GameSaveDataPassengerScriptableObject> passengerScriptableObjects;
     public DateTime savedDateTime;
 }
