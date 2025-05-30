@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class GameControlSingleton<T> : MonoBehaviour where T : Component {
@@ -5,7 +6,7 @@ public class GameControlSingleton<T> : MonoBehaviour where T : Component {
     public static T Instance {
         get {
             if (instance == null) {
-                instance = (T)FindObjectOfType(typeof(T));
+                instance = FindAnyObjectByType<T>();
                 
                 if (instance == null) {
                     SetupInstance();
@@ -18,9 +19,9 @@ public class GameControlSingleton<T> : MonoBehaviour where T : Component {
     public virtual void Awake() {
         RemoveDuplicates();
     }
-
+    
     private static void SetupInstance() {
-        instance = (T)FindObjectOfType(typeof(T));
+        instance = FindAnyObjectByType<T>();
         
         if (instance == null) {
             GameObject gameObj = new GameObject();
