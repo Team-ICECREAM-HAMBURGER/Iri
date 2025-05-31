@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -39,5 +40,11 @@ public class TrafficStateBehaviour : MonoBehaviour {
 
     public void Stop() {        
         this.OnTrafficUpdateStop.Invoke();
+        StartCoroutine(IdleRoutine());
+    }
+
+    private IEnumerator IdleRoutine() {
+        yield return new WaitForSeconds(2.5f);
+        this.trafficStateMachine?.TransitionTo(this.trafficStateMachine.trafficStateIdle);
     }
 }
