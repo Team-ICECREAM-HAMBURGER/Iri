@@ -25,7 +25,7 @@ public class PlayerBehaviour : GameControlSingleton<PlayerBehaviour> {
     }
     
     private void PunchIn() {
-        Debug.Log("Punch In");
+        // Debug.Log("Punch In");
         
         if (!this.isPunched) {
             this.gameSaveDataChapterController.OnInitChapter.Invoke();
@@ -37,7 +37,7 @@ public class PlayerBehaviour : GameControlSingleton<PlayerBehaviour> {
     // EventController/Manager -> Event Control -> ChapterUpdate //
     
     private void PunchOut() {
-        Debug.Log("Punch Out");
+        // Debug.Log("Punch Out");
 
         if (this.isPunched) {
             this.gameSaveDataChapterController.OnUpdatedChapterSave.Invoke();
