@@ -1,11 +1,11 @@
 using UnityEngine;
 
-public class TrafficLightStateMove : ITrafficLightState {
-    private TrafficLightBehaviour trafficLightBehaviour;
+public class TrafficStateMove : ITrafficState {
+    private TrafficStateBehaviour trafficStateBehaviour;
 
 
-    public TrafficLightStateMove(TrafficLightBehaviour trafficLightBehaviour) {
-        this.trafficLightBehaviour = trafficLightBehaviour;
+    public TrafficStateMove(TrafficStateBehaviour trafficStateBehaviour) {
+        this.trafficStateBehaviour = trafficStateBehaviour;
     }
     
     public void Enter() {
@@ -14,7 +14,7 @@ public class TrafficLightStateMove : ITrafficLightState {
 
     public void Execute() {
         // Debug.Log("Execute Traffic Light State Move");
-        this.trafficLightBehaviour.Move();
+        this.trafficStateBehaviour.Move();
     }
 
     public void Exit() {

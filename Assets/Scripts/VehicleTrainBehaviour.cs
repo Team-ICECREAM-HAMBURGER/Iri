@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class VehicleTrainBehaviour : MonoBehaviour { 
     [Header("Train Components")] 
@@ -13,10 +14,11 @@ public class VehicleTrainBehaviour : MonoBehaviour {
     [SerializeField] private float vehicleAcceleration;
     [SerializeField] private float vehicleCurrentSpeed;
     
+    [FormerlySerializedAs("trafficLightBehaviour")]
     [Space(25f)]
     
     [Header("System Components")]
-    [SerializeField] private TrafficLightBehaviour trafficLightBehaviour;
+    [SerializeField] private TrafficStateBehaviour trafficStateBehaviour;
     
     public List<Vector3> JointCarResetPositions { get; private set; }
     public Vector3 EngineCarResetPosition { get; private set; }
@@ -37,9 +39,9 @@ public class VehicleTrainBehaviour : MonoBehaviour {
         this.JointCarResetPositions = this.jointCars.Select(car => car.transform.localPosition).ToList();
         
         // Traffic Light Event Listener //
-        this.trafficLightBehaviour.OnTrafficUpdateIdle.AddListener(Idle);
-        this.trafficLightBehaviour.OnTrafficUpdateMove.AddListener(Move);
-        this.trafficLightBehaviour.OnTrafficUpdateStop.AddListener(Stop);
+        this.trafficStateBehaviour.OnTrafficUpdateIdle.AddListener(Idle);
+        this.trafficStateBehaviour.OnTrafficUpdateMove.AddListener(Move);
+        this.trafficStateBehaviour.OnTrafficUpdateStop.AddListener(Stop);
     }
 
     private void Awake() {

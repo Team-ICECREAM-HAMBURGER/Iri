@@ -1,46 +1,44 @@
-using System;
 using UnityEngine;
-using UnityEngine.Events;
 
 public class TrafficLightBehaviour : MonoBehaviour {
-    [HideInInspector] public UnityEvent OnTrafficUpdateIdle;
-    [HideInInspector] public UnityEvent OnTrafficUpdateMove;
-    [HideInInspector] public UnityEvent OnTrafficUpdateStop;
+    [Header("System Components")]
+    [SerializeField] private TrafficStateBehaviour trafficStateBehaviour;
     
-    private TrafficLightStateMachine trafficLightStateMachine;
+    [Space(25f)]
     
+    [Header("Traffic Lights")] 
+    [SerializeField] private Light trafficLight;
     
-    private void Init() {
-        this.trafficLightStateMachine = new TrafficLightStateMachine(this);
-    }
+    private Color trafficLightsColorIdle;
+    private Color trafficLightsColorMove;
+    private Color trafficLightsColorStop;
 
+
+    private void Init() {
+        this.trafficLightsColorIdle = Color.yellow;
+        this.trafficLightsColorStop = Color.red;
+        this.trafficLightsColorMove = Color.green;
+        
+        this.trafficStateBehaviour.OnTrafficUpdateIdle.AddListener(Idle);
+        this.trafficStateBehaviour.OnTrafficUpdateMove.AddListener(Move);
+        this.trafficStateBehaviour.OnTrafficUpdateStop.AddListener(Stop);
+    }
+    
     private void Awake() {
         Init();
     }
 
-    private void FixedUpdate() {
-        this.trafficLightStateMachine?.Execute();
+    private void Idle() {
+        this.trafficLight.color = this.trafficLightsColorIdle;
     }
 
-    public void OnClick() {
-        ITrafficLightState state = 
-            (this.trafficLightStateMachine.CurrentTrafficLightState == 
-             this.trafficLightStateMachine.trafficLightStateMove) ? 
-                this.trafficLightStateMachine.trafficLightStateStop : 
-                this.trafficLightStateMachine.trafficLightStateMove;
-        
-        this.trafficLightStateMachine?.TransitionTo(state);
+    private void Move() {
+        this.trafficLight.color = this.trafficLightsColorMove;
+
     }
 
-    public void Idle() {
-        this.OnTrafficUpdateIdle.Invoke();
-    }
+    private void Stop() {
+        this.trafficLight.color = this.trafficLightsColorStop;
 
-    public void Move() {
-        this.OnTrafficUpdateMove.Invoke();
-    }
-
-    public void Stop() {
-        this.OnTrafficUpdateStop.Invoke();
     }
 }
