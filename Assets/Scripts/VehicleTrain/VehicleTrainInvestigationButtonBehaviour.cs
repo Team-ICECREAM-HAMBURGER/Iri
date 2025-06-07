@@ -21,6 +21,7 @@ public class VehicleTrainInvestigationButtonBehaviour : MonoBehaviour {
 
     public void OnClick() {
         this.OnInvestigate.Invoke();    // Investigation Event Invoke
+        
         this.investigated = true;
         this.gameObject.SetActive(false);
     }
