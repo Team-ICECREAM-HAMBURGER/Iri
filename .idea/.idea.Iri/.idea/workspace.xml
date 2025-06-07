@@ -5,142 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ddc2bca3-3552-44fb-9935-884ccdc772c1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Meshes/- Props/E_Prop Lamp (City).fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Meshes/- Props/E_Prop Lamp (City).fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Meshes/- Props/E_Prop Lamp Road (Double).fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Meshes/- Props/E_Prop Lamp Road (Double).fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Meshes/- Props/E_Prop Lamp Road (Single).fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Meshes/- Props/E_Prop Lamp Road (Single).fbx.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Iri/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Iri/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Colors/1 SKIN-DARKEST-LPUP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Colors/1 SKIN-DARKEST-LPUP.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Colors/10 BROWN-DARK-LPUP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Colors/10 BROWN-DARK-LPUP.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Colors/11 BROWN-MEDIUM-LPUP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Colors/11 BROWN-MEDIUM-LPUP.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Colors/12 BROWN-LPUP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Colors/12 BROWN-LPUP.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Colors/13 BROWN-LIGHT-LPUP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Colors/13 BROWN-LIGHT-LPUP.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Colors/14 BROWN LIGHTEST-LPUP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Colors/14 BROWN LIGHTEST-LPUP.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Colors/15 BROWN-WHITE-LPUP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Colors/15 BROWN-WHITE-LPUP.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Colors/17 GREY-DARKEST-LPUP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Colors/17 GREY-DARKEST-LPUP.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Colors/18 GREY-DARK-LPUP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Colors/18 GREY-DARK-LPUP.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Colors/19 GREY-MEDIUM-LPUP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Colors/19 GREY-MEDIUM-LPUP.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Colors/2 SKIN-DARK-LPUP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Colors/2 SKIN-DARK-LPUP.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Colors/20 GREY-LPUP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Colors/20 GREY-LPUP.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Colors/21 GREY-LIGHT-LPUP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Colors/21 GREY-LIGHT-LPUP.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Colors/22 GREY-LIGHTEST-LPUP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Colors/22 GREY-LIGHTEST-LPUP.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Colors/23 GREY-WHITE-LPUP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Colors/23 GREY-WHITE-LPUP.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Colors/25 RED-DARKEST-LPUP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Colors/25 RED-DARKEST-LPUP.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Colors/26 RED-DARK-LPUP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Colors/26 RED-DARK-LPUP.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Colors/27 RED-LPUP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Colors/27 RED-LPUP.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Colors/28 ORANGE-LPUP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Colors/28 ORANGE-LPUP.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Colors/29 ORANGE-LIGHT-LPUP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Colors/29 ORANGE-LIGHT-LPUP.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Colors/3 SKIN-MEDIUM-LPUP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Colors/3 SKIN-MEDIUM-LPUP.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Colors/30 YELLOW-LPUP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Colors/30 YELLOW-LPUP.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Colors/31 YELLOW-LIGHT-LPUP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Colors/31 YELLOW-LIGHT-LPUP.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Colors/33 GREEN-DARKEST-LPUP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Colors/33 GREEN-DARKEST-LPUP.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Colors/34 GREEN-DARK-LPUP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Colors/34 GREEN-DARK-LPUP.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Colors/35 GREEN-MEDIUM-LPUP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Colors/35 GREEN-MEDIUM-LPUP.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Colors/36 GREEN-LPUP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Colors/36 GREEN-LPUP.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Colors/37 GREEN-LIGHT-LPUP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Colors/37 GREEN-LIGHT-LPUP.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Colors/38 GREEN-LIGHTEST-LPUP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Colors/38 GREEN-LIGHTEST-LPUP.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Colors/39 GREEN-WHITE-LPUP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Colors/39 GREEN-WHITE-LPUP.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Colors/4 SKIN-LPUP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Colors/4 SKIN-LPUP.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Colors/41 BLUE-DARKEST-LPUP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Colors/41 BLUE-DARKEST-LPUP.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Colors/42 BLUE-DARK-LPUP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Colors/42 BLUE-DARK-LPUP.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Colors/43 BLUE-MEDIUM-LPUP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Colors/43 BLUE-MEDIUM-LPUP.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Colors/44 BLUE-LPUP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Colors/44 BLUE-LPUP.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Colors/45 BLUE-LIGHT-LPUP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Colors/45 BLUE-LIGHT-LPUP.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Colors/46 BLUE-LIGHEST-LPUP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Colors/46 BLUE-LIGHEST-LPUP.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Colors/47 BLUE-WHITE-LPUP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Colors/47 BLUE-WHITE-LPUP.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Colors/49 PINK-DARKEST-LPUP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Colors/49 PINK-DARKEST-LPUP.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Colors/5 SKIN-LIGHT-LPUP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Colors/5 SKIN-LIGHT-LPUP.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Colors/50 PINK-DARK-LPUP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Colors/50 PINK-DARK-LPUP.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Colors/51 PINK-MEDIUM-LPUP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Colors/51 PINK-MEDIUM-LPUP.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Colors/52 PINK-LPUP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Colors/52 PINK-LPUP.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Colors/53 PINK-LIGHT-LPUP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Colors/53 PINK-LIGHT-LPUP.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Colors/57 BLACK-LPUP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Colors/57 BLACK-LPUP.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Colors/58 WHITE-LPUP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Colors/58 WHITE-LPUP.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Colors/6 SKIN-LIGHTEST-LPUP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Colors/6 SKIN-LIGHTEST-LPUP.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Colors/64 GLASS-LPUP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Colors/64 GLASS-LPUP.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Colors/64 GLASS-NIGHT-LPUP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Colors/64 GLASS-NIGHT-LPUP.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Colors/7 SKIN-WHITE-LPUP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Colors/7 SKIN-WHITE-LPUP.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Colors/9 BROWN-DARKEST-LPUP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Colors/9 BROWN-DARKEST-LPUP.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Colors/Emission/54 EMISSION-BLUE-LPUP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Colors/Emission/54 EMISSION-BLUE-LPUP.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Colors/Emission/55 EMISSION-PURPLE-LPUP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Colors/Emission/55 EMISSION-PURPLE-LPUP.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Colors/Emission/59 EMISSION-WHITE-LPUP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Colors/Emission/59 EMISSION-WHITE-LPUP.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Colors/Emission/60 EMISSION-RED-LPUP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Colors/Emission/60 EMISSION-RED-LPUP.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Colors/Emission/61 EMISSION-ORANGE-LPUP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Colors/Emission/61 EMISSION-ORANGE-LPUP.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Colors/Emission/62 EMISSION-YELLOW-LPUP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Colors/Emission/62 EMISSION-YELLOW-LPUP.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Colors/Emission/63 EMISSION-GREEN-LPUP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Colors/Emission/63 EMISSION-GREEN-LPUP.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Colors/Transparent/16 BROWN-MEDIUM-LPUP 1.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Colors/Transparent/16 BROWN-MEDIUM-LPUP 1.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Colors/Transparent/24 TRANSPARENT-GREY-LPUP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Colors/Transparent/24 TRANSPARENT-GREY-LPUP.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Colors/Transparent/32 TRANSPARENT-ORANGE-LPUP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Colors/Transparent/32 TRANSPARENT-ORANGE-LPUP.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Colors/Transparent/40 TRANSPARENT-GREEN-LPUP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Colors/Transparent/40 TRANSPARENT-GREEN-LPUP.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Colors/Transparent/48 TRANSPARENT BLUE-LPUP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Colors/Transparent/48 TRANSPARENT BLUE-LPUP.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Colors/Transparent/56 TRANSPARENT-WHITE-LPUP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Colors/Transparent/56 TRANSPARENT-WHITE-LPUP.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Colors/Transparent/8 TRANSPARENT-RED-LPUP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Colors/Transparent/8 TRANSPARENT-RED-LPUP.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Colors/Transparent/RAYS-LPUP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Colors/Transparent/RAYS-LPUP.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/atlas-LPUP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/atlas-LPUP.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/atlas-night-LPUP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/atlas-night-LPUP.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/atlas-transparent-LPUP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/atlas-transparent-LPUP.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Meshes/- Terrains/terrain-world-plain.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Meshes/- Terrains/terrain-world-plain.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Meshes/- Tiles/Rail/tile-rail-conjunction.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Meshes/- Tiles/Rail/tile-rail-conjunction.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Meshes/- Tiles/Rail/tile-rail-curve-double.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Meshes/- Tiles/Rail/tile-rail-curve-double.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Meshes/- Tiles/Rail/tile-rail-curve.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Meshes/- Tiles/Rail/tile-rail-curve.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Meshes/- Tiles/Rail/tile-rail-hill.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Meshes/- Tiles/Rail/tile-rail-hill.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Meshes/- Tiles/Rail/tile-rail-intersection.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Meshes/- Tiles/Rail/tile-rail-intersection.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Meshes/- Tiles/Rail/tile-rail-mainroad-crossing.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Meshes/- Tiles/Rail/tile-rail-mainroad-crossing.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Meshes/- Tiles/Rail/tile-rail-road-crossing.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Meshes/- Tiles/Rail/tile-rail-road-crossing.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Meshes/- Tiles/Rail/tile-rail-straight-double.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Meshes/- Tiles/Rail/tile-rail-straight-double.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Meshes/- Tiles/Rail/tile-rail-y.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Meshes/- Tiles/Rail/tile-rail-y.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Meshes/- Vehicles/Jeep-willys.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Meshes/- Vehicles/Jeep-willys.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Meshes/- Vehicles/car-camper-bus.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Meshes/- Vehicles/car-camper-bus.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Meshes/- Vehicles/car-taxi-china.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Meshes/- Vehicles/car-taxi-china.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Meshes/- Vehicles/car-tow-truck.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Meshes/- Vehicles/car-tow-truck.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Meshes/- Vehicles/car-truck-cargo.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Meshes/- Vehicles/car-truck-cargo.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Meshes/- Vehicles/car-truck-cement.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Meshes/- Vehicles/car-truck-cement.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Meshes/- Vehicles/car-truck-concrete-pump.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Meshes/- Vehicles/car-truck-concrete-pump.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Meshes/- Vehicles/car-truck-dump.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Meshes/- Vehicles/car-truck-dump.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Meshes/- Vehicles/car-truck-flatbed.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Meshes/- Vehicles/car-truck-flatbed.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Meshes/- Vehicles/car-truck-pump.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Meshes/- Vehicles/car-truck-pump.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Meshes/- Vehicles/car-truck-tanker.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Meshes/- Vehicles/car-truck-tanker.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Meshes/- Vehicles/jeep-open.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Meshes/- Vehicles/jeep-open.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Meshes/- Vehicles/military-truck-cover.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Meshes/- Vehicles/military-truck-cover.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Meshes/- Vehicles/military-truck.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Meshes/- Vehicles/military-truck.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Meshes/- Vehicles/sherman.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Meshes/- Vehicles/sherman.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Meshes/- Vehicles/tiger.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Meshes/- Vehicles/tiger.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Meshes/- Vehicles/train-freight-big.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Meshes/- Vehicles/train-freight-big.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Meshes/- Vehicles/train-freight-short.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Meshes/- Vehicles/train-freight-short.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Meshes/- Vehicles/train-passenger-wagon.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Meshes/- Vehicles/train-passenger-wagon.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Meshes/- Vehicles/train-passenger.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Meshes/- Vehicles/train-passenger.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Meshes/- Vehicles/train-wagon-cargo.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Meshes/- Vehicles/train-wagon-cargo.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Meshes/- Vehicles/train-wagon-hopper.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Meshes/- Vehicles/train-wagon-hopper.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Meshes/- Vehicles/train-wagon-oil.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Meshes/- Vehicles/train-wagon-oil.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Meshes/- Vehicles/truck.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Meshes/- Vehicles/truck.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Building_Platform.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Building_Platform.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/02-Iri_Station.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/02-Iri_Station.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TrafficLightBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TrafficStateBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TrafficLightBehaviour.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TrafficStateBehaviour.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TrafficLightState.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TrafficState.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TrafficLightState/ITrafficLightState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TrafficState/ITrafficState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TrafficLightState/ITrafficLightState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TrafficState/ITrafficState.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TrafficLightState/TrafficLightStateIdle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TrafficState/TrafficStateIdle.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TrafficLightState/TrafficLightStateIdle.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TrafficState/TrafficStateIdle.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TrafficLightState/TrafficLightStateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TrafficState/TrafficStateMachine.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TrafficLightState/TrafficLightStateMachine.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TrafficState/TrafficStateMachine.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TrafficLightState/TrafficLightStateMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TrafficState/TrafficStateMove.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TrafficLightState/TrafficLightStateMove.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TrafficState/TrafficStateMove.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TrafficLightState/TrafficLightStateStop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TrafficState/TrafficStateStop.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TrafficLightState/TrafficLightStateStop.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TrafficState/TrafficStateStop.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/VehicleTrainBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/VehicleTrainBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/atlas-albedo-LPUP.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/atlas-albedo-LPUP.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/atlas-emission-LPUP.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/atlas-emission-LPUP.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/atlas-emission-night-LPUP.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/atlas-emission-night-LPUP.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/atlas-gradient-LPUP.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/atlas-gradient-LPUP.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/atlas-source-LPUP.psd.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/atlas-source-LPUP.psd.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/atlas-specular-LPUP.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/atlas-specular-LPUP.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/belt-texture.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/belt-texture.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/grass-texture-LPUP.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/grass-texture-LPUP.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/grass-texture-long-LPUP.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/grass-texture-long-LPUP.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/lightrays-LPUP.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/lightrays-LPUP.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/VehicleTrain/VehicleTrainInvestigationButtonBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/VehicleTrain/VehicleTrainInvestigationButtonBehaviour.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -323,7 +190,8 @@
       <workItem from="1748438211108" duration="5906000" />
       <workItem from="1748581181414" duration="1274000" />
       <workItem from="1748598374441" duration="15300000" />
-      <workItem from="1748690486962" duration="3539000" />
+      <workItem from="1748690486962" duration="13970000" />
+      <workItem from="1749286444439" duration="2485000" />
     </task>
     <task id="LOCAL-00001" summary="뉴스 펼치기 기능 구현&#10;&#10;추상 클래스, GameControlPointerManager.cs&#10;확장 메뉴 펼치기 기능 구현 클래스, GameControlExpandMenuController.cs&#10;드래그&amp;드랍 기능 구현 클래스, GameControlDragDropController.cs&#10;- GameControlPointerManager.cs 추상 클래스에는 Unity.EventSystems 라이브러리가 포함되어 있으며, OnPointerDown(), OnBeginDrag(), OnDrag(), OnEndDrag() 추상 메서드가 있다.&#10;- 자식 클래스(GameControlExpandMenuController.cs, GameControlDragDropController.cs)는 추상 메서드를 구현하는 방식으로 기능을 구현한다.&#10;- 뉴스 펼치기 기능도 확장 메뉴 펼치기 기능과 동일한 방식으로 구현되므로, 스크립트를 컴포넌트로 붙여서 재활용.&#10;- 뉴스를 펼치는 방향과 확장 메뉴를 펼치는 방향이 반대이기 때문에, swipeLevel을 SerializeField로 선언하여 시작 레벨 값을 설정하도록 변경함.&#10;(대신 레벨 값이 변화할 떄는 swipeDirection이 음수일 때 -1, 양수일 때 +1로 설정)&#10;&#10;GameControlDragDropController.cs는 오브젝트를 선택하여 드래그&amp;드랍하는 기능을 구현하는 클래스.&#10;- 추후 검문 패널에서 증거물 오브젝트를 마우스로 클릭해 움직이는 기능을 구현할 때 해당 클래스를 활용한다.&#10;&#10;패널이 펼쳐지고 닫히는 애니메이션 속도를 증가시켜서 답답함을 해소하고자 함.&#10;- 지속적인 QA가 필요한 부분.&#10;- 검문 패널이 닫힐 때, 스프링처럼 튕겼다가 다시 돌아오는 애니메이션 효과를 추가하면 더 자연스러울 것 같다.">
       <option name="closed" value="true" />
