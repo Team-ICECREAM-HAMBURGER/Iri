@@ -2,22 +2,20 @@ using UnityEngine;
 using UnityEngine.Events;
 
 public class PlayerBehaviour : GameControlSingleton<PlayerBehaviour> {
-    [SerializeField] private GameSaveDataChapterController gameSaveDataChapterController;
-    [SerializeField] private GameTimeController gameTimeController;
-    
-    [Space(10f)]
-    
     [HideInInspector] public UnityEvent OnPunchIn;
     [HideInInspector] public UnityEvent OnPunchOut;
-
+    
+    [SerializeField] private GameSaveDataChapterController gameSaveDataChapterController;
+    [SerializeField] private GameTimeController gameTimeController;
+    [Space(10f)]
+    [SerializeField] private PunchButtonBehaviour punchButtonBehaviour;
+    
     private bool isPunched;
     
     
     private void Init() {
         this.isPunched = false;
-        
-        this.OnPunchIn.AddListener(PunchIn);
-        this.OnPunchOut.AddListener(PunchOut);
+        this.punchButtonBehaviour.OnPunchIn.AddListener(PunchIn);    
     }
 
     private void Awake() {
@@ -25,23 +23,27 @@ public class PlayerBehaviour : GameControlSingleton<PlayerBehaviour> {
     }
     
     private void PunchIn() {
-        // Debug.Log("Punch In");
-        
-        if (!this.isPunched) {
-            this.gameSaveDataChapterController.OnInitChapter.Invoke();
-            this.gameTimeController.OnTimeUpdate.Invoke(Time.time);
-            this.isPunched = true;
+        if (this.isPunched) {
+            return;
         }
+        
+        this.gameSaveDataChapterController.OnInitChapter.Invoke();
+
+        // Debug.Log("Punch In");
+        this.OnPunchIn.Invoke();
+        this.isPunched = true;
+        this.gameTimeController.OnTimeUpdate.Invoke(Time.time);
     }
 
-    // EventController/Manager -> Event Control -> ChapterUpdate //
-    
     private void PunchOut() {
-        // Debug.Log("Punch Out");
-
-        if (this.isPunched) {
-            this.gameSaveDataChapterController.OnUpdatedChapterSave.Invoke();
-            this.isPunched = false;
+        if (!this.isPunched) {
+            return;
         }
+        
+        this.gameSaveDataChapterController.OnUpdatedChapterSave.Invoke();
+
+        // Debug.Log("Punch Out");
+        this.OnPunchOut.Invoke();
+        this.isPunched = false;
     }
 }

@@ -5,9 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ddc2bca3-3552-44fb-9935-884ccdc772c1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameController/GameControlSpeechBalloonController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameController/GameControlSpeechBalloonController.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/VehicleTrain/VehicleTrainInvestigationButtonBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/VehicleTrain/VehicleTrainInvestigationButtonBehaviour.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Newspaper.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PunchButtonBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Iri/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Iri/.idea/projectSettingsUpdater.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Iri/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Iri/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/02-Iri_Station.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/02-Iri_Station.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameCamChanger.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameCamChanger.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewspaperArticle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Newspaper/NewspaperArticle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewspaperArticle.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Newspaper/NewspaperArticle.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewspaperArticleScriptableObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Newspaper/NewspaperArticleScriptableObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewspaperArticleScriptableObject.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Newspaper/NewspaperArticleScriptableObject.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewspaperController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Newspaper/NewspaperController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewspaperController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Newspaper/NewspaperController.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/OfficeController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/OfficeController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PunchButtonBehaviour.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TrafficStatusTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TrafficStatusTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/VehicleTrain/VehicleTrainSpawnBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/VehicleTrain/VehicleTrainSpawnBehaviour.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +92,13 @@
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;/Users/seung-ki/Library/Application Support/JetBrains/Rider2024.1/resharper-host/DecompilerCache&quot;,
+      &quot;/Users/seung-ki/Library/Application Support/JetBrains/Rider2024.1/resharper-host/SourcesCache&quot;,
+      &quot;/Users/seung-ki/Library/Application Support/Symbols/src&quot;
+    ]
   }
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -89,7 +111,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.23f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/6000.0.23f1/Unity.app/Contents/MacOS/Unity" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath &quot;$PROJECT_DIR$&quot; -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -97,7 +119,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.23f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/6000.0.23f1/Unity.app/Contents/MacOS/Unity" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath &quot;$PROJECT_DIR$&quot; -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -192,6 +214,8 @@
       <workItem from="1748598374441" duration="15300000" />
       <workItem from="1748690486962" duration="13970000" />
       <workItem from="1749286444439" duration="3470000" />
+      <workItem from="1749361268200" duration="323000" />
+      <workItem from="1749361607940" duration="2044000" />
     </task>
     <task id="LOCAL-00001" summary="뉴스 펼치기 기능 구현&#10;&#10;추상 클래스, GameControlPointerManager.cs&#10;확장 메뉴 펼치기 기능 구현 클래스, GameControlExpandMenuController.cs&#10;드래그&amp;드랍 기능 구현 클래스, GameControlDragDropController.cs&#10;- GameControlPointerManager.cs 추상 클래스에는 Unity.EventSystems 라이브러리가 포함되어 있으며, OnPointerDown(), OnBeginDrag(), OnDrag(), OnEndDrag() 추상 메서드가 있다.&#10;- 자식 클래스(GameControlExpandMenuController.cs, GameControlDragDropController.cs)는 추상 메서드를 구현하는 방식으로 기능을 구현한다.&#10;- 뉴스 펼치기 기능도 확장 메뉴 펼치기 기능과 동일한 방식으로 구현되므로, 스크립트를 컴포넌트로 붙여서 재활용.&#10;- 뉴스를 펼치는 방향과 확장 메뉴를 펼치는 방향이 반대이기 때문에, swipeLevel을 SerializeField로 선언하여 시작 레벨 값을 설정하도록 변경함.&#10;(대신 레벨 값이 변화할 떄는 swipeDirection이 음수일 때 -1, 양수일 때 +1로 설정)&#10;&#10;GameControlDragDropController.cs는 오브젝트를 선택하여 드래그&amp;드랍하는 기능을 구현하는 클래스.&#10;- 추후 검문 패널에서 증거물 오브젝트를 마우스로 클릭해 움직이는 기능을 구현할 때 해당 클래스를 활용한다.&#10;&#10;패널이 펼쳐지고 닫히는 애니메이션 속도를 증가시켜서 답답함을 해소하고자 함.&#10;- 지속적인 QA가 필요한 부분.&#10;- 검문 패널이 닫힐 때, 스프링처럼 튕겼다가 다시 돌아오는 애니메이션 효과를 추가하면 더 자연스러울 것 같다.">
       <option name="closed" value="true" />
