@@ -37,11 +37,11 @@ public class VehicleTrainBehaviour : MonoBehaviour {
         this.vehicleTrainTrafficManager.onTrafficExecuteMove.RemoveListener(Move);
         this.vehicleTrainTrafficManager.onTrafficExecuteStop.RemoveListener(Stop);
         this.vehicleTrainTrafficManager.onTrafficEnterIdle.RemoveListener(Idle);
-
+        
     }
 
     private void Idle() {
-        this.vehicleCurrentSpeed = 0f;
+        this.vehicleRigidbody.linearVelocity = Vector3.zero;
     }
     
     private void Move() {

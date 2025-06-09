@@ -8,6 +8,7 @@ public class VehicleTrainTrafficStateIdle : IVehicleTrainTrafficState {
     
     public void Enter() {
         // 이벤트 발생 알림!
+        this.vehicleTrainTrafficManager.TrainTrafficMonitorUpdate(true, "대기");
         this.vehicleTrainTrafficManager.onTrafficEnterIdle.Invoke();
     }
 
@@ -16,6 +17,6 @@ public class VehicleTrainTrafficStateIdle : IVehicleTrainTrafficState {
     }
 
     public void Exit() {
-        
+        this.vehicleTrainTrafficManager.onTrafficExitIdle.Invoke();
     }
 }

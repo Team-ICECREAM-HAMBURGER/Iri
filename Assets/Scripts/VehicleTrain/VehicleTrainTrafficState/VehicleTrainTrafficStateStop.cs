@@ -8,6 +8,7 @@ public class VehicleTrainTrafficStateStop : IVehicleTrainTrafficState {
     
     public void Enter() {
         // 이벤트 발생 알림!
+        this.vehicleTrainTrafficManager.TrainTrafficMonitorUpdate(false, "정차");
         this.vehicleTrainTrafficManager.onTrafficEnterStop.Invoke();
     }
 

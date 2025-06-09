@@ -4,10 +4,6 @@ using UnityEditor;
 using System.Reflection;
 using System;
 
-// [CustomPropertyDrawer(typeof(GameControlSerializableDictionary.TrafficStatus))]
-[CustomPropertyDrawer(typeof(GameControlSerializableDictionary.TrafficStatusTmp))]
-[CustomPropertyDrawer(typeof(GameControlSerializableDictionary.TrafficStatusText))]
-
 [CustomPropertyDrawer(typeof(GameControlSerializableDictionary.SpawnableTrain))]
 
 [CustomPropertyDrawer(typeof(GameControlSerializableDictionary.NewsArticle))]

@@ -1,6 +1,6 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class VehicleTrainTrafficManager : MonoBehaviour {
@@ -8,23 +8,28 @@ public class VehicleTrainTrafficManager : MonoBehaviour {
 
     [HideInInspector] public UnityEvent onTrafficEnterIdle;
     [HideInInspector] public UnityEvent onTrafficEnterStop;
+    // [HideInInspector] public UnityEvent onTrafficEnterMove;
 
     [HideInInspector] public UnityEvent onTrafficExecuteMove;
     [HideInInspector] public UnityEvent onTrafficExecuteStop;
+
+    [HideInInspector] public UnityEvent onTrafficExitIdle;
     
     [SerializeField] private Image investigatingIcon;
-    private Button trafficStateChangeButton;
+    [SerializeField] private TMP_Text trafficStateTmp;
+    [SerializeField] private Button trafficStateChangeButton;
 
     private IVehicleTrainTrafficState nextState;
     private VehicleTrainTrafficStateManager vehicleTrainTrafficStateManager;
     
 
     private void Init() {
+        this.investigatingIcon.gameObject.SetActive(false);
         this.vehicleTrainTrafficStateManager = new VehicleTrainTrafficStateManager(this);
-        this.trafficStateChangeButton = this.gameObject.GetComponent<Button>();
         
         this.trafficStateChangeButton.onClick.AddListener(OnTrafficStateChange);
         this.onTrafficTransitionToIdle.AddListener(OnTrafficStateChangeToIdle);
+        
     }
 
     private void Awake() {
@@ -51,4 +56,11 @@ public class VehicleTrainTrafficManager : MonoBehaviour {
         
         this.vehicleTrainTrafficStateManager.TransitionTo(this.nextState);
     }
+
+    public void TrainTrafficMonitorUpdate(bool investigationIconValue, string stateText) {
+        this.investigatingIcon.gameObject.SetActive(investigationIconValue);
+        this.trafficStateTmp.text = stateText;
+    }
+
+    
 }
