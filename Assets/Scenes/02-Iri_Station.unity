@@ -5038,6 +5038,9 @@ MonoBehaviour:
   onTrafficExecuteMove:
     m_PersistentCalls:
       m_Calls: []
+  onTrafficExecuteStop:
+    m_PersistentCalls:
+      m_Calls: []
   investigatingIcon: {fileID: 380907220}
 --- !u!4 &129119072 stripped
 Transform:
@@ -23582,6 +23585,9 @@ MonoBehaviour:
   onTrafficExecuteMove:
     m_PersistentCalls:
       m_Calls: []
+  onTrafficExecuteStop:
+    m_PersistentCalls:
+      m_Calls: []
   investigatingIcon: {fileID: 276859145}
 --- !u!1001 &460964336
 PrefabInstance:
@@ -38721,6 +38727,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 2408747580492067109}
+    - targetCorrespondingSourceObject: {fileID: 540300813762860313, guid: f5780b409d0fba744b45c0cd20f0e8dc,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2408747580492067116}
     - targetCorrespondingSourceObject: {fileID: 540300813762860313, guid: f5780b409d0fba744b45c0cd20f0e8dc,
         type: 3}
       insertIndex: -1
@@ -65910,6 +65920,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8424193848400607440, guid: 18c47b67fd7f3b04e84ec7844466be14,
         type: 3}
       insertIndex: -1
+      addedObject: {fileID: 3784840534460844020}
+    - targetCorrespondingSourceObject: {fileID: 8424193848400607440, guid: 18c47b67fd7f3b04e84ec7844466be14,
+        type: 3}
+      insertIndex: -1
       addedObject: {fileID: 3784840534460844015}
     - targetCorrespondingSourceObject: {fileID: 8424193848400607440, guid: 18c47b67fd7f3b04e84ec7844466be14,
         type: 3}
@@ -69088,6 +69102,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   onTrafficExecuteMove:
+    m_PersistentCalls:
+      m_Calls: []
+  onTrafficExecuteStop:
     m_PersistentCalls:
       m_Calls: []
   investigatingIcon: {fileID: 459262034}
@@ -76544,6 +76561,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 2640181256957993449}
+    - targetCorrespondingSourceObject: {fileID: 1496696072424990762, guid: ef6bb891461dfec43a094a3873381052,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3535768181180609569}
     - targetCorrespondingSourceObject: {fileID: 1496696072424990762, guid: ef6bb891461dfec43a094a3873381052,
         type: 3}
       insertIndex: -1
@@ -95904,6 +95925,9 @@ MonoBehaviour:
   onTrafficExecuteMove:
     m_PersistentCalls:
       m_Calls: []
+  onTrafficExecuteStop:
+    m_PersistentCalls:
+      m_Calls: []
   investigatingIcon: {fileID: 944203130}
 --- !u!4 &2084759212 stripped
 Transform:
@@ -103225,6 +103249,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2408747580492067116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 540300814471330415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28b5e4acc930475c9f143a50f0d8b557, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vehicleTrainTrafficManager: {fileID: 1438064369}
 --- !u!222 &2412787106577110556
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -106256,6 +106293,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3535768181180609569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3535768181180609562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28b5e4acc930475c9f143a50f0d8b557, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vehicleTrainTrafficManager: {fileID: 460064414}
 --- !u!33 &3553894331501840010
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -106906,6 +106956,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3784840534460844020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1299416863822487098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28b5e4acc930475c9f143a50f0d8b557, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vehicleTrainTrafficManager: {fileID: 127384818}
 --- !u!224 &3787832896956060153
 RectTransform:
   m_ObjectHideFlags: 0
@@ -117498,6 +117561,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28b5e4acc930475c9f143a50f0d8b557, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  vehicleTrainTrafficManager: {fileID: 2083892595}
 --- !u!1 &7937413673753948994
 GameObject:
   m_ObjectHideFlags: 0

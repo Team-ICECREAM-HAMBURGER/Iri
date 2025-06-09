@@ -63,7 +63,7 @@ public class VehicleTrainBehaviour : MonoBehaviour {
 
         if (speed > 1f) {
             var brakeForce = -this.vehicleRigidbody.linearVelocity.normalized 
-                                 * (this.vehicleAcceleration * this.vehicleRigidbody.mass * this.jointCars);
+                                 * (this.vehicleAcceleration * this.vehicleRigidbody.mass);
             this.vehicleRigidbody.AddForce(brakeForce, ForceMode.Force);
         }
         else {
