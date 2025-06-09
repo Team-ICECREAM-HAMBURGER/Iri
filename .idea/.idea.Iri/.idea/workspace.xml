@@ -4,26 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ddc2bca3-3552-44fb-9935-884ccdc772c1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Newspaper.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PunchButtonBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Iri/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Iri/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Iri/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Iri/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/02-Iri_Station.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/02-Iri_Station.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameCamChanger.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameCamChanger.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewspaperArticle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Newspaper/NewspaperArticle.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewspaperArticle.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Newspaper/NewspaperArticle.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewspaperArticleScriptableObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Newspaper/NewspaperArticleScriptableObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewspaperArticleScriptableObject.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Newspaper/NewspaperArticleScriptableObject.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewspaperController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Newspaper/NewspaperController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewspaperController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Newspaper/NewspaperController.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/OfficeController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/OfficeController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PunchButtonBehaviour.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TrafficStatusTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TrafficStatusTrigger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/VehicleTrain/VehicleTrainSpawnBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/VehicleTrain/VehicleTrainSpawnBehaviour.cs" afterDir="false" />
-    </list>
+    <list default="true" id="ddc2bca3-3552-44fb-9935-884ccdc772c1" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
