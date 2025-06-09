@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ddc2bca3-3552-44fb-9935-884ccdc772c1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Iri/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Iri/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/02-Iri_Station.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/02-Iri_Station.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/VehicleTrain/VehicleTrainBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/VehicleTrain/VehicleTrainBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/VehicleTrain/VehicleTrainSpawnBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/VehicleTrain/VehicleTrainSpawnBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/VehicleTrain/VehicleTrainTrafficState/VehicleTrainTrafficManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/VehicleTrain/VehicleTrainTrafficState/VehicleTrainTrafficManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Traffic Light Speech Balloon Controller.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Traffic Light Speech Balloon Controller.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Traffic Light Speech Balloon Level 0.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Traffic Light Speech Balloon Level 0.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Traffic Light Speech Balloon Level 1.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Traffic Light Speech Balloon Level 1.anim.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,12 +36,12 @@
     <setting file="file://$PROJECT_DIR$/../Crashy-Road_2023/Assets/Scripts/EnemyVehicleController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Crashy-Road_2023/Assets/Scripts/ObjectPooling.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Crashy-Road_2023/Assets/Scripts/PlayerVehicleController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/seung-ki/Documents/GitHub/Team ICECREAM HAMBURGER/Iri/Assets/Animations/Speech (Officer).controller.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/seung-ki/Documents/GitHub/Team ICECREAM HAMBURGER/Iri/Assets/Animations/Speech (Officer).controller.meta" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameSaveData/GameSaveDataChapterController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameSaveData/GameSaveDataFamily.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameSaveData/GameSaveDataManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameSaveData/GameSaveDataPlayer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/VehicleTrain/VehicleTrainTrafficState/IVehicleTrainTrafficState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/VehicleTrain/VehicleTrainTrafficState/VehicleTrainTrafficStateStop.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem/InputSystem/Actions/InputActionMap.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem/InputSystem/Plugins/PlayerInput/DefaultInputActions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem/InputSystem/Plugins/UI/InputSystemUIInputModule.cs" root0="SKIP_HIGHLIGHTING" />
