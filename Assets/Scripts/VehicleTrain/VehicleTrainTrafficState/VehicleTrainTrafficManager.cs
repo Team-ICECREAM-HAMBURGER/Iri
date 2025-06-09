@@ -15,21 +15,23 @@ public class VehicleTrainTrafficManager : MonoBehaviour {
 
     [HideInInspector] public UnityEvent onTrafficExitIdle;
     
-    [SerializeField] private Image investigatingIcon;
     [SerializeField] private TMP_Text trafficStateTmp;
     [SerializeField] private Button trafficStateChangeButton;
+    [SerializeField] private Button investigatingButton;
 
     private IVehicleTrainTrafficState nextState;
     private VehicleTrainTrafficStateManager vehicleTrainTrafficStateManager;
+    [HideInInspector] public bool isInvestigated;  
     
-
+    
     private void Init() {
-        this.investigatingIcon.gameObject.SetActive(false);
+        this.isInvestigated = false;
+        this.investigatingButton.gameObject.SetActive(false);
         this.vehicleTrainTrafficStateManager = new VehicleTrainTrafficStateManager(this);
         
         this.trafficStateChangeButton.onClick.AddListener(OnTrafficStateChange);
+        this.investigatingButton.onClick.AddListener(OnInvestigatingStart);
         this.onTrafficTransitionToIdle.AddListener(OnTrafficStateChangeToIdle);
-        
     }
 
     private void Awake() {
@@ -57,10 +59,18 @@ public class VehicleTrainTrafficManager : MonoBehaviour {
         this.vehicleTrainTrafficStateManager.TransitionTo(this.nextState);
     }
 
-    public void TrainTrafficMonitorUpdate(bool investigationIconValue, string stateText) {
-        this.investigatingIcon.gameObject.SetActive(investigationIconValue);
-        this.trafficStateTmp.text = stateText;
+    private void OnInvestigatingStart() {
+        this.isInvestigated = true;
+        // TODO: 검문 화면 자동 스크롤
     }
-
     
+    public void TrainTrafficMonitorUpdate(bool investigationIconValue, string stateText) {
+        this.trafficStateTmp.text = stateText;
+
+        if (this.isInvestigated) {
+            investigationIconValue = false;
+        }
+
+        this.investigatingButton.gameObject.SetActive(investigationIconValue);
+    }
 }

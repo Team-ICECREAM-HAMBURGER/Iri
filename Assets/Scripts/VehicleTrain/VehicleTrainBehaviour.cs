@@ -12,7 +12,7 @@ public class VehicleTrainBehaviour : MonoBehaviour {
     
     private Transform vehicleTransform;
     private Rigidbody vehicleRigidbody;
-    
+
     
     private void Init() {
         // Train Component Init //
@@ -28,12 +28,14 @@ public class VehicleTrainBehaviour : MonoBehaviour {
     }
 
     private void OnEnable() {
+        this.vehicleTrainTrafficManager.isInvestigated = false;
         this.vehicleTrainTrafficManager.onTrafficExecuteMove.AddListener(Move);
         this.vehicleTrainTrafficManager.onTrafficExecuteStop.AddListener(Stop);
         this.vehicleTrainTrafficManager.onTrafficEnterIdle.AddListener(Idle);
     }
 
     private void OnDisable() {
+        this.vehicleTrainTrafficManager.isInvestigated = false;
         this.vehicleTrainTrafficManager.onTrafficExecuteMove.RemoveListener(Move);
         this.vehicleTrainTrafficManager.onTrafficExecuteStop.RemoveListener(Stop);
         this.vehicleTrainTrafficManager.onTrafficEnterIdle.RemoveListener(Idle);

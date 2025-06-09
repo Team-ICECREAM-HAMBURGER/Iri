@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class GameControlExpandMenuController : GameControlPointerManager {
+public class GameControlExpandMenuDragController : GameControlPointerManager {
     [SerializeField] private Animator animator;
     [SerializeField] private int swipeLevel;
 

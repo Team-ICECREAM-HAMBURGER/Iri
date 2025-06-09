@@ -3,29 +3,25 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class VehicleTrainSpawnBehaviour : MonoBehaviour {
-    [Header("Spawn Settings")]
-    [field:SerializeField] private List<GameObject> spawnTrain;
-    [Space(10f)]
+    [field:SerializeField] private List<GameObject> spawnPrefabs;
     [SerializeField] private float spawnTime;
     [SerializeField] private float spawnTimeRandomValue;
     
     private Vector3 vehicleSpawnPosition;
     private Vector3 vehicleSpawnRotation;
-    private List<GameObject> spawnedTrain;
-    private bool isTrainSpawned;
+    private List<GameObject> spawnTrain;
     
     
     private void Init() {
         PlayerBehaviour.Instance.OnPunchIn.AddListener(TrainSpawn);
         
-        this.isTrainSpawned = false;
-        this.spawnedTrain = new();
-        this.vehicleSpawnPosition = this.spawnTrain[0].transform.position;
-        this.vehicleSpawnRotation = this.spawnTrain[0].transform.rotation.eulerAngles;
+        this.spawnTrain = new();
+        this.vehicleSpawnPosition = this.spawnPrefabs[0].transform.position;
+        this.vehicleSpawnRotation = this.spawnPrefabs[0].transform.rotation.eulerAngles;
     }
     
     private void OnTriggerEnter(Collider other) {
-        this.isTrainSpawned = false;
+        other.gameObject.SetActive(false);
         StartCoroutine(TrainSpawnCoroutine());
     }
     
@@ -34,33 +30,29 @@ public class VehicleTrainSpawnBehaviour : MonoBehaviour {
     }
 
     private void TrainSpawn() {
-        foreach (var VARIABLE in this.spawnTrain) {
+        foreach (var VARIABLE in this.spawnPrefabs) {
             var obj 
                 = Instantiate(VARIABLE, this.vehicleSpawnPosition, Quaternion.Euler(vehicleSpawnRotation));
             
             obj.SetActive(false);
-            this.spawnedTrain.Add(obj);
+            this.spawnTrain.Add(obj);
         }
         
         StartCoroutine(TrainSpawnCoroutine());
         
-        foreach (var VARIABLE in this.spawnTrain) {
+        foreach (var VARIABLE in this.spawnPrefabs) {
             Destroy(VARIABLE);
         }
     }
     
     private IEnumerator TrainSpawnCoroutine() {
-        if (this.isTrainSpawned) {
-            yield break;
-        }
-        
-        var target = SpawnTrainRandomSelect(this.spawnedTrain);
-        
+        var target = SpawnTrainRandomSelect(this.spawnTrain);
+        target.transform.position = this.vehicleSpawnPosition;
+
         yield return new WaitForSeconds(
             this.spawnTime + Random.Range(-this.spawnTimeRandomValue, this.spawnTimeRandomValue));
             
         target.SetActive(true);
-        this.isTrainSpawned = true;
     }
     
     private GameObject SpawnTrainRandomSelect(List<GameObject> trains) {
