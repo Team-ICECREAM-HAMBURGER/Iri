@@ -1,12 +1,8 @@
 using UnityEngine;
 
-public class TrafficStateLightBehaviour : MonoBehaviour {
-    [Header("System Components")]
-    [SerializeField] private TrafficStateBehaviour trafficStateBehaviour;
-    
-    [Space(25f)]
-    
-    [Header("Traffic Lights")] 
+public class VehicleTrainTrafficStateLightManger : MonoBehaviour {
+    [SerializeField] private VehicleTrainTrafficManager vehicleTrainTrafficManager;
+    [Space(10f)]
     [SerializeField] private Light trafficLight;
     
     private Color trafficLightsColorIdle;
@@ -15,13 +11,13 @@ public class TrafficStateLightBehaviour : MonoBehaviour {
 
 
     private void Init() {
+        this.vehicleTrainTrafficManager.onTrafficEnterIdle.AddListener(Idle);
+        this.vehicleTrainTrafficManager.onTrafficEnterStop.AddListener(Stop);
+        this.vehicleTrainTrafficManager.onTrafficExecuteMove.AddListener(Move);
+        
         this.trafficLightsColorIdle = Color.yellow;
         this.trafficLightsColorStop = Color.red;
         this.trafficLightsColorMove = Color.green;
-        
-        this.trafficStateBehaviour.OnTrafficUpdateIdle.AddListener(Idle);
-        this.trafficStateBehaviour.OnTrafficUpdateMove.AddListener(Move);
-        this.trafficStateBehaviour.OnTrafficUpdateStop.AddListener(Stop);
     }
     
     private void Awake() {
@@ -38,7 +34,7 @@ public class TrafficStateLightBehaviour : MonoBehaviour {
     }
 
     private void Stop() {
+        Debug.Log("정지!");
         this.trafficLight.color = this.trafficLightsColorStop;
-
     }
 }

@@ -5013,19 +5013,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 127384814}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 127384818}
-        m_TargetAssemblyTypeName: TrafficLightBehaviour, Assembly-CSharp
-        m_MethodName: OnClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &127384818
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5038,16 +5026,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e00346fb21dccbb40a9f0aaea09ded96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnTrafficUpdateIdle:
+  onTrafficTransitionToIdle:
     m_PersistentCalls:
       m_Calls: []
-  OnTrafficUpdateMove:
+  onTrafficEnterIdle:
     m_PersistentCalls:
       m_Calls: []
-  OnTrafficUpdateStop:
+  onTrafficEnterStop:
     m_PersistentCalls:
       m_Calls: []
-  vehicleTrainInvestigationButtonBehaviour: {fileID: 380907222}
+  onTrafficExecuteMove:
+    m_PersistentCalls:
+      m_Calls: []
+  investigatingIcon: {fileID: 380907220}
 --- !u!4 &129119072 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8932441817806888640, guid: 7f8e35e7ab64a98418dbfca1129b54d3,
@@ -7494,6 +7485,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 540300813762860313, guid: f5780b409d0fba744b45c0cd20f0e8dc,
         type: 3}
       insertIndex: -1
+      addedObject: {fileID: 7933753732712366451}
+    - targetCorrespondingSourceObject: {fileID: 540300813762860313, guid: f5780b409d0fba744b45c0cd20f0e8dc,
+        type: 3}
+      insertIndex: -1
       addedObject: {fileID: 7933753732712366446}
     - targetCorrespondingSourceObject: {fileID: 540300813762860313, guid: f5780b409d0fba744b45c0cd20f0e8dc,
         type: 3}
@@ -7698,7 +7693,6 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 203884646}
   - {fileID: 1430897147}
   - {fileID: 921157035}
   m_Father: {fileID: 0}
@@ -8028,151 +8022,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 659059766}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &203884645
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 203884646}
-  - component: {fileID: 203884649}
-  - component: {fileID: 203884648}
-  - component: {fileID: 203884647}
-  - component: {fileID: 203884650}
-  m_Layer: 5
-  m_Name: Cam Change Button
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &203884646
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 203884645}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 177584152}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -200, y: -80}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &203884647
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 203884645}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 203884648}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 203884650}
-        m_TargetAssemblyTypeName: GameCamChanger, Assembly-CSharp
-        m_MethodName: OnClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &203884648
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 203884645}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3832ae3a2af323940b1f876d22d46b3b, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &203884649
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 203884645}
-  m_CullTransparentMesh: 1
---- !u!114 &203884650
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 203884645}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3bc11865c60647a48b90605f4b4a551f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &204365467
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10106,7 +9955,7 @@ GameObject:
   - component: {fileID: 249189411}
   - component: {fileID: 249189410}
   m_Layer: 5
-  m_Name: Current Location
+  m_Name: Location
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11609,7 +11458,6 @@ GameObject:
   - component: {fileID: 276859143}
   - component: {fileID: 276859146}
   - component: {fileID: 276859145}
-  - component: {fileID: 276859147}
   m_Layer: 5
   m_Name: Investigating Icon
   m_TagString: Untagged
@@ -11675,22 +11523,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 276859142}
   m_CullTransparentMesh: 1
---- !u!114 &276859147
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 276859142}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f3172e85d834b06b67faf4d04f53611, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnInvestigate:
-    m_PersistentCalls:
-      m_Calls: []
-  trafficStateBehaviour: {fileID: 460064414}
 --- !u!1001 &282146510
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18232,7 +18064,6 @@ GameObject:
   - component: {fileID: 380907218}
   - component: {fileID: 380907221}
   - component: {fileID: 380907220}
-  - component: {fileID: 380907222}
   m_Layer: 5
   m_Name: Investigating Icon
   m_TagString: Untagged
@@ -18298,22 +18129,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 380907217}
   m_CullTransparentMesh: 1
---- !u!114 &380907222
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 380907217}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f3172e85d834b06b67faf4d04f53611, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnInvestigate:
-    m_PersistentCalls:
-      m_Calls: []
-  trafficStateBehaviour: {fileID: 127384818}
 --- !u!1001 &381448637
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21366,7 +21181,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa0d3866b3bb45fba00bf9117bd9d370, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trafficStateBehaviour: {fileID: 1438064369}
+  vehicleTrainTrafficManager: {fileID: 1438064369}
   trafficLight: {fileID: 436935342}
 --- !u!1 &437561891
 GameObject:
@@ -22594,7 +22409,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa0d3866b3bb45fba00bf9117bd9d370, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trafficStateBehaviour: {fileID: 460064414}
+  vehicleTrainTrafficManager: {fileID: 460064414}
   trafficLight: {fileID: 449194048}
 --- !u!1001 &452323613
 PrefabInstance:
@@ -23268,7 +23083,6 @@ GameObject:
   - component: {fileID: 459262032}
   - component: {fileID: 459262035}
   - component: {fileID: 459262034}
-  - component: {fileID: 459262036}
   m_Layer: 5
   m_Name: Investigating Icon
   m_TagString: Untagged
@@ -23334,22 +23148,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 459262031}
   m_CullTransparentMesh: 1
---- !u!114 &459262036
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 459262031}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f3172e85d834b06b67faf4d04f53611, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnInvestigate:
-    m_PersistentCalls:
-      m_Calls: []
-  trafficStateBehaviour: {fileID: 1438064369}
 --- !u!1001 &459785891
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23759,19 +23557,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 460064410}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 460064414}
-        m_TargetAssemblyTypeName: TrafficLightBehaviour, Assembly-CSharp
-        m_MethodName: OnClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &460064414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23784,16 +23570,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e00346fb21dccbb40a9f0aaea09ded96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnTrafficUpdateIdle:
+  onTrafficTransitionToIdle:
     m_PersistentCalls:
       m_Calls: []
-  OnTrafficUpdateMove:
+  onTrafficEnterIdle:
     m_PersistentCalls:
       m_Calls: []
-  OnTrafficUpdateStop:
+  onTrafficEnterStop:
     m_PersistentCalls:
       m_Calls: []
-  vehicleTrainInvestigationButtonBehaviour: {fileID: 276859147}
+  onTrafficExecuteMove:
+    m_PersistentCalls:
+      m_Calls: []
+  investigatingIcon: {fileID: 276859145}
 --- !u!1001 &460964336
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46626,7 +46415,6 @@ GameObject:
   - component: {fileID: 944203128}
   - component: {fileID: 944203131}
   - component: {fileID: 944203130}
-  - component: {fileID: 944203132}
   m_Layer: 5
   m_Name: Investigating Icon
   m_TagString: Untagged
@@ -46692,22 +46480,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 944203127}
   m_CullTransparentMesh: 1
---- !u!114 &944203132
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 944203127}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f3172e85d834b06b67faf4d04f53611, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnInvestigate:
-    m_PersistentCalls:
-      m_Calls: []
-  trafficStateBehaviour: {fileID: 2083892595}
 --- !u!1001 &946466409
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -69293,19 +69065,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1438064365}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1438064369}
-        m_TargetAssemblyTypeName: TrafficLightBehaviour, Assembly-CSharp
-        m_MethodName: OnClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1438064369
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69318,16 +69078,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e00346fb21dccbb40a9f0aaea09ded96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnTrafficUpdateIdle:
+  onTrafficTransitionToIdle:
     m_PersistentCalls:
       m_Calls: []
-  OnTrafficUpdateMove:
+  onTrafficEnterIdle:
     m_PersistentCalls:
       m_Calls: []
-  OnTrafficUpdateStop:
+  onTrafficEnterStop:
     m_PersistentCalls:
       m_Calls: []
-  vehicleTrainInvestigationButtonBehaviour: {fileID: 459262036}
+  onTrafficExecuteMove:
+    m_PersistentCalls:
+      m_Calls: []
+  investigatingIcon: {fileID: 459262034}
 --- !u!1001 &1446154405
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -81796,7 +81559,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa0d3866b3bb45fba00bf9117bd9d370, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trafficStateBehaviour: {fileID: 127384818}
+  vehicleTrainTrafficManager: {fileID: 127384818}
   trafficLight: {fileID: 1794030090}
 --- !u!1001 &1799057089
 PrefabInstance:
@@ -87768,7 +87531,7 @@ Transform:
   m_GameObject: {fileID: 1917747661}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -60, y: 8.114697, z: -45.69626}
+  m_LocalPosition: {x: -60, y: 8.114697, z: -45.696243}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -87787,7 +87550,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mode: 0
-  size: {x: 693, y: 31.229404, z: 300.39255}
+  size: {x: 693, y: 31.229404, z: 300.39258}
   overrideRendererFilters: 0
   minRendererVolumeSize: 0.1
   objectLayerMask:
@@ -96116,19 +95879,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2083892591}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2083892595}
-        m_TargetAssemblyTypeName: TrafficLightBehaviour, Assembly-CSharp
-        m_MethodName: OnClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &2083892595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -96141,16 +95892,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e00346fb21dccbb40a9f0aaea09ded96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnTrafficUpdateIdle:
+  onTrafficTransitionToIdle:
     m_PersistentCalls:
       m_Calls: []
-  OnTrafficUpdateMove:
+  onTrafficEnterIdle:
     m_PersistentCalls:
       m_Calls: []
-  OnTrafficUpdateStop:
+  onTrafficEnterStop:
     m_PersistentCalls:
       m_Calls: []
-  vehicleTrainInvestigationButtonBehaviour: {fileID: 944203132}
+  onTrafficExecuteMove:
+    m_PersistentCalls:
+      m_Calls: []
+  investigatingIcon: {fileID: 944203130}
 --- !u!4 &2084759212 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8932441817806888640, guid: 7f8e35e7ab64a98418dbfca1129b54d3,
@@ -103381,7 +103135,7 @@ MonoBehaviour:
   vehicleAcceleration: 20
   vehicleCurrentSpeed: 0
   jointCars: 6
-  trafficStateBehaviour: {fileID: 1438064369}
+  vehicleTrainTrafficManager: {fileID: 1438064369}
 --- !u!114 &2408747580492067111
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -104386,7 +104140,7 @@ MonoBehaviour:
   vehicleAcceleration: 20
   vehicleCurrentSpeed: 0
   jointCars: 7
-  trafficStateBehaviour: {fileID: 460064414}
+  vehicleTrainTrafficManager: {fileID: 460064414}
 --- !u!33 &2643562363927506128
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -107062,7 +106816,7 @@ MonoBehaviour:
   vehicleAcceleration: 20
   vehicleCurrentSpeed: 0
   jointCars: 7
-  trafficStateBehaviour: {fileID: 127384818}
+  vehicleTrainTrafficManager: {fileID: 127384818}
 --- !u!114 &3784840534460844015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -117642,7 +117396,7 @@ MonoBehaviour:
   vehicleAcceleration: 20
   vehicleCurrentSpeed: 0
   jointCars: 6
-  trafficStateBehaviour: {fileID: 2083892595}
+  vehicleTrainTrafficManager: {fileID: 2083892595}
 --- !u!114 &7933753732712366446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -117650,7 +117404,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7933753732712366443}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 65358128842078545a5cdbe8906fabf5, type: 3}
   m_Name: 
@@ -117732,6 +117486,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7933753732712366451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7933753732712366443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28b5e4acc930475c9f143a50f0d8b557, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7937413673753948994
 GameObject:
   m_ObjectHideFlags: 0
@@ -119359,7 +119125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa0d3866b3bb45fba00bf9117bd9d370, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trafficStateBehaviour: {fileID: 2083892595}
+  vehicleTrainTrafficManager: {fileID: 2083892595}
   trafficLight: {fileID: 4031625823169673479}
 --- !u!33 &8741393597464678122
 MeshFilter:

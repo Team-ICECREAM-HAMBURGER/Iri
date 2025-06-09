@@ -8,11 +8,11 @@ public class VehicleTrainBehaviour : MonoBehaviour {
     
     [Space(25f)]
     
-    [SerializeField] private TrafficStateBehaviour trafficStateBehaviour;
+    [SerializeField] private VehicleTrainTrafficManager vehicleTrainTrafficManager;
     
     private Transform vehicleTransform;
     private Rigidbody vehicleRigidbody;
-
+    
     
     private void Init() {
         // Train Component Init //
@@ -21,24 +21,30 @@ public class VehicleTrainBehaviour : MonoBehaviour {
         
         this.vehicleMaxSpeed /= 3.6f;       // km/h -> m/s
         this.vehicleAcceleration /= 3.6f;   // km/h -> m/s
-       
-        // Traffic Light Event Listener //
-        this.trafficStateBehaviour.OnTrafficUpdateIdle.AddListener(Idle);
-        this.trafficStateBehaviour.OnTrafficUpdateMove.AddListener(Move);
-        this.trafficStateBehaviour.OnTrafficUpdateStop.AddListener(Stop);
     }
 
     private void Awake() {
         Init();
     }
 
+    private void OnEnable() {
+        this.vehicleTrainTrafficManager.onTrafficExecuteMove.AddListener(Move);
+        this.vehicleTrainTrafficManager.onTrafficExecuteStop.AddListener(Stop);
+        this.vehicleTrainTrafficManager.onTrafficEnterIdle.AddListener(Idle);
+    }
+
+    private void OnDisable() {
+        this.vehicleTrainTrafficManager.onTrafficExecuteMove.RemoveListener(Move);
+        this.vehicleTrainTrafficManager.onTrafficExecuteStop.RemoveListener(Stop);
+        this.vehicleTrainTrafficManager.onTrafficEnterIdle.RemoveListener(Idle);
+
+    }
+
     private void Idle() {
-        // TrainInfoMonitorUpdate(GameControlTypeManager.TrafficState.IDLE);
         this.vehicleCurrentSpeed = 0f;
     }
     
     private void Move() {
-        // TrainInfoMonitorUpdate(GameControlTypeManager.TrafficState.MOVE);
         this.vehicleCurrentSpeed = this.vehicleRigidbody.linearVelocity.magnitude;
         
         if (this.vehicleCurrentSpeed < this.vehicleMaxSpeed) {
@@ -53,20 +59,16 @@ public class VehicleTrainBehaviour : MonoBehaviour {
     }
     
     private void Stop() {
-        // TrainInfoMonitorUpdate(GameControlTypeManager.TrafficState.STOP);
-        this.vehicleCurrentSpeed = this.vehicleRigidbody.linearVelocity.magnitude;
-        
-        if (Vector3.Dot(this.vehicleTransform.forward, this.vehicleTransform.up) >= 0.1f) {
-            this.vehicleRigidbody.AddForce(
-                -this.vehicleTransform.forward 
-                * (this.vehicleAcceleration * this.vehicleRigidbody.mass * this.jointCars), ForceMode.Force);
+        var speed = this.vehicleRigidbody.linearVelocity.magnitude;
+
+        if (speed > 1f) {
+            var brakeForce = -this.vehicleRigidbody.linearVelocity.normalized 
+                                 * (this.vehicleAcceleration * this.vehicleRigidbody.mass * this.jointCars);
+            this.vehicleRigidbody.AddForce(brakeForce, ForceMode.Force);
         }
         else {
-            this.vehicleCurrentSpeed = 0f;
+            this.vehicleRigidbody.linearVelocity = Vector3.zero;
+            this.vehicleTrainTrafficManager.onTrafficTransitionToIdle.Invoke();
         }
     }
-    
-    // private void TrainInfoMonitorUpdate(GameControlTypeManager.TrafficState trafficState) {
-    //     TrainInfoMonitorBehaviour.OnTrafficStatusUpdate.Invoke(this.vehicleType, trafficState);
-    // }
 }
