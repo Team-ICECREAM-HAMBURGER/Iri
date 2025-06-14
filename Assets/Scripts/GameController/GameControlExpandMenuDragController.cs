@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -8,7 +9,7 @@ public class GameControlExpandMenuDragController : GameControlPointerManager {
     private float swipeDirection;
     private Vector2 swipeStartPosition;
     private Vector2 swipeEndPosition;
-
+    
     
     public override void OnPointerDown(PointerEventData eventData) {
     }
@@ -24,17 +25,35 @@ public class GameControlExpandMenuDragController : GameControlPointerManager {
         this.swipeEndPosition = (eventData.position / this.targetCanvas.scaleFactor);
         this.swipeDirection = (this.swipeEndPosition - this.swipeStartPosition).normalized.y;
         
-        if (this.swipeDirection < 0) {
-            this.swipeLevel -= 1;
-        }
-        else if (this.swipeDirection > 0) {
-            this.swipeLevel += 1;
+        switch (this.swipeDirection) {
+            case < 0:
+                this.swipeLevel -= 1;
+                break;
+            case > 0:
+                this.swipeLevel += 1;
+                break;
         }        
         
-        this.swipeLevel = Mathf.Clamp(this.swipeLevel, 0, 2);
+        this.swipeLevel = Mathf.Clamp(this.swipeLevel, 0, 1);
         
         this.animator.SetFloat("direction", this.swipeDirection);
         this.animator.SetInteger("swipeLevel", this.swipeLevel);
         this.animator.SetTrigger("onSwipe");
+    }
+    
+    public void InvestigatePanelActive() {
+        StartCoroutine(DelayAction());
+        return;
+
+        // Local Method
+        IEnumerator DelayAction() {
+            yield return new WaitForSeconds(1.5f);
+            
+            this.swipeLevel = 0;
+            this.swipeDirection = -1;
+            this.animator.SetFloat("direction", this.swipeDirection);
+            this.animator.SetInteger("swipeLevel", this.swipeLevel);
+            this.animator.SetTrigger("onSwipe");
+        }
     }
 }

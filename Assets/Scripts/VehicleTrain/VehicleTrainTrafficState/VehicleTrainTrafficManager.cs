@@ -17,11 +17,12 @@ public class VehicleTrainTrafficManager : MonoBehaviour {
     
     [SerializeField] private TMP_Text trafficStateTmp;
     [SerializeField] private Button trafficStateChangeButton;
-    [SerializeField] private Button investigatingButton;
-
+    
+    public Button investigatingButton;
+    [HideInInspector] public bool isInvestigated;
+    
     private IVehicleTrainTrafficState nextState;
     private VehicleTrainTrafficStateManager vehicleTrainTrafficStateManager;
-    [HideInInspector] public bool isInvestigated;  
     
     
     private void Init() {
@@ -30,7 +31,6 @@ public class VehicleTrainTrafficManager : MonoBehaviour {
         this.vehicleTrainTrafficStateManager = new VehicleTrainTrafficStateManager(this);
         
         this.trafficStateChangeButton.onClick.AddListener(OnTrafficStateChange);
-        this.investigatingButton.onClick.AddListener(OnInvestigatingStart);
         this.onTrafficTransitionToIdle.AddListener(OnTrafficStateChangeToIdle);
     }
 
@@ -58,11 +58,6 @@ public class VehicleTrainTrafficManager : MonoBehaviour {
         
         this.vehicleTrainTrafficStateManager.TransitionTo(this.nextState);
     }
-
-    private void OnInvestigatingStart() {
-        this.isInvestigated = true;
-        // TODO: 검문 화면 자동 스크롤
-    }
     
     public void TrainTrafficMonitorUpdate(bool investigationIconValue, string stateText) {
         this.trafficStateTmp.text = stateText;
@@ -70,7 +65,7 @@ public class VehicleTrainTrafficManager : MonoBehaviour {
         if (this.isInvestigated) {
             investigationIconValue = false;
         }
-
+        
         this.investigatingButton.gameObject.SetActive(investigationIconValue);
     }
 }

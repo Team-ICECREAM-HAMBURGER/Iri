@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Train Speech Controller R
+  m_Controller: {fileID: 9100000, guid: a54c51083efcff74fb2d8e480099c380, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: db38fdf80c6dab74c99f2d0e7def764d, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 594d82bb0c9ed7445a561bf8c62b339d, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 3137a6352a2a78d4f8db8fe6e40e9bf0, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 921ed286367081c4999f887cb3d0b36d, type: 2}
