@@ -41,7 +41,7 @@ public class VehicleTrainTrafficManager : MonoBehaviour {
     private void FixedUpdate() {
         this.vehicleTrainTrafficStateManager?.Execute();
     }
-
+    
     private void OnTrafficStateChangeToIdle() {
         this.vehicleTrainTrafficStateManager.TransitionTo(
             this.vehicleTrainTrafficStateManager.VehicleTrainTrafficStateIdle);
@@ -59,6 +59,17 @@ public class VehicleTrainTrafficManager : MonoBehaviour {
         this.vehicleTrainTrafficStateManager.TransitionTo(this.nextState);
     }
     
+    public void TrainSetActive(bool isActive) {
+        if (isActive) {
+            this.vehicleTrainTrafficStateManager.TransitionTo(
+                this.vehicleTrainTrafficStateManager.VehicleTrainTrafficStateMove);
+        }
+        else {
+            this.vehicleTrainTrafficStateManager.TransitionTo(
+                this.vehicleTrainTrafficStateManager.VehicleTrainTrafficStateIdle);
+        }
+    }
+    
     public void TrainTrafficMonitorUpdate(bool investigationIconValue, string stateText) {
         this.trafficStateTmp.text = stateText;
 
@@ -66,6 +77,7 @@ public class VehicleTrainTrafficManager : MonoBehaviour {
             investigationIconValue = false;
         }
         
+        // TODO: 처음 출발할 때도 '검문' 버튼이 출력됨
         this.investigatingButton.gameObject.SetActive(investigationIconValue);
     }
 }

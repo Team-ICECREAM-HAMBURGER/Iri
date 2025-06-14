@@ -10,7 +10,7 @@ public class VehicleTrainTrafficStateManager {
         this.VehicleTrainTrafficStateMove = new (vehicleTrainTrafficManager);
         this.VehicleTrainTrafficStateStop = new (vehicleTrainTrafficManager);
         this.VehicleTrainTrafficStateIdle = new (vehicleTrainTrafficManager);
-        TransitionTo(this.VehicleTrainTrafficStateMove);
+        TransitionTo(this.VehicleTrainTrafficStateIdle);
     }
     
     public void TransitionTo(IVehicleTrainTrafficState nextVehicleTrainTrafficState) {

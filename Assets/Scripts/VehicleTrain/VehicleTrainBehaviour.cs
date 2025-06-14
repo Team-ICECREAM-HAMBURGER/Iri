@@ -28,6 +28,9 @@ public class VehicleTrainBehaviour : MonoBehaviour {
     }
 
     private void OnEnable() {
+        // 상태를 대기 -> 출발로
+        this.vehicleTrainTrafficManager.TrainSetActive(true);
+        
         this.vehicleTrainTrafficManager.isInvestigated = false;
         this.vehicleTrainTrafficManager.onTrafficExecuteMove.AddListener(Move);
         this.vehicleTrainTrafficManager.onTrafficExecuteStop.AddListener(Stop);
@@ -35,11 +38,13 @@ public class VehicleTrainBehaviour : MonoBehaviour {
     }
 
     private void OnDisable() {
+        // 상태를 출발 -> 대기로
+        this.vehicleTrainTrafficManager.TrainSetActive(false);
+        
         this.vehicleTrainTrafficManager.isInvestigated = false;
         this.vehicleTrainTrafficManager.onTrafficExecuteMove.RemoveListener(Move);
         this.vehicleTrainTrafficManager.onTrafficExecuteStop.RemoveListener(Stop);
         this.vehicleTrainTrafficManager.onTrafficEnterIdle.RemoveListener(Idle);
-        
     }
 
     private void Idle() {

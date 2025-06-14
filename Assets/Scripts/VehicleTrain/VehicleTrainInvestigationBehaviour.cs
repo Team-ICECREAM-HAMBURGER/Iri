@@ -20,8 +20,6 @@ public class VehicleTrainInvestigationBehaviour : MonoBehaviour {
     }
     
     private void OnInvestigationTalk() {
-        Debug.Log("Talking...");
-        
         // 말풍선
         this.investigatingAnimator.SetTrigger(this.animationTriggerName);
         // TODO: 검문 데이터 로드
