@@ -1,4 +1,5 @@
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
@@ -17,23 +18,20 @@ public class VehicleTrainTrafficManager : MonoBehaviour {
     
     [SerializeField] private TMP_Text trafficStateTmp;
     [SerializeField] private Button trafficStateChangeButton;
-    
-    public Button investigatingButton;
-    [HideInInspector] public bool isInvestigated;
+    public Button investigationButton;
     
     private IVehicleTrainTrafficState nextState;
     private VehicleTrainTrafficStateManager vehicleTrainTrafficStateManager;
     
     
     private void Init() {
-        this.isInvestigated = false;
-        this.investigatingButton.gameObject.SetActive(false);
         this.vehicleTrainTrafficStateManager = new VehicleTrainTrafficStateManager(this);
-        
+        this.investigationButton.gameObject.SetActive(false);
+
         this.trafficStateChangeButton.onClick.AddListener(OnTrafficStateChange);
         this.onTrafficTransitionToIdle.AddListener(OnTrafficStateChangeToIdle);
     }
-
+    
     private void Awake() {
         Init();
     }
@@ -62,22 +60,15 @@ public class VehicleTrainTrafficManager : MonoBehaviour {
     public void TrainSetActive(bool isActive) {
         if (isActive) {
             this.vehicleTrainTrafficStateManager.TransitionTo(
-                this.vehicleTrainTrafficStateManager.VehicleTrainTrafficStateMove);
+                this.vehicleTrainTrafficStateManager?.VehicleTrainTrafficStateMove);
         }
         else {
             this.vehicleTrainTrafficStateManager.TransitionTo(
-                this.vehicleTrainTrafficStateManager.VehicleTrainTrafficStateIdle);
+                this.vehicleTrainTrafficStateManager?.VehicleTrainTrafficStateIdle);
         }
     }
     
-    public void TrainTrafficMonitorUpdate(bool investigationIconValue, string stateText) {
+    public void TrainTrafficMonitorUpdate(string stateText) {
         this.trafficStateTmp.text = stateText;
-
-        if (this.isInvestigated) {
-            investigationIconValue = false;
-        }
-        
-        // TODO: 처음 출발할 때도 '검문' 버튼이 출력됨
-        this.investigatingButton.gameObject.SetActive(investigationIconValue);
     }
 }

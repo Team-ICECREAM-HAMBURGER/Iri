@@ -1,3 +1,5 @@
+using System;
+using UnityEditor;
 using UnityEngine;
 
 public class VehicleTrainBehaviour : MonoBehaviour { 
@@ -12,7 +14,13 @@ public class VehicleTrainBehaviour : MonoBehaviour {
     
     private Transform vehicleTransform;
     private Rigidbody vehicleRigidbody;
+    
+    private bool isQuit;
 
+    
+    private void OnApplicationQuit() {
+        this.isQuit = true;
+    }
     
     private void Init() {
         // Train Component Init //
@@ -31,20 +39,27 @@ public class VehicleTrainBehaviour : MonoBehaviour {
         // 상태를 대기 -> 출발로
         this.vehicleTrainTrafficManager.TrainSetActive(true);
         
-        this.vehicleTrainTrafficManager.isInvestigated = false;
         this.vehicleTrainTrafficManager.onTrafficExecuteMove.AddListener(Move);
         this.vehicleTrainTrafficManager.onTrafficExecuteStop.AddListener(Stop);
         this.vehicleTrainTrafficManager.onTrafficEnterIdle.AddListener(Idle);
     }
-
+    
     private void OnDisable() {
-        // 상태를 출발 -> 대기로
-        this.vehicleTrainTrafficManager.TrainSetActive(false);
+#if UNITY_EDITOR
+        if (!Application.isPlaying) {
+            return;
+        }
+#endif
+        if (GameControlApplicationQuitChecker.IsQuit) {
+            return;
+        }
         
-        this.vehicleTrainTrafficManager.isInvestigated = false;
-        this.vehicleTrainTrafficManager.onTrafficExecuteMove.RemoveListener(Move);
-        this.vehicleTrainTrafficManager.onTrafficExecuteStop.RemoveListener(Stop);
-        this.vehicleTrainTrafficManager.onTrafficEnterIdle.RemoveListener(Idle);
+        // 상태를 출발 -> 대기로
+        this.vehicleTrainTrafficManager?.TrainSetActive(false);
+
+        this.vehicleTrainTrafficManager?.onTrafficExecuteMove.RemoveListener(Move);
+        this.vehicleTrainTrafficManager?.onTrafficExecuteStop.RemoveListener(Stop);
+        this.vehicleTrainTrafficManager?.onTrafficEnterIdle.RemoveListener(Idle);
     }
 
     private void Idle() {
