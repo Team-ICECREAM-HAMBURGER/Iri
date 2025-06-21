@@ -15,13 +15,7 @@ public class VehicleTrainBehaviour : MonoBehaviour {
     private Transform vehicleTransform;
     private Rigidbody vehicleRigidbody;
     
-    private bool isQuit;
 
-    
-    private void OnApplicationQuit() {
-        this.isQuit = true;
-    }
-    
     private void Init() {
         // Train Component Init //
         this.vehicleTransform = this.gameObject.transform;

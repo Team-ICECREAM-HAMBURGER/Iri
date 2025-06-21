@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class VehicleTrainInvestigationBehaviour : MonoBehaviour {
@@ -7,19 +8,23 @@ public class VehicleTrainInvestigationBehaviour : MonoBehaviour {
     [SerializeField] private Animator investigationAnimator;
     [SerializeField] private string animationTriggerName;
 
+    [Space(25f)]
+    
+    [Header("Passenger Information")]
+    [SerializeField] private List<PassengerScriptableObject> randomPassengerScriptableObjects;
+    [SerializeField] private List<PassengerScriptableObject> targetPassengerScriptableObjects;
+    private List<Passenger> allPassengers;
+    private int randomPassengerIndex;
+    private GameControlFisherYatesShuffler gameControlFisherYatesShuffler;
+
     private bool isInvestigated;
     private bool isStopped;
-
-    private bool isQuit;
-
     
-    private void OnApplicationQuit() {
-        this.isQuit = true;
-    }
     
     private void Init() {
         this.isInvestigated = false;
         this.isStopped = false;
+        this.gameControlFisherYatesShuffler = new();
     }
 
     private void Awake() {
@@ -35,8 +40,23 @@ public class VehicleTrainInvestigationBehaviour : MonoBehaviour {
         this.vehicleTrainTrafficManager.onTrafficEnterStop.AddListener(OnTrainStopCheck);
         this.vehicleTrainTrafficManager.onTrafficEnterIdle.AddListener(OnInvestigationButtonActiveControl);
         this.vehicleTrainTrafficManager.onTrafficExitIdle.AddListener(OnInvestigationPass);
+        
+        // PassengerSOs Init
+        this.allPassengers = new();
+        var passengerScriptableObjects = this.randomPassengerScriptableObjects;
+        passengerScriptableObjects.AddRange(targetPassengerScriptableObjects);
+        
+        // Fisher–Yates Shuffle
+        passengerScriptableObjects 
+            = this.gameControlFisherYatesShuffler.ShuffleList(passengerScriptableObjects);
+        
+        // allPassengers Init
+        foreach (var VARIABLE in passengerScriptableObjects) { 
+            var passenger = new Passenger(VARIABLE);
+            this.allPassengers.Add(passenger);
+        }
     }
-
+    
     private void OnDisable() {
 #if UNITY_EDITOR
         if (!Application.isPlaying) {
@@ -79,9 +99,16 @@ public class VehicleTrainInvestigationBehaviour : MonoBehaviour {
         this.isInvestigated = true;
         this.investigationAnimator.SetTrigger(this.animationTriggerName);
         
-        // TODO: 검문 데이터 로드
+        InvestigationDataLoad();
         
         // 화면 자동 스크롤
         this.gameControlExpandMenuDragController.InvestigatePanelActive();
+    }
+
+    private void InvestigationDataLoad() {
+        // 아이템 준비
+        foreach (var passenger in this.allPassengers) {
+            passenger.PassengerItemInit();
+        }
     }
 }

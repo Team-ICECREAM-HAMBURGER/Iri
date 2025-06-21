@@ -13,8 +13,8 @@ using System;
 
 [CustomPropertyDrawer(typeof(GameControlSerializableDictionary.ItemLabel))]
 
-[CustomPropertyDrawer(typeof(GameControlSerializableDictionary.ItemSaveData))]
-[CustomPropertyDrawer(typeof(GameControlSerializableDictionary.ItemSaveDataScriptableObject))]
+[CustomPropertyDrawer(typeof(GameControlSerializableDictionary.ItemDictionary))]
+[CustomPropertyDrawer(typeof(GameControlSerializableDictionary.ItemScriptableObjectDictionary))]
 
 [CustomPropertyDrawer(typeof(GameControlSerializableDictionary.EventSaveDataScriptableObject))]
 public class SerializableDictionaryPropertyDrawer : PropertyDrawer
