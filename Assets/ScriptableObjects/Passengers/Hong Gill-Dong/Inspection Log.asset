@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Inspection Log
   m_EditorClassIdentifier: 
   itemType: 0
-  informationValue:
-    m_keys: 
-    m_values: []
+  itemLabelTextDictionary:
+    m_keys: 00000000
+    m_values:
+    - "\uACF0\uB3CC\uC774"

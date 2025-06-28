@@ -13,7 +13,8 @@ public class VehicleTrainInvestigationBehaviour : MonoBehaviour {
     [Header("Passenger Information")]
     [SerializeField] private List<PassengerScriptableObject> randomPassengerScriptableObjects;
     [SerializeField] private List<PassengerScriptableObject> targetPassengerScriptableObjects;
-    private List<Passenger> allPassengers;
+    
+    private List<Passenger> trainPassengers;
     private int randomPassengerIndex;
     private GameControlFisherYatesShuffler gameControlFisherYatesShuffler;
 
@@ -42,7 +43,7 @@ public class VehicleTrainInvestigationBehaviour : MonoBehaviour {
         this.vehicleTrainTrafficManager.onTrafficExitIdle.AddListener(OnInvestigationPass);
         
         // PassengerSOs Init
-        this.allPassengers = new();
+        this.trainPassengers = new();
         var passengerScriptableObjects = this.randomPassengerScriptableObjects;
         passengerScriptableObjects.AddRange(targetPassengerScriptableObjects);
         
@@ -53,7 +54,7 @@ public class VehicleTrainInvestigationBehaviour : MonoBehaviour {
         // allPassengers Init
         foreach (var VARIABLE in passengerScriptableObjects) { 
             var passenger = new Passenger(VARIABLE);
-            this.allPassengers.Add(passenger);
+            this.trainPassengers.Add(passenger);
         }
     }
     
@@ -106,8 +107,8 @@ public class VehicleTrainInvestigationBehaviour : MonoBehaviour {
     }
 
     private void InvestigationDataLoad() {
-        // 아이템 준비
-        foreach (var passenger in this.allPassengers) {
+        // 승객의 아이템 준비
+        foreach (var passenger in this.trainPassengers) {
             passenger.PassengerItemInit();
         }
     }

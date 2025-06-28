@@ -11,9 +11,11 @@ using System;
 [CustomPropertyDrawer(typeof(GameControlSerializableDictionary.FamilySaveData))]
 [CustomPropertyDrawer(typeof(GameControlSerializableDictionary.FamilySaveDataScriptableObject))]
 
-[CustomPropertyDrawer(typeof(GameControlSerializableDictionary.ItemLabel))]
+[CustomPropertyDrawer(typeof(GameControlSerializableDictionary.ItemLabelTextDictionary))]
+[CustomPropertyDrawer(typeof(GameControlSerializableDictionary.ItemLabelObjectDictionary))]
 
-[CustomPropertyDrawer(typeof(GameControlSerializableDictionary.ItemDictionary))]
+[CustomPropertyDrawer(typeof(GameControlSerializableDictionary.ItemScriptDictionary))]
+[CustomPropertyDrawer(typeof(GameControlSerializableDictionary.ItemGameObjectDictionary))]
 [CustomPropertyDrawer(typeof(GameControlSerializableDictionary.ItemScriptableObjectDictionary))]
 
 [CustomPropertyDrawer(typeof(GameControlSerializableDictionary.EventSaveDataScriptableObject))]

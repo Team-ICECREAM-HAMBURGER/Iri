@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: ID Card Normal
   m_EditorClassIdentifier: 
   itemType: 6
-  informationValue:
+  itemLabelTextDictionary:
     m_keys: 000000000200000005000000
     m_values:
     - "\uD64D\uAE38\uB3D9"
-    - 001234-348
-    - "\uC804\uBD81\uB3C4 \uC774\uB9AC\uC2DC \uB098\uB3D9"
+    - 123-123
+    - "\uC9C0\uB9AC\uC0B0"

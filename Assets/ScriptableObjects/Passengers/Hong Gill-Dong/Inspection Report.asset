@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Inspection Report
   m_EditorClassIdentifier: 
   itemType: 1
-  informationValue:
-    m_keys: 
-    m_values: []
+  itemLabelTextDictionary:
+    m_keys: 00000000
+    m_values:
+    - "\uBA4D\uBB49\uC774"
