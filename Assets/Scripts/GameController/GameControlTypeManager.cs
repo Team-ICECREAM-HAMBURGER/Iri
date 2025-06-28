@@ -138,6 +138,7 @@ public static class GameControlTypeManager {
     }
 
     public enum ItemForgeryType {
+        NORMAL,
         WRONG_INFO_NAME,
         WRONG_INFO_DOB,
         EXPIRED_DATE
