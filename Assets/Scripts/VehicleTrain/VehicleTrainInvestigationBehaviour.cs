@@ -35,7 +35,10 @@ public class VehicleTrainInvestigationBehaviour : MonoBehaviour {
     private void OnEnable() {
         this.isInvestigated = false;
         this.isStopped = false;
-        this.vehicleTrainTrafficManager.investigationButton.gameObject.SetActive(false);
+        
+        // FOR PREVENT NULL ERROR //
+        // this.vehicleTrainTrafficManager.investigationButton.gameObject.SetActive(false);
+        this.vehicleTrainTrafficManager.onInvestigationButtonActive.Invoke(false);
         
         this.vehicleTrainTrafficManager.investigationButton.onClick.AddListener(OnInvestigatingMessagePopup);
         this.vehicleTrainTrafficManager.onTrafficEnterStop.AddListener(OnTrainStopCheck);
@@ -59,23 +62,17 @@ public class VehicleTrainInvestigationBehaviour : MonoBehaviour {
     }
     
     private void OnDisable() {
-#if UNITY_EDITOR
-        if (!Application.isPlaying) {
-            return;
-        }
-#endif
-        if (GameControlApplicationQuitChecker.IsQuit) {
-            return;
-        }
-        
         this.isInvestigated = false;
         this.isStopped = false;
-        this.vehicleTrainTrafficManager.investigationButton?.gameObject.SetActive(false);
         
-        this.vehicleTrainTrafficManager.investigationButton?.onClick.RemoveListener(OnInvestigatingMessagePopup);
-        this.vehicleTrainTrafficManager?.onTrafficEnterStop.RemoveListener(OnTrainStopCheck);
-        this.vehicleTrainTrafficManager?.onTrafficEnterIdle.RemoveListener(OnInvestigationButtonActiveControl);
-        this.vehicleTrainTrafficManager?.onTrafficExitIdle.RemoveListener(OnInvestigationPass);
+        // FOR PREVENT NULL ERROR //
+        // this.vehicleTrainTrafficManager.investigationButton.gameObject.SetActive(false);
+        this.vehicleTrainTrafficManager.onInvestigationButtonActive.Invoke(false);
+        
+        this.vehicleTrainTrafficManager.investigationButton.onClick.RemoveListener(OnInvestigatingMessagePopup);
+        this.vehicleTrainTrafficManager.onTrafficEnterStop.RemoveListener(OnTrainStopCheck);
+        this.vehicleTrainTrafficManager.onTrafficEnterIdle.RemoveListener(OnInvestigationButtonActiveControl);
+        this.vehicleTrainTrafficManager.onTrafficExitIdle.RemoveListener(OnInvestigationPass);
     }
 
     private void OnTrainStopCheck() {
@@ -83,15 +80,22 @@ public class VehicleTrainInvestigationBehaviour : MonoBehaviour {
     }
 
     private void OnInvestigationPass() {
-        this.vehicleTrainTrafficManager.investigationButton?.gameObject.SetActive(false);
+        // FOR PREVENT NULL ERROR //
+        // this.vehicleTrainTrafficManager.investigationButton.gameObject.SetActive(false);
+        this.vehicleTrainTrafficManager.onInvestigationButtonActive.Invoke(false);
     }
     
     private void OnInvestigationButtonActiveControl() {
         if (this.isStopped && !this.isInvestigated) { // target
-            this.vehicleTrainTrafficManager.investigationButton?.gameObject.SetActive(true);
+            // FOR PREVENT NULL ERROR //
+            // this.vehicleTrainTrafficManager.investigationButton.gameObject.SetActive(true);
+            this.vehicleTrainTrafficManager.onInvestigationButtonActive.Invoke(true);
+
         }
         else {
-            this.vehicleTrainTrafficManager.investigationButton?.gameObject.SetActive(false);
+            // FOR PREVENT NULL ERROR //
+            // this.vehicleTrainTrafficManager.investigationButton.gameObject.SetActive(false);
+            this.vehicleTrainTrafficManager.onInvestigationButtonActive.Invoke(false);
         }
     }
     

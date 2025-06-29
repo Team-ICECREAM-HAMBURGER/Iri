@@ -39,15 +39,6 @@ public class VehicleTrainBehaviour : MonoBehaviour {
     }
     
     private void OnDisable() {
-#if UNITY_EDITOR
-        if (!Application.isPlaying) {
-            return;
-        }
-#endif
-        if (GameControlApplicationQuitChecker.IsQuit) {
-            return;
-        }
-        
         // 상태를 출발 -> 대기로
         this.vehicleTrainTrafficManager?.TrainSetActive(false);
 
