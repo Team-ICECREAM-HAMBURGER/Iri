@@ -18,11 +18,11 @@ public class ItemManager : GameControlSingleton<ItemManager> {
 
     public void InspectionItemInit(Passenger.PassengerData passengerData) {
         var inspectionLogObj = this.itemObjectDictionary[GameControlTypeManager.ItemType.INSPECTION_LOG];
-        var inspectionLogScp = inspectionLogObj.GetComponent<ItemInspectionLogBehaviour>();
+        var inspectionLogScp = inspectionLogObj.GetComponent<ItemInvestigationLogBehaviour>();
         var inspectionReportObj = this.itemObjectDictionary[GameControlTypeManager.ItemType.INSPECTION_REPORT];
-        var inspectionReportScp = inspectionReportObj.GetComponent<ItemInspectionReportBehaviour>();
+        var inspectionReportScp = inspectionReportObj.GetComponent<ItemInvestigationReportBehaviour>();
         
         inspectionLogScp.Init(passengerData);
-        inspectionReportScp.Init();
+        inspectionReportScp.Init(passengerData);
     }
 }
