@@ -16,8 +16,6 @@ public class ItemInvestigationReportBehaviour : MonoBehaviour {
         
         this.itemStampPunchBehaviour.OnPaperStampOk.AddListener(OnPaperStampOK);
         this.itemStampPunchBehaviour.OnPaperStampNo.AddListener(OnPaperStampNO);
-
-        this.gameObject.SetActive(false);
     }
     
     public void Init(Passenger.PassengerData passengerData) {

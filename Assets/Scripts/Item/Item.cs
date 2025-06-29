@@ -10,9 +10,13 @@ public class Item : MonoBehaviour {
     private Vector2 itemInitPosition;
 
 
+    private void Init() {
+        this.itemInitPosition = this.gameObject.transform.localPosition;
+
+    }
+    
     private void Awake() {
-        this.itemInitPosition = this.gameObject.transform.localPosition; // TODO: 위치가 안맞음!
-        this.gameObject.SetActive(false);
+        Init();
     }
     
     public void Init(ItemScriptableObject data) {

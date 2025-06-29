@@ -38,6 +38,9 @@ public class ItemTossController : MonoBehaviour {
         }
         
         this.gameObject.transform.position = endPosition;
-        this.gameObject.SetActive(false);
+        // this.gameObject.SetActive(false);
+        Debug.Log("Item Check!");
+        Destroy(this.gameObject);   // TODO: 제출된 자료 검증 후 삭제
+        
     }
 }

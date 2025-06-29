@@ -108,6 +108,9 @@ public class VehicleTrainInvestigationBehaviour : MonoBehaviour {
         
         // 화면 자동 스크롤
         this.gameControlExpandMenuDragController.InvestigatePanelActive();
+        
+        // 검문 버튼 OFF
+        this.vehicleTrainTrafficManager.onInvestigationButtonActive.Invoke(false);
     }
 
     private void InvestigationDataLoad() {
