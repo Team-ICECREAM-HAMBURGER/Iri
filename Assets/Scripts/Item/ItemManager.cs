@@ -12,8 +12,17 @@ public class ItemManager : GameControlSingleton<ItemManager> {
             var itemScp = itemObj.GetComponent<Item>();
             
             itemScp.Init(itemData.Value);
-            
-            itemObj.SetActive(true);
+            // itemObj.SetActive(true);
         }
+    }
+
+    public void InspectionItemInit(Passenger.PassengerData passengerData) {
+        var inspectionLogObj = this.itemObjectDictionary[GameControlTypeManager.ItemType.INSPECTION_LOG];
+        var inspectionLogScp = inspectionLogObj.GetComponent<ItemInspectionLogBehaviour>();
+        var inspectionReportObj = this.itemObjectDictionary[GameControlTypeManager.ItemType.INSPECTION_REPORT];
+        var inspectionReportScp = inspectionReportObj.GetComponent<ItemInspectionReportBehaviour>();
+        
+        inspectionLogScp.Init(passengerData);
+        inspectionReportScp.Init();
     }
 }

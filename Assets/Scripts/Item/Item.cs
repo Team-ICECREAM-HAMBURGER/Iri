@@ -1,21 +1,22 @@
 using UnityEngine;
 
 public class Item : MonoBehaviour {
-    public GameControlTypeManager.ItemType itemType;
-    public GameControlTypeManager.ItemForgeryType itemForgeryType;
-    public GameControlSerializableDictionary.ItemLabelObjectDictionary itemLabelObjectDictionary;
-
+    [SerializeField] private GameControlSerializableDictionary.ItemLabelObjectDictionary itemLabelObjectDictionary;
+    
     private GameControlSerializableDictionary.ItemLabelTextDictionary itemLabelTextDictionary;
+    private GameControlTypeManager.ItemType itemType;
+    private GameControlTypeManager.ItemForgeryType itemForgeryType;
+    
     private Vector2 itemInitPosition;
 
 
-    private void Init() {
-        this.itemInitPosition = this.gameObject.transform.position;
+    private void Awake() {
+        this.itemInitPosition = this.gameObject.transform.localPosition; // TODO: 위치가 안맞음!
         this.gameObject.SetActive(false);
     }
     
     public void Init(ItemScriptableObject data) {
-        this.gameObject.transform.position = this.itemInitPosition;
+        this.gameObject.transform.localPosition = this.itemInitPosition;
         
         this.itemType = data.itemType;
         this.itemForgeryType = data.itemForgeryType;
@@ -26,9 +27,7 @@ public class Item : MonoBehaviour {
         foreach (var label in itemLabelTextDictionary) {
             this.itemLabelObjectDictionary[label.Key].text = label.Value;
         }
-    }
-
-    private void Awake() {
-        Init();
+        
+        this.gameObject.SetActive(true);
     }
 }

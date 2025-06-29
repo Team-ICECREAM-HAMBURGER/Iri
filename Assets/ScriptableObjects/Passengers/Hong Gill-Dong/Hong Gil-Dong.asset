@@ -15,9 +15,8 @@ MonoBehaviour:
   name: "\uD64D\uAE38\uB3D9"
   dob: 001234-348
   gender: "\uB0A8\uC131"
-  personalNote: 
+  personalNote: "\uBA4D\uBB49? \uBA4D\uBB49!"
   itemScriptableObjectDictionary:
-    m_keys: 0000000006000000
+    m_keys: 06000000
     m_values:
-    - {fileID: 11400000, guid: 80b4ad55d7c894d4982971b83f9d3b6d, type: 2}
     - {fileID: 11400000, guid: 623095ab243634c029e5ff21973b82ab, type: 2}
