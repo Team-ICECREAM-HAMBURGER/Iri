@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: John Doe
   m_EditorClassIdentifier: 
   name: "\uC874 \"\uD53C\uC790\" \uB3C4\uC6B0"
-  dob: 2022-22-22
+  dob: 1922-02-20
   gender: "\uD53C\uC790"
-  personalNote: "\uCF69 \uAE4C\uC9C0\uB9C8!"
-  itemScriptableObjectDictionary:
+  investigateNote: 
+  possessionItemScriptableObject:
     m_keys: 02000000
     m_values:
     - {fileID: 11400000, guid: 7f77fc727276513469e667fb4f3a3f76, type: 2}

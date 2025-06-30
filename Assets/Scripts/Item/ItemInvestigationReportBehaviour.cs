@@ -1,26 +1,33 @@
+using TMPro;
 using UnityEngine;
 
 public class ItemInvestigationReportBehaviour : MonoBehaviour {
+    [SerializeField] private TMP_Text nameField;
+    [Space(10f)]
     [SerializeField] private ItemStampPunchBehaviour itemStampPunchBehaviour;
     [SerializeField] private GameControlObjectPoolingController okStampObjectPoolingController;
     [SerializeField] private GameControlObjectPoolingController noStampObjectPoolingController;
     
-    private (string, bool) investigationResult;
+    private ItemTossController itemTossController;
     private Vector2 itemInitPosition;
     private RectTransform stampRectTransform;
     private GameObject stampObject;
 
 
     private void Init() {
+        this.itemTossController = this.GetComponent<ItemTossController>();
+        this.itemTossController.onItemToss.AddListener(OnItemReturn);
+        
         this.itemInitPosition = this.gameObject.transform.localPosition;
         
         this.itemStampPunchBehaviour.OnPaperStampOk.AddListener(OnPaperStampOK);
         this.itemStampPunchBehaviour.OnPaperStampNo.AddListener(OnPaperStampNO);
     }
     
-    public void Init(Passenger.PassengerData passengerData) {
+    public void Init(PassengerData passengerData) {
         this.gameObject.transform.localPosition = this.itemInitPosition;
-        this.investigationResult = (passengerData.name, false);
+        
+        this.nameField.text = passengerData.name;
         
         this.okStampObjectPoolingController.ReturnToPoolStack();
         this.noStampObjectPoolingController.ReturnToPoolStack();
@@ -43,7 +50,8 @@ public class ItemInvestigationReportBehaviour : MonoBehaviour {
         this.stampRectTransform.position = punchRectTransform.position;
         
         this.stampObject.SetActive(true);
-        this.investigationResult = (this.investigationResult.Item1, true);  // OK
+        
+        ItemInvestigateManager.Instance.isOK = true;
     }
 
     private void OnPaperStampNO(RectTransform punchRectTransform) {
@@ -57,6 +65,11 @@ public class ItemInvestigationReportBehaviour : MonoBehaviour {
         this.stampRectTransform.position = punchRectTransform.position;
         
         this.stampObject.SetActive(true);
-        this.investigationResult = (this.investigationResult.Item1, false); // NO
+        
+        ItemInvestigateManager.Instance.isOK = false;
+    }
+
+    private void OnItemReturn() {
+        ItemInvestigateManager.Instance.InvestigationItemReturnCheck(GameControlTypeManager.ItemType.INSPECTION_REPORT);
     }
 }

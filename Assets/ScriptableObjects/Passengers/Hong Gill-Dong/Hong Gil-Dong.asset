@@ -13,10 +13,12 @@ MonoBehaviour:
   m_Name: Hong Gil-Dong
   m_EditorClassIdentifier: 
   name: "\uD64D\uAE38\uB3D9"
-  dob: 001234-348
+  dob: 231225-123
   gender: "\uB0A8\uC131"
-  personalNote: "\uBA4D\uBB49? \uBA4D\uBB49!"
-  itemScriptableObjectDictionary:
-    m_keys: 06000000
+  investigateNote: 
+  investigateResult: 1
+  possessionItemScriptableObject:
+    m_keys: 0200000006000000
     m_values:
+    - {fileID: 11400000, guid: 40097770ed234354493bfbf263d9d964, type: 2}
     - {fileID: 11400000, guid: 623095ab243634c029e5ff21973b82ab, type: 2}

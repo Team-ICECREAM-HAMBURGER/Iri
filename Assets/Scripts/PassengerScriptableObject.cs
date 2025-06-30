@@ -1,11 +1,12 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 
 [CreateAssetMenu(fileName = "GameSaveDataPassengerScriptableObject", menuName = "ScriptableObjects/GameSaveDataPassengerScriptableObject", order = 1)]
 public class PassengerScriptableObject : ScriptableObject {
     public new string name;
     public string dob;
     public string gender;
-    [TextArea] public string personalNote;
-
-    public GameControlSerializableDictionary.ItemScriptableObjectDictionary itemScriptableObjectDictionary;
+    [TextArea] public string investigateNote;
+    public GameControlTypeManager.InvestigateResultType investigateResult;
+    public GameControlSerializableDictionary.ItemScriptableObjectDictionary possessionItemScriptableObject;
 }

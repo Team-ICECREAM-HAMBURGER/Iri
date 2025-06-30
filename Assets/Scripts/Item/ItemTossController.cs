@@ -1,9 +1,10 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Serialization;
 
 public class ItemTossController : MonoBehaviour {
-    [HideInInspector] public UnityEvent OnItemToss;
+    [HideInInspector] public UnityEvent onItemToss;
     
     [Space(25f)]
     
@@ -12,14 +13,14 @@ public class ItemTossController : MonoBehaviour {
     
 
     private void Init() {
-        this.OnItemToss.AddListener(ItemToss);
+        this.onItemToss.AddListener(OnItemToss);
     }
 
     private void Awake() {
         Init();
     }
     
-    private void ItemToss() {
+    private void OnItemToss() {
         StartCoroutine(ItemTossCoroutine());
     }
     
@@ -38,9 +39,5 @@ public class ItemTossController : MonoBehaviour {
         }
         
         this.gameObject.transform.position = endPosition;
-        // this.gameObject.SetActive(false);
-        Debug.Log("Item Check!");
-        Destroy(this.gameObject);   // TODO: 제출된 자료 검증 후 삭제
-        
     }
 }

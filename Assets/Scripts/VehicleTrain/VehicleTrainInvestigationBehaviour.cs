@@ -20,7 +20,7 @@ public class VehicleTrainInvestigationBehaviour : MonoBehaviour {
 
     private bool isInvestigated;
     private bool isStopped;
-    
+    private GameControlTypeManager.InvestigateResultType investigateResult;
     
     private void Init() {
         this.isInvestigated = false;
@@ -45,7 +45,7 @@ public class VehicleTrainInvestigationBehaviour : MonoBehaviour {
         this.vehicleTrainTrafficManager.onTrafficEnterIdle.AddListener(OnInvestigationButtonActiveControl);
         this.vehicleTrainTrafficManager.onTrafficExitIdle.AddListener(OnInvestigationPass);
         
-        // PassengerSOs Init
+        // Passengers Init
         this.trainPassengers = new();
         var passengerScriptableObjects = this.randomPassengerScriptableObjects;
         passengerScriptableObjects.AddRange(targetPassengerScriptableObjects);
@@ -82,6 +82,16 @@ public class VehicleTrainInvestigationBehaviour : MonoBehaviour {
     private void OnInvestigationPass() {
         // FOR PREVENT NULL ERROR //
         // this.vehicleTrainTrafficManager.investigationButton.gameObject.SetActive(false);
+        ItemInvestigateManager.Instance.isInvestigating = false;
+        this.investigateResult = ItemInvestigateManager.Instance.InvestigationResult();
+        
+        if (this.investigateResult != GameControlTypeManager.InvestigateResultType.이상없음) {
+            Debug.Log("검문오류: " + this.investigateResult);
+        }
+        else {
+            Debug.Log("통과!");
+        }
+        
         this.vehicleTrainTrafficManager.onInvestigationButtonActive.Invoke(false);
     }
     
@@ -100,6 +110,12 @@ public class VehicleTrainInvestigationBehaviour : MonoBehaviour {
     }
     
     private void OnInvestigatingMessagePopup() {
+        if (ItemInvestigateManager.Instance.isInvestigating) {
+            return;
+        }
+        
+        ItemInvestigateManager.Instance.isInvestigating = true;
+        
         // 말풍선; "수사 중..."
         this.isInvestigated = true;
         this.investigationAnimator.SetTrigger(this.animationTriggerName);

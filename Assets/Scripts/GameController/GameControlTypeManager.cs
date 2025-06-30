@@ -137,10 +137,12 @@ public static class GameControlTypeManager {
         NOTE
     }
 
-    public enum ItemForgeryType {
-        NORMAL,
-        WRONG_INFO_NAME,
-        WRONG_INFO_DOB,
-        EXPIRED_DATE
+    public enum InvestigateResultType {
+        이상없음,
+        서류상오류,
+        필수서류누락,
+        서류만기,
+        물품반납누락,
+        검역오류,
     }
 }

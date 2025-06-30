@@ -8,7 +8,7 @@ public class ItemTossManager : MonoBehaviour, IDropHandler, IPointerUpHandler, I
     
     public void OnDrop(PointerEventData eventData) {
         if (eventData.pointerDrag != null) {
-            eventData.pointerDrag.GetComponent<ItemTossController>().OnItemToss.Invoke();
+            eventData.pointerDrag.GetComponent<ItemTossController>().onItemToss.Invoke();
             TossIndicatorControl(false);
         }
     }
