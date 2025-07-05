@@ -7,6 +7,7 @@ public class PassengerScriptableObject : ScriptableObject {
     public string dob;
     public string gender;
     [TextArea] public string investigateNote;
+    public GameControlTypeManager.VehicleTrainType passengerTrainType;
     public GameControlTypeManager.InvestigateResultType investigateResult;
     public GameControlSerializableDictionary.ItemScriptableObjectDictionary possessionItemScriptableObject;
 }

@@ -68,7 +68,6 @@ public class VehicleTrainInvestigationBehaviour : MonoBehaviour {
     private void OnDisable() {
         this.isInvestigatedTrain = false;
         this.isStopped = false;
-
         
         this.trainInformationBoardBehaviour.onInvestigationButtonActive.Invoke(false);
         
@@ -83,8 +82,11 @@ public class VehicleTrainInvestigationBehaviour : MonoBehaviour {
     }
 
     private void OnInvestigationPass() {
-        // 신호 전환 성공 시 //
-        if (PlayerBehaviour.Instance.isInvestigating) {
+        // 신호 전환 성공 후, //
+        
+        // 검역 작업 문제 여부 판단 보고; 검역 대상 차량 시 //
+        if (PlayerBehaviour.Instance.isInvestigating && 
+            PlayerBehaviour.Instance.currentInvestigatingTrainType == this.vehicleType) {
             this.investigateResult = ItemInvestigateManager.Instance.InvestigationResult();
             
             if (this.investigateResult != GameControlTypeManager.InvestigateResultType.이상없음) {
@@ -96,7 +98,6 @@ public class VehicleTrainInvestigationBehaviour : MonoBehaviour {
             }
         }
         
-        PlayerBehaviour.Instance.isInvestigating = false;
         this.trainInformationBoardBehaviour.onInvestigationButtonActive.Invoke(false);
     }
     
@@ -115,8 +116,6 @@ public class VehicleTrainInvestigationBehaviour : MonoBehaviour {
         if (PlayerBehaviour.Instance.isInvestigating) {
             return;
         }
-        
-        PlayerBehaviour.Instance.isInvestigating = true;
         
         // 말풍선; "수사 중..."
         this.isInvestigatedTrain = true;

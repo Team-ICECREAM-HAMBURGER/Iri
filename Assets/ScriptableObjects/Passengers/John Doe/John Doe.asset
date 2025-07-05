@@ -16,6 +16,8 @@ MonoBehaviour:
   dob: 1922-02-20
   gender: "\uD53C\uC790"
   investigateNote: 
+  passengerTrainType: 1
+  investigateResult: 0
   possessionItemScriptableObject:
     m_keys: 02000000
     m_values:

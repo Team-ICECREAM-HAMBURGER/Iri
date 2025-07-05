@@ -58,20 +58,19 @@ public class TrainInformationBoardBehaviour : MonoBehaviour {
     }
     
     private void OnTrafficStateChange() {
-        if (PlayerBehaviour.Instance.isInvestigating) { // 신호 전환 시도, 플레이어 현재 검문 중.
-            // 필수 서류 제출이 이루어졌는가?
-            if (!ItemInvestigateManager.Instance.investigationFinDictionary[this.trainType]) {
+        // 신호 전환 시도
+        if (PlayerBehaviour.Instance.isInvestigating) {
+            // 플레이어는 현재 검문 중, 필수 서류 제출이 이루어졌는가?
+            if (PlayerBehaviour.Instance.currentInvestigatingTrainType == this.trainType) {
                 // TODO: 싱글턴이라서 다른 열차까지 영향을 미침.
-                
-                Debug.Log("필수 서류 누락");
-                
                 this.speechTextField.text = this.speechText;
                 this.animator.SetTrigger(this.animationTriggerName);
                 
                 return;
             }
         }
-        
+
+        // 신호 전환 진행 //
         if (this.vehicleTrainTrafficStateManager.CurrentVehicleTrainTrafficState 
             == this.vehicleTrainTrafficStateManager.VehicleTrainTrafficStateMove) {
             this.nextState = this.vehicleTrainTrafficStateManager.VehicleTrainTrafficStateStop;

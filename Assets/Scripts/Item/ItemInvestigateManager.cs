@@ -2,12 +2,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ItemInvestigateManager : GameControlSingleton<ItemInvestigateManager> {
-    public Dictionary<GameControlTypeManager.VehicleTrainType, bool> investigationFinDictionary;
     public GameControlSerializableDictionary.ItemGameObjectDictionary itemPrefabDictionary;
     
-    [SerializeField] private Transform itemSpawnTransform;
-    
     [HideInInspector] public bool isStampOK;
+    
+    [SerializeField] private Transform itemSpawnTransform;
     
     private int passengerItemReturnCount;
     private int investigationItemReturnCount;
@@ -17,7 +16,6 @@ public class ItemInvestigateManager : GameControlSingleton<ItemInvestigateManage
     public void PassengerItemInit(PassengerData passengerData) {
         this.passengerItemReturnCount = 0;
         this.targetPassengerData = passengerData;
-        this.investigationFinDictionary.Add(, false);
         
         foreach (var itemType in passengerData.possessionItems) {
             var itemObj = Instantiate(this.itemPrefabDictionary[itemType], this.itemSpawnTransform);
@@ -28,9 +26,12 @@ public class ItemInvestigateManager : GameControlSingleton<ItemInvestigateManage
     }
 
     public void InvestigationItemInit(PassengerData passengerData) {
+        PlayerBehaviour.Instance.isInvestigating = true;
+        PlayerBehaviour.Instance.currentInvestigatingTrainType = passengerData.passengerTrainType;
+        
         this.investigationItemReturnCount = 0;
         this.targetPassengerData = passengerData;
-
+        
         var inspectionLogObj = Instantiate(
             this.itemPrefabDictionary[GameControlTypeManager.ItemType.INSPECTION_LOG], this.itemSpawnTransform);
         var inspectionReportObj = Instantiate(
@@ -55,7 +56,7 @@ public class ItemInvestigateManager : GameControlSingleton<ItemInvestigateManage
         }
 
         if (this.investigationItemReturnCount >= 2) {
-            this.investigationFinDictionary[] = true;
+            PlayerBehaviour.Instance.isInvestigating = false;
         }
     }
 

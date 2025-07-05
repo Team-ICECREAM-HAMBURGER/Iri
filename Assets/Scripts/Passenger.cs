@@ -6,6 +6,7 @@ public struct PassengerData {
     public string dob;
     public string gender;
     public string investigateNote;
+    public GameControlTypeManager.VehicleTrainType passengerTrainType;
     public GameControlTypeManager.InvestigateResultType investigateResult;
     public List<GameControlTypeManager.ItemType> possessionItems;
     public GameControlSerializableDictionary.ItemScriptableObjectDictionary possessionItemScriptableObject;
@@ -21,6 +22,7 @@ public class Passenger {
         this.passengerData.name = data.name;
         this.passengerData.dob = data.dob;
         this.passengerData.gender = data.gender;
+        this.passengerData.passengerTrainType = data.passengerTrainType;
         this.passengerData.investigateNote = data.investigateNote;
         this.passengerData.investigateResult = data.investigateResult;
 
