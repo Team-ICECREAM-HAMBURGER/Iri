@@ -1,7 +1,8 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class VehicleTrainTrafficLightManger : MonoBehaviour {
-    [SerializeField] private VehicleTrainTrafficManager vehicleTrainTrafficManager;
+    [SerializeField] private TrainInformationBoardBehaviour trainInformationBoardBehaviour;
     [Space(10f)]
     [SerializeField] private Light trafficLight;
     [Space(10f)] 
@@ -14,9 +15,9 @@ public class VehicleTrainTrafficLightManger : MonoBehaviour {
 
 
     private void Init() {
-        this.vehicleTrainTrafficManager.onTrafficEnterIdle.AddListener(Idle);
-        this.vehicleTrainTrafficManager.onTrafficEnterStop.AddListener(Stop);
-        this.vehicleTrainTrafficManager.onTrafficExecuteMove.AddListener(Move);
+        this.trainInformationBoardBehaviour.onTrafficEnterIdle.AddListener(Idle);
+        this.trainInformationBoardBehaviour.onTrafficEnterStop.AddListener(Stop);
+        this.trainInformationBoardBehaviour.onTrafficExecuteMove.AddListener(Move);
         
         this.trafficLightsColorIdle = Color.yellow;
         this.trafficLightsColorStop = Color.red;

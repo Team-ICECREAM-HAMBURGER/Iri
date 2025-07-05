@@ -9,7 +9,9 @@ public class PlayerBehaviour : GameControlSingleton<PlayerBehaviour> {
     [SerializeField] private GameTimeController gameTimeController;
     [Space(10f)]
     [SerializeField] private PunchButtonBehaviour punchButtonBehaviour;
-    
+
+
+    [HideInInspector] public bool isInvestigating; // 현재 검문 중인가?
     private bool isPunched;
     
     

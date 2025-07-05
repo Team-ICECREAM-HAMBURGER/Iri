@@ -1,20 +1,23 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class ItemInvestigateManager : GameControlSingleton<ItemInvestigateManager> {
+    public Dictionary<GameControlTypeManager.VehicleTrainType, bool> investigationFinDictionary;
     public GameControlSerializableDictionary.ItemGameObjectDictionary itemPrefabDictionary;
+    
     [SerializeField] private Transform itemSpawnTransform;
     
-    [HideInInspector] public bool isOK;
-    [HideInInspector] public bool isInvestigating;
+    [HideInInspector] public bool isStampOK;
     
-    private PassengerData targetPassengerData;
     private int passengerItemReturnCount;
     private int investigationItemReturnCount;
+    private PassengerData targetPassengerData;
     
-    
+
     public void PassengerItemInit(PassengerData passengerData) {
         this.passengerItemReturnCount = 0;
         this.targetPassengerData = passengerData;
+        this.investigationFinDictionary.Add(, false);
         
         foreach (var itemType in passengerData.possessionItems) {
             var itemObj = Instantiate(this.itemPrefabDictionary[itemType], this.itemSpawnTransform);
@@ -40,7 +43,6 @@ public class ItemInvestigateManager : GameControlSingleton<ItemInvestigateManage
     }
 
     public void PassengerItemReturnCheck(GameControlTypeManager.ItemType itemType) {
-        // 반납 아이템 카운트 //
         if (this.targetPassengerData.possessionItems.Contains(itemType)) {
             this.passengerItemReturnCount++;
         }
@@ -50,6 +52,10 @@ public class ItemInvestigateManager : GameControlSingleton<ItemInvestigateManage
         if (itemType == GameControlTypeManager.ItemType.INSPECTION_LOG ||
             itemType == GameControlTypeManager.ItemType.INSPECTION_REPORT) {
             this.investigationItemReturnCount++;
+        }
+
+        if (this.investigationItemReturnCount >= 2) {
+            this.investigationFinDictionary[] = true;
         }
     }
 
@@ -61,21 +67,16 @@ public class ItemInvestigateManager : GameControlSingleton<ItemInvestigateManage
             result = GameControlTypeManager.InvestigateResultType.물품반납누락;
         }
         
-        // 반납 서류 누락 검증 //
-        if (this.investigationItemReturnCount < 2) {
-            result = GameControlTypeManager.InvestigateResultType.필수서류누락;
-        }
-        
         // 아이템 검증 //
-        if (this.isOK &&
+        if (this.isStampOK &&
             this.targetPassengerData.investigateResult != GameControlTypeManager.InvestigateResultType.이상없음) {
             result = this.targetPassengerData.investigateResult;
         }
-        else if (!this.isOK &&
+        else if (!this.isStampOK &&
                  this.targetPassengerData.investigateResult == GameControlTypeManager.InvestigateResultType.이상없음) {
             result = GameControlTypeManager.InvestigateResultType.검역오류;
         }
-
+        
         return result;
     }
 }

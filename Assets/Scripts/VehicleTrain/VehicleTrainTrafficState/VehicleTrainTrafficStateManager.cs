@@ -6,10 +6,10 @@ public class VehicleTrainTrafficStateManager {
     public VehicleTrainTrafficStateStop VehicleTrainTrafficStateStop { get; }
     
     
-    public VehicleTrainTrafficStateManager(VehicleTrainTrafficManager vehicleTrainTrafficManager) {
-        this.VehicleTrainTrafficStateMove = new (vehicleTrainTrafficManager);
-        this.VehicleTrainTrafficStateStop = new (vehicleTrainTrafficManager);
-        this.VehicleTrainTrafficStateIdle = new (vehicleTrainTrafficManager);
+    public VehicleTrainTrafficStateManager(TrainInformationBoardBehaviour trainInformationBoardBehaviour) {
+        this.VehicleTrainTrafficStateMove = new (trainInformationBoardBehaviour);
+        this.VehicleTrainTrafficStateStop = new (trainInformationBoardBehaviour);
+        this.VehicleTrainTrafficStateIdle = new (trainInformationBoardBehaviour);
         TransitionTo(this.VehicleTrainTrafficStateIdle);
     }
     

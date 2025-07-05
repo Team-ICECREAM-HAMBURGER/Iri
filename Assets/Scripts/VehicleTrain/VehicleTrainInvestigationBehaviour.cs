@@ -1,13 +1,19 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class VehicleTrainInvestigationBehaviour : MonoBehaviour {
     [SerializeField] private GameControlExpandMenuDragController gameControlExpandMenuDragController;
-    [SerializeField] private VehicleTrainTrafficManager vehicleTrainTrafficManager;
+    [SerializeField] private TrainInformationBoardBehaviour trainInformationBoardBehaviour;
     [Space(10f)] 
-    [SerializeField] private Animator investigationAnimator;
+    [SerializeField] private Animator animator;
+    [SerializeField] private TMP_Text speechTextField;
+    [SerializeField] private string speechText;
     [SerializeField] private string animationTriggerName;
-
+    [Space(10f)]
+    [SerializeField] private GameControlTypeManager.VehicleTrainType vehicleType;
+    
     [Space(25f)]
     
     [Header("Passenger Information")]
@@ -15,15 +21,15 @@ public class VehicleTrainInvestigationBehaviour : MonoBehaviour {
     [SerializeField] private List<PassengerScriptableObject> targetPassengerScriptableObjects;
     
     private List<Passenger> trainPassengers;
-    private int randomPassengerIndex;
     private GameControlFisherYatesShuffler gameControlFisherYatesShuffler;
-
-    private bool isInvestigated;
-    private bool isStopped;
     private GameControlTypeManager.InvestigateResultType investigateResult;
+    private int randomPassengerIndex;
+    private bool isInvestigatedTrain;
+    private bool isStopped;
+    
     
     private void Init() {
-        this.isInvestigated = false;
+        this.isInvestigatedTrain = false;
         this.isStopped = false;
         this.gameControlFisherYatesShuffler = new();
     }
@@ -33,17 +39,15 @@ public class VehicleTrainInvestigationBehaviour : MonoBehaviour {
     }
 
     private void OnEnable() {
-        this.isInvestigated = false;
+        this.isInvestigatedTrain = false;
         this.isStopped = false;
+
+        this.trainInformationBoardBehaviour.onInvestigationButtonActive.Invoke(false);
         
-        // FOR PREVENT NULL ERROR //
-        // this.vehicleTrainTrafficManager.investigationButton.gameObject.SetActive(false);
-        this.vehicleTrainTrafficManager.onInvestigationButtonActive.Invoke(false);
-        
-        this.vehicleTrainTrafficManager.investigationButton.onClick.AddListener(OnInvestigatingMessagePopup);
-        this.vehicleTrainTrafficManager.onTrafficEnterStop.AddListener(OnTrainStopCheck);
-        this.vehicleTrainTrafficManager.onTrafficEnterIdle.AddListener(OnInvestigationButtonActiveControl);
-        this.vehicleTrainTrafficManager.onTrafficExitIdle.AddListener(OnInvestigationPass);
+        this.trainInformationBoardBehaviour.investigationButton.onClick.AddListener(OnInvestigatingMessagePopup);
+        this.trainInformationBoardBehaviour.onTrafficEnterStop.AddListener(OnTrainStopCheck);
+        this.trainInformationBoardBehaviour.onTrafficEnterIdle.AddListener(OnInvestigationButtonActiveControl);
+        this.trainInformationBoardBehaviour.onTrafficExitIdle.AddListener(OnInvestigationPass);
         
         // Passengers Init
         this.trainPassengers = new();
@@ -62,17 +66,16 @@ public class VehicleTrainInvestigationBehaviour : MonoBehaviour {
     }
     
     private void OnDisable() {
-        this.isInvestigated = false;
+        this.isInvestigatedTrain = false;
         this.isStopped = false;
+
         
-        // FOR PREVENT NULL ERROR //
-        // this.vehicleTrainTrafficManager.investigationButton.gameObject.SetActive(false);
-        this.vehicleTrainTrafficManager.onInvestigationButtonActive.Invoke(false);
+        this.trainInformationBoardBehaviour.onInvestigationButtonActive.Invoke(false);
         
-        this.vehicleTrainTrafficManager.investigationButton.onClick.RemoveListener(OnInvestigatingMessagePopup);
-        this.vehicleTrainTrafficManager.onTrafficEnterStop.RemoveListener(OnTrainStopCheck);
-        this.vehicleTrainTrafficManager.onTrafficEnterIdle.RemoveListener(OnInvestigationButtonActiveControl);
-        this.vehicleTrainTrafficManager.onTrafficExitIdle.RemoveListener(OnInvestigationPass);
+        this.trainInformationBoardBehaviour.investigationButton.onClick.RemoveListener(OnInvestigatingMessagePopup);
+        this.trainInformationBoardBehaviour.onTrafficEnterStop.RemoveListener(OnTrainStopCheck);
+        this.trainInformationBoardBehaviour.onTrafficEnterIdle.RemoveListener(OnInvestigationButtonActiveControl);
+        this.trainInformationBoardBehaviour.onTrafficExitIdle.RemoveListener(OnInvestigationPass);
     }
 
     private void OnTrainStopCheck() {
@@ -80,45 +83,45 @@ public class VehicleTrainInvestigationBehaviour : MonoBehaviour {
     }
 
     private void OnInvestigationPass() {
-        // FOR PREVENT NULL ERROR //
-        // this.vehicleTrainTrafficManager.investigationButton.gameObject.SetActive(false);
-        ItemInvestigateManager.Instance.isInvestigating = false;
-        this.investigateResult = ItemInvestigateManager.Instance.InvestigationResult();
-        
-        if (this.investigateResult != GameControlTypeManager.InvestigateResultType.이상없음) {
-            Debug.Log("검문오류: " + this.investigateResult);
+        // 신호 전환 성공 시 //
+        if (PlayerBehaviour.Instance.isInvestigating) {
+            this.investigateResult = ItemInvestigateManager.Instance.InvestigationResult();
+            
+            if (this.investigateResult != GameControlTypeManager.InvestigateResultType.이상없음) {
+                Debug.Log("검문오류: " + this.investigateResult);
+                // TODO: 검문 오류 시 행동 처리
+            }
+            else {
+                Debug.Log("검문성공!");
+            }
         }
-        else {
-            Debug.Log("통과!");
-        }
         
-        this.vehicleTrainTrafficManager.onInvestigationButtonActive.Invoke(false);
+        PlayerBehaviour.Instance.isInvestigating = false;
+        this.trainInformationBoardBehaviour.onInvestigationButtonActive.Invoke(false);
     }
     
     private void OnInvestigationButtonActiveControl() {
-        if (this.isStopped && !this.isInvestigated) { // target
-            // FOR PREVENT NULL ERROR //
-            // this.vehicleTrainTrafficManager.investigationButton.gameObject.SetActive(true);
-            this.vehicleTrainTrafficManager.onInvestigationButtonActive.Invoke(true);
+        if (this.isStopped && !this.isInvestigatedTrain) { // target
+            this.trainInformationBoardBehaviour.onInvestigationButtonActive.Invoke(true);
 
         }
         else {
-            // FOR PREVENT NULL ERROR //
-            // this.vehicleTrainTrafficManager.investigationButton.gameObject.SetActive(false);
-            this.vehicleTrainTrafficManager.onInvestigationButtonActive.Invoke(false);
+            this.trainInformationBoardBehaviour.onInvestigationButtonActive.Invoke(false);
         }
     }
     
     private void OnInvestigatingMessagePopup() {
-        if (ItemInvestigateManager.Instance.isInvestigating) {
+        // 열차 수색은 1번에 1대만 가능
+        if (PlayerBehaviour.Instance.isInvestigating) {
             return;
         }
         
-        ItemInvestigateManager.Instance.isInvestigating = true;
+        PlayerBehaviour.Instance.isInvestigating = true;
         
         // 말풍선; "수사 중..."
-        this.isInvestigated = true;
-        this.investigationAnimator.SetTrigger(this.animationTriggerName);
+        this.isInvestigatedTrain = true;
+        this.speechTextField.text = this.speechText;
+        this.animator.SetTrigger(this.animationTriggerName);
         
         InvestigationDataLoad();
         
@@ -126,7 +129,7 @@ public class VehicleTrainInvestigationBehaviour : MonoBehaviour {
         this.gameControlExpandMenuDragController.InvestigatePanelActive();
         
         // 검문 버튼 OFF
-        this.vehicleTrainTrafficManager.onInvestigationButtonActive.Invoke(false);
+        this.trainInformationBoardBehaviour.onInvestigationButtonActive.Invoke(false);
     }
 
     private void InvestigationDataLoad() {

@@ -1,18 +1,18 @@
 public class VehicleTrainTrafficStateMove : IVehicleTrainTrafficState {
-    private VehicleTrainTrafficManager vehicleTrainTrafficManager;
+    private TrainInformationBoardBehaviour trainInformationBoardBehaviour;
 
     
-    public VehicleTrainTrafficStateMove(VehicleTrainTrafficManager vehicleTrainTrafficManager) {
-        this.vehicleTrainTrafficManager = vehicleTrainTrafficManager;
+    public VehicleTrainTrafficStateMove(TrainInformationBoardBehaviour trainInformationBoardBehaviour) {
+        this.trainInformationBoardBehaviour = trainInformationBoardBehaviour;
     }
     
     public void Enter() {
         // 이벤트 발생 알림!
-        this.vehicleTrainTrafficManager?.TrainTrafficMonitorUpdate("이동");
+        this.trainInformationBoardBehaviour?.TrainTrafficMonitorUpdate("이동");
     }
 
     public void Execute() {
-        this.vehicleTrainTrafficManager?.onTrafficExecuteMove.Invoke();
+        this.trainInformationBoardBehaviour?.onTrafficExecuteMove.Invoke();
     }
 
     public void Exit() {

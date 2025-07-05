@@ -1,14 +1,14 @@
-using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 
-public class VehicleTrainTrafficManager : MonoBehaviour {
+public class TrainInformationBoardBehaviour : MonoBehaviour {
+    [SerializeField] private GameControlTypeManager.VehicleTrainType trainType;
+    
     [HideInInspector] public UnityEvent onTrafficTransitionToIdle;
 
     [HideInInspector] public UnityEvent onTrafficEnterIdle;
-    // [HideInInspector] public UnityEvent onTrafficEnterMove;
     [HideInInspector] public UnityEvent onTrafficEnterStop;
 
     [HideInInspector] public UnityEvent onTrafficExecuteMove;
@@ -21,6 +21,13 @@ public class VehicleTrainTrafficManager : MonoBehaviour {
     [SerializeField] private TMP_Text trafficStateTmp;
     [SerializeField] private Button trafficStateChangeButton;
     
+    [Space(10f)]
+    [SerializeField] private Animator animator;
+    [SerializeField] private TMP_Text speechTextField;
+    [SerializeField] private string speechText;
+    [SerializeField] private string animationTriggerName;
+    
+    [Space(10f)]
     public Button investigationButton;
     
     private IVehicleTrainTrafficState nextState;
@@ -51,6 +58,20 @@ public class VehicleTrainTrafficManager : MonoBehaviour {
     }
     
     private void OnTrafficStateChange() {
+        if (PlayerBehaviour.Instance.isInvestigating) { // 신호 전환 시도, 플레이어 현재 검문 중.
+            // 필수 서류 제출이 이루어졌는가?
+            if (!ItemInvestigateManager.Instance.investigationFinDictionary[this.trainType]) {
+                // TODO: 싱글턴이라서 다른 열차까지 영향을 미침.
+                
+                Debug.Log("필수 서류 누락");
+                
+                this.speechTextField.text = this.speechText;
+                this.animator.SetTrigger(this.animationTriggerName);
+                
+                return;
+            }
+        }
+        
         if (this.vehicleTrainTrafficStateManager.CurrentVehicleTrainTrafficState 
             == this.vehicleTrainTrafficStateManager.VehicleTrainTrafficStateMove) {
             this.nextState = this.vehicleTrainTrafficStateManager.VehicleTrainTrafficStateStop;

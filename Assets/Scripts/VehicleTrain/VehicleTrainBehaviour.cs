@@ -1,6 +1,7 @@
 using System;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class VehicleTrainBehaviour : MonoBehaviour { 
     [SerializeField] private float vehicleMaxSpeed;
@@ -8,9 +9,11 @@ public class VehicleTrainBehaviour : MonoBehaviour {
     [SerializeField] private float vehicleCurrentSpeed;
     [SerializeField] private int jointCars;
     
+    [FormerlySerializedAs("trainTrafficManager")]
+    [FormerlySerializedAs("vehicleTrainTrafficManager")]
     [Space(25f)]
     
-    [SerializeField] private VehicleTrainTrafficManager vehicleTrainTrafficManager;
+    [SerializeField] private TrainInformationBoardBehaviour trainInformationBoardBehaviour;
     
     private Transform vehicleTransform;
     private Rigidbody vehicleRigidbody;
@@ -31,20 +34,20 @@ public class VehicleTrainBehaviour : MonoBehaviour {
 
     private void OnEnable() {
         // 상태를 대기 -> 출발로
-        this.vehicleTrainTrafficManager.TrainSetActive(true);
+        this.trainInformationBoardBehaviour.TrainSetActive(true);
         
-        this.vehicleTrainTrafficManager.onTrafficExecuteMove.AddListener(Move);
-        this.vehicleTrainTrafficManager.onTrafficExecuteStop.AddListener(Stop);
-        this.vehicleTrainTrafficManager.onTrafficEnterIdle.AddListener(Idle);
+        this.trainInformationBoardBehaviour.onTrafficExecuteMove.AddListener(Move);
+        this.trainInformationBoardBehaviour.onTrafficExecuteStop.AddListener(Stop);
+        this.trainInformationBoardBehaviour.onTrafficEnterIdle.AddListener(Idle);
     }
     
     private void OnDisable() {
         // 상태를 출발 -> 대기로
-        this.vehicleTrainTrafficManager?.TrainSetActive(false);
+        this.trainInformationBoardBehaviour?.TrainSetActive(false);
 
-        this.vehicleTrainTrafficManager?.onTrafficExecuteMove.RemoveListener(Move);
-        this.vehicleTrainTrafficManager?.onTrafficExecuteStop.RemoveListener(Stop);
-        this.vehicleTrainTrafficManager?.onTrafficEnterIdle.RemoveListener(Idle);
+        this.trainInformationBoardBehaviour?.onTrafficExecuteMove.RemoveListener(Move);
+        this.trainInformationBoardBehaviour?.onTrafficExecuteStop.RemoveListener(Stop);
+        this.trainInformationBoardBehaviour?.onTrafficEnterIdle.RemoveListener(Idle);
     }
 
     private void Idle() {
@@ -75,7 +78,7 @@ public class VehicleTrainBehaviour : MonoBehaviour {
         }
         else {
             this.vehicleRigidbody.linearVelocity = Vector3.zero;
-            this.vehicleTrainTrafficManager.onTrafficTransitionToIdle.Invoke();
+            this.trainInformationBoardBehaviour.onTrafficTransitionToIdle.Invoke();
         }
     }
 }

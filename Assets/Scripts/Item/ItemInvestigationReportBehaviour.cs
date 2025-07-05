@@ -51,7 +51,7 @@ public class ItemInvestigationReportBehaviour : MonoBehaviour {
         
         this.stampObject.SetActive(true);
         
-        ItemInvestigateManager.Instance.isOK = true;
+        ItemInvestigateManager.Instance.isStampOK = true;
     }
 
     private void OnPaperStampNO(RectTransform punchRectTransform) {
@@ -66,7 +66,7 @@ public class ItemInvestigationReportBehaviour : MonoBehaviour {
         
         this.stampObject.SetActive(true);
         
-        ItemInvestigateManager.Instance.isOK = false;
+        ItemInvestigateManager.Instance.isStampOK = false;
     }
 
     private void OnItemReturn() {

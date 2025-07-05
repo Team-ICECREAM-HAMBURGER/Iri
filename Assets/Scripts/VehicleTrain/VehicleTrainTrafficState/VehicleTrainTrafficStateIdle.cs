@@ -1,15 +1,15 @@
 public class VehicleTrainTrafficStateIdle : IVehicleTrainTrafficState {
-    private VehicleTrainTrafficManager vehicleTrainTrafficManager;
+    private TrainInformationBoardBehaviour trainInformationBoardBehaviour;
     
     
-    public VehicleTrainTrafficStateIdle(VehicleTrainTrafficManager vehicleTrainTrafficManager) {
-        this.vehicleTrainTrafficManager = vehicleTrainTrafficManager;
+    public VehicleTrainTrafficStateIdle(TrainInformationBoardBehaviour trainInformationBoardBehaviour) {
+        this.trainInformationBoardBehaviour = trainInformationBoardBehaviour;
     }
     
     public void Enter() {
         // 이벤트 발생 알림!
-        this.vehicleTrainTrafficManager?.TrainTrafficMonitorUpdate("대기");
-        this.vehicleTrainTrafficManager?.onTrafficEnterIdle.Invoke();
+        this.trainInformationBoardBehaviour?.TrainTrafficMonitorUpdate("대기");
+        this.trainInformationBoardBehaviour?.onTrafficEnterIdle.Invoke();
     }
 
     public void Execute() {
@@ -17,6 +17,6 @@ public class VehicleTrainTrafficStateIdle : IVehicleTrainTrafficState {
     }
 
     public void Exit() {
-        this.vehicleTrainTrafficManager?.onTrafficExitIdle.Invoke();
+        this.trainInformationBoardBehaviour?.onTrafficExitIdle.Invoke();
     }
 }
