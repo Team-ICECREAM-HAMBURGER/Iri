@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Serialization;
 
 public class PlayerBehaviour : GameControlSingleton<PlayerBehaviour> {
     [HideInInspector] public UnityEvent OnPunchIn;
@@ -11,8 +12,10 @@ public class PlayerBehaviour : GameControlSingleton<PlayerBehaviour> {
     [SerializeField] private PunchButtonBehaviour punchButtonBehaviour;
 
 
+    public int investigateWarningCount;
     public bool isInvestigating; // 현재 검문 중인가?
     public GameControlTypeManager.VehicleTrainType currentInvestigatingTrainType;
+    
     private bool isPunched;
     
     

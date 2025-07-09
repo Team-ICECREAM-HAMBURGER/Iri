@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Enter Permit
   m_EditorClassIdentifier: 
   itemType: 2
-  itemForgeryType: 0
+  investigateResultType: 1
   itemLabelTextDictionary:
     m_keys: 04000000000000000200000006000000
     m_values:

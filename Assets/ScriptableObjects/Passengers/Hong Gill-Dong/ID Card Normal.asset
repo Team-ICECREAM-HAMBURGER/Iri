@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: ID Card Normal
   m_EditorClassIdentifier: 
   itemType: 6
-  itemForgeryType: 1
+  investigateResultType: 1
   itemLabelTextDictionary:
     m_keys: 000000000200000005000000
     m_values:

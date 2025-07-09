@@ -139,10 +139,10 @@ public static class GameControlTypeManager {
 
     public enum InvestigateResultType {
         이상없음,
-        서류상오류,
-        필수서류누락,
-        서류만기,
+        서류상불일치,
+        서류기한만기,
         물품반납누락,
-        검역오류,
+        물품반납오류,
+        검역오류
     }
 }

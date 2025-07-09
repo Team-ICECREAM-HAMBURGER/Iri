@@ -1,7 +1,6 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 public class VehicleTrainInvestigationBehaviour : MonoBehaviour {
     [SerializeField] private GameControlExpandMenuDragController gameControlExpandMenuDragController;
@@ -22,7 +21,7 @@ public class VehicleTrainInvestigationBehaviour : MonoBehaviour {
     
     private List<Passenger> trainPassengers;
     private GameControlFisherYatesShuffler gameControlFisherYatesShuffler;
-    private GameControlTypeManager.InvestigateResultType investigateResult;
+    private HashSet<GameControlTypeManager.InvestigateResultType> investigateResultTypeSet;
     private int randomPassengerIndex;
     private bool isInvestigatedTrain;
     private bool isStopped;
@@ -85,16 +84,15 @@ public class VehicleTrainInvestigationBehaviour : MonoBehaviour {
         // 신호 전환 성공 후, //
         
         // 검역 작업 문제 여부 판단 보고; 검역 대상 차량 시 //
-        if (PlayerBehaviour.Instance.isInvestigating && 
+        if (!PlayerBehaviour.Instance.isInvestigating && 
             PlayerBehaviour.Instance.currentInvestigatingTrainType == this.vehicleType) {
-            this.investigateResult = ItemInvestigateManager.Instance.InvestigationResult();
+            this.investigateResultTypeSet = ItemInvestigateManager.Instance.InvestigationResult();
             
-            if (this.investigateResult != GameControlTypeManager.InvestigateResultType.이상없음) {
-                Debug.Log("검문오류: " + this.investigateResult);
-                // TODO: 검문 오류 시 행동 처리
-            }
-            else {
-                Debug.Log("검문성공!");
+            // TODO: DEBUG.LOG
+            Debug.Log("- 검문결과: ");
+            
+            foreach (var VARIABLE in this.investigateResultTypeSet) {
+                Debug.Log(VARIABLE);
             }
         }
         

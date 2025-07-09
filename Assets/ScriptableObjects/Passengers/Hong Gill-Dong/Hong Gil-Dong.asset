@@ -15,8 +15,8 @@ MonoBehaviour:
   name: "\uD64D\uAE38\uB3D9"
   dob: 231225-123
   gender: "\uB0A8\uC131"
-  investigateNote: 
-  investigateResult: 1
+  investigateNote: "\uADF8 \uC774\uB984\uC740 \uD64D\uAE38\uB3D9."
+  passengerTrainType: 0
   possessionItemScriptableObject:
     m_keys: 0200000006000000
     m_values:
