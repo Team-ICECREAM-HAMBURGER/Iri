@@ -1,4 +1,4 @@
-# 이리(Iri)
+# 이리
 ![iri_Title](https://github.com/user-attachments/assets/fa46de8c-558f-45da-82bf-56e742f4d803)
 > ***“우리는 광기의 시대에 살고 있다.”***
 <br/>
